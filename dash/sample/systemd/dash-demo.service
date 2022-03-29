@@ -1,0 +1,15 @@
+[Unit]
+Description=KX Dashboards Demo
+
+[Service]
+Type=forking
+User=direct
+Group=direct
+PIDFile=/opt/dash/logs/dash-demo.pid
+ExecStart=/opt/dash/dash-demo.sh
+TimeoutSec=30s
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

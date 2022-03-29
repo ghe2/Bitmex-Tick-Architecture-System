@@ -1,0 +1,10 @@
+{
+  "name": "html5evalcongroup",
+  "dbtype": "q",
+  "tls": "off",
+  "host": "localhost",
+  "port": "6812",
+  "user": "",
+  "pass": "",
+  "database": ""
+}

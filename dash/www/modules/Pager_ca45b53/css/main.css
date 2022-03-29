@@ -1,0 +1,46 @@
+.app-div.pager {
+  font-size: 13px;
+}
+.app-div.pager .slick-pager {
+  width: 100%;
+  height: 26px;
+  border: 1px solid gray;
+  border-top: 0;
+  background: url("images/header-columns-bg.gif") repeat-x center bottom;
+  vertical-align: middle;
+}
+.app-div.pager .slick-pager .slick-pager-status {
+  display: inline-block;
+  padding: 6px;
+}
+.app-div.pager .slick-pager .ui-icon-container {
+  display: inline-block;
+  margin: 2px;
+  border-color: gray;
+}
+.app-div.pager .slick-pager .slick-pager-nav {
+  display: inline-block;
+  float: left;
+  padding: 2px;
+}
+.app-div.pager .slick-pager .slick-pager-nav > * {
+  vertical-align: middle;
+}
+.app-div.pager .slick-pager .slick-pager-settings {
+  display: block;
+  float: right;
+  padding: 2px;
+}
+.app-div.pager .slick-pager .slick-pager-settings * {
+  vertical-align: middle;
+}
+.app-div.pager .slick-pager .slick-pager-settings a {
+  padding: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.app-div.pager .slick-pager {
+  border: none;
+  background: none;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyIsInNsaWNrZ3JpZC9zbGljay5wYWdlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0k7O0FDRko7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QURuQ1I7RUFDSTtFQUNBIiwiZmlsZSI6Im1haW4uY3NzIn0= */

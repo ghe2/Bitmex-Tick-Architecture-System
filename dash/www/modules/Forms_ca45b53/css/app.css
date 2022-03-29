@@ -1,0 +1,829 @@
+.ui-timepicker-div .ui-widget-header {
+  margin-bottom: 8px;
+}
+.ui-timepicker-div dl {
+  text-align: left;
+}
+.ui-timepicker-div dl dt {
+  float: left;
+  clear: left;
+  padding: 0 0 0 5px;
+}
+.ui-timepicker-div dl dd {
+  margin: 0 10px 10px 40%;
+}
+.ui-timepicker-div td {
+  font-size: 90%;
+}
+.ui-timepicker-div .ui_tpicker_unit_hide {
+  display: none;
+}
+.ui-timepicker-div.ui-timepicker-oneLine {
+  padding-right: 2px;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time {
+  display: none;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dt {
+  display: none;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time_label {
+  display: block;
+  padding-top: 2px;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl {
+  text-align: right;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd {
+  display: inline-block;
+  margin: 0;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd > div {
+  display: inline-block;
+  margin: 0;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before {
+  content: ":";
+  display: inline-block;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before {
+  content: ":";
+  display: inline-block;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_millisec:before {
+  content: ".";
+  display: inline-block;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_microsec:before {
+  content: ".";
+  display: inline-block;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide {
+  display: none;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide:before {
+  display: none;
+}
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
+  background: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #555;
+  width: 95%;
+}
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input:focus {
+  border-bottom-color: #aaa;
+}
+
+.ui-tpicker-grid-label {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-timepicker-rtl {
+  direction: rtl;
+}
+.ui-timepicker-rtl dl {
+  text-align: right;
+  padding: 0 5px 0 0;
+}
+.ui-timepicker-rtl dl dt {
+  float: right;
+  clear: right;
+}
+.ui-timepicker-rtl dl dd {
+  margin: 0 40% 10px 10px;
+}
+
+/* Shortened version style */
+.ui-timepicker-div.ui-timepicker-oneLine {
+  padding-right: 2px;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time, .ui-timepicker-div.ui-timepicker-oneLine dt {
+  display: none;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time_label {
+  display: block;
+  padding-top: 2px;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl {
+  text-align: right;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd {
+  display: inline-block;
+  margin: 0;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd > div {
+  display: inline-block;
+  margin: 0;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before, .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before {
+  content: ":";
+  display: inline-block;
+}
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_millisec:before, .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_microsec:before {
+  content: ".";
+  display: inline-block;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide {
+  display: none;
+}
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide:before {
+  display: none;
+}
+
+/* surrounding tag container */
+.tag-editor {
+  list-style-type: none;
+  padding: 0 5px 0 0;
+  margin: 0;
+  overflow: hidden;
+  cursor: text;
+  font: normal 14px sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+/* core styles usually need no change */
+.tag-editor li {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  margin: 3px 0;
+  line-height: 1.5;
+}
+
+.tag-editor div {
+  float: left;
+  padding: 0 4px;
+}
+
+.tag-editor .placeholder {
+  padding: 0 8px;
+  color: #989898;
+}
+
+.tag-editor .tag-editor-spacer {
+  padding: 0;
+  width: 8px;
+  overflow: hidden;
+  color: transparent;
+  background: none;
+}
+
+.tag-editor input {
+  vertical-align: inherit;
+  border: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: text;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  box-shadow: none;
+  background: none;
+  color: #000;
+}
+
+/* hide original input field or textarea visually to allow tab navigation */
+.tag-editor-hidden-src {
+  position: absolute !important;
+  left: -99999px;
+}
+
+/* hide IE10 "clear field" X */
+.tag-editor ::-ms-clear {
+  display: none;
+}
+
+/* tag style */
+.tag-editor .tag-editor-tag {
+  padding-left: 5px;
+  color: #46799b;
+  background: #e0eaf1;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px 0 0 2px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* delete icon */
+.tag-editor .tag-editor-delete {
+  background: #e0eaf1;
+  border-left: 1px solid #fff;
+  cursor: pointer;
+  padding-right: 5px;
+  border-radius: 0 2px 2px 0;
+}
+
+.tag-editor .tag-editor-delete i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  vertical-align: middle;
+  background: url(../images/delete-tag.png) 0 0 no-repeat;
+  position: relative;
+  top: -1px;
+}
+
+.tag-editor .tag-editor-delete:hover i {
+  background-position: 0 -14px;
+}
+
+.tag-editor .tag-editor-tag.active + .tag-editor-delete,
+.tag-editor .tag-editor-tag.active + .tag-editor-delete i {
+  background: none;
+  cursor: text;
+}
+
+.tag-editor .tag-editor-tag.active {
+  background: none !important;
+}
+
+/* Form */
+.bbf-form {
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* hide original input field or textarea visually to allow tab navigation */
+}
+.bbf-form ul {
+  padding: 0;
+}
+.bbf-form fieldset {
+  border: 1px solid #3c3c3c;
+}
+.bbf-form .ui-button[type=submit],
+.bbf-form .ui-button.reset {
+  vertical-align: top;
+}
+.bbf-form .tag-editor-hidden-src {
+  position: absolute !important;
+  left: -99999px;
+}
+.bbf-form .tag-editor {
+  padding: 0 5px 0 0;
+  margin: 0;
+  font: normal 11px sans-serif !important;
+  color: #000;
+  background: white;
+  /* core styles usually need no change */
+  /* hide IE10 "clear field" X */
+}
+.bbf-form .tag-editor li {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  margin: 3px 0;
+  line-height: 1.5;
+  width: auto;
+  clear: none;
+}
+.bbf-form .tag-editor div {
+  float: left;
+  padding: 0 4px;
+}
+.bbf-form .tag-editor .placeholder {
+  padding: 0 8px;
+  color: #989898;
+}
+.bbf-form .tag-editor .tag-editor-delete {
+  height: 16px;
+}
+.bbf-form .tag-editor .tag-editor-spacer {
+  padding: 0;
+  width: 8px;
+  overflow: hidden;
+  color: transparent;
+  background: none;
+}
+.bbf-form .tag-editor ::-ms-clear {
+  display: none;
+}
+
+.select2-dropdown-arrow {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 8px 6px;
+  cursor: pointer;
+}
+
+/* Field */
+.bbf-field {
+  margin: 1em 0;
+  list-style-type: none;
+  position: relative;
+  clear: both;
+  vertical-align: bottom;
+}
+.bbf-field label {
+  float: left;
+  width: 25%;
+}
+.bbf-field .bbf-editor {
+  margin-left: 25%;
+  width: 74%;
+}
+.bbf-field .bbf-editor .select2-container .select2-select-all-checkbox {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 8px 6px;
+  cursor: pointer;
+}
+.bbf-field .bbf-editor .select2-container .select2-selection__arrow {
+  display: none;
+}
+.bbf-field .bbf-editor .select2-container.select2-container--open .select2-select-all-checkbox {
+  display: block;
+}
+.bbf-field .bbf-editor .select2-container.select2-container--open .select2-select-all-checkbox + .select2-selection__rendered {
+  margin-left: 14px;
+}
+.bbf-field .bbf-editor .select2-container.select2-container--open .select2-dropdown-arrow {
+  display: none;
+}
+.bbf-field .bbf-editor .select2-container .select2-selection--multiple .select2-selection__rendered .summary {
+  margin-top: 4px;
+}
+.bbf-field .bbf-editor .select2-container.counter-enabled {
+  width: auto !important;
+}
+.bbf-field input,
+.bbf-field textarea,
+.bbf-field select {
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding: 2px;
+}
+.bbf-field textarea:focus, .bbf-field textarea:hover {
+  border-color: #00aeff;
+}
+.bbf-field .ui-spinner {
+  display: block !important;
+}
+.bbf-field .ui-spinner.focused {
+  border-color: #00aeff;
+}
+.bbf-field .ui-spinner input {
+  margin: 0;
+  border: 0px;
+  font-size: 13px !important;
+  background-color: white;
+}
+.bbf-field .ui-spinner .ui-spinner-button {
+  visibility: hidden;
+}
+.bbf-field .ui-spinner:focus .ui-spinner-button, .bbf-field .ui-spinner:hover .ui-spinner-button {
+  visibility: visible;
+}
+.bbf-field input[type=checkbox] {
+  width: auto;
+}
+.bbf-field input:focus,
+.bbf-field input:hover {
+  border-color: #00aeff;
+}
+.bbf-field .bbf-help {
+  margin-left: 25%;
+  width: 74%;
+  color: #999;
+}
+.bbf-field.bbf-error .bbf-editor, .bbf-field.error .bbf-editor {
+  outline: 1px solid red;
+}
+.bbf-field .selection-counter {
+  position: relative;
+  bottom: 0.5em;
+  left: 0.5em;
+}
+
+/* states in the dialog */
+.ui-widget-content .bbf-field input:focus, .ui-widget-content .bbf-field input:hover {
+  border-color: #00aeff;
+}
+
+/* Radio */
+.bbf-radio,
+.bbf-checkboxes {
+  list-style-type: none;
+}
+.bbf-radio input,
+.bbf-checkboxes input {
+  width: auto;
+}
+.bbf-radio label,
+.bbf-checkboxes label {
+  float: none;
+}
+
+/* Checkboxes */
+/* List */
+.bbf-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.bbf-list .bbf-error {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+.bbf-list li {
+  clear: both;
+  width: 100%;
+}
+.bbf-list li .bbf-editor-container {
+  margin-right: 2em;
+}
+.bbf-list li .bbf-remove {
+  float: right;
+  width: 2em;
+}
+.bbf-list .bbf-actions {
+  text-align: center;
+  clear: both;
+  display: none;
+}
+
+.bbf-list {
+  border: 1px solid grey;
+  background: white;
+  display: block;
+}
+.bbf-list > ul {
+  display: inline-block;
+}
+.bbf-list > ul > li {
+  border: 1px solid grey;
+  display: inline-block;
+  clear: none;
+  width: auto;
+  margin: 1px 1px;
+}
+.bbf-list > ul > li > button.bbf-remove {
+  background: transparent;
+  border: none;
+  font-size: 1em;
+  padding: 4px 0px;
+  cursor: pointer;
+}
+.bbf-list > .bbf-actions {
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  background: transparent;
+  clear: none;
+  vertical-align: top;
+}
+.bbf-list > .bbf-actions:hover {
+  opacity: 1;
+}
+.bbf-list > .bbf-actions > button {
+  background: none;
+  border: 0;
+  color: black;
+  font-size: 1em;
+  padding: 7px 1px 5px 4px;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+/* List.Modal */
+.bbf-list-modal {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  width: 208px;
+  border-radius: 3px;
+  padding: 4px;
+  color: #555;
+}
+
+/* Date */
+.bbf-date .bbf-date {
+  width: 4em;
+}
+.bbf-date .bbf-month {
+  width: 9em;
+}
+.bbf-date .bbf-year {
+  width: 6em;
+}
+
+/* DateTime */
+.bbf-datetime .bbf-date-container {
+  float: left;
+  margin-right: 1em;
+}
+.bbf-datetime select {
+  width: 4em;
+}
+
+/* Dict */
+ul.dict-items {
+  list-style: none;
+}
+ul.dict-items li {
+  position: relative;
+}
+ul.dict-items .bbf-dict {
+  line-height: 25px;
+  margin: 3px 0px;
+}
+ul.dict-items .bbf-dict .dict-key,
+ul.dict-items .bbf-dict .dict-value,
+ul.dict-items .bbf-dict .dict-default {
+  display: inline-block;
+  width: 45%;
+  vertical-align: middle;
+}
+ul.dict-items .bbf-dict .dict-key.three-items,
+ul.dict-items .bbf-dict .dict-value.three-items,
+ul.dict-items .bbf-dict .dict-default.three-items {
+  width: 30%;
+}
+ul.dict-items .bbf-dict .ui-selectmenu-button {
+  vertical-align: top;
+  width: 45% !important;
+}
+
+ul.dict-legend {
+  margin-bottom: -10px;
+}
+ul.dict-legend li {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* View State Dialog Dict Default and Value */
+.bbf-field.field-_default .bbf-editor .dict-button[data-action=add], .bbf-field.field-value .bbf-editor .dict-button[data-action=add] {
+  left: 25% !important;
+  position: absolute !important;
+}
+
+.dict-button {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.dict-button:hover, .dict-button:focus {
+  opacity: 1;
+}
+.dict-button[data-action=remove] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 9px 6px;
+}
+.dict-button[data-action=add] {
+  position: relative;
+  left: 25%;
+  bottom: 0px;
+  margin-left: -20px;
+  margin-bottom: 4px;
+}
+
+.Dataform .dict-items li {
+  white-space: normal;
+}
+.Dataform div.bbf-editor[style*="display: inline"] .dict-button[data-action=add] {
+  margin-left: 0px;
+}
+.Dataform div.bbf-editor[style*="display: inline"] .dict-button[data-action=remove] {
+  margin: 10px 0px;
+}
+.Dataform div.bbf-editor:not([style*="display: inline"]) .dict-button[data-action=add] {
+  left: 0px;
+  margin-left: 0px;
+}
+.Dataform div.bbf-editor:not([style*="display: inline"]) .dict-button[data-action=remove] {
+  margin: 3px 0px;
+}
+
+.bbf-editor .ui-selectmenu-button {
+  border-color: #6d6d6d;
+}
+.bbf-editor .fa-calendar {
+  position: absolute;
+  right: 5px;
+  bottom: 1px;
+  pointer-events: none;
+}
+.bbf-editor .fa-clock-o {
+  position: absolute;
+  right: 15px;
+  bottom: 1px;
+  pointer-events: none;
+}
+.bbf-editor .hasDatepicker {
+  font-size: 13px !important;
+  text-align: center;
+  height: auto !important;
+  width: 100%;
+}
+.bbf-editor.Light .ui-selectmenu-button {
+  border-color: black;
+  background: white;
+  color: black;
+}
+.bbf-editor .viewstate-control {
+  position: relative;
+  /* hide list actions, 'Add' etc */
+}
+.bbf-editor .viewstate-control .viewstate-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  visibility: hidden;
+}
+.bbf-editor .viewstate-control .viewstate-container input {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 1px;
+  left: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-left: 19px;
+  padding-bottom: 4px;
+  text-indent: 4px;
+}
+.bbf-editor .viewstate-control .viewstate-container i.watermark {
+  position: absolute;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  color: #1b1b1b;
+  font-size: 1.2em;
+  height: 22px;
+  margin: 0.2em 0px;
+  padding: 0 0.4em;
+  width: 1.2em;
+  z-index: 2;
+}
+.bbf-editor .viewstate-control .viewstate-container i.watermark.viewstate-clear {
+  opacity: 0.5;
+  right: 0;
+  width: auto;
+}
+.bbf-editor .viewstate-control .viewstate-container i.watermark.viewstate-clear:hover, .bbf-editor .viewstate-control .viewstate-container i.watermark.viewstate-clear:focus {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.bbf-editor .viewstate-control .viewstate-container i.watermark.viewstate-icon {
+  left: 0;
+  opacity: 0.5;
+}
+.bbf-editor .viewstate-control .viewstate-container:hover i.viewstate-clear {
+  opacity: 1;
+}
+.bbf-editor .viewstate-control i.viewstate-apply {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  color: #1b1b1b;
+  font-size: 1.2em;
+  margin: 0.3em 0.7em;
+  opacity: 0;
+  padding: 0;
+  width: 1.28571429em;
+}
+.bbf-editor .viewstate-control input[type=number] + i.viewstate-apply {
+  margin-right: 1.25em;
+}
+.bbf-editor .viewstate-control:hover i.viewstate-apply {
+  opacity: 0.5;
+}
+.bbf-editor .viewstate-control:hover i.viewstate-apply:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.bbf-editor .viewstate-control.is-viewstate .viewstate-container {
+  visibility: visible;
+}
+.bbf-editor .viewstate-control .bbf-list .bbf-actions {
+  display: none;
+}
+
+/* Forms errors - added to body so can't nest */
+.field-error {
+  position: absolute;
+  z-index: 201;
+  background-color: #cd0a0a;
+  color: white;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  padding-right: 6px;
+  border-radius: 0px 4px 4px 0px;
+  white-space: nowrap;
+}
+.field-error:before, .field-error:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.field-error:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #cd0a0a;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.field-error:after {
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #cd0a0a;
+  border-width: 9px;
+  margin-top: -9px;
+}
+.field-error.error-left-side {
+  padding-left: 6px;
+  padding-right: 0px;
+  border-radius: 4px 0px 0px 4px;
+}
+.field-error.error-left-side:before, .field-error.error-left-side:after {
+  left: 100%;
+  right: auto;
+}
+.field-error.error-left-side:before {
+  border-left-color: #cd0a0a;
+  border-right-color: transparent;
+}
+.field-error.error-left-side:after {
+  border-left-color: #cd0a0a;
+  border-right-color: transparent;
+}
+
+.select2-dropdown .select2-bulk {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 5px;
+  text-align: center;
+  width: 50%;
+}
+.select2-dropdown .select2-results__option {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.select2-dropdown .select2-results__option .wrap:before {
+  font-family: fontAwesome;
+  color: #999;
+  content: "\f096";
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+.select2-dropdown .select2-results__option[aria-selected=true] .wrap:before {
+  content: "\f14a";
+}
+
+.ui-selectmenu-menu {
+  bottom: 7px;
+}
+.ui-selectmenu-menu > ul {
+  max-height: 100%;
+  background: #303030;
+  border: solid 1px #6d6d6d;
+}
+
+.ui-dialog {
+  overflow: visible;
+}
+.ui-dialog.error-dialog {
+  z-index: 103;
+}
+.ui-dialog.error-dialog + .ui-widget-overlay {
+  z-index: 102;
+}
+
+#ui-datepicker-div .ui-timespinner-div {
+  width: 100%;
+  text-align: center;
+}
+#ui-datepicker-div .ui-timespinner-div .ui-spinner-input {
+  font-size: 13px !important;
+  margin-right: 0.4em;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9saWIudGltZVBpY2tlckFkZE9uLnNjc3MiLCJfanF1ZXJ5LnRhZy1lZGl0b3Iuc2NzcyIsImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtDO0VBQ0M7O0FBRUQ7RUFDQzs7QUFDQTtFQUNDO0VBQ0E7RUFDQTs7QUFFRDtFQUNDOztBQUdGO0VBQ0M7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDOztBQUNBO0VBQ0M7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQzs7QUFDQTtFQUNDO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTs7QUFJSDtFQUNDOztBQUNBO0VBQ0M7O0FBSUg7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQyxxQkE3RTJCOzs7QUFpRjlCO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7OztBQUVEO0VBQ0M7O0FBQ0E7RUFDQztFQUNBOztBQUNBO0VBQ0M7RUFDQTs7QUFFRDtFQUNDOzs7QUFLSDtBQUNBO0VBQ0M7O0FBQ0E7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQzs7QUFDQTtFQUNDO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7O0FBSUg7RUFDQzs7QUFDQTtFQUNDOzs7QUN4SUY7QUFDRDtFQUNDO0VBQXVCO0VBQW9CO0VBQVc7RUFBa0I7RUFDeEU7RUFBOEI7RUFBYTs7O0FBSTVDO0FBQ0E7RUFBaUI7RUFBdUI7RUFBYTtFQUFrQjtFQUFlOzs7QUFDdEY7RUFBa0I7RUFBYTs7O0FBQy9CO0VBQTJCO0VBQWdCOzs7QUFDM0M7RUFBaUM7RUFBWTtFQUFZO0VBQWtCO0VBQW9COzs7QUFDL0Y7RUFDQztFQUF5QjtFQUFXO0VBQWU7RUFBWTtFQUFXO0VBQzFFO0VBQXNCO0VBQXNCO0VBQW9CO0VBQ2hFO0VBQWtCO0VBQWtCOzs7QUFFckM7QUFDQTtFQUF5QjtFQUErQjs7O0FBQ3hEO0FBQ0E7RUFBMEI7OztBQUUxQjtBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBRUQ7RUFBeUM7OztBQUN6QztBQUFBO0VBQzBEO0VBQWtCOzs7QUFFNUU7RUFBcUM7OztBQ3REckM7QUFFQTtFQUNJO0VBQ0E7RUFDQTtBQWNBOztBQVpBO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtBQUFBO0VBRUk7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUNBO0FBZ0NBOztBQS9CQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7O0FBS1o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHSjtBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUlJO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7O0FBSUE7RUFDSTs7QUFFQTtFQUNJOztBQUlSO0VBQ0k7O0FBS0o7RUFDSTs7QUFJUjtFQUNJOztBQUtaO0FBQUE7QUFBQTtFQUdJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFFSTs7QUFJUjtFQUNJOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUdBO0VBQ0k7O0FBS1o7RUFDSTs7QUFHSjtBQUFBO0VBRUk7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFFSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7O0FBSVI7QUFFSTtFQUVJOzs7QUFJUjtBQUVBO0FBQUE7RUFFSTs7QUFDQTtBQUFBO0VBQ0k7O0FBRUo7QUFBQTtFQUNJOzs7QUFJUjtBQUVBO0FBR0k7RUFDSTtFQUNBO0VBQ0E7O0FBRUo7RUFDSTtFQUNBOztBQUVKO0VBQ0k7RUFDQTs7QUFDQTtFQUNJOztBQUVKO0VBQ0k7RUFDQTs7QUFHUjtFQUNJO0VBQ0E7RUFDQTs7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUtaO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBS1o7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0o7QUFHSTtFQUNJOztBQUVKO0VBQ0k7O0FBRUo7RUFDSTs7O0FBSVI7QUFHSTtFQUNJO0VBQ0E7O0FBRUo7RUFDSTs7O0FBSVI7QUFDQTtFQUNJOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTtFQUNBOztBQUVBO0FBQUE7QUFBQTtFQUdJO0VBQ0E7RUFDQTs7QUFFQTtBQUFBO0FBQUE7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7OztBQUtaO0VBQ0k7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7OztBQUlSO0FBS1k7RUFDSTtFQUNBOzs7QUFNaEI7RUFDSTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBTUE7RUFDSTs7QUFNQTtFQUNJOztBQUdKO0VBQ0k7O0FBT0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7OztBQU9aO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFDSTtFQUNBO0VBQ0E7O0FBSVI7RUFDSTtBQWtHQTs7QUFoR0E7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFFQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7O0FBSUE7RUFDSTs7QUFLWjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFJQTtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFNUjtFQUNJOztBQUtSO0VBQ0k7OztBQUtaO0FBQ0E7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUVJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBRUk7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOzs7QUFNUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSVI7RUFDSTs7O0FBSVI7RUFDSTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTs7O0FBSVI7RUFDSTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7OztBQUtaO0VBQ0k7RUFDQTs7QUFFQTtFQUNJO0VBQ0EiLCJmaWxlIjoiYXBwLmNzcyJ9 */

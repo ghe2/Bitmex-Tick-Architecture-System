@@ -1,0 +1,1262 @@
+.Datagrid.column-config-dialog {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+}
+.Datagrid.column-config-dialog .pnlButtons {
+  display: none;
+}
+.Datagrid.column-config-dialog .pnlGrid > .Datagrid {
+  background: none;
+}
+.Datagrid.column-config-dialog .slick-viewport, .Datagrid.column-config-dialog .slick-headerrow {
+  background: #222222;
+}
+.Datagrid.column-config-dialog .Datagrid.Light .slick-viewport, .Datagrid.column-config-dialog .Datagrid.Light .slick-headerrow {
+  background: #ffffff;
+}
+.Datagrid.column-config-dialog .pnlGroupedColumns {
+  display: none;
+}
+.Datagrid.column-config-dialog .slick-header {
+  visibility: hidden;
+}
+.Datagrid.column-config-dialog .txtGlobalFilter {
+  display: none;
+}
+.Datagrid.column-config-dialog .pnlSource, .Datagrid.column-config-dialog .pnlTarget, .Datagrid.column-config-dialog .pnlGrid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 7px 7px 5px;
+}
+.Datagrid.column-config-dialog .pnlSource {
+  right: 50%;
+  margin-right: 20px;
+}
+.Datagrid.column-config-dialog .pnlTarget {
+  left: 50%;
+  margin-left: 20px;
+}
+.Datagrid.column-config-dialog .pnlGrid {
+  margin: 0;
+}
+.Datagrid.column-config-dialog .pnlSource > span, .Datagrid.column-config-dialog .pnlTarget > span {
+  display: inline-block;
+  margin: 6px;
+}
+.Datagrid.column-config-dialog .pnlActionButtons {
+  position: absolute;
+  top: 82px;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  text-align: center;
+}
+.Datagrid.column-config-dialog .lnkResetFilters {
+  display: none !important;
+}
+.Datagrid.column-config-dialog .ui-dialog-content {
+  overflow: visible;
+}
+.Datagrid.column-config-dialog .lblRetainColumnWidths {
+  position: absolute;
+  bottom: -35px;
+}
+
+.Datagrid.date-filter-dialog {
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+}
+.Datagrid.date-filter-dialog .ui-dialog-content {
+  padding: 1em;
+}
+.Datagrid.date-filter-dialog .cmbOperator {
+  position: absolute;
+  left: 0;
+  width: 80px;
+}
+.Datagrid.date-filter-dialog .dp1, .Datagrid.date-filter-dialog .dp2 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  height: 21px;
+  width: 260px;
+}
+.Datagrid.date-filter-dialog .dp2 {
+  top: 48px;
+}
+.Datagrid.date-filter-dialog .datepicker-container .datepicker-input.has-container {
+  border-width: 0;
+}
+.Datagrid.date-filter-dialog .datepicker-container .datepicker-input.has-container input {
+  border-radius: 3px;
+}
+.Datagrid.date-filter-dialog .datepicker-container .datepicker-button {
+  display: none !important;
+}
+
+.Datagrid.dlgBasicPopup {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+}
+.Datagrid.dlgBasicPopup .dlgCsvExport input, .Datagrid.dlgBasicPopup .dlgExcelExport input {
+  margin-top: 0.75em;
+  padding: 0.25em;
+  border-width: 1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*
+IMPORTANT:
+In order to preserve the uniform grid appearance, all cell styles need to have padding, margin and border sizes.
+No built-in (selected, editable, highlight, flashing, invalid, loading, :focus) or user-specified CSS
+classes should alter those!
+*/
+.slick-header.ui-state-default, .slick-headerrow.ui-state-default {
+  width: 100%;
+  overflow: hidden;
+  border-left: 0px;
+}
+
+.slick-header-columns, .slick-headerrow-columns {
+  position: relative;
+  white-space: nowrap;
+  cursor: default;
+  overflow: hidden;
+}
+
+.slick-header-column.ui-state-default {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding: 4px;
+  border-right: 1px solid silver;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  float: left;
+}
+
+.slick-headerrow-column.ui-state-default {
+  padding: 4px;
+}
+
+.slick-header-column-sorted {
+  font-style: italic;
+}
+
+.slick-sort-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  margin-left: 4px;
+  margin-top: 6px;
+  float: left;
+}
+
+.slick-sort-indicator-desc {
+  background: url(images/sort-desc.gif);
+}
+
+.slick-sort-indicator-asc {
+  background: url(images/sort-asc.gif);
+}
+
+.slick-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  cursor: col-resize;
+  width: 4px;
+  right: 0px;
+  top: 0;
+  height: 100%;
+}
+
+.slick-sortable-placeholder {
+  background: silver;
+}
+
+.grid-canvas {
+  position: relative;
+  outline: 0;
+}
+
+.slick-row.ui-widget-content, .slick-row.ui-state-active {
+  position: absolute;
+  border: 0px;
+  width: 100%;
+}
+
+.slick-cell, .slick-headerrow-column {
+  position: absolute;
+  border: 1px solid transparent;
+  border-right: 1px dotted silver;
+  border-bottom-color: silver;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  z-index: 1;
+  padding: 1px 2px 2px 1px;
+  padding: 0 2px 0 1px;
+  margin: 0;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.slick-group-toggle {
+  display: inline-block;
+}
+
+.slick-cell.highlighted {
+  background: lightskyblue;
+  background: rgba(0, 0, 255, 0.2);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.slick-cell.flashing {
+  border: 1px solid red !important;
+}
+
+.slick-cell.editable {
+  z-index: 11;
+  overflow: visible;
+  background: white;
+  border-color: black;
+  border-style: solid;
+}
+
+.slick-cell:focus {
+  outline: none;
+}
+
+.slick-reorder-proxy {
+  display: inline-block;
+  background: blue;
+  opacity: 0.15;
+  filter: alpha(opacity=15);
+  cursor: move;
+}
+
+.slick-reorder-guide {
+  display: inline-block;
+  height: 2px;
+  background: blue;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.slick-selection {
+  z-index: 10;
+  position: absolute;
+  border: 2px dashed black;
+}
+
+/*
+IMPORTANT:
+In order to preserve the uniform grid appearance, all cell styles need to have padding, margin and border sizes.
+No built-in (selected, editable, highlight, flashing, invalid, loading, :focus) or user-specified CSS
+classes should alter those!
+*/
+.slick-header-columns {
+  /*background: url('images/header-columns-bg.gif') repeat-x center bottom;*/
+  border-bottom: 1px solid silver;
+}
+
+.slick-header-column {
+  /*background: url('images/header-columns-bg.gif') repeat-x center bottom;*/
+  border-right: 1px solid silver;
+}
+
+/*.slick-header-column:hover, .slick-header-column-active {
+  background: white url('images/header-columns-over-bg.gif') repeat-x center bottom;
+}*/
+.slick-headerrow {
+  background: #fafafa;
+}
+
+.slick-headerrow-column {
+  background: #fafafa;
+  border-bottom: 0;
+  height: 100%;
+}
+
+.slick-row {
+  position: absolute;
+  background: white;
+  border: 0px;
+  line-height: 20px;
+}
+.slick-row.ui-state-active {
+  background: #F5F7D7;
+}
+.slick-row.selected {
+  z-index: 10;
+  background: #DFE8F6;
+}
+
+.slick-cell {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.slick-group {
+  border-bottom: 2px solid silver;
+}
+
+.slick-group-toggle {
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+}
+.slick-group-toggle.expanded {
+  background: url(images/collapse.gif) no-repeat center center;
+}
+.slick-group-toggle.collapsed {
+  background: url(images/expand.gif) no-repeat center center;
+}
+
+.slick-group-totals {
+  color: gray;
+  background: white;
+}
+
+.slick-cell.selected {
+  background-color: beige;
+}
+.slick-cell.active {
+  border-color: gray;
+  border-style: solid;
+}
+
+.slick-sortable-placeholder {
+  background: silver !important;
+}
+
+.slick-row.odd {
+  background: #fafafa;
+}
+.slick-row.ui-state-active {
+  background: #F5F7D7;
+}
+.slick-row.loading {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.slick-cell.invalid {
+  border-color: red;
+  -moz-animation-duration: 0.2s;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-name: slickgrid-invalid-hilite;
+  -webkit-animation-name: slickgrid-invalid-hilite;
+}
+
+@-moz-keyframes slickgrid-invalid-hilite {
+  from {
+    box-shadow: 0 0 6px red;
+  }
+  to {
+    box-shadow: none;
+  }
+}
+@-webkit-keyframes slickgrid-invalid-hilite {
+  from {
+    box-shadow: 0 0 6px red;
+  }
+  to {
+    box-shadow: none;
+  }
+}
+.slick-pager {
+  width: 100%;
+  height: 26px;
+  border: 1px solid gray;
+  border-top: 0;
+  /*background: url('images/header-columns-bg.gif') repeat-x center bottom;*/
+  vertical-align: middle;
+}
+.slick-pager .slick-pager-status {
+  display: inline-block;
+  padding: 6px;
+}
+.slick-pager .ui-icon-container {
+  display: inline-block;
+  margin: 2px;
+  border-color: gray;
+}
+.slick-pager .slick-pager-nav {
+  display: inline-block;
+  float: left;
+  padding: 2px;
+}
+.slick-pager .slick-pager-nav > * {
+  vertical-align: middle;
+}
+.slick-pager .slick-pager-settings {
+  display: block;
+  float: right;
+  padding: 2px;
+}
+.slick-pager .slick-pager-settings * {
+  vertical-align: middle;
+}
+.slick-pager .slick-pager-settings a {
+  padding: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Datagrid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* fix: datagrid within tabs has extra border */
+  font-size: 13px;
+}
+.Datagrid .bbf-form fieldset {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+.Datagrid .bbf-form fieldset ul, .Datagrid .bbf-form fieldset .bbf-field {
+  margin: 0;
+}
+.Datagrid .bbf-form fieldset .bbf-editor {
+  margin-left: 0;
+  width: 100%;
+}
+.Datagrid .bbf-form fieldset .bbf-editor input {
+  border-radius: 0;
+  background-color: #fff;
+  color: #000;
+  background-image: none;
+}
+.Datagrid .bbf-form fieldset .bbf-editor .ui-spinner {
+  height: 23px;
+  line-height: 23px;
+  vertical-align: baseline;
+  margin-top: 2px;
+}
+.Datagrid .bbf-form fieldset .bbf-editor .ui-spinner input {
+  vertical-align: baseline;
+}
+.Datagrid .bbf-form fieldset .bff-month-editor {
+  margin-top: 2px;
+}
+.Datagrid .bbf-form fieldset .bff-month-editor .bff-month-input.bff-month {
+  float: left;
+}
+.Datagrid .slick-headerrow .basicComponents_dropdown .bbf-field, .Datagrid .slick-headerrow .basicComponents_dropdown .bbf-editor, .Datagrid .slick-headerrow .basicComponents_dropdown .dropdown-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+.Datagrid .slick-headerrow .basicComponents_dropdown .dropdown-label {
+  display: none;
+}
+.Datagrid .slick-headerrow .basicComponents_dropdown .dropdown-container {
+  top: 50%;
+  margin-top: -13px;
+  width: auto !important;
+}
+.Datagrid .slick-headerrow .basicComponents_dropdown .select2-selection {
+  border-radius: 0;
+  background: #424242;
+  border-color: transparent;
+  margin: 0 1px;
+}
+.Datagrid .slick-headerrow .basicComponents_dropdown .select2-container {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+.Datagrid.Light .slick-headerrow .basicComponents_dropdown .select2-selection {
+  background: #ffffff;
+}
+.Datagrid .slick-header-column.ui-state-default {
+  border-right: 1px solid silver;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  padding: 0 4px;
+}
+.Datagrid .datagridFrame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.Datagrid .cellIcons {
+  position: absolute;
+  left: 7px;
+  top: 0px;
+}
+.Datagrid .cellIcons > i {
+  margin-right: 7px;
+}
+.Datagrid .slick-cell > .deleteIcon {
+  left: 50%;
+  cursor: pointer;
+  color: red;
+  font-size: 1.2em;
+  margin-left: -0.3em;
+}
+.Datagrid .Fill_Right-to-Left, .Datagrid .Fill_Left-to-Right {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  z-index: -1;
+  box-sizing: border-box;
+}
+.Datagrid .Fill_Left-to-Right {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+.Datagrid .Fill_Right-to-Left {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.Datagrid .ui-widget {
+  font-size: 13px;
+}
+.Datagrid .slick-group-toggle.expanded {
+  background: url(../img/collapse.gif) no-repeat center center;
+}
+.Datagrid .slick-group-toggle.collapsed {
+  background: url(../img/expand.gif) no-repeat center center;
+}
+.Datagrid .slick-headerrow {
+  background: none !important;
+  border: none;
+}
+.Datagrid .slick-headerrow-column.ui-state-default {
+  background: none !important;
+  border: none;
+  border-right: 1px solid #1b1b1b;
+  text-align: center;
+  padding: 0;
+  color: black;
+}
+.Datagrid .slick-headerrow-column.ui-state-default > .slick-headerrow-columns {
+  height: 25px;
+}
+.Datagrid .slick-headerrow-column.ui-state-default input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 1px;
+  background: #424242;
+  border: 1px solid #6d6d6d;
+  color: white !important;
+}
+.Datagrid .slick-headerrow-column.ui-state-default input::-ms-clear {
+  display: none;
+}
+.Datagrid .slick-headerrow-column.ui-state-default > .fa {
+  cursor: pointer;
+  position: absolute;
+  cursor: pointer;
+  position: absolute;
+  right: 0.4em;
+  top: 50%;
+  margin-top: -0.7em;
+}
+.Datagrid .pnlProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  background-color: #222222;
+  background-color: rgba(32, 32, 32, 0.8);
+}
+.Datagrid .pnlProgressBar .divProgressBar {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+}
+.Datagrid .pnlProgressBar .lblProgressBar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -1.5em;
+  text-align: center;
+}
+.Datagrid .percentageFormatter {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  height: 20px;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.Datagrid .percentageFormatter p {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  border-radius: 2px;
+}
+.Datagrid .percentageFormatter span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  line-height: 18px;
+  font-size: 0.8em;
+}
+.Datagrid .slick-header.ui-state-default {
+  border: none;
+}
+.Datagrid .slick-range-decorator {
+  box-sizing: border-box;
+  border: 1px dashed #888 !important;
+}
+.Datagrid .slick-sort-indicator {
+  width: 9px;
+  margin-top: -2px;
+  top: 50%;
+  position: absolute;
+}
+.Datagrid .slick-sort-indicator-asc {
+  background: url(../img/sort_asc.png);
+}
+.Datagrid .slick-sort-indicator-desc {
+  background: url(../img/sort_desc.png);
+}
+.Datagrid .tempGroupingFix.pnlGrid {
+  overflow: visible !important;
+}
+.Datagrid .lblGropRowCount {
+  color: green;
+}
+.Datagrid .lblGroupSummary {
+  margin-left: 2em;
+}
+.Datagrid .lblGroupSummary i {
+  font-style: normal;
+  margin-right: 0.5em;
+}
+.Datagrid .pnlGroupedColumns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 36px;
+  background-image: none !important;
+  font-size: 12px;
+  padding-left: 6px;
+  box-sizing: border-box;
+  line-height: 36px;
+}
+.Datagrid .pnlGroupedColumns.ui-state-hover {
+  border: none;
+}
+.Datagrid .pnlGroupedColumns .groupedItem, .Datagrid .pnlGroupedColumns .ui-sortable-placeholder {
+  display: inline-block;
+  margin: 2px;
+  line-height: 24px;
+  box-sizing: border-box;
+  height: 24px;
+  padding: 0 4px;
+  vertical-align: middle;
+  cursor: e-resize;
+  white-space: nowrap;
+}
+.Datagrid .pnlGroupedColumns .groupedItem .btnClose, .Datagrid .pnlGroupedColumns .ui-sortable-placeholder .btnClose {
+  margin-left: 8px;
+}
+.Datagrid .pnlGroupedColumns .groupedItem .btnClose:hover, .Datagrid .pnlGroupedColumns .ui-sortable-placeholder .btnClose:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+.Datagrid .pnlGroupedColumns .ui-sortable-placeholder {
+  visibility: visible !important;
+}
+.Datagrid .pnlGroupedColumns .ui-sortable-helper {
+  top: 4px;
+}
+.Datagrid .lblDragDropHint {
+  position: absolute;
+  line-height: 36px;
+  padding-left: 16px;
+  pointer-events: none;
+}
+.Datagrid .pnlNoDataMessage {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  left: 40px;
+  display: none;
+}
+.Datagrid .pnlGrid {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+}
+.Datagrid .pnlPager {
+  position: absolute;
+  right: 220px;
+  bottom: 0px;
+  left: 0;
+  height: 30px;
+}
+.Datagrid .pnlPager .slick-pager {
+  border: none;
+  background: none;
+}
+.Datagrid .txtGlobalFilter {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #b0b0b0;
+  padding: 2px 5px;
+}
+.Datagrid .slick-row {
+  height: 30px;
+}
+.Datagrid .slick-cell {
+  text-align: center;
+  padding: 0px;
+}
+.Datagrid .slick-cell > div:not(.highlightBox) {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 4px;
+}
+.Datagrid .slick-cell > .highlightBox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid transparent;
+}
+.Datagrid .slick-cell > i {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  margin-top: -0.5em;
+  text-shadow: 1px 1px 1px #000;
+}
+.Datagrid .slick-cell.editable.selected input[type=text] {
+  width: 100%;
+  border-width: 0;
+  box-sizing: border-box;
+}
+.Datagrid .slick-cell .ui-datepicker-trigger {
+  background: url("../img/calendar.gif");
+  display: inline-block;
+  width: 16px;
+  height: 19px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+.Datagrid .slick-cell.left {
+  text-align: left;
+}
+.Datagrid .slick-cell.center {
+  text-align: center;
+}
+.Datagrid .slick-cell.right {
+  text-align: right;
+}
+.Datagrid .slick-cell .pendingChange.boolean-toggle:after {
+  content: "\f069";
+  font-family: FontAwesome;
+  position: relative;
+  top: -8px;
+  left: 12px;
+  color: #00AEFF;
+  font-size: 11px;
+}
+.Datagrid .slick-cell .pendingChange.boolean-custom-toggle:after {
+  content: "\f069";
+  font-family: FontAwesome;
+  position: absolute;
+  top: -8px;
+  margin: 2px;
+  color: #00AEFF;
+  font-size: 11px;
+}
+.Datagrid .slick-cell .boolean-toggle, .Datagrid .slick-cell .boolean-custom-toggle {
+  cursor: pointer;
+}
+.Datagrid .slick-cell, .Datagrid .slick-cell.active {
+  border-right-style: solid;
+  border-left-width: 0;
+  border-top-width: 0;
+}
+.Datagrid .slick-group .slick-cell {
+  text-align: left;
+}
+.Datagrid .slick-group-title div {
+  display: inline-block;
+}
+.Datagrid .header-uppercase .slick-header-column {
+  text-transform: uppercase;
+}
+.Datagrid .header-lowercase .slick-header-column {
+  text-transform: lowercase;
+}
+.Datagrid .header-capitalize .slick-header-column {
+  text-transform: capitalize;
+}
+.Datagrid .slick-header-column {
+  font-size: 12px;
+  text-align: center;
+}
+.Datagrid .slick-header-column.left {
+  text-align: left;
+}
+.Datagrid .slick-header-column.center {
+  text-align: center;
+}
+.Datagrid .slick-header-column.right {
+  text-align: right;
+}
+.Datagrid .slick-header-column.right .slick-column-name {
+  position: relative;
+  left: -12px;
+}
+.Datagrid .slick-header-column.right .slick-sort-indicator {
+  right: 3px;
+}
+.Datagrid .slick-header-column .column-toggle-all {
+  margin-right: 8px;
+  top: 1px;
+  position: relative;
+  cursor: pointer;
+}
+.Datagrid .slick-header-column-sorted {
+  font-style: normal;
+}
+.Datagrid .pnlSummaryRow {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+}
+.Datagrid .pnlSummaryRow .slick-cell {
+  padding: 0 4px;
+  border-top: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.Datagrid.Dark {
+  background-color: transparent;
+  color: #f0f0f0;
+}
+.Datagrid.Dark .pnlButtons .btnShowHugeData {
+  display: none;
+}
+.Datagrid.Dark .pnlButtons .lnkResetFilters, .Datagrid.Dark .pnlButtons .lnkToggleFilters, .Datagrid.Dark .pnlButtons .lnkConfiguration, .Datagrid.Dark .pnlButtons .lnkToggleEditable, .Datagrid.Dark .pnlButtons .lnkSubmitChanges {
+  line-height: 36px;
+  padding: 0 1em;
+  cursor: pointer;
+  color: #CCC;
+}
+.Datagrid.Dark .pnlButtons .lnkResetFilters:hover, .Datagrid.Dark .pnlButtons .lnkToggleFilters:hover, .Datagrid.Dark .pnlButtons .lnkConfiguration:hover, .Datagrid.Dark .pnlButtons .lnkToggleEditable:hover, .Datagrid.Dark .pnlButtons .lnkSubmitChanges:hover {
+  color: #00AEFF;
+}
+.Datagrid.Dark .pnlButtons .lnkResetFilters, .Datagrid.Dark .pnlButtons .lnkToggleFilters,
+.Datagrid.Dark .pnlButtons .lnkConfiguration, .Datagrid.Dark .pnlButtons .lnkToggleEditable, .Datagrid.Dark .pnlButtons .lnkSubmitChanges {
+  display: inline-block;
+  color: #CCC;
+}
+.Datagrid.Dark .pnlButtons .instantButtons {
+  display: inline-block;
+}
+.Datagrid.Dark .pnlButtons .instantButtons > button {
+  color: #CCC;
+  background: transparent;
+  border: none;
+}
+.Datagrid.Dark .pnlButtons .instantButtons > button:hover {
+  color: #00AEFF;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  /* dividers */
+}
+.Datagrid.Dark .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkCsvExport,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkExcelExport,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkFullExport {
+  color: #CCC;
+  line-height: 36px;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkFullExport:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkFullExport .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkFullExport.export-in-progress {
+  pointer-events: none;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkFullExport.link-disabled {
+  display: none;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkCsvExport.events-disabled,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkExcelExport.events-disabled,
+.Datagrid.Dark .pnlButtons span.lnksExport a.lnkFullExport.events-disabled {
+  color: #6f6f6f;
+}
+.Datagrid.Dark .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  content: " | ";
+  color: #CCC;
+  padding: 0 0.4em 0 0.2em;
+}
+.Datagrid.Dark a {
+  color: #707070;
+}
+.Datagrid.Dark .slick-header-columns {
+  border-bottom-color: #222222;
+}
+.Datagrid.Dark .slick-header-column::after {
+  content: "";
+  border: 1px solid #505050;
+  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.Datagrid.Dark .slick-header-column:hover::after {
+  border-color: #6e6e6e;
+}
+.Datagrid.Dark .slick-header-column.ui-state-default {
+  border-right-color: #222222;
+}
+.Datagrid.Dark .slick-row {
+  background-color: #303030;
+}
+.Datagrid.Dark .slick-row.odd {
+  background-color: #282828;
+}
+.Datagrid.Dark .ui-widget-content, .Datagrid.Dark .ui-state-default {
+  color: #fff;
+}
+.Datagrid.Dark .slick-cell, .Datagrid.Dark .slick-cell.active {
+  border-color: #1b1b1b;
+}
+.Datagrid.Dark .slick-cell.selected, .Datagrid.Dark .slick-cell.active.selected {
+  background-color: #505050;
+}
+.Datagrid.Dark .slick-cell.selected > div, .Datagrid.Dark .slick-cell.active.selected > div {
+  background-color: transparent !important;
+}
+.Datagrid.Dark .pnlGroupedColumns.ui-state-hover {
+  color: #ffffff;
+  -webkit-box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+.Datagrid.Dark .pnlGroupedColumns .groupedItem, .Datagrid.Dark .pnlGroupedColumns .ui-sortable-placeholder {
+  border: 1px solid #4a4a4a;
+  background: linear-gradient(to bottom, #3c3c3c 0%, #3c3c3c 50%, #323232 51%, #3c3c3c 100%);
+}
+.Datagrid.Dark .pnlGroupedColumns .ui-sortable-placeholder {
+  border: 1px dotted #808080;
+}
+.Datagrid.Dark .percentageFormatter {
+  border-color: #a0a0a0;
+  background-color: #383838;
+}
+.Datagrid.Dark .percentageFormatter p {
+  background-color: #606060;
+}
+.Datagrid.Dark .percentageFormatter span {
+  text-shadow: 1px 1px #434343;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.Datagrid.Light {
+  background-color: transparent;
+  color: #000;
+}
+.Datagrid.Light .pnlButtons .btnShowHugeData {
+  display: none;
+}
+.Datagrid.Light .pnlButtons .lnkResetFilters, .Datagrid.Light .pnlButtons .lnkToggleFilters, .Datagrid.Light .pnlButtons .lnkConfiguration, .Datagrid.Light .pnlButtons .lnkToggleEditable, .Datagrid.Light .pnlButtons .lnkSubmitChanges {
+  line-height: 36px;
+  padding: 0 1em;
+  cursor: pointer;
+  color: #000;
+}
+.Datagrid.Light .pnlButtons .lnkResetFilters:hover, .Datagrid.Light .pnlButtons .lnkToggleFilters:hover, .Datagrid.Light .pnlButtons .lnkConfiguration:hover, .Datagrid.Light .pnlButtons .lnkToggleEditable:hover, .Datagrid.Light .pnlButtons .lnkSubmitChanges:hover {
+  color: #00AEFF;
+}
+.Datagrid.Light .pnlButtons .lnkResetFilters, .Datagrid.Light .pnlButtons .lnkToggleFilters,
+.Datagrid.Light .pnlButtons .lnkConfiguration, .Datagrid.Light .pnlButtons .lnkToggleEditable, .Datagrid.Light .pnlButtons .lnkSubmitChanges {
+  display: inline-block;
+  color: #000;
+}
+.Datagrid.Light .pnlButtons .instantButtons {
+  display: inline-block;
+}
+.Datagrid.Light .pnlButtons .instantButtons > button {
+  color: #CCC;
+  background: transparent;
+  border: none;
+}
+.Datagrid.Light .pnlButtons .instantButtons > button:hover {
+  color: #00AEFF;
+}
+.Datagrid.Light .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  /* dividers */
+}
+.Datagrid.Light .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkCsvExport,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkExcelExport,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkFullExport {
+  color: #000;
+  line-height: 36px;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkFullExport:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkFullExport .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkFullExport.export-in-progress {
+  pointer-events: none;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkFullExport.link-disabled {
+  display: none;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkCsvExport.events-disabled,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkExcelExport.events-disabled,
+.Datagrid.Light .pnlButtons span.lnksExport a.lnkFullExport.events-disabled {
+  color: #b1b1b1;
+}
+.Datagrid.Light .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  content: " | ";
+  color: #000;
+  padding: 0 0.4em 0 0.2em;
+}
+.Datagrid.Light .ui-state-default, .Datagrid.Light .ui-widget-content {
+  color: #101010;
+}
+.Datagrid.Light .slick-header {
+  border-color: #c0c0c0;
+}
+.Datagrid.Light .slick-headerrow-column.ui-state-default {
+  border-right-color: silver;
+}
+.Datagrid.Light .slick-headerrow-column.ui-state-default input {
+  background: white !important;
+  border: 1px solid #999 !important;
+  color: black !important;
+}
+.Datagrid.Light button {
+  border: 1px solid #a0a0a0;
+}
+.Datagrid.Light a {
+  color: #707070;
+}
+.Datagrid.Light .slick-header-columns {
+  border-bottom-color: #c0c0c0;
+}
+.Datagrid.Light .slick-header-column::after {
+  content: "";
+  border: 1px solid transparent;
+  box-shadow: inset 0px 0px 1px 0px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.Datagrid.Light .slick-header-column:hover::after {
+  border-color: #9b9b9b;
+}
+.Datagrid.Light .slick-header-column.ui-state-default {
+  border-right-color: #c0c0c0;
+}
+.Datagrid.Light .slick-row {
+  background-color: #ffffff;
+}
+.Datagrid.Light .slick-row.odd {
+  background-color: #f4f4f4;
+}
+.Datagrid.Light .ui-widget-content, .Datagrid.Light .ui-state-default {
+  color: #000;
+}
+.Datagrid.Light .slick-cell, .Datagrid.Light .slick-cell.active {
+  border-color: silver;
+}
+.Datagrid.Light .slick-cell.selected, .Datagrid.Light .slick-cell.active.selected {
+  background-color: #cecece;
+}
+.Datagrid.Light .slick-cell.selected > div, .Datagrid.Light .slick-cell.active.selected > div {
+  background-color: transparent !important;
+}
+.Datagrid.Light .pnlGroupedColumns {
+  background-color: #f8f8f8;
+}
+.Datagrid.Light .pnlGroupedColumns.ui-state-hover {
+  color: #101010;
+  -webkit-box-shadow: inset 0px 0px 2px 2px rgba(200, 200, 200, 0.5);
+  -moz-box-shadow: inset 0px 0px 2px 2px rgba(200, 200, 200, 0.5);
+  box-shadow: inset 0px 0px 2px 2px rgba(200, 200, 200, 0.5);
+}
+.Datagrid.Light .pnlGroupedColumns .groupedItem, .Datagrid.Light .pnlGroupedColumns .ui-sortable-placeholder {
+  border: 1px solid #c7c7c7;
+  background: #f2f2f2;
+  background: linear-gradient(to bottom, #fdfdfd 0%, #fdfdfd 50%, #f4f4f4 51%, #f8f8f8 100%);
+}
+.Datagrid.Light .pnlGroupedColumns .ui-sortable-placeholder {
+  border: 1px dotted #606060;
+}
+.Datagrid.Light .percentageFormatter {
+  border-color: #707070;
+  background-color: #dddddd;
+}
+.Datagrid.Light .percentageFormatter p {
+  background-color: #a8a8a8;
+}
+.Datagrid.Light .percentageFormatter span {
+  text-shadow: 1px 1px #c0c0c0;
+  box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+.Datagrid.Light .pnlButtons .instantButtons > button {
+  color: black;
+}
+.Datagrid .title {
+  text-align: center;
+}
+.Datagrid .updateStatusFeedback {
+  transition: display 0.3s ease-in;
+  position: absolute;
+  display: none;
+  left: -500px;
+  left: 10px;
+  bottom: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: auto;
+  color: #fff;
+  z-index: 999;
+  padding-right: 5px;
+}
+.Datagrid .updateStatusFeedback.show {
+  display: inline-block;
+}
+.Datagrid .updateStatusFeedback.error {
+  background-color: #ED3054;
+}
+.Datagrid .updateStatusFeedback.error i.errorIcon {
+  display: inline-block;
+}
+.Datagrid .updateStatusFeedback.error i.successIcon {
+  display: none;
+}
+.Datagrid .updateStatusFeedback.success {
+  background-color: #62BA62;
+}
+.Datagrid .updateStatusFeedback.success i.errorIcon {
+  display: none;
+}
+.Datagrid .updateStatusFeedback.success i.successIcon {
+  display: inline-block;
+}
+.Datagrid .sparklinesRoot canvas {
+  position: relative;
+  top: 6px;
+}
+
+.quick-dash .properties-panel .container-SelectedObjectRouting .viewstate-form-control .fa-eye {
+  left: 0px;
+}
+.quick-dash .properties-panel .container-SelectedObjectRouting table thead tr th:nth-child(1), .quick-dash .properties-panel .container-SelectedObjectRouting table thead tr th:nth-child(2) {
+  width: 120px;
+}
+.quick-dash .properties-panel .container-SelectedObjectRouting .select2-container {
+  width: 100% !important;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9jb2x1bW5Db25maWdEaWFsb2cuc2NzcyIsIl9kYXRlRmlsdGVyLnNjc3MiLCJfYmFzaWNQb3B1cC5zY3NzIiwic2xpY2tncmlkL3NsaWNrLmdyaWQuc2NzcyIsInNsaWNrZ3JpZC9zbGljay1kZWZhdWx0LXRoZW1lLnNjc3MiLCJzbGlja2dyaWQvc2xpY2sucGFnZXIuc2NzcyIsImFwcC5zY3NzIiwiX2N1c3RvbUVkaXRvci5zY3NzIiwiX2ZpbHRlcnMuc2NzcyIsIl9wbmxCdXR0b25zLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUM7RUFNRztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQVJBO0VBQ0k7O0FBU0o7RUFDSTs7QUFHSjtFQUNJOztBQUlBO0VBQ0k7O0FBSVI7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7O0FDdkZQO0VBRUc7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUtBO0VBQ0k7O0FBRUE7RUFDSTs7QUFJUjtFQUNJOzs7QUN6Q1g7RUFFRztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdJO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUNkWjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFPQTtFQUNJO0VBQ0E7RUFDQTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHSjtFQUNJOzs7QUFHSjtFQUNJOzs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0o7RUFDSTs7O0FBR0o7RUFDSTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHSjtFQUNJOzs7QUFHSjtFQUNJO0VBQ0E7OztBQUdKO0VBQ0k7RUFDQTtFQUNBOzs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQU1KO0VBQ0k7OztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHSjtFQUNJOzs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdKO0VBQ0k7OztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7O0FDNUpKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQU9BO0FBQ0U7RUFDQTs7O0FBR0Y7QUFDRTtFQUNBOzs7QUFHRjtBQUFBO0FBQUE7QUFJQTtFQUNFOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTs7O0FBR0Y7RUFJRTtFQUNBO0VBQ0E7RUFDQTs7QUFOQTtFQUNFOztBQU1GO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBOzs7QUFHRjtFQUNFOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTs7QUFDQTtFQUNFOztBQUVGO0VBQ0U7OztBQUlKO0VBQ0U7RUFDQTs7O0FBSUE7RUFDRTs7QUFFRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7OztBQUlBO0VBQ0U7O0FBRUY7RUFDRTs7QUFFRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0Y7RUFDRTtJQUNFOztFQUdGO0lBQ0U7OztBQUtKO0VBQ0U7SUFDRTs7RUFHRjtJQUNFOzs7QUMzSEo7RUFDSTtFQUNBO0VBQ0E7RUFDQTtBQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7O0FDNUJaO0VBSUk7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUVBO0VBa0JBOztBQ3pDSDtFQUNHO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFFQTtFQUVJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFLWjtFQUNJOztBQUVBO0VBQ0k7O0FDbENKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBUUE7RUFDSTs7QUZoQlo7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUVBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFLSjtFQUNJO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlSO0VBQ0k7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUtBO0VBQ0k7O0FBSVI7RUFDSTs7QUFHSjtFQU1JOztBQUxBO0VBQ0k7RUFDQTs7QUFNUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0EsUUE3T1E7RUE4T1I7RUFDQTtFQUNBO0VBQ0E7RUFDQSxhQWxQUTs7QUFvUFI7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFHQTs7QUFFQTtFQUNJOztBQUdBO0VBQ0k7RUFDQTs7QUFLWjtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTtFQUNBLGFBM1JRO0VBNFJSO0VBQ0E7O0FBR0o7RUFDSTtFQUNBLEtBbFNRO0VBbVNSO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0EsS0ExU1E7RUEyU1I7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFPSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJQTtFQUNJO0VBQ0E7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBRUk7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFFQTtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUlSO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSVI7RUFLSTtFQUNBOztBRy9mQTtFQUNJOztBQUdKO0VBQ0ksYUhFSTtFR0RKO0VBQ0E7RUFDQSxPSG1ma0I7O0FHaGZsQjtFQUNJLE9IRkU7O0FHTVY7QUFBQTtFQUVJO0VBQ0EsT0h3ZWtCOztBR3BldEI7RUFDSTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUlSO0VBQ0k7QUFvQ0E7O0FBbENBO0VBQ0k7O0FBR0o7QUFBQTtBQUFBO0VBR0ksT0g0Y2M7RUczY2QsYUh6Q0E7O0FHMkNBO0FBQUE7QUFBQTtFQUNJLE9IekNGO0VHMENFOztBQUdKO0FBQUE7QUFBQTtFQUNSO0VBQ0E7RUFDQTtFQUNBOztBQUdRO0FBQUE7QUFBQTtFQUNSOztBQUdRO0FBQUE7QUFBQTtFQUNJOztBQUVKO0FBQUE7QUFBQTtFQUNJLE9Ib2JjOztBRzlhbEI7RUFDSTtFQUNBO0VBQ0EsT0g0YVU7RUczYVY7O0FIaWJaO0VBQ0k7O0FBR0o7RUFFSTs7QUFLQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQVFKO0VBQ0k7O0FBSVI7RUFDSTs7QUFFQTtFQUNJOztBQUlSO0VBQ0k7O0FBR0o7RUFDSSxjQTNpQkU7O0FBNmlCRjtFQUNJOztBQUdBO0VBQ0k7O0FBT1I7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBS1o7RUE2Qkk7RUFDQSxPQTVCc0I7O0FHbm1CdEI7RUFDSTs7QUFHSjtFQUNJLGFIRUk7RUdESjtFQUNBO0VBQ0EsT0gybEJrQjs7QUd4bEJsQjtFQUNJLE9IRkU7O0FHTVY7QUFBQTtFQUVJO0VBQ0EsT0hnbEJrQjs7QUc1a0J0QjtFQUNJOztBQUVBO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTtBQW9DQTs7QUFsQ0E7RUFDSTs7QUFHSjtBQUFBO0FBQUE7RUFHSSxPSG9qQmM7RUduakJkLGFIekNBOztBRzJDQTtBQUFBO0FBQUE7RUFDSSxPSHpDRjtFRzBDRTs7QUFHSjtBQUFBO0FBQUE7RUFDUjtFQUNBO0VBQ0E7RUFDQTs7QUFHUTtBQUFBO0FBQUE7RUFDUjs7QUFHUTtBQUFBO0FBQUE7RUFDSTs7QUFFSjtBQUFBO0FBQUE7RUFDSSxPSDRoQmM7O0FHdGhCbEI7RUFDSTtFQUNBO0VBQ0EsT0hvaEJVO0VHbmhCVjs7QUh1aEJaO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUVBO0VBQ0k7RUFDQTtFQUNBOztBQUtSO0VBQ0k7O0FBTUo7RUFDSTs7QUFHSjtFQUNJOztBQUlBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7O0FBSUo7RUFDSTs7QUFJUjtFQUNJOztBQUVBO0VBQ0k7O0FBSVI7RUFDSSxPQXRFa0I7O0FBeUV0QjtFQUNJOztBQUVBO0VBQ0k7O0FBR0E7RUFDSTs7QUFLWjtFQUNJOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBS0o7RUFDSTs7QUFLWjtFQUNJOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBTVI7RUFDSTtFQUNBOzs7QUFTVjtFQUNDOztBQUtEO0VBQ0M7O0FBSUY7RUFDQyIsImZpbGUiOiJhcHAuY3NzIn0= */

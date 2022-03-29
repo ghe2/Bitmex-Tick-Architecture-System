@@ -1,0 +1,296 @@
+.accordion {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+.accordion.flex {
+  display: flex;
+}
+.accordion.animate .section {
+  -webkit-transition: flex-grow 0.3s;
+  -moz-transition: flex-grow 0.3s;
+  transition: flex-grow 0.3s;
+}
+.accordion.animate .section .heading i {
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.accordion.animate .section .content {
+  display: block;
+}
+.accordion.animate .section.expanded.flex {
+  flex: 1 1 auto;
+}
+.accordion > .section {
+  min-height: 32px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.accordion > .section.noHeader {
+  min-height: 0;
+}
+.accordion > .section.noHeader > .heading {
+  display: none;
+}
+.accordion > .section.noHeader > .content {
+  top: 0;
+}
+.accordion > .section.noHeader:not(.expanded) {
+  visibility: hidden;
+}
+.accordion > .section .heading {
+  height: 31px;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 32px;
+  cursor: pointer;
+  /* apply jqueryUi styles
+    background: $background1;*/
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.accordion > .section .heading .title {
+  padding-right: 1.5em;
+}
+.accordion > .section .heading > i {
+  margin: -2px 10px 2px 10px;
+  vertical-align: middle;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+.accordion > .section > .content {
+  position: absolute;
+  top: 32px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  /*
+  can't hide content when sub-elements occupy header
+  display: none;
+           */
+}
+.accordion > .section.expanded {
+  flex: 1 1 auto;
+}
+.accordion > .section.expanded > .heading i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.accordion > .section.expanded > .content {
+  display: block;
+}
+.accordion > .section.expanded.flex {
+  flex: none;
+}
+.accordion > .section.expanded.flex > .content {
+  position: relative;
+  top: 0px;
+}
+.accordion > .section.expanded.flex > .content > .component-drop {
+  position: relative;
+}
+.accordion > .section.expanded.flex > .content > .component-drop > .component-drop-widget {
+  position: relative;
+}
+.accordion > .section.expanded.flex > .content > .component-drop > .component-drop-widget > div > .border-div {
+  position: relative;
+}
+.accordion > .section.expanded.flex > .content > .component-drop > .component-drop-widget > div > .border-div > .app-div {
+  position: relative;
+}
+.accordion > .section.ui-resizable-resizing > .ui-resizable-handle {
+  background-color: #137bac;
+}
+.accordion > .section > .ui-resizable-s {
+  bottom: 0px;
+  height: 3px;
+  border-bottom: 3px solid #202020;
+  border-top: 3px solid #202020;
+  display: block;
+  background-color: #333;
+}
+.accordion > .section > .ui-resizable-s:hover {
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: #137bac;
+}
+.accordion > .section .error-message {
+  display: none;
+}
+.accordion > .section .has-error .error-message {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  right: 1em;
+  padding: 1em;
+  display: block;
+}
+.accordion > .section .has-error .error-message .fa {
+  color: #dd2222;
+  margin: 0 0.5em 0 0;
+}
+.accordion.Vertical {
+  flex-direction: column;
+}
+.accordion.Vertical > .section.flex > .content.expanded > .content {
+  height: auto;
+}
+.accordion.Vertical > .section.ui-resizable > .content {
+  bottom: 9px;
+}
+.accordion.Horizontal {
+  flex-direction: row;
+  white-space: nowrap;
+}
+.accordion.Horizontal > .section {
+  display: block;
+  min-width: 32px;
+  float: left;
+  /* make room for resize handle */
+}
+.accordion.Horizontal > .section.noHeader {
+  min-width: 0px;
+}
+.accordion.Horizontal > .section.noHeader > .content {
+  left: 0;
+}
+.accordion.Horizontal > .section.noHeader:not(.expanded) {
+  visibility: hidden;
+}
+.accordion.Horizontal > .section > .heading {
+  position: absolute;
+  left: 0px;
+  width: 500px;
+  bottom: 0px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 0px 0px 0px;
+  margin-bottom: -32px;
+}
+.accordion.Horizontal > .section > .content {
+  top: 0;
+  left: 32px;
+}
+.accordion.Horizontal > .section.ui-resizable > .content {
+  right: 9px;
+}
+.accordion.Horizontal > .section.expanded > .heading i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.accordion.Horizontal > .section.expanded > .content {
+  display: block;
+}
+.accordion.Horizontal > .section.flex > .content {
+  position: relative;
+  height: 100%;
+}
+.accordion.Horizontal > .section > .ui-resizable-e {
+  right: 0px;
+  height: 100%;
+  width: 3px;
+  border-left: 3px solid #202020;
+  border-right: 3px solid #202020;
+  display: block;
+  background-color: #333;
+}
+.accordion.Horizontal > .section > .ui-resizable-e:hover {
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: #137bac;
+}
+
+.Light .accordion > .section > .ui-resizable-handle {
+  background-color: #d4d4d4;
+  border-top-color: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+.Light .accordion.Horizontal > .section > .ui-resizable-handle {
+  background-color: #d4d4d4;
+  border-left-color: #f8f8f8;
+  border-right-color: #f8f8f8;
+}
+
+/*
+// DEBUG
+
+.accordion {
+	border: 1px solid purple;
+
+	.section {
+
+		.heading {
+			border: 1px solid red;
+		}
+
+		.content {
+			border: 1px solid green;
+
+			> div {
+				border: 1px solid yellow;
+			}
+		}
+	}
+} */
+.quick-view .accordion .no-widgets-info, .quick-view .accordion .worksheet-highlight-item {
+  display: none;
+}
+
+.quick-dash:not(.buildMode) .accordion .no-widgets-info, .quick-dash:not(.buildMode) .accordion .worksheet-highlight-item, .quick-dash:not(.buildMode) .accordion .remove-btn,
+.quick-view .accordion .no-widgets-info,
+.quick-view .accordion .worksheet-highlight-item,
+.quick-view .accordion .remove-btn {
+  display: none;
+}
+
+.quick-dash.buildMode .accordion .section .heading {
+  pointer-events: auto;
+}
+.quick-dash.buildMode .accordion .section .ui-resizable-handle {
+  pointer-events: auto;
+}
+
+.content-panel.outlined .accordion .section {
+  pointer-events: auto;
+}
+.content-panel.outlined .accordion .section .content.drop-target > .component-drop > .component-drop-widget {
+  z-index: 0;
+}
+.content-panel.outlined .accordion .section .content.drop-target > .component-drop > .component-drop-widget[data-componentid=FlexPanel], .content-panel.outlined .accordion .section .content.drop-target > .component-drop > .component-drop-widget[data-componentid=Panel] {
+  z-index: 1;
+}
+.content-panel.outlined .accordion .section .content.drop-target > .component-drop::after {
+  pointer-events: none;
+  background-color: #484848;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 0;
+}
+.content-panel.outlined.Light .accordion .section .content.drop-target > .component-drop::after {
+  background-color: #d0d0d0;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9hY2NvcmRpb24uc2NzcyIsImJvdXJib24tc25pcHBldC5zY3NzIiwibWFpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVNBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUNtQ0ksb0JEbENBO0VDc0NBLGlCRHRDQTtFQ2tEQSxZRGxEQTs7QUFFQTtFQ2dJSixvQkFYVztFQVlSLGlCQVhRO0VBWUgsWUFYRzs7QURuSFA7RUFDSTs7QUFHSjtFQUNJOztBQUlSO0VBQ0ksWUEvQk07RUFnQ047RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBLGFBekRFO0VBMERGO0FBQ0E7QUFBQTtFQ1ZKLHFCRGFtQztFQ0xuQyxpQkRLbUM7RUNHbkMsYURIbUM7O0FBRS9CO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlSO0VBQ0k7RUFDQSxLQS9FRTtFQWdGRjtFQUNBO0VBQ0E7RUFDQTtBQUNBO0FBQUE7QUFBQTtBQUFBOztBQU1KO0VBQ0k7O0FBRUE7RUM1Q0osbUJENkMyQjtFQ3pDM0IsZ0JEeUMyQjtFQ3JDM0IsZURxQzJCO0VDakMzQixjRGlDMkI7RUM3QjNCLFdENkIyQjs7QUFHdkI7RUFDSTs7QUFHSjtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7O0FBRUE7RUFDSTs7QUFFQTtFQUNJOztBQVV4QjtFQUNJLGtCQWxJQzs7QUFzSVQ7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0Esa0JBL0lFOztBQWlKRjtFQzVGSixvQkQ2RlE7RUN6RlIsaUJEeUZRO0VDN0VSLFlENkVRO0VBQ0Esa0JBaEpDOztBQW9KVDtFQUNJOztBQUlBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTs7QUFNaEI7RUFDSTs7QUFNZ0I7RUFDSTs7QUFNaEI7RUFDSTs7QUFLWjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBLFdBbE1FO0VBbU1GO0FBNkJBOztBQTNCQTtFQUNJOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VDcEtSLG1CRHFLMkI7RUNqSzNCLGdCRGlLMkI7RUM3SjNCLGVENkoyQjtFQ3pKM0IsY0R5SjJCO0VDckozQixXRHFKMkI7RUFDbkI7RUFDQTs7QUFHSjtFQUNJO0VBQ0EsTUE3TkY7O0FBaU9GO0VBQ0k7O0FBSUE7RUNyTFIsbUJEc0wrQjtFQ2xML0IsZ0JEa0wrQjtFQzlLL0IsZUQ4SytCO0VDMUsvQixjRDBLK0I7RUN0Sy9CLFdEc0srQjs7QUFHdkI7RUFDSTs7QUFLSjtFQUNJO0VBQ0E7O0FBVVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQSxrQkF2UUY7O0FBeVFFO0VDcE5SLG9CRHFOWTtFQ2pOWixpQkRpTlk7RUNyTVosWURxTVk7RUFDQSxrQkF4UUg7OztBQWdSYjtFQUNJLGtCQWxSWTtFQW1SWixrQkFwUlc7RUFxUlgscUJBclJXOztBQXlSWDtFQUNJLGtCQXpSUTtFQTBSUixtQkEzUk87RUE0UlAsb0JBNVJPOzs7QUFnU25CO0FBQUE7O0FBQUE7QUFBQTs7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUU3UkM7RUFDQzs7O0FBTUQ7QUFBQTtBQUFBO0FBQUE7RUFDQzs7O0FBVUE7RUFDQzs7QUFHRDtFQUNDOzs7QUFPRDtFQUNDOztBQUdDO0VBQ0M7O0FBRUE7RUFFQzs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQVE7RUFBUztFQUFXO0VBQzVCO0VBQ0E7O0FBTUo7RUFDQyIsImZpbGUiOiJtYWluLmNzcyJ9 */

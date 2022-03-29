@@ -1,0 +1,206 @@
+.app-div.dark .tools-panel.disabled {
+  display: none;
+}
+.app-div.dark .tools-panel .pnlButtons {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  font-size: 13px;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  color: #CCC;
+  /* dividers */
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkFullExport {
+  color: #CCC;
+  line-height: 20px;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot:hover,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkFullExport:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkFullExport .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkFullExport.export-in-progress {
+  pointer-events: none;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkFullExport.link-disabled {
+  display: none;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  color: #CCC;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+.app-div.light .tools-panel.disabled {
+  display: none;
+}
+.app-div.light .tools-panel .pnlButtons {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  font-size: 13px;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  color: #000;
+  /* dividers */
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkFullExport {
+  color: #000;
+  line-height: 20px;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot:hover,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkFullExport:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkFullExport .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkFullExport.export-in-progress {
+  pointer-events: none;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkFullExport.link-disabled {
+  display: none;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  color: #000;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.highlight-rules-dialog {
+  position: absolute;
+  bottom: 0;
+}
+.highlight-rules-dialog .highlightRule-menu-item {
+  display: inline-block;
+}
+.highlight-rules-dialog .highlightRule-menu-item svg {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 4px;
+}
+
+.chart-legend {
+  height: 30px;
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+}
+.chart-legend .strike {
+  text-decoration: line-through !important;
+}
+.chart-legend ul {
+  padding: 0;
+  margin: 0;
+}
+.chart-legend ul li {
+  cursor: pointer;
+  display: inline-flex;
+}
+.chart-legend ul li span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.generic-tooltip.PieJS-tooltip {
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  font-family: Arial;
+  font-size: 12px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.generic-tooltip.PieJS-tooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.generic-tooltip.PieJS-tooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.generic-tooltip.PieJS-tooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.generic-tooltip.PieJS-tooltip table td .key {
+  font-weight: normal;
+}
+.generic-tooltip.PieJS-tooltip table td .value {
+  text-align: right;
+  font-weight: bold;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIiwiX3BubEJ1dHRvbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNWTtFQUFZOztBQ052QjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNJO0VBQ0EsT0RQb0I7QUN5Q3BCOztBQWhDQTtFQUNJOztBQUdKO0FBQUE7QUFBQTtBQUFBO0VBSUksT0RqQmdCO0VDa0JoQixhRHJCSzs7QUN1Qkw7QUFBQTtBQUFBO0FBQUE7RUFDSSxPRHpCQztFQzBCRDs7QUFHSjtBQUFBO0FBQUE7QUFBQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0FBQUE7QUFBQTtBQUFBO0VBQ0k7O0FBR0o7QUFBQTtBQUFBO0FBQUE7RUFDSTs7QUFNSjtFQUNJO0VBQ0EsT0Q3Q1k7RUM4Q1o7RUFDQTs7QURyQ0o7RUFBWTs7QUNkdkI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDSTtFQUNBLE9EQ29CO0FDaUNwQjs7QUFoQ0E7RUFDSTs7QUFHSjtBQUFBO0FBQUE7QUFBQTtFQUlJLE9EVGdCO0VDVWhCLGFEckJLOztBQ3VCTDtBQUFBO0FBQUE7QUFBQTtFQUNJLE9EekJDO0VDMEJEOztBQUdKO0FBQUE7QUFBQTtBQUFBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7QUFBQTtBQUFBO0FBQUE7RUFDSTs7QUFHSjtBQUFBO0FBQUE7QUFBQTtFQUNJOztBQU1KO0VBQ0k7RUFDQSxPRHJDWTtFQ3NDWjtFQUNBOzs7QUQvQmhCO0VBQ0k7RUFDQTtFQUNBOzs7QUFHSjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOzs7QUFLWjtFQUNRO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0k7O0FBRUo7RUFDSTtFQUNBOztBQUNBO0VBQ0k7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOzs7QUFNcEI7RUFDSTtFQUNBO0VBQ0E7QUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7O0FBRUo7RUFDSTtFQUNBOztBQUNBO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUVKO0VBQ0k7RUFDQSIsImZpbGUiOiJhcHAuY3NzIn0= */

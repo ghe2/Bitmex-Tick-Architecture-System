@@ -1,0 +1,333 @@
+.Dataform {
+  color: #ffffff;
+  font-size: 13px;
+}
+.Dataform > form.bbf-form {
+  height: 100%;
+  overflow-y: auto;
+}
+.Dataform > form.bbf-form .flex-row, .Dataform > form.bbf-form .flex-column {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field, .Dataform > form.bbf-form .flex-column > li.bbf-field {
+  width: 150px;
+  display: inline-block;
+  margin: 0em 1.5em 0.5em 0em;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field.submit-field, .Dataform > form.bbf-form .flex-column > li.bbf-field.submit-field {
+  margin-right: 0px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor {
+  height: 24px;
+  min-width: 100px;
+  width: auto;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor.fillspace, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor.fillspace {
+  display: flex;
+  margin-left: 0px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor.fillspace > div, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor.fillspace > div {
+  width: 100%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor.checkbox, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor.checkbox {
+  display: block;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor.checkbox > input[type=checkbox], .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor.checkbox > input[type=checkbox] {
+  vertical-align: middle;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input.ui-state-default, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input.ui-state-default {
+  width: 100%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget {
+  width: 99.75%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget > input.ui-spinner-input, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget > input.ui-spinner-input {
+  height: 22px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input[type=number], .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input[type=number] {
+  height: 24px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input[type=text], .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input[type=text] {
+  height: 24px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input[type=text].ui-spinner-input, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input[type=text].ui-spinner-input {
+  height: 22px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input.hasDatepicker, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input.hasDatepicker {
+  font-size: 13px !important;
+  background-color: #303030;
+  text-align: center;
+  height: 24px !important;
+  width: 100%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items {
+  margin: 0px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button:hover, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button:hover {
+  opacity: 1;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button[data-action=remove], .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button[data-action=remove] {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  padding: 0;
+  margin: 5px 2px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button[data-action=remove]:focus, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button[data-action=remove]:focus {
+  opacity: 1;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button[data-action=add], .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > i.dict-button[data-action=add] {
+  position: relative;
+  margin-bottom: initial;
+  bottom: initial;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict {
+  display: flex;
+  margin: 0px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict > input, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict > input {
+  height: 24px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict > span.select2-container, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict > span.select2-container {
+  width: 45% !important;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict > span.select2-container > span > span.select2-selection--single, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div ul.dict-items > li > div.bbf-dict > span.select2-container > span > span.select2-selection--single {
+  height: 25px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container {
+  min-width: 80px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container :hover, .Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container :focus, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container :hover, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container :focus {
+  border-color: #00AEFF;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container .select2-selection--multiple, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container .select2-selection--multiple {
+  min-height: 23.9px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container .select2-selection--multiple li.select2-selection__choice, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container .select2-selection--multiple li.select2-selection__choice {
+  margin-bottom: 0px;
+  margin-top: 2px;
+  padding: 0px 5px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container .select2-selection--single > .select2-selection__rendered, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container .select2-selection--single > .select2-selection__rendered {
+  line-height: 19px;
+  margin-top: 1px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > .select2-container .select2-dropdown-arrow, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > .select2-container .select2-dropdown-arrow {
+  margin: 6px 6px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div.bbf-date, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div.bbf-date {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div.bbf-date select.bbf-month, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div.bbf-date select.bbf-month {
+  width: 50%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div.bbf-date select.bbf-year, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div.bbf-date select.bbf-year {
+  width: 50%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div.bbf-customlist > textarea, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div.bbf-customlist > textarea {
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 11px !important;
+  height: 15px;
+  padding: 2px;
+  border: 1px solid #6D6D6D;
+  border-radius: 2px;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > input[type=checkbox], .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > input[type=checkbox] {
+  width: 100%;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > select, .Dataform > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > select {
+  background-image: linear-gradient(to bottom, #636363 50%, #575757 100%);
+  color: #636363;
+}
+.Dataform > form.bbf-form .flex-row > li.bbf-field > *:not(button), .Dataform > form.bbf-form .flex-column > li.bbf-field > *:not(button) {
+  font-size: 0.9em;
+}
+.Dataform > form.bbf-form .flex-column {
+  flex-direction: column;
+}
+.Dataform > form.bbf-form .flex-column > li.bbf-field.submit-field > button[type=submit] {
+  margin-left: 0px;
+}
+.Dataform > form.bbf-form > div {
+  display: inline-block;
+  width: 100%;
+}
+.Dataform > form.bbf-form > div fieldset {
+  display: inline-block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.Dataform > form.bbf-form.inline-labels li.bbf-field > label {
+  margin-top: 3px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.Dataform > form.bbf-form.inline-labels > button[type=submit], .Dataform > form.bbf-form.inline-labels li > button[type=submit] {
+  margin: 0px 12.5px;
+}
+.Dataform > form.bbf-form.inline-labels > button.reset, .Dataform > form.bbf-form.inline-labels li > button.reset {
+  margin: 0px 12.5px;
+}
+.Dataform > form.bbf-form.inline-labels.bothFloat > button[type=submit], .Dataform > form.bbf-form.inline-labels.bothFloat li > button[type=submit] {
+  margin: 0px 0px 0px 12.5px;
+}
+.Dataform > form.bbf-form.inline-labels.bothFloat > button.reset, .Dataform > form.bbf-form.inline-labels.bothFloat li > button.reset {
+  margin: 0px 0px 0px 12.5px;
+}
+.Dataform > form.bbf-form.has-reset button.reset {
+  display: inline-block;
+}
+.Dataform > form.bbf-form.has-submit button[type=submit] {
+  display: inline-block;
+}
+.Dataform > form.bbf-form > button[type=submit], .Dataform > form.bbf-form li > button[type=submit] {
+  margin-left: 0px;
+  margin-top: 15px;
+  margin-right: 12.5px;
+  display: none;
+}
+.Dataform > form.bbf-form > button[type=submit] span.ui-button-text, .Dataform > form.bbf-form li > button[type=submit] span.ui-button-text {
+  margin-top: -3.5px;
+  margin-left: -2.5px;
+}
+.Dataform > form.bbf-form > button.reset, .Dataform > form.bbf-form li > button.reset {
+  display: none;
+  height: 25px;
+  width: 78px;
+  margin-top: 15px;
+}
+.Dataform > form.bbf-form > button.reset span.ui-button-text, .Dataform > form.bbf-form li > button.reset span.ui-button-text {
+  margin-top: -3.5px;
+  margin-left: -2.5px;
+}
+
+.Dataform.Light {
+  color: #303030;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget {
+  border: 1px solid #6D6D6D;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget:hover, .Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget:focus, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget:hover, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget:focus {
+  border: 1px solid #00AEFF;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget > input.ui-spinner-input, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget > input.ui-spinner-input {
+  background: white;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget > a.ui-spinner-button span.ui-icon-triangle-1-s, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > span.ui-spinner.ui-widget > a.ui-spinner-button span.ui-icon-triangle-1-s {
+  background-position: -65px -16px;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input.hasDatepicker, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input.hasDatepicker {
+  background: white;
+  color: black;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div > input.hasDatepicker .ui-icon.fa-calendar, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div > input.hasDatepicker .ui-icon.fa-calendar {
+  color: black;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection .select2-selection__arrow b, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection .select2-selection__arrow b {
+  border-color: black transparent transparent transparent;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection i.select2-dropdown-arrow, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection i.select2-dropdown-arrow {
+  border-color: black transparent transparent transparent;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection.select2-selection--multiple, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection.select2-selection--multiple {
+  background: #dcdcdc;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection.select2-selection--multiple ul > li, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection.select2-selection--multiple ul > li {
+  padding: 0px 5px;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection.select2-selection--single, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > span.select2 > span > .select2-selection.select2-selection--single {
+  background: white;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > select, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > select {
+  background: #dcdcdc;
+  color: #dcdcdc;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div.bbf-customlist > ul.tag-editor, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div.bbf-customlist > ul.tag-editor {
+  border: 1px solid #6D6D6D;
+  border-radius: 2px;
+}
+.Dataform.Light > form.bbf-form .flex-row > li.bbf-field > div.bbf-editor > div.bbf-customlist > ul.tag-editor:hover, .Dataform.Light > form.bbf-form .flex-column > li.bbf-field > div.bbf-editor > div.bbf-customlist > ul.tag-editor:hover {
+  border-color: #00AEFF;
+}
+.Dataform.Light > form.bbf-form button[type=submit], .Dataform.Light > form.bbf-form button.reset {
+  background: #d4d4d4;
+}
+.Dataform.Light > form.bbf-form button[type=submit]:hover, .Dataform.Light > form.bbf-form button[type=submit]:focus, .Dataform.Light > form.bbf-form button.reset:hover, .Dataform.Light > form.bbf-form button.reset:focus {
+  border-color: #00AEFF;
+}
+.Dataform.Light > form.bbf-form button[type=submit] .ui-button-text, .Dataform.Light > form.bbf-form button.reset .ui-button-text {
+  color: black;
+}
+
+.error {
+  outline: 1px solid red !important;
+}
+
+.properties-panel {
+  /* hide error messages for missing flags, e.g. isDefaultInput */
+  /* fixes for json editor disable_array_delete, disable_array_reorder overrides in properties panel */
+}
+.properties-panel .container-FieldType, .properties-panel div[data-schemaid=FieldType] {
+  position: relative;
+}
+.properties-panel .container-FieldType > label, .properties-panel .container-FieldType > select, .properties-panel div[data-schemaid=FieldType] > label, .properties-panel div[data-schemaid=FieldType] > select {
+  position: absolute;
+  right: 0;
+  left: 50%;
+  top: 0px;
+  color: #dedede;
+  background: #424242;
+  border: solid 1px #484848;
+  box-sizing: border-box;
+  width: 50%;
+  height: 22px;
+}
+.properties-panel .container-FieldType > label, .properties-panel div[data-schemaid=FieldType] > label {
+  position: relative;
+  left: 0;
+  top: 4px;
+  padding: 6px;
+  padding-left: 0px;
+  background: none;
+  border: none;
+  color: #ccc;
+  pointer-events: none;
+}
+.properties-panel .container-FieldType > select, .properties-panel div[data-schemaid=FieldType] > select {
+  background: #424242 !important;
+  /* inline css is applying a transparent background */
+  margin-left: 0px !important;
+}
+.properties-panel .container-FieldType > div, .properties-panel div[data-schemaid=FieldType] > div {
+  margin-top: 8px;
+}
+.properties-panel div[data-schemaid=FieldType] > h3, .properties-panel div[data-schemaid=Dropdown] > h3, .properties-panel div[data-schemaid=Text] > h3 {
+  display: none;
+}
+.properties-panel div[data-schemaid=FieldType] div[data-schemaid=Text] > div > p {
+  display: none;
+}
+.properties-panel .btnSetCntrls .fa-bars {
+  display: none;
+}
+.properties-panel div[data-schemapath="root.Basics.ViewStates"] > div > .ui-buttonset {
+  display: none !important;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0M7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FBR0E7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUdBO0VBQ0M7RUFDQTs7QUFFQTtFQUNDOztBQUlGO0VBQ0M7O0FBQ0E7RUFDQzs7QUFNRDtFQUNDOztBQUdEO0VBQ0M7O0FBRUE7RUFDQzs7QUFJRjtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUQ7RUFDQzs7QUFHQztFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQzs7QUFJRjtFQUNDO0VBQ0E7RUFDQTs7QUFJRjtFQUNDO0VBQ0E7O0FBRUE7RUFDQzs7QUFHRDtFQUVDOztBQUVBO0VBQ0M7O0FBU047RUFDQzs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBS0Q7RUFDQztFQUNBOztBQUlGO0VBQ0M7O0FBS0Y7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUVEO0VBQ0M7O0FBS0Y7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlEO0VBQ0M7O0FBR0Q7RUFDQztFQUNBOztBQUlGO0VBQ0M7O0FBTUg7RUFDQzs7QUFHQztFQUNDOztBQU1IO0VBQ0M7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBTUQ7RUFDQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQUlBO0VBQ0M7O0FBR0Q7RUFDQzs7QUFPRjtFQUNDOztBQU1EO0VBQ0M7O0FBS0Y7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7O0FBS0Y7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7OztBQWFIO0VBQ0M7O0FBT0k7RUFDQyxRQVhHOztBQVlIO0VBQ0M7O0FBRUQ7RUFDQzs7QUFJRDtFQUNDOztBQUtGO0VBQ0M7RUFDQTs7QUFFQTtFQUNDOztBQU9GO0VBQ0MsY0F4Q1k7O0FBMkNiO0VBQ0MsY0E1Q1k7O0FBK0NiO0VBQ0MsWUFsRFE7O0FBb0RSO0VBQ0M7O0FBSUY7RUFDQzs7QUFJRjtFQUNDO0VBQ0E7O0FBSUQ7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBTUg7RUFDQzs7QUFDQTtFQUNDOztBQUVEO0VBQ0M7OztBQVFMO0VBQ0M7OztBQUlEO0FBMkNDO0FBS0E7O0FBL0NBO0VBQ087O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNMO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0FBQWdDO0VBQzdCOztBQUdKO0VBQ0M7O0FBSUY7RUFDQzs7QUFJRDtFQUNDOztBQUlEO0VBQ0M7O0FBR0Q7RUFDQyIsImZpbGUiOiJhcHAuY3NzIn0= */

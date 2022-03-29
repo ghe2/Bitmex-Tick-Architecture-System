@@ -1,0 +1,585 @@
+.query-builder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.query-builder .group-toolbar {
+  text-align: right;
+  margin-left: 6px;
+  margin-right: 2px;
+  cursor: move;
+}
+.query-builder .group-toolbar .radio-group {
+  text-align: left;
+  float: left;
+}
+.query-builder .group-toolbar .align-right {
+  text-align: right;
+  display: inline-block;
+}
+.query-builder .group-toolbar:hover + .items-div.group:not(.empty) {
+  border-color: #2f8bb6;
+}
+.query-builder .group-toolbar:hover + .items-div.group:not(.empty) > .query-item > .items-div:not(.empty) > .branch {
+  background-color: #2f8bb6;
+}
+.query-builder .group-toolbar .align-right .ui-button:not(.ui-state-hover) {
+  background: transparent;
+  border-color: transparent;
+  color: #ddd;
+}
+.query-builder .group-toolbar svg {
+  float: left;
+  margin-top: 6px;
+  opacity: 0.7;
+  display: none;
+  pointer-events: none;
+}
+.query-builder .group-toolbar svg g:nth-child(2) {
+  fill: white;
+  stroke: transparent;
+}
+.query-builder .group-toolbar:hover svg {
+  display: block;
+}
+.query-builder .group-toolbar .add-rule-button-group {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.query-builder .group-toolbar .add-rule-button-group .select2-selection:not(:hover) {
+  background: transparent;
+  border-color: transparent;
+}
+.query-builder .group-toolbar .add-rule-button-group .select2-selection__arrow > b {
+  border-color: white transparent;
+}
+.query-builder .group-toolbar .add-rule-button-group .add-rule {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.query-builder .group-toolbar .add-rule-button-group .add-rule > .ui-button-text {
+  padding-right: 0.5em;
+}
+.query-builder .group-toolbar .add-rule-button-group .select2-selection__rendered {
+  display: none;
+}
+.query-builder .group-toolbar .ui-button-text-icon-primary .ui-button-text {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+.query-builder.rootGroup > .group-toolbar {
+  cursor: default;
+}
+.query-builder.rootGroup > .group-toolbar svg {
+  display: none !important;
+}
+.query-builder .droppie {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2f8bb6;
+  width: 100%;
+  display: none;
+}
+.query-builder > .group-toolbar .delete-group {
+  display: none;
+}
+.query-builder > .items-div > .branch {
+  display: none;
+}
+.query-builder .branch {
+  height: 1px;
+  background: #535353;
+  width: 12px;
+  position: absolute;
+  left: -12px;
+  top: 11px;
+}
+.query-builder .group > .drag-div {
+  display: none;
+}
+.query-builder .group > .drag-div > i {
+  display: none !important;
+}
+.query-builder .items-div {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  position: relative;
+  clear: both;
+  margin-right: 0;
+}
+.query-builder .items-div input[type=search].bindings-available::-webkit-search-cancel-button {
+  display: none;
+}
+.query-builder .items-div.group {
+  border: 1px solid #535353;
+  margin-right: 3px;
+}
+.query-builder .items-div.empty {
+  border-color: transparent;
+}
+.query-builder .items-div.empty .branch {
+  background-color: transparent;
+}
+.query-builder .items-div .query-item {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-right: 0;
+}
+.query-builder .items-div .query-item.drag-over-top {
+  border-top: 1px solid #2f8bb6;
+}
+.query-builder .items-div .query-item.drag-over-bottom {
+  border-bottom: 1px solid #2f8bb6;
+}
+.query-builder .items-div .query-item.draggie {
+  opacity: 0.3;
+}
+.query-builder .items-div .query-item.draggie .items-div.group {
+  pointer-events: none;
+  border-color: #2f8bb6;
+}
+.query-builder .items-div .drag-div {
+  position: absolute;
+  left: 17px;
+  top: -4px;
+  height: 25px;
+  width: 23px;
+  font-size: 21px;
+  cursor: move;
+  display: none;
+  pointer-events: none;
+  opacity: 0.7;
+  fill: white;
+  stroke: transparent;
+}
+.query-builder .items-div .delete-row {
+  position: absolute;
+  right: -2px;
+  top: 0px;
+  background: transparent;
+  border-color: transparent;
+  opacity: 0;
+  z-index: 102;
+}
+.query-builder .items-div .compare-fields {
+  position: absolute;
+  right: 22px;
+  top: 0px;
+  background: transparent;
+  border-color: transparent;
+  opacity: 0;
+  z-index: 102;
+}
+.query-builder .items-div .binding-container.show-options {
+  margin-right: 30px;
+}
+.query-builder .items-div .binding-container.useViewState {
+  width: 100%;
+}
+.query-builder .items-div .binding-container.useViewState i.binding-clear-dialog {
+  color: black;
+}
+.query-builder .items-div .binding-container input {
+  padding-left: 19px;
+  cursor: pointer;
+}
+.query-builder .items-div .binding-container i.binding-clear-dialog {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  top: 2px;
+  padding: 0.3em 0.1em;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  right: 2px;
+}
+.query-builder .items-div .binding-container i.binding-clear-dialog:hover {
+  opacity: 1;
+}
+.query-builder .items-div .binding-container i.viewstate-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  top: 2px;
+  padding: 0.3em 0.1em;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: black;
+  pointer-events: none;
+}
+.query-builder .items-div .binding-container .viewstate-display {
+  cursor: pointer;
+}
+.query-builder .items-div i.binding-apply {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  right: 2px;
+  top: 2px;
+  padding: 0.3em 0.1em;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  color: gray;
+}
+.query-builder .items-div i.binding-apply:hover {
+  opacity: 1;
+}
+.query-builder .items-div.rule:hover .delete-row, .query-builder .items-div.rule:hover .compare-fields {
+  opacity: 0.5;
+}
+.query-builder .items-div.rule:hover .drag-div {
+  display: block;
+}
+.query-builder .items-div.rule:hover .binding-apply {
+  opacity: 1;
+}
+.query-builder .items-div .the-form {
+  position: relative;
+  text-align: right;
+}
+.query-builder .items-div .the-form > .editor {
+  display: inline-block;
+  cursor: default;
+  /* TODO: gk - should be default for all forms */
+}
+.query-builder .items-div .the-form > .editor.histogram {
+  position: absolute;
+  left: 35px;
+  top: 0;
+  right: 28px;
+}
+.query-builder .items-div .the-form > .editor.histogram canvas {
+  background: #c3c3c3;
+  border: 1px solid #6d6d6d;
+}
+.query-builder .items-div .the-form > .editor.histogram .inner-wrap {
+  position: relative;
+  width: 100%;
+  height: 51px;
+}
+.query-builder .items-div .the-form > .editor.histogram .left-handle, .query-builder .items-div .the-form > .editor.histogram .right-handle {
+  position: absolute;
+  top: 1px;
+  bottom: -1px;
+  width: 3px;
+  cursor: ew-resize;
+  background: transparent;
+  border-radius: 1px;
+}
+.query-builder .items-div .the-form > .editor.histogram .left-handle .grabber, .query-builder .items-div .the-form > .editor.histogram .right-handle .grabber {
+  position: absolute;
+  left: -3px;
+  top: 0;
+  bottom: 0;
+  width: 9px;
+  background: transparent;
+}
+.query-builder .items-div .the-form > .editor.histogram .left-handle {
+  left: 0;
+}
+.query-builder .items-div .the-form > .editor.histogram .right-handle {
+  right: 0;
+}
+.query-builder .items-div .the-form > .editor.histogram .greyout {
+  position: absolute;
+  top: 0;
+  bottom: -2px;
+  background: #555555;
+  pointer-events: none;
+  opacity: 0.55;
+}
+.query-builder .items-div .the-form > .editor.histogram .greyout.left {
+  left: 0;
+}
+.query-builder .items-div .the-form > .editor.histogram .greyout.right {
+  right: -3px;
+}
+.query-builder .items-div .the-form > .editor.histogram .drag-middle {
+  position: absolute;
+  top: 0;
+  bottom: -2px;
+  background: transparent;
+  cursor: move;
+}
+.query-builder .items-div .the-form > .editor.active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  z-index: 5;
+}
+.query-builder .items-div .the-form > .editor.active > input {
+  position: absolute;
+  left: 0;
+}
+.query-builder .items-div .the-form > .editor.property-name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  z-index: 3;
+}
+.query-builder .items-div .the-form > .editor.property-name > span {
+  position: absolute;
+  left: 35px;
+  top: 0;
+  right: 25%;
+  bottom: 0;
+  margin-right: 5px;
+  width: auto !important;
+}
+.query-builder .items-div .the-form > .editor.property-name.type-histogram > span {
+  left: 35px;
+  top: 55px;
+  right: 25px;
+  bottom: 0;
+  width: auto !important;
+}
+.query-builder .items-div .the-form > .editor.operator {
+  position: absolute;
+  left: 50%;
+  margin-left: -12.5%;
+  width: 25%;
+  z-index: 102;
+}
+.query-builder .items-div .the-form > .editor.operator > .select2 {
+  width: 100% !important;
+}
+.query-builder .items-div .the-form > .editor.value {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  height: 21px;
+  z-index: 101;
+}
+.query-builder .items-div .the-form > .editor.value > div {
+  position: absolute;
+  left: 25%;
+  top: 0;
+  right: 25px;
+  bottom: 0;
+  margin-left: 5px;
+}
+.query-builder .items-div .the-form > .editor.value > div.two-options {
+  right: 25px;
+}
+.query-builder .items-div .the-form > .editor.value > div.three-options {
+  right: 50px;
+}
+.query-builder .items-div .the-form > .editor.value input, .query-builder .items-div .the-form > .editor.value .select2:not(.bff-month-input) {
+  width: 100% !important;
+}
+.query-builder .items-div .the-form > .editor.value:hover .binding-apply {
+  opacity: 1;
+}
+.query-builder .items-div .the-form > .editor.value.type-histogram {
+  pointer-events: none;
+  height: 75px;
+}
+.query-builder .items-div .the-form > .editor.value2 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  right: 55px;
+  pointer-events: none;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap {
+  text-align: left;
+  margin-top: 55px;
+  margin-left: 30px;
+  width: 100% !important;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > input {
+  width: 50%;
+  pointer-events: all;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > input:first-child {
+  margin-left: -5px;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > input:last-child {
+  margin-left: 5px;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > div {
+  display: inline-block;
+  width: 50%;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > div:first-child {
+  margin-left: -5px;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > div:last-child {
+  margin-left: 5px;
+}
+.query-builder .items-div .the-form > .editor.value2 .inner-wrap > div > div > input {
+  width: 100%;
+  pointer-events: all;
+}
+.query-builder .items-div .the-form > .editor.value2.disabled .inner-wrap > div > input {
+  pointer-events: none !important;
+}
+.query-builder .items-div .the-form > .editor.histogram-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3px;
+  text-align: center;
+  color: white;
+  pointer-events: none;
+  padding-top: 15px;
+}
+.query-builder .items-div .the-form > .editor > *:not([type=checkbox]), .query-builder .items-div .the-form > .editor input:not([type=checkbox]) {
+  box-sizing: border-box !important;
+  min-height: 24px;
+}
+.query-builder .items-div .the-form > .editor .empty-div {
+  height: 19px !important;
+}
+.query-builder .items-div .the-form > .editor .empty-div.type-histogram {
+  height: 75px !important;
+}
+.query-builder .items-div .the-form > .editor input[type=checkbox] {
+  margin-top: 5px;
+}
+.query-builder .items-div .the-form > .editor .tag-editor {
+  padding: 2px 0;
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+}
+.query-builder .items-div .the-form > .editor .tag-editor li {
+  margin: 2px 1px;
+}
+.query-builder .items-div .the-form > .editor .tag-editor li input {
+  margin: -5px -4px -5px -4px;
+}
+.query-builder .items-div .the-form > .editor .tag-editor .tag-editor-spacer {
+  display: none;
+}
+.query-builder .items-div .the-form > .editor .tag-editor .tag-editor-tag {
+  margin-left: 0;
+}
+.query-builder .items-div .the-form > .editor .tag-editor .tag-editor-delete {
+  margin-right: 4px;
+}
+.query-builder .items-div .the-form .value-wrap > div.show-options {
+  margin-right: 30px;
+}
+.query-builder .items-div .the-form .value-wrap > select {
+  /* no need to show select because we always use select2 spans instead */
+  display: none;
+}
+.query-builder .items-div .the-form .value-wrap.no-bindings {
+  width: inherit;
+}
+.query-builder .items-div .the-form .select2-container .select2-select-all-checkbox {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 8px 6px;
+  cursor: pointer;
+}
+.query-builder .items-div .the-form .select2-container .select2-dropdown-arrow {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 8px 6px;
+  cursor: pointer;
+}
+.query-builder .items-div .the-form .select2-container.select2-container--open .select2-select-all-checkbox {
+  display: block;
+}
+.query-builder .items-div .the-form .select2-container.select2-container--open .select2-select-all-checkbox + .select2-selection__rendered {
+  margin-left: 14px;
+}
+.query-builder .items-div .the-form .select2-container.select2-container--open .select2-dropdown-arrow {
+  display: none;
+}
+.query-builder .items-div .the-form .select2-container .select2-selection--multiple {
+  min-height: 24px;
+}
+.query-builder .items-div .the-form .select2-container .select2-selection--multiple .select2-selection__rendered .summary {
+  margin-top: 4px;
+}
+.query-builder .items-div .the-form .select2-container .select2-selection--multiple .select2-selection__choice {
+  margin-top: 1px;
+  margin-bottom: -3px;
+}
+.query-builder .items-div .the-form .select2-container.counter-enabled {
+  width: auto !important;
+}
+.query-builder .items-div .the-form:hover {
+  cursor: move;
+}
+
+.bff-month-editor {
+  text-align: left;
+}
+.bff-month-editor .bff-month-input {
+  width: 50% !important;
+}
+.bff-month-editor .bff-month-input.bff-year {
+  float: right;
+  width: 49% !important;
+}
+
+.kx-light .query-builder .branch {
+  background: #bababa;
+}
+.kx-light .query-builder .group-toolbar svg g:nth-child(2) {
+  fill: black;
+  stroke: transparent;
+}
+.kx-light .query-builder .group-toolbar .align-right .ui-button:not(.ui-state-hover) {
+  color: black;
+}
+.kx-light .query-builder .group-toolbar .select2-selection {
+  background: transparent;
+  border-color: transparent;
+}
+.kx-light .query-builder .group-toolbar .add-rule-button-group .select2-selection__arrow > b {
+  border-color: black transparent;
+}
+.kx-light .query-builder .group-toolbar .add-rule {
+  background: white;
+}
+.kx-light .query-builder .items-div.group {
+  border-color: #bababa;
+}
+.kx-light .query-builder .items-div .drag-div {
+  fill: black;
+  stroke: transparent;
+}
+.kx-light .query-builder .items-div .binding-container i.binding-clear-dialog {
+  color: black;
+}
+.kx-light .query-builder .items-div .the-form > .editor .histogram-info {
+  color: black;
+}
+.kx-light .query-builder .items-div .the-form > .editor.histogram canvas {
+  background: #dcdcdc;
+  border: 1px solid #aeaeae;
+}
+.kx-light .query-builder .items-div .the-form > .editor.histogram .greyout {
+  background: #00aeff;
+  opacity: 0.2;
+}
+.kx-light .query-builder .items-div .the-form > .editor.histogram .left-handle, .kx-light .query-builder .items-div .the-form > .editor.histogram .right-handle {
+  background: #747474;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUVKO0VBQ0k7RUFDQTs7QUFHSjtFQUVJOztBQUVBO0VBQ0k7O0FBS0o7RUFDSTtFQUNBO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdJO0VBQ0k7RUFDQTs7QUFPUjtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTs7QUFHQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBOztBQUdBO0VBQ0k7O0FBSVI7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7O0FBS0o7RUFDSTs7QUFFQTtFQUNJOztBQUtaO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7RUFDQTs7QUFLQTtFQUNJOztBQU1KO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7O0FBSUE7RUFDSTs7QUFDQTtFQUNJOztBQUtaO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7O0FBRUE7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFLWjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFDSTs7QUFHSjtFQUNJOztBQUNBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUtSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFPQTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFLWjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0FBeVFBOztBQXZRQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdBO0VBR0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlSO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQU9SO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUtaO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBR1I7RUFDSTs7QUFHQTtFQUNJOztBQUdSO0VBU1E7RUFDQTs7QUFLWjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUlJO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBUWhCO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUtBO0VBQ0k7RUFDQTs7QUFJUjtFQUNJOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTs7QUFJSjtFQUNJO0VBcUJBO0VBQ0E7O0FBckJBO0VBQ0k7O0FBRUE7RUFDSTs7QUFJUjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFVSjtFQUNJOztBQUlSO0FBQ0k7RUFDQTs7QUFHSjtFQUNJOztBQU1KO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJQTtFQUNJOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTs7QUFJUjtFQUNJOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTtFQUNBOztBQUlSO0VBQ0k7O0FBSVI7RUFDSTs7O0FBTWhCO0VBQ0k7O0FBRUE7RUFDSTs7QUFFQTtFQUNJO0VBQ0E7OztBQU9KO0VBQ0k7O0FBTVE7RUFDSTtFQUNBOztBQUtSO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUtJO0VBQ0k7O0FBS1o7RUFDSTs7QUFLSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFJQTtFQUNJOztBQU1BO0VBQ0k7O0FBR0E7RUFDSTtFQUNBOztBQUVKO0VBQ0k7RUFDQTs7QUFFSjtFQUNJIiwiZmlsZSI6ImFwcC5jc3MifQ== */

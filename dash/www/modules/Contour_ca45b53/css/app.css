@@ -1,0 +1,54 @@
+.Dark svg > g > g > path.domain {
+  stroke: white;
+}
+.Dark svg > g > g > g.tick > text {
+  fill: white;
+}
+.Dark .Contour-app .cbaxis > g > text {
+  fill: #ffffff !important;
+}
+.Dark .Contour-app .cbtitle > text {
+  fill: #ffffff !important;
+}
+.Dark .Contour-app .xtick > text {
+  fill: #ffffff !important;
+}
+.Dark .Contour-app .ytick > text {
+  fill: #ffffff !important;
+}
+
+.Light svg > g > g > path.domain {
+  stroke: black;
+}
+.Light svg > g > g > g.tick > text {
+  fill: black;
+}
+.Light .Contour-app .cbaxis > g > text {
+  fill: #000000 !important;
+}
+.Light .Contour-app .cbtitle > text {
+  fill: #000000 !important;
+}
+.Light .Contour-app .xtick > text {
+  fill: #000000 !important;
+}
+.Light .Contour-app .ytick > text {
+  fill: #000000 !important;
+}
+
+.hoverlayer .hovertext .name {
+  display: none;
+}
+
+.modebar-container {
+  display: none !important;
+}
+
+.generic-tooltip.Contour-tooltip {
+  line-height: 1;
+  padding: 6px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 9999;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0k7O0FBRUo7RUFDSTs7QUFHQTtFQUNFOztBQUVGO0VBQ0k7O0FBRUo7RUFDSTs7QUFFSjtFQUNJOzs7QUFLUjtFQUNJOztBQUVKO0VBQ0k7O0FBR0E7RUFDRTs7QUFFRjtFQUNJOztBQUVKO0VBQ0k7O0FBRUo7RUFDSTs7O0FBTUo7RUFDSTs7O0FBS1o7RUFDSTs7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6ImFwcC5jc3MifQ== */

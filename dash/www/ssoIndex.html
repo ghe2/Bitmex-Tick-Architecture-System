@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var parser = document.createElement('a');
+            parser.href = location.href;
+            
+            // add the auth param to sarch
+            var search = "";
+            if (parser.search && parser.search.length > 0) {
+                // there are some params
+                search = parser.search + "&auth=saml";
+            } else {
+                // no params whatsoever
+                search  = "?auth=saml";
+            }
+
+            var newUrl = parser.protocol + "//" + parser.host + "/dashboards/" + search + parser.hash;
+            
+            window.location.href = newUrl;
+        </script>
+    </body>
+</html>

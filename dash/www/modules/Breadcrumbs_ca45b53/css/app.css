@@ -1,0 +1,109 @@
+.breadcrumb-container {
+  display: inline-block;
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: 18px;
+  line-height: 40px;
+}
+
+.breadcrumb {
+  display: inline-block;
+  line-height: 15px;
+}
+.breadcrumb > div {
+  position: relative;
+  border: 1px solid #505050;
+  border-right: none;
+  background: #2C2C2C;
+  font-family: "Helvetica", "Helvetica Neue", "Segoe UI", sans-serif;
+  float: left;
+  font-size: 12px;
+  margin: -3px -5px 0 0;
+  line-height: 11px;
+  height: 11px;
+  padding: 5px 20px 4px 20px;
+  cursor: pointer;
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.breadcrumb > div.placeholder {
+  border-left-color: transparent;
+  cursor: move;
+}
+.breadcrumb > div.placeholder span {
+  opacity: 0.4;
+}
+.breadcrumb > div > .header {
+  text-transform: uppercase;
+}
+.breadcrumb > div > .close {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+}
+.breadcrumb > div > .close :before {
+  line-height: 1.2em;
+}
+.breadcrumb > div > .home {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  padding-left: 4px;
+}
+.breadcrumb > div:first-child {
+  margin-left: -10px;
+  padding: 5px 0px 4px 10px;
+}
+.breadcrumb > div:after,
+.breadcrumb > div:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.breadcrumb > div:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #2C2C2C;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.breadcrumb > div:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-left-color: #505050;
+  border-width: 11px;
+  margin-top: -11px;
+}
+
+.Light .breadcrumb-app {
+  background: transparent;
+  color: #000;
+}
+.Light .breadcrumb-app .breadcrumb > div {
+  border-color: #6D6D6D;
+  background: #e0e0e0;
+  -moz-box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.2);
+}
+.Light .breadcrumb-app .breadcrumb > div:before {
+  border-left-color: #6D6D6D;
+}
+.Light .breadcrumb-app .breadcrumb > div:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #e0e0e0;
+}
+.Light .breadcrumb-app .breadcrumb > div:last-child:before {
+  border-left-color: #2d2d2d;
+}
+
+.Dark .breadcrumb-app {
+  color: #fff;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1BO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQSxZQXJCbUI7RUFzQm5CO0VBQ0E7RUFDQTtFQUNBO0VBQ0EsYUE1QlU7RUE2QlYsUUE3QlU7RUE4QlY7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7O0FBRUE7RUFDSTs7QUFJUjtFQUNJOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7O0FBR0o7QUFBQTtFQUVJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0EsbUJBckZtQjtFQXNGbkI7RUFDQTs7QUFHSjtFQUNJO0VBQ0EsbUJBN0ZlO0VBOEZmLGNBL0ZVO0VBZ0dWOzs7QUFLSjtFQUNJO0VBQ0E7O0FBSUk7RUFDSSxjQXpHWTtFQTBHWixZQXpHZ0I7RUEwR2hCO0VBQ0E7RUFDQTs7QUFFQTtFQUNJLG1CQWhIUTs7QUFtSFo7RUFDSTtFQUNBLG1CQXBIWTs7QUF3SFo7RUFDSTs7O0FBU3BCO0VBQ0kiLCJmaWxlIjoiYXBwLmNzcyJ9 */

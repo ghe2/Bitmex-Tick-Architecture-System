@@ -1,0 +1,11 @@
+.Blob {
+  position: absolute;
+}
+.Blob .mi {
+  padding-top: 1px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  text-indent: 0;
+  background-image: none !important;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6ImFwcC5jc3MifQ== */

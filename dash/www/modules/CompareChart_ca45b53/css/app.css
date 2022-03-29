@@ -1,0 +1,866 @@
+/*Global style variables*/
+/*Export link styles*/
+.Chart.dlgBasicPopup {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+}
+.Chart.dlgBasicPopup .dlgFileExporter input {
+  margin-top: 0.75em;
+  padding: 0.25em;
+  border-width: 1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-div.dark .tools-panel.disabled {
+  display: none;
+}
+.app-div.dark .tools-panel .pnlButtons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  font-size: 13px;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  color: #CCC;
+  /* dividers */
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot {
+  color: #CCC;
+  line-height: 20px;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress {
+  pointer-events: none;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled {
+  display: none;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a.lnkFullExport {
+  display: none !important;
+}
+.app-div.dark .tools-panel .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  color: #CCC;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+.app-div.light .tools-panel.disabled {
+  display: none;
+}
+.app-div.light .tools-panel .pnlButtons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  font-size: 13px;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  color: #000;
+  /* dividers */
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot {
+  color: #000;
+  line-height: 20px;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress {
+  pointer-events: none;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled {
+  display: none;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a.lnkFullExport {
+  display: none !important;
+}
+.app-div.light .tools-panel .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  color: #000;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+.app-div.light .chart {
+  background-color: #f8f8f8 !important;
+}
+
+.CompareChart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /**********
+  *  Brush
+  */
+  /**********
+  *  Legend
+  */
+  /**********
+  *  Axes
+  */
+  /**********
+  *  Brush
+  */
+  /**********
+  *  Bars
+  */
+  /********************
+  * TOOLTIP CSS
+  */
+  /*Give tooltips that old fade in transition by
+  putting a "with-transitions" class on the container div.
+  */
+}
+.CompareChart.dark {
+  background: transparent;
+  color: white;
+}
+.CompareChart.dark .pnlButtons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  font-size: 13px;
+}
+.CompareChart.dark .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  color: #CCC;
+  /* dividers */
+}
+.CompareChart.dark .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkCsvExport,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkExcelExport,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkDownloadScreenshot {
+  color: #CCC;
+  line-height: 20px;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkDownloadScreenshot:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress {
+  pointer-events: none;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled {
+  display: none;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a.lnkFullExport {
+  display: none !important;
+}
+.CompareChart.dark .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  color: #CCC;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+.CompareChart.dark .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+  background: transparent;
+}
+.CompareChart.dark .graph text {
+  fill: white;
+}
+.CompareChart.dark .graph .nvd3 .nv-background {
+  fill: #303030;
+  fill-opacity: 0;
+}
+.CompareChart.dark .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: 0.55;
+  shape-rendering: crispEdges;
+}
+.CompareChart.light {
+  background: #ffffff;
+  color: #000000;
+}
+.CompareChart.light .pnlButtons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  font-size: 13px;
+}
+.CompareChart.light .pnlButtons span.lnksExport {
+  padding: 0 1em;
+  color: #000;
+  /* dividers */
+}
+.CompareChart.light .pnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.CompareChart.light .pnlButtons span.lnksExport a.lnkCsvExport,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkExcelExport,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkDownloadScreenshot {
+  color: #000;
+  line-height: 20px;
+}
+.CompareChart.light .pnlButtons span.lnksExport a.lnkCsvExport:hover,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkExcelExport:hover,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkDownloadScreenshot:hover {
+  color: #00AEFF;
+  cursor: pointer;
+}
+.CompareChart.light .pnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.CompareChart.light .pnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress {
+  pointer-events: none;
+}
+.CompareChart.light .pnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.CompareChart.light .pnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled {
+  display: none;
+}
+.CompareChart.light .pnlButtons span.lnksExport a.lnkFullExport {
+  display: none !important;
+}
+.CompareChart.light .pnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  color: #000;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+.CompareChart.light .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+  background: white;
+}
+.CompareChart.light .graph text {
+  fill: black;
+}
+.CompareChart.light .graph .nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+}
+.CompareChart.light .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.55;
+  shape-rendering: crispEdges;
+}
+.CompareChart .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.CompareChart .frame.links-enabled {
+  top: 20px;
+}
+.CompareChart rect.mainrect {
+  stroke: transparent !important;
+}
+.CompareChart .loading {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 1000;
+}
+.CompareChart .d3-tip {
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  color: white !important;
+  border-radius: 6px;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  padding: 8px;
+}
+.CompareChart .title {
+  text-align: center;
+}
+.CompareChart.dark {
+  background: transparent;
+  color: white;
+}
+.CompareChart.dark .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+  background: transparent;
+}
+.CompareChart.dark .graph text {
+  fill: white;
+}
+.CompareChart.dark .graph .nvd3 .nv-background {
+  fill: #303030;
+  fill-opacity: 0;
+}
+.CompareChart.dark .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: 0.55;
+  shape-rendering: crispEdges;
+}
+.CompareChart.light {
+  background: #ffffff;
+  color: #000000;
+}
+.CompareChart.light .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+  background: white;
+}
+.CompareChart.light .graph text {
+  fill: black;
+}
+.CompareChart.light .graph .nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+}
+.CompareChart.light .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.55;
+  shape-rendering: crispEdges;
+}
+.CompareChart a.button {
+  border: 1px solid #111111;
+  background: #222222 url(../img/ui-bg_highlight-soft_10_222222_1x100.png) 50% 50% repeat-x;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 1em;
+  margin-right: 0.1em;
+  cursor: pointer;
+  text-align: center;
+  zoom: 1;
+  overflow: visible;
+  /* the overflow property removes extra width in IE */
+  text-decoration: none;
+  border-radius: 3px;
+}
+.CompareChart a.button:hover {
+  background: red;
+}
+.CompareChart .graphingArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.CompareChart .graphingIndex {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 13px;
+  width: 10%;
+  opacity: 1;
+}
+.CompareChart .graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /********************
+  * SVG CSS
+  */
+  /********************
+  Box shadow and border radius styling
+  */
+  /********************
+  * TOOLTIP CSS
+  */
+  /*Give tooltips that old fade in transition by
+  putting a "with-transitions" class on the container div.
+  */
+}
+.CompareChart .graph text {
+  fill: white;
+  font-size: 1em;
+}
+.CompareChart .graph svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Trying to get SVG to act like a greedy block in all browsers */
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.CompareChart .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+}
+.CompareChart .graph .nvtooltip.with-3d-shadow, .CompareChart .graph .with-3d-shadow .nvtooltip {
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.CompareChart .graph .nvtooltip {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.CompareChart .graph .nvtooltip.with-transitions, .CompareChart .graph .with-transitions .nvtooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+.CompareChart .graph .nvtooltip.x-nvtooltip,
+.CompareChart .graph .nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+.CompareChart .graph .nvtooltip.y-nvtooltip {
+  left: 0 !important;
+}
+.CompareChart .graph .nvtooltip h4 {
+  display: inline-block;
+}
+.CompareChart .graph .nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+  display: inline-block;
+}
+.CompareChart .graph .nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.CompareChart .graph .nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.CompareChart .graph .nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.CompareChart .graph .nvtooltip table td.key {
+  font-weight: normal;
+}
+.CompareChart .graph .nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+.CompareChart .graph .nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.CompareChart .graph .nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.CompareChart .graph .nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.CompareChart .graph .nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+.CompareChart .graph .nvd3 text {
+  font: normal 12px Arial;
+}
+.CompareChart .graph .nvd3 .title {
+  font: bold 14px Arial;
+}
+.CompareChart .graph .nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+}
+.CompareChart .graph .nvd3.nv-noData {
+  font-size: 18px;
+  font-weight: bold;
+}
+.CompareChart .nv-brush .extent {
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+.CompareChart .nvd3 .nv-legend .nv-series {
+  cursor: pointer;
+}
+.CompareChart .nvd3 .nv-legend .nv-disabled circle {
+  fill-opacity: 0;
+}
+.CompareChart .axis {
+  opacity: 1;
+}
+.CompareChart .axis.nv-disabled {
+  opacity: 0;
+}
+.CompareChart .nvd3 .nv-axis {
+  pointer-events: none;
+}
+.CompareChart .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.55;
+  shape-rendering: crispEdges;
+}
+.CompareChart .nvd3 .nv-axis path.domain {
+  stroke-opacity: 0.55;
+}
+.CompareChart .nvd3 .nv-axis.nv-x path.domain {
+  stroke-opacity: 0;
+}
+.CompareChart .nvd3 .nv-axis line {
+  fill: none;
+  stroke: rgba(160, 160, 160, 0.3);
+  shape-rendering: crispEdges;
+}
+.CompareChart .nvd3 .nv-axis .zero line,
+.CompareChart .nvd3 .nv-axis line.zero {
+  stroke-opacity: 0.55;
+}
+.CompareChart .nvd3 .x .nv-axis .nv-axisMaxMin text,
+.CompareChart .nvd3 .x2 .nv-axis .nv-axisMaxMin text,
+.CompareChart .nvd3 .x3 .nv-axis .nv-axisMaxMin text {
+  text-anchor: middle;
+}
+.CompareChart .nv-brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+.CompareChart .nvd3 .nv-bars rect {
+  fill-opacity: 0.75;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+  height: 100%;
+}
+.CompareChart .nvd3 .nv-bars rect.hover {
+  fill-opacity: 1;
+}
+.CompareChart .nvd3 .nv-bars .hover rect {
+  fill: lightblue;
+}
+.CompareChart .nvd3 .nv-bars text {
+  fill: rgba(0, 0, 0, 0);
+}
+.CompareChart .nvd3 .nv-bars .hover text {
+  fill: black;
+}
+.CompareChart .nvtooltip {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.CompareChart .nvtooltip.with-transitions, .CompareChart .with-transitions .nvtooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+.CompareChart .nvtooltip.x-nvtooltip,
+.CompareChart .nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+.CompareChart .nvtooltip.y-nvtooltip {
+  left: 0 !important;
+}
+.CompareChart .nvtooltip h4 {
+  display: inline-block;
+}
+.CompareChart .nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+  display: inline-block;
+}
+.CompareChart .nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.CompareChart .nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.CompareChart .nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.CompareChart .nvtooltip table td.key {
+  font-weight: normal;
+}
+.CompareChart .nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+.CompareChart .nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.CompareChart .nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.CompareChart .nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.CompareChart .nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+
+/********************
+* TOOLTIP CSS
+*/
+.nvtooltip {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*Give tooltips that old fade in transition by
+putting a "with-transitions" class on the container div.
+*/
+.nvtooltip.with-transitions, .with-transitions .nvtooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+
+.nvtooltip.x-nvtooltip,
+.nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+
+.nvtooltip.y-nvtooltip {
+  left: 0 !important;
+}
+
+.nvtooltip h4 {
+  display: inline-block;
+}
+
+.nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+  display: inline-block;
+}
+
+.nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+
+.nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+
+.nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+
+.nvtooltip table td.key {
+  font-weight: normal;
+}
+
+.nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+
+.nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+
+.nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+
+.nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9nbG9iYWxzLnNjc3MiLCJfYmFzaWNQb3B1cC5zY3NzIiwiYXBwLnNjc3MiLCJfcG5sQnV0dG9ucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFDO0FBRUQ7QUNGQztFQUVHO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0k7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUNMQTtFQUFZOztBQ1R2QjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDTztFQUNBLE9ERmdCO0FDcUNoQjs7QUFqQ0E7RUFDSTs7QUFHSjtBQUFBO0FBQUE7RUFHSSxPRFhZO0VDWVosYURmQzs7QUNpQkQ7QUFBQTtBQUFBO0VBQ0ksT0RuQkg7RUNvQkc7O0FBR0o7QUFBQTtBQUFBO0VBQ1I7RUFDQTtFQUNBO0VBQ0E7O0FBR1E7QUFBQTtBQUFBO0VBQ1I7O0FBR1E7QUFBQTtBQUFBO0VBQ0k7O0FBR1I7RUFDSTs7QUFJQTtFQUNJO0VBQ0EsT0R6Q1E7RUMwQ1I7RUFDQTs7QUQ5QlI7RUFBWTs7QUNwQnZCO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNPO0VBQ0EsT0RTZ0I7QUMwQmhCOztBQWpDQTtFQUNJOztBQUdKO0FBQUE7QUFBQTtFQUdJO0VBQ0EsYURmQzs7QUNpQkQ7QUFBQTtBQUFBO0VBQ0ksT0RuQkg7RUNvQkc7O0FBR0o7QUFBQTtBQUFBO0VBQ1I7RUFDQTtFQUNBO0VBQ0E7O0FBR1E7QUFBQTtBQUFBO0VBQ1I7O0FBR1E7QUFBQTtBQUFBO0VBQ0k7O0FBR1I7RUFDSTs7QUFJQTtFQUNJO0VBQ0EsT0Q5QlE7RUMrQlI7RUFDQTs7QUQzQlo7RUFDSTs7O0FBS1o7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBMllDO0FBQUE7QUFBQTtBQVVBO0FBQUE7QUFBQTtBQWFBO0FBQUE7QUFBQTtBQWtEQTtBQUFBO0FBQUE7QUFVQTtBQUFBO0FBQUE7QUFzQ0Q7QUFBQTtBQUFBO0FBbUNBO0FBQUE7QUFBQTs7QUFyaUJHO0VBS0Y7RUFDQTs7QUMxQ0Q7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ087RUFDQSxPRDRCZ0I7QUNPaEI7O0FBakNBO0VBQ0k7O0FBR0o7QUFBQTtBQUFBO0VBR0ksT0RtQlk7RUNsQlosYURmQzs7QUNpQkQ7QUFBQTtBQUFBO0VBQ0ksT0RuQkg7RUNvQkc7O0FBR0o7QUFBQTtBQUFBO0VBQ1I7RUFDQTtFQUNBO0VBQ0E7O0FBR1E7QUFBQTtBQUFBO0VBQ1I7O0FBR1E7QUFBQTtBQUFBO0VBQ0k7O0FBR1I7RUFDSTs7QUFJQTtFQUNJO0VBQ0EsT0RYUTtFQ1lSO0VBQ0E7O0FETmpCO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRDtFQUNDOztBQUVEO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUtIO0VBS0M7RUFDQTs7QUM1RUQ7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ087RUFDQSxPRDhEaUI7QUMzQmpCOztBQWpDQTtFQUNJOztBQUdKO0FBQUE7QUFBQTtFQUdJLE9EcURhO0VDcERiLGFEZkM7O0FDaUJEO0FBQUE7QUFBQTtFQUNJLE9EbkJIO0VDb0JHOztBQUdKO0FBQUE7QUFBQTtFQUNSO0VBQ0E7RUFDQTtFQUNBOztBQUdRO0FBQUE7QUFBQTtFQUNSOztBQUdRO0FBQUE7QUFBQTtFQUNJOztBQUdSO0VBQ0k7O0FBSUE7RUFDSTtFQUNBLE9EdUJTO0VDdEJUO0VBQ0E7O0FENEJqQjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFJSDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRU07RUFDSSxLQTNHSzs7QUErR2hCO0VBQ0M7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFFQztFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFLSDtFQUNDO0VBQ0E7O0FBRUM7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVEO0VBQ0M7O0FBRUQ7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBS0g7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBQW1CO0VBQ25CO0VBQ0E7O0FBRUE7RUFDQzs7QUFJRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUQ7RUFFQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUVBO0FBQUE7QUFBQTtBQWlDQTtBQUFBO0FBQUE7QUFhQTtBQUFBO0FBQUE7QUFtQ0E7QUFBQTtBQUFBOztBQTdFQTtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBTUQ7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7O0FBT0Q7RUFFQztFQUVBO0VBQ0E7RUFDQTtFQUNBO0FBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFPRDtFQUNDO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7QUFHRDtBQUFBO0VBRUM7O0FBR0Q7RUFDQzs7QUFFRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFJRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBUUQ7RUFDQztFQUNBOztBQVFEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFRRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtBQUFBO0VBRUM7O0FBSUQ7QUFBQTtBQUFBO0VBR0M7O0FBUUQ7RUFDQztFQUNBOztBQVlEO0VBRUM7RUFFQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQVdGO0VBRUM7RUFFQTtFQUNBO0VBQ0E7RUFDQTtBQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBT0Q7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7O0FBR0Q7QUFBQTtFQUVDOztBQUdEO0VBQ0M7O0FBRUQ7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBSUQ7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBRUQ7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOzs7QUFLRDtBQUFBO0FBQUE7QUFJQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7QUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFJQTtBQUFBO0FBQUE7QUFHQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7O0FBR0E7QUFBQTtFQUVBOzs7QUFHQTtFQUNBOzs7QUFFQTtFQUNBOzs7QUFHQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHQTtFQUNBO0VBQ0E7OztBQUdBO0VBQ0E7RUFDQTs7O0FBSUE7RUFDQTtFQUNBOzs7QUFHQTtFQUNBOzs7QUFFQTtFQUNBO0VBQ0E7OztBQUdBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdBO0VBQ0E7RUFDQTs7O0FBR0E7RUFDQTtFQUNBIiwiZmlsZSI6ImFwcC5jc3MifQ== */

@@ -1,0 +1,68 @@
+/**/
+.treeview-app .treeview-container.search-disabled .treeview-search {
+  display: none;
+}
+.treeview-app .treeview-container.search-disabled .treeview-elem {
+  top: 0px;
+}
+.treeview-app .treeview-container.hide-checkboxes i.jstree-icon.jstree-checkbox {
+  display: none;
+}
+.treeview-app .treeview-container .treeview-search {
+  width: 99.5%;
+  height: 25px;
+  border: 1px solid #5a5a5a;
+}
+.treeview-app .treeview-container .treeview-search .fa-search {
+  margin: 7px -19px 0px 7px;
+  color: #ccc;
+  position: absolute;
+  top: 2px;
+}
+.treeview-app .treeview-container .treeview-search .fa-times {
+  margin-top: 2px;
+}
+.treeview-app .treeview-container .treeview-search .search {
+  height: 25px;
+  background: #424242;
+  border-width: 0px;
+  color: white;
+  padding: 4px 23px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.treeview-app .treeview-container .treeview-search .clearSearch {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  cursor: pointer;
+}
+.treeview-app .treeview-container .jstree-default .jstree-icon.jstree-themeicon-custom {
+  background-image: none;
+}
+.treeview-app .treeview-container .treeview-elem {
+  overflow: auto;
+  top: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 8px;
+}
+.treeview-app .treeview-container .jstree .jstree-search {
+  color: #ffffff;
+}
+
+.kx-light .treeview-app .treeview-search {
+  border: 1px solid #bababa;
+}
+.kx-light .treeview-app .treeview-search .search {
+  background: #ffffff;
+  color: #000000;
+}
+.kx-light .treeview-app .treeview-search .fa-times {
+  color: #424242;
+}
+.kx-light .treeview-app .jstree .jstree-search {
+  color: #000000;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBSVk7RUFDSTs7QUFFSjtFQUNJOztBQUlKO0VBQ0k7O0FBR1I7RUFDSTtFQUNBO0VBQ0E7O0FBQ0E7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFFSjtFQUNJOztBQUVKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUo7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHUjtFQUNJOztBQUVKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVKO0VBQ0k7OztBQU1SO0VBQ0k7O0FBQ0E7RUFDSTtFQUNBOztBQUVKO0VBQ0k7O0FBR1I7RUFDSSIsImZpbGUiOiJhcHAuY3NzIn0= */

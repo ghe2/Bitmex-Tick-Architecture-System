@@ -1,0 +1,154 @@
+.RangeSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.RangeSlider .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.RangeSlider .title {
+  text-align: center;
+}
+.RangeSlider .sliderAxis path {
+  stroke: #ffffff;
+  fill: transparent;
+}
+.RangeSlider .sliderAxis line {
+  stroke: #ffffff;
+}
+.RangeSlider.dark {
+  color: white;
+}
+.RangeSlider.dark .sliderAxis path {
+  stroke: #ffffff;
+  fill: transparent;
+}
+.RangeSlider.dark .sliderAxis line {
+  stroke: #ffffff;
+}
+.RangeSlider.dark .graph text {
+  fill: white;
+}
+.RangeSlider.light {
+  color: #000000;
+}
+.RangeSlider.light .sliderAxis path {
+  stroke: #4D4D4D;
+  fill: transparent;
+}
+.RangeSlider.light .sliderAxis line {
+  stroke: #4D4D4D;
+}
+.RangeSlider.light .graph text {
+  fill: black;
+}
+.RangeSlider a.button {
+  border: 1px solid #111111;
+  background: #222222 url(../img/ui-bg_highlight-soft_10_222222_1x100.png) 50% 50% repeat-x;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 1em;
+  margin-right: 0.1em;
+  cursor: pointer;
+  text-align: center;
+  zoom: 1;
+  overflow: visible;
+  /* the overflow property removes extra width in IE */
+  text-decoration: none;
+  border-radius: 3px;
+}
+.RangeSlider a.button:hover {
+  background: red;
+}
+.RangeSlider .graphingArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.RangeSlider .crumbs {
+  padding: 0;
+  border-radius: 0px;
+  margin: 0;
+  white-space: nowrap;
+  display: none;
+}
+.RangeSlider .crumbs span {
+  display: inline-block;
+  line-height: 20px;
+  height: 20px;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0 16px;
+  margin: 2px 0;
+  vertical-align: top;
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+}
+.RangeSlider .crumbs span:last-child {
+  position: relative;
+  background: #00AEFF;
+  color: white;
+  border-radius: 20px;
+  padding: 0 16px;
+}
+.RangeSlider .crumbs span:last-child:before, .RangeSlider .crumbs span:last-child:after {
+  content: "";
+  line-height: 0;
+  border: 0px solid red;
+  border-right: none;
+  border-left: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.RangeSlider .crumbs span:last-child:before {
+  left: -17px;
+  border-left: solid transparent 17px;
+}
+.RangeSlider .graphingIndex {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 13px;
+  width: 10%;
+  opacity: 1;
+}
+.RangeSlider .graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /********************
+  * SVG CSS
+  */
+}
+.RangeSlider .graph text {
+  fill: black;
+  font-size: 0.75em;
+}
+.RangeSlider .graph svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Trying to get SVG to act like a greedy block in all browsers */
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQzs7QUFJTTtFQUNJO0VBQ0E7O0FBRUo7RUFDSTs7QUFJWDtFQUNDOztBQUdVO0VBQ0k7RUFDQTs7QUFFSjtFQUNJOztBQUtiO0VBQ0M7O0FBTUg7RUFDQzs7QUFFVTtFQUNJO0VBQ0E7O0FBRUo7RUFDSTs7QUFLYjtFQUNDOztBQUtIO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUFtQjtFQUNuQjtFQUNBOztBQUVBO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBRUE7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUQ7RUFDQztFQUNBOztBQUtGO0VBRUM7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUFFQTtBQUFBO0FBQUE7O0FBSUE7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiJhcHAuY3NzIn0= */

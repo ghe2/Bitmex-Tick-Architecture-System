@@ -1,0 +1,467 @@
+.quick-view .flex-panel .advanced-item:hover > .remove-btn,
+.quick-view .flex-panel:hover > .switch-button {
+  display: none !important;
+}
+
+#appdiv:not(.buildMode) .flex-panel .advanced-item:hover > .remove-btn {
+  display: none !important;
+}
+
+.flex-panel > .worksheet > .grid-stack {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item {
+  box-sizing: border-box;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item .drop-show {
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  text-align: center;
+  vertical-align: middle;
+  background: #00aeff;
+  opacity: 0.3;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.highlight .drop-show {
+  display: block;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one {
+  order: 1;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content {
+  position: relative;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content:empty {
+  display: none;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .title-div {
+  order: 1;
+  flex: none;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  position: relative !important;
+  order: 2;
+  flex: auto;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .app-div > .query-builder {
+  position: relative !important;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.two {
+  order: 2;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.two > .grid-stack-item-content {
+  position: relative;
+  height: 100%;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item.placeholder {
+  background: #00aeff;
+  opacity: 0.3;
+  pointer-events: none;
+  display: none;
+}
+.flex-panel.horizontaltop > .worksheet > .grid-stack {
+  flex-direction: column;
+}
+.flex-panel.horizontaltop > .worksheet > .grid-stack > .advanced-item.one {
+  flex: none;
+}
+.flex-panel.horizontaltop > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  width: 100%;
+}
+.flex-panel.horizontaltop > .worksheet > .grid-stack > .advanced-item.two {
+  flex: auto;
+}
+.flex-panel.horizontalbottom > .worksheet > .grid-stack {
+  flex-direction: column-reverse;
+}
+.flex-panel.horizontalbottom > .worksheet > .grid-stack > .advanced-item.one {
+  flex: none;
+}
+.flex-panel.horizontalbottom > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  width: 100%;
+}
+.flex-panel.horizontalbottom > .worksheet > .grid-stack > .advanced-item.two {
+  flex: auto;
+}
+.flex-panel.verticalleft > .worksheet > .grid-stack {
+  flex-direction: row;
+}
+.flex-panel.verticalleft > .worksheet > .grid-stack > .advanced-item.one {
+  flex: none;
+}
+.flex-panel.verticalleft > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content {
+  height: 100%;
+}
+.flex-panel.verticalleft > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div {
+  height: 99%;
+}
+.flex-panel.verticalleft > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  height: 100%;
+}
+.flex-panel.verticalleft > .worksheet > .grid-stack > .advanced-item.two {
+  flex: auto;
+}
+.flex-panel.verticalright > .worksheet > .grid-stack {
+  flex-direction: row-reverse;
+}
+.flex-panel.verticalright > .worksheet > .grid-stack > .advanced-item.one {
+  flex: none;
+}
+.flex-panel.verticalright > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content {
+  height: 100%;
+}
+.flex-panel.verticalright > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div {
+  height: 99%;
+}
+.flex-panel.verticalright > .worksheet > .grid-stack > .advanced-item.one > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  height: 100%;
+}
+.flex-panel.verticalright > .worksheet > .grid-stack > .advanced-item.two {
+  flex: auto;
+}
+.flex-panel > .switch-button {
+  pointer-events: all;
+  background: transparent;
+  border-color: transparent;
+  display: none;
+}
+.flex-panel:hover > .switch-button.enabled {
+  display: block;
+}
+
+.flex-panel .grid-stack .grid-stack > .advanced-item:hover > .remove-btn {
+  right: 13px;
+}
+
+.flex-panel .grid-stack .grid-stack .grid-stack > .advanced-item:hover > .remove-btn {
+  right: 20px;
+}
+
+.flex-panel > .configure-widgets {
+  display: none;
+}
+.flex-panel > .configure-widgets > .show-configure-menu {
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+  display: inline-block;
+  padding: 6px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  white-space: nowrap;
+  z-index: 2;
+}
+.flex-panel > .configure-widgets > .show-configure-menu > * {
+  opacity: 0.8;
+}
+.flex-panel > .configure-widgets > .show-configure-menu:hover > * {
+  opacity: 1;
+}
+.flex-panel > .configure-widgets > .show-configure-menu .fa-caret-down {
+  transition: transform 0.2s;
+}
+.flex-panel > .configure-widgets > .configure-widgets-menu {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  z-index: 3;
+}
+.flex-panel > .configure-widgets > .configure-widgets-menu li:not(.ui-menu-divider) {
+  padding: 7px;
+}
+.flex-panel > .configure-widgets.showing-menu > .show-configure-menu > * {
+  opacity: 1;
+}
+.flex-panel > .configure-widgets.showing-menu > .show-configure-menu .fa-caret-down {
+  transform: rotate(180deg);
+}
+.flex-panel > .configure-widgets.showing-menu > .configure-widgets-menu {
+  display: block;
+}
+.flex-panel > .worksheet > .grid-stack.build-off {
+  background-color: transparent;
+  transition: none;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item {
+  background: transparent;
+  min-height: 0px;
+  position: relative;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .remove-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  font-size: 1.3em;
+  color: #b2b2b2;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+  text-shadow: -1px -1px 0 #101010, 1px -1px 0 #101010, -1px 1px 0 #101010, 1px 1px 0 #101010;
+}
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .remove-btn:hover {
+  color: #1eb8ff;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item,
+.flex-panel > .worksheet > .grid-stack > .advanced-item {
+  box-sizing: border-box;
+  z-index: 1;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.build-off,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.build-off {
+  /*border: none !important;*/
+  background-color: transparent;
+  transition: none;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.build-off::before,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.build-off::before {
+  border: none !important;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.build-off .grid-stack-item-content .component-build-view,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.build-off .grid-stack-item-content .component-build-view {
+  pointer-events: all;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.build-off > .remove-btn,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.build-off > .remove-btn {
+  display: none !important;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.selected:not(.build-off),
+.flex-panel > .worksheet > .grid-stack > .advanced-item.selected:not(.build-off) {
+  z-index: 5;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.selected:not(.build-off)::before,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.selected:not(.build-off)::before {
+  content: " ";
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 2px solid #1eb8ff;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.selected:not(.build-off):hover > .ui-resizable-se,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.selected:not(.build-off):hover > .ui-resizable-se {
+  display: block !important;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item.selected:not(.build-off):hover > .remove-btn,
+.flex-panel > .worksheet > .grid-stack > .advanced-item.selected:not(.build-off):hover > .remove-btn {
+  display: block;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .ui-resizable-se,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .ui-resizable-se {
+  display: none !important;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .grid-stack-item-content,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .grid-stack-item-content {
+  pointer-events: auto;
+  /* needed for gridstack drag */
+  z-index: 0;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .grid-stack-item-content .component-build-view,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .grid-stack-item-content .component-build-view {
+  pointer-events: none;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .grid-stack-item-content .component-build-view .app-div.flex-panel,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .grid-stack-item-content .component-build-view .app-div.flex-panel {
+  pointer-events: auto;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .grid-stack-item-content,
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .placeholder-content,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .grid-stack-item-content,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .placeholder-content {
+  left: 0px;
+  right: 0px;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .remove-btn,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .remove-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  font-size: 1.3em;
+  color: #b2b2b2;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+  text-shadow: -1px -1px 0 #101010, 1px -1px 0 #101010, -1px 1px 0 #101010, 1px 1px 0 #101010;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item > .remove-btn:hover,
+.flex-panel > .worksheet > .grid-stack > .advanced-item > .remove-btn:hover {
+  color: #1eb8ff;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item .ui-resizable-se,
+.flex-panel > .worksheet > .grid-stack > .advanced-item .ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  bottom: 6px;
+  right: 6px;
+  cursor: se-resize;
+  z-index: 20;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: transparent;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item .ui-resizable-se::before,
+.flex-panel > .worksheet > .grid-stack > .advanced-item .ui-resizable-se::before {
+  content: " ";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 4px;
+  height: 4px;
+  border: 4px solid #b2b2b2;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.flex-panel > .worksheet > .grid-stack > .grid-stack-item .ui-resizable-se:hover::before,
+.flex-panel > .worksheet > .grid-stack > .advanced-item .ui-resizable-se:hover::before {
+  border-color: #1eb8ff;
+}
+.flex-panel > .worksheet > .grid-stack .grid-stack-placeholder {
+  -webkit-transition: left 0.3s, top 0.3s, height 0.3s, width 0.3s;
+  -moz-transition: left 0.3s, top 0.3s, height 0.3s, width 0.3s;
+  -ms-transition: left 0.3s, top 0.3s, height 0.3s, width 0.3s;
+  -o-transition: left 0.3s, top 0.3s, height 0.3s, width 0.3s;
+  transition: left 0.3s, top 0.3s, height 0.3s, width 0.3s;
+  z-index: 0;
+}
+.flex-panel .worksheet-highlight-item.now-over,
+.flex-panel .row-highlight-item,
+.flex-panel .highlight-item {
+  background-color: #484848 !important;
+  border: 1px dashed #606060 !important;
+}
+.flex-panel .highlight-viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.flex-panel .highlight-viewport .highlight-layer {
+  position: relative;
+}
+.flex-panel .highlight-viewport .highlight-layer .highlight-item {
+  position: absolute;
+  background-color: #adc7f7;
+  display: none;
+}
+.flex-panel .row-highlight-item {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 12px;
+  background-color: green;
+  border: 1px dashed #1eb8ff !important;
+  z-index: 99;
+  pointer-events: none;
+  display: none;
+}
+.flex-panel .worksheet-highlight-item {
+  background-color: transparent;
+  display: none;
+  pointer-events: none;
+}
+.flex-panel .worksheet-highlight-item.now-over {
+  background-color: green;
+}
+.flex-panel > .worksheet {
+  pointer-events: auto;
+  z-index: -1;
+}
+.flex-panel .visual-indicator {
+  position: absolute;
+  display: none;
+  background: #00aeff;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 99;
+}
+.flex-panel .visual-indicator.horizontaltop {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 65%;
+  display: block;
+}
+.flex-panel .visual-indicator.horizontalbottom {
+  left: 0;
+  right: 0;
+  top: 65%;
+  bottom: 0;
+  display: block;
+}
+.flex-panel .visual-indicator.verticalleft {
+  left: 0;
+  right: 65%;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+.flex-panel .visual-indicator.verticalright {
+  left: 65%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+
+.quick-view .no-widgets-info,
+.quick-view .worksheet-highlight-item {
+  display: none;
+}
+.quick-view.buildMode .flex-panel.user-configurable > .configure-widgets {
+  display: block;
+}
+.quick-view.buildMode .flex-panel.user-configurable > .configure-widgets:not(.widgets-available) .configure-widgets-menu .ui-widget-header,
+.quick-view.buildMode .flex-panel.user-configurable > .configure-widgets:not(.widgets-available) .configure-widgets-menu .ui-menu-divider {
+  display: none;
+}
+.quick-view.buildMode .flex-panel.user-configurable > .worksheet > .grid-stack > .grid-stack-item > .grid-stack-item-content {
+  pointer-events: auto;
+}
+.quick-view.buildMode .flex-panel.user-configurable > .worksheet > .grid-stack > .grid-stack-item > .grid-stack-item-content > .component-build-view {
+  pointer-events: none;
+}
+.quick-view.buildMode .flex-panel:not(.user-configurable) > .worksheet > .grid-stack > .grid-stack-item:not([data-componentid=Panel]) {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.quick-dash.buildMode .flex-panel > .worksheet > .grid-stack > .advanced-item > .grid-stack-item-content > .component-build-view {
+  pointer-events: auto;
+}
+
+.quick-dash:not(.buildMode) .flex-panel .no-widgets-info,
+.quick-dash:not(.buildMode) .flex-panel .worksheet-highlight-item {
+  display: none;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpQkE7QUFBQTtFQUVJOzs7QUFHSjtFQUNJOzs7QUFJQTtFQUNJO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlBO0VBQ0k7O0FBSVI7RUFDSTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7O0FBSUE7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUdKO0VBRUk7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFReEI7RUFDSTs7QUFFQTtFQUNJO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFNUjtFQUNJOztBQUdJO0VBQ0k7O0FBT1k7RUFFSTs7QUFPcEI7RUFDSTs7QUFPWjtFQUNJOztBQUdJO0VBQ0k7O0FBT1k7RUFFSTs7QUFPcEI7RUFDSTs7QUFPWjtFQUNJOztBQUdJO0VBQ0k7O0FBRUE7RUFDSTs7QUFHSTtFQUNJOztBQUlBO0VBRUk7O0FBT3BCO0VBQ0k7O0FBT1o7RUFDSTs7QUFHSTtFQUNJOztBQUVBO0VBQ0k7O0FBR0k7RUFDSTs7QUFJQTtFQUVJOztBQU9wQjtFQUNJOztBQU1oQjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUlBO0VBQ0k7OztBQU9KO0VBQ0k7OztBQU9KO0VBQ0k7OztBQU1SO0VBQ0k7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQU1BO0VBQ0k7O0FBR0o7RUFDSTs7QUFJUjtFQUNJOztBQU1SO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHQTtFQUNJLE9BcFdPOztBQXlXbkI7QUFBQTtFQUVJO0VBQ0E7O0FBRUE7QUFBQTtBQUNJO0VBQ0E7RUFDQTs7QUFFQTtBQUFBO0VBQ0k7O0FBSUE7QUFBQTtFQUNJOztBQUlSO0FBQUE7RUFDSTs7QUFJUjtBQUFBO0VBQ0k7O0FBRUE7QUFBQTtFQWxZWjtFQUNBO0VBRUE7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0EsUUF5WGdCOztBQUlBO0FBQUE7RUFDSTs7QUFHSjtBQUFBO0VBQ0k7O0FBS1o7QUFBQTtFQUNJOztBQUdKO0FBQUE7RUFDSTtBQUFzQjtFQUN0Qjs7QUFFQTtBQUFBO0VBQ0k7O0FBRUE7QUFBQTtFQUNJOztBQUtaO0FBQUE7QUFBQTtBQUFBO0VBRUk7RUFDQTs7QUFHSjtBQUFBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdBO0FBQUE7RUFDSSxPQXhiTzs7QUE0YmY7QUFBQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0FBQUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7QUFBQTtFQUNJLGNBemRHOztBQStkbkI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSVI7QUFBQTtBQUFBO0VBSUk7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7O0FBS1o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUVBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFFQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBRUE7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUVBOzs7QUFNUjtBQUFBO0VBRUk7O0FBTVE7RUFDSTs7QUFJUTtBQUFBO0VBRUk7O0FBV0o7RUFDSTs7QUFFQTtFQUNJOztBQVVoQjtFQUNJO0VBQ0E7OztBQWFKO0VBQ0k7OztBQVNwQjtBQUFBO0VBRUkiLCJmaWxlIjoibWFpbi5jc3MifQ== */

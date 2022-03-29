@@ -1,0 +1,59 @@
+Long,Lat,message,alert_Title,alert_Color,process,title,alert_subType,alert_icon,alert_timeAgo,Type,ID,Threshold,icon_Color,icon
+-92.6616,16.7342,warning,Temperature over threshold,#FFD859,CIP,Control RM 3,"ID: 35, Zone: Batch Tank",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-92.6613,16.7342,error,Conductivity over threshold,red,CIP,Control RM 45,"ID: 13, Zone: Phosphoric Acid",error,1 hr ago.,Marker,13,Conductivity,red,error
+-92.6615,16.7342,warning,Flow over threshold,#ED5602,CIP,Control RM 23,"ID: 13, Zone: Sugar Syrup",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-92.6611,16.7342,,Hong Kong,#546E7A,,Hong Kong,,,,Plant_Marker,0,Hong Kong,#546E7A,
+-92.976,17.9592,warning,Temperature over threshold,#FFD859,CIP,Control RM 10,"ID: 35, Zone: Phosphoric Acid",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-92.9755,17.959,error,Conductivity over threshold,red,CIP,Control RM 3,"ID: 13, Zone: Chlorine",error,1 hr ago.,Marker,13,Conductivity,red,error
+-92.9763,17.959,warning,Flow over threshold,#ED5602,CIP,Control RM 38,"ID: 13, Zone: Treated Water",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-92.9759,17.9591,,Xi'an,#546E7A,,Xi'an,,,,Plant_Marker,0,Xi'an,#546E7A,
+-101.2149,19.6871,warning,Temperature over threshold,#FFD859,CIP,Control RM 34,"ID: 35, Zone: Treated Water",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-101.215,19.6871,error,Conductivity over threshold,red,CIP,Control RM 26,"ID: 13, Zone: Carbonator",error,1 hr ago.,Marker,13,Conductivity,red,error
+-101.2151,19.6871,warning,Flow over threshold,#ED5602,CIP,Control RM 9,"ID: 13, Zone: Treated Water",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-101.2153,19.6871,,Kuala Lumpur,#546E7A,,Kuala Lumpur,,,,Plant_Marker,0,Kuala Lumpur,#546E7A,
+-98.121,19.4196,warning,Temperature over threshold,#FFD859,CIP,Control RM 31,"ID: 35, Zone: Treated Water",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-98.1195,19.4197,error,Conductivity over threshold,red,CIP,Control RM 11,"ID: 13, Zone: Mixing Tank",error,1 hr ago.,Marker,13,Conductivity,red,error
+-98.1212,19.4189,warning,Flow over threshold,#ED5602,CIP,Control RM 44,"ID: 13, Zone: Sterlization",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-98.1208,19.4191,,Manila,#546E7A,,Planta Pizaco,,,,Plant_Marker,0,Manila,#546E7A,
+-96.9425,19.4532,warning,Temperature over threshold,#FFD859,CIP,Control RM 44,"ID: 35, Zone: Batch Tank",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-96.9437,19.4532,error,Conductivity over threshold,red,CIP,Control RM 35,"ID: 13, Zone: Phosphoric Acid",error,1 hr ago.,Marker,13,Conductivity,red,error
+-96.9433,19.4534,warning,Flow over threshold,#ED5602,CIP,Control RM 13,"ID: 13, Zone: Dosing Station",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-96.943,19.453,,Beijing,#546E7A,,Beijing,,,,Plant_Marker,0,Beijing,#546E7A,
+-97.9579,22.4607,warning,Temperature over threshold,#FFD859,CIP,Control RM 31,"ID: 35, Zone: Sterlization",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-97.9566,22.4657,error,Conductivity over threshold,red,CIP,Control RM 18,"ID: 13, Zone: Flavour",error,1 hr ago.,Marker,13,Conductivity,red,error
+-97.9526,22.4627,warning,Flow over threshold,#ED5602,CIP,Control RM 27,"ID: 17, Zone: Treated Water",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-97.9586,22.4667,,Seoul,#546E7A,,Seoul,,,,Plant_Marker,0,Seoul,#546E7A,
+-99.188,19.6628,,Kyoto,#546E7A,,Kyoto,,,,Plant_Marker,0,Kyoto,#546E7A,
+-99.1875,19.6625,warning,Temperature over threshold,#FFD859,CIP,Control RM 34,"ID: 35, Zone: Phosphoric Acid",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-99.1878,19.6633,error,Conductivity over threshold,red,CIP,Control RM 25,"ID: 13, Zone: Sugar Syrup",error,1 hr ago.,Marker,13,Conductivity,red,error
+-99.1875,19.6619,warning,Flow over threshold,#ED5602,CIP,Control RM 28,"ID: 17, Zone: Carbon filter",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-101.552,21.1027,,Shanghai,#546E7A,,Shanghai,,,,Plant_Marker,0,Shanghai,#546E7A,
+-101.5511,21.1009,error,Conductivity over Threshold,red,CIP,Control RM 25,"ID: 18, Zone: Sugar Syrup",error,1 hr ago.,Marker,18,Conductivity,red,error
+-101.552,21.1018,error,Ozone over threshold,#ED5602,CIP,Control RM 8,"ID: 50, Zone: Phosphoric Acid",warning,1 hr ago.,Marker,50,Ozone,#ED5602,warning
+-101.5503,21.1029,warning,Flow over threshold,red,CIP,Control RM 12,"ID: 105, Zone: Flavour",error,1 hr ago.,Marker,105,Flow,red,error
+-101.5528,21.1039,error,Flow over threshold,red,CIP,Control RM 12,"ID: 92, Zone: Treated Water",warning,1 hr ago.,Marker,92,Flow,red,warning
+-101.5525,21.102,warning,Flow over threshold,#ED5602,CIP,Control RM 3,"ID: 22, Zone: Mixing Tank",warning,1 hr ago.,Marker,22,Flow,#ED5602,warning
+-101.553,21.1035,warning,Temperature over threshold,red,CIP,Control RM 18,"ID: 33, Zone: Particulate Remover",error,1 hr ago.,Marker,33,Temperature,red,error
+-101.5503,21.1041,error,"Temperature over threshold,Conductivity over Threshold,Ozone over threshold","red,#ED5602,#FFD859",CIP,Control RM 14,"ID: 5, Zone: Phosphoric Acid","error,warning,warning","1 hr ago.,1 hr ago.,1 hr ago.",Marker,5,Temperature,red,error
+-101.5507,21.1023,warning,Temperature over threshold,#FFD859,CIP,Control RM 32,"ID: 4, Zone: Carbon filter",warning,1 hr ago.,Marker,4,Temperature,#FFD859,warning
+-101.551,21.1015,warning,Temperature over threshold,#FFD859,CIP,Control RM 35,"ID: 23, Zone: Treated Water",warning,1 hr ago.,Marker,23,Temperature,#FFD859,warning
+-101.5512,21.1029,warning,Temperature over threshold,#FFD859,CIP,Control RM 31,"ID: 55, Zone: Sterlization",warning,1 hr ago.,Marker,55,Temperature,#FFD859,warning
+-101.5519,21.1033,warning,Temperature over threshold,#FFD859,CIP,Control RM 10,"ID: 35, Zone: Carbon filter",warning,1 hr ago.,Marker,35,Temperature,#FFD859,warning
+-99.5975,19.298,error,Temperature over threshold,red,CIP,Control RM 1,"ID: 29, Zone: Sugar Syrup",error,1 hr ago.,Marker,29,Temperature,red,error
+-99.5984,19.2989,error,Conductivity over threshold,red,CIP,Control RM 2,"ID: 235, Zone: Chlorine",error,1 hr ago.,Marker,235,Conductivity,red,error
+-99.598,19.2979,error,Ozone over threshold,red,CIP,Control RM 3,"ID: 180, Zone: Sugar Syrup",error,1 hr ago.,Marker,180,Ozone,red,error
+-99.5967,19.2983,error,Flow over threshold,red,CIP,Control RM 5,"ID: 110, Zone: Sterilization",error,1 hr ago.,Marker,110,Flow,red,error
+-99.597,19.2986,error,"Temperature over threshold,Conductivity over threshold,Ozone over threshold","red,#ED5602,#FFD859",CIP,Control RM 8,"ID: 1, Zone: Dosing Station","error,warning,warning","1 hr ago.,1 hr ago.,1 hr ago.",Marker,1,"Temperature,Conductivity,Ozone",red,error
+-99.5968,19.2977,error,Conductivity over threshold,red,CIP,Control RM 9,"ID: 13, Zone: Carbon Filter",error,1 hr ago.,Marker,13,Conductivity,red,error
+-99.5962,19.2984,warning,Ozone over threshold,#ED5602,CIP,Control RM 15,"ID: 67, Zone: Batch Tank",warning,1 hr ago.,Marker,67,Ozone,#ED5602,warning
+-99.5961,19.2979,error,Flow over threshold,red,CIP,Control RM 20,"ID: 102, Zone: Carbonator",error,1 hr ago.,Marker,102,Flow,red,error
+-99.5958,19.2982,warning,Temperature over threshold,#ED5602,CIP,Control RM 22,"ID: 37, Zone: Concentrate",warning,1 hr ago.,Marker,37,Temperature,#ED5602,warning
+-99.5955,19.298,error,Conductivity over threshold,red,CIP,Control RM 25,"ID: 254, Zone: Particulate Remover",error,1 hr ago.,Marker,254,Conductivity,red,error
+-99.595,19.2978,warning,Ozone over threshold,#ED5602,CIP,Control RM 29,"ID: 129,  Zone: Batch Tank",warning,1 hr ago.,Marker,129,Ozone,#ED5602,warning
+-99.5958,19.2975,warning,Flow over threshold,#ED5602,CIP,Control RM 31,"ID: 17, Zone: Phosphoric Acid",warning,1 hr ago.,Marker,17,Flow,#ED5602,warning
+-99.5978,19.298,,Tokyo,#546E7A,,Tokyo,,,,Plant_Marker,0,Tokyo,#546E7A,
+-99.5974,19.2984,warning,Temperature over threshold,#FFD859,CIP,Control RM 21,"ID: 2, Zone: Treated Water",warning,1 hr ago.,Marker,2,Temperature,#FFD859,warning
+-99.5952,19.2979,warning,Temperature over threshold,#FFD859,CIP,Control RM 28,"ID: 30, Zone: Treated Water",warning,1 hr ago.,Marker,30,Temperature,#FFD859,warning
+-99.5959,19.2985,warning,Temperature over threshold,#FFD859,CIP,Control RM 43,"ID: 55,  Zone: Particulate Remover",warning,1 hr ago.,Marker,55,Temperature,#FFD859,warning
+-99.5961,19.2979,warning,Temperature over threshold,#FFD859,CIP,Control RM 47,"ID: 200, Zone: Treated Water",warning,1 hr ago.,Marker,200,Temperature,#FFD859,warning
+-99.5971,19.2983,warning,Ozone over threshold,#FFD859,CIP,Control RM 52,"ID: 35, Zone: Carbonator",warning,1 hr ago.,Marker,35,Ozone,#FFD859,warning

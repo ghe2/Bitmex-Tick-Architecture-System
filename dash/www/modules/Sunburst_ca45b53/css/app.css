@@ -1,0 +1,79 @@
+.Dark .sunburst-container .colorscaleItemIndex {
+  color: #ffffff;
+}
+.Dark .sunburst-container .legendMenuListItem {
+  color: #ffffff;
+}
+.Dark .tools-panel.disabled {
+  display: none;
+}
+
+.Light .sunburst-container .colorscaleItemIndex {
+  color: #000000;
+}
+.Light .sunburst-container .legendMenuListItem {
+  color: #000000;
+}
+.Light .tools-panel.disabled {
+  display: none;
+}
+
+.sunburst-container {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.sunburst-container .sunburst {
+  cursor: pointer;
+  width: 100%;
+  height: calc(100% - 40px);
+}
+.sunburst-container .legend {
+  height: 40px;
+  width: 100%;
+}
+.sunburst-container .legend .colorscale {
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+.sunburst-container .legend .colorscaleItem {
+  float: left;
+  height: 20px;
+  border: 0px;
+}
+.sunburst-container .legend .colorscaleIndex {
+  top: -20px;
+  position: relative;
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+.sunburst-container .legend .colorscaleItemIndex {
+  float: left;
+  height: 20px;
+  border: 0px;
+}
+.sunburst-container .legend .indicatorIcon {
+  position: relative;
+  top: -20px;
+}
+.sunburst-container .legend .legendMenulList {
+  top: -5px;
+  position: relative;
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+.sunburst-container .legend .legendMenuListItem {
+  float: left;
+  height: 20px;
+  border: 0px;
+  padding-right: 20px;
+}
+
+.generic-tooltip.Sunburst-tooltip {
+  padding: 5px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtRO0VBQ0k7O0FBRUo7RUFDSTs7QUFJSjtFQUFZOzs7QUFPWjtFQUNJOztBQUVKO0VBQ0k7O0FBSUo7RUFBWTs7O0FBS3BCO0VBQ0M7RUFDRztFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUVKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFFSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7OztBQUtaO0VBQ0kiLCJmaWxlIjoiYXBwLmNzcyJ9 */

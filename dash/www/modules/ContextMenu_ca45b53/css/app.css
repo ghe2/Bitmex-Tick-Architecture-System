@@ -1,0 +1,978 @@
+.ContextMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /********************
+  * TOOLTIP CSS
+  */
+  /*Give tooltips that old fade in transition by
+  putting a "with-transitions" class on the container div.
+  */
+}
+.ContextMenu .frame {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ContextMenu .frame > div {
+  vertical-align: top;
+}
+.ContextMenu .ui-dialog-titlebar {
+  display: none;
+}
+.ContextMenu.ui-dialog {
+  max-height: 200px;
+}
+.ContextMenu .title {
+  text-align: center;
+}
+.ContextMenu .span-header {
+  font-weight: bold;
+}
+.ContextMenu .container-Shape label {
+  display: block !important;
+}
+.ContextMenu .container-Shape > label {
+  display: none !important;
+}
+.ContextMenu .container-Shape > select {
+  display: none;
+}
+.ContextMenu .BlueGloss {
+  background: #1e5799 !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e5799", endColorstr="#7db9e8",GradientType=0 ) !important;
+}
+.ContextMenu .BlackGloss {
+  background: #4c4c4c !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#4c4c4c", endColorstr="#131313",GradientType=0 );
+}
+.ContextMenu .BlueTransparent {
+  background: -moz-linear-gradient(top, #1e5799 0%, rgba(125, 185, 232, 0) 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e5799 0%, rgba(125, 185, 232, 0) 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e5799 0%, rgba(125, 185, 232, 0) 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e5799", endColorstr="#007db9e8",GradientType=0 ) !important;
+}
+.ContextMenu .BlackTransparent {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a6000000", endColorstr="#00000000",GradientType=0 ) !important;
+}
+.ContextMenu .BlueGrey {
+  background: #b8c6df !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b8c6df 0%, #6d88b7 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b8c6df 0%, #6d88b7 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b8c6df 0%, #6d88b7 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b8c6df", endColorstr="#6d88b7",GradientType=0 ) !important;
+}
+.ContextMenu .Grey3D {
+  background: #b5bdc8 !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b5bdc8 0%, #828c95 36%, #28343b 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b5bdc8", endColorstr="#28343b",GradientType=0 ) !important;
+}
+.ContextMenu .GreyPipe {
+  background: #f5f6f6 !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f5f6f6", endColorstr="#f5f6f6",GradientType=0 ) !important;
+}
+.ContextMenu.dark {
+  background: #303030;
+  color: white;
+}
+.ContextMenu.dark .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+  background: #303030;
+}
+.ContextMenu.dark .graph text {
+  fill: white;
+}
+.ContextMenu.dark .graph .nvd3 .nv-background {
+  fill: #303030;
+  fill-opacity: 0;
+}
+.ContextMenu.dark .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: 0.75;
+  shape-rendering: crispEdges;
+}
+.ContextMenu.light {
+  background: #ffffff;
+  color: #000000;
+}
+.ContextMenu.light .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+  background: white;
+}
+.ContextMenu.light .graph text {
+  fill: black;
+}
+.ContextMenu.light .graph .nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+}
+.ContextMenu.light .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.75;
+  shape-rendering: crispEdges;
+}
+.ContextMenu a.button {
+  border: 1px solid #111111;
+  background: #222222 url(../img/ui-bg_highlight-soft_10_222222_1x100.png) 50% 50% repeat-x;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 1em;
+  margin-right: 0.1em;
+  cursor: pointer;
+  text-align: center;
+  zoom: 1;
+  overflow: visible;
+  /* the overflow property removes extra width in IE */
+  text-decoration: none;
+  border-radius: 3px;
+}
+.ContextMenu a.button:hover {
+  background: red;
+}
+.ContextMenu .graphingArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ContextMenu .crumbs {
+  padding: 0;
+  border-radius: 0px;
+  margin: 0;
+  white-space: nowrap;
+  display: none;
+}
+.ContextMenu .crumbs span {
+  display: inline-block;
+  line-height: 20px;
+  height: 20px;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0 16px;
+  margin: 2px 0;
+  vertical-align: top;
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+}
+.ContextMenu .crumbs span:last-child {
+  position: relative;
+  background: #00AEFF;
+  color: white;
+  border-radius: 20px;
+  padding: 0 16px;
+}
+.ContextMenu .crumbs span:last-child:before, .ContextMenu .crumbs span:last-child:after {
+  content: "";
+  line-height: 0;
+  border: 0px solid red;
+  border-right: none;
+  border-left: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.ContextMenu .crumbs span:last-child:before {
+  left: -17px;
+  border-left: solid transparent 17px;
+}
+.ContextMenu .graphingIndex {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 13px;
+  width: 10%;
+  opacity: 1;
+}
+.ContextMenu .graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /********************
+  * SVG CSS
+  */
+  /********************
+  Box shadow and border radius styling
+  */
+  /********************
+  * TOOLTIP CSS
+  */
+  /*Give tooltips that old fade in transition by
+  putting a "with-transitions" class on the container div.
+  */
+  /**********
+  *  Brush
+  */
+  /**********
+  *  Legend
+  */
+  /**********
+  *  Axes
+  */
+  /**********
+  *  Brush
+  */
+  /**********
+  *  Bars
+  */
+  /**********
+  *  Bars
+  */
+  /***********
+  *  Pie Chart
+  */
+  /**********
+  * Lines
+  */
+  /**********
+  * Distribution
+  */
+  /**********
+  *  Scatter
+  */
+  /**********
+  *  Stacked Area
+  */
+  /**********
+  *  Line Plus Bar
+  */
+  /**********
+  *  Bullet
+  */
+  /**********
+  * Sparkline
+  */
+  /**********
+  * historical stock
+  */
+  /**********
+  * Parallel Coordinates
+  */
+  /****
+  Interactive Layer
+  */
+}
+.ContextMenu .graph text {
+  fill: black;
+  font-size: 0.75em;
+}
+.ContextMenu .graph svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Trying to get SVG to act like a greedy block in all browsers */
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.ContextMenu .graph svg.nvd3-svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+}
+.ContextMenu .graph .nvtooltip.with-3d-shadow, .ContextMenu .graph .with-3d-shadow .nvtooltip {
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.ContextMenu .graph .nvtooltip {
+  position: absolute;
+  top: 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ContextMenu .graph .nvtooltip.with-transitions, .ContextMenu .graph .with-transitions .nvtooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+.ContextMenu .graph .nvtooltip.x-nvtooltip,
+.ContextMenu .graph .nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+.ContextMenu .graph .nvtooltip.y-nvtooltip {
+  left: 0 !important;
+}
+.ContextMenu .graph .nvtooltip h4 {
+  display: inline-block;
+}
+.ContextMenu .graph .nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+  display: inline-block;
+}
+.ContextMenu .graph .nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.ContextMenu .graph .nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.ContextMenu .graph .nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.ContextMenu .graph .nvtooltip table td.key {
+  font-weight: normal;
+}
+.ContextMenu .graph .nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+.ContextMenu .graph .nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.ContextMenu .graph .nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.ContextMenu .graph .nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.ContextMenu .graph .nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+.ContextMenu .graph .nvd3 text {
+  font: normal 12px Arial;
+}
+.ContextMenu .graph .nvd3 .title {
+  font: bold 14px Arial;
+}
+.ContextMenu .graph .nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+}
+.ContextMenu .graph .nvd3.nv-noData {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ContextMenu .graph .nv-brush .extent {
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+.ContextMenu .graph .nvd3 .nv-legend .nv-series {
+  cursor: pointer;
+}
+.ContextMenu .graph .nvd3 .nv-legend .nv-disabled circle {
+  fill-opacity: 0;
+}
+.ContextMenu .graph .axis {
+  opacity: 1;
+}
+.ContextMenu .graph .axis.nv-disabled {
+  opacity: 0;
+}
+.ContextMenu .graph .nvd3 .nv-axis {
+  pointer-events: none;
+}
+.ContextMenu .graph .nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.75;
+  shape-rendering: crispEdges;
+}
+.ContextMenu .graph .nvd3 .nv-axis path.domain {
+  stroke-opacity: 0.75;
+}
+.ContextMenu .graph .nvd3 .nv-axis.nv-x path.domain {
+  stroke-opacity: 0;
+}
+.ContextMenu .graph .nvd3 .nv-axis line {
+  fill: none;
+  stroke: rgba(160, 160, 160, 0.3);
+  shape-rendering: crispEdges;
+}
+.ContextMenu .graph .nvd3 .nv-axis .zero line,
+.ContextMenu .graph .nvd3 .nv-axis line.zero {
+  stroke-opacity: 0.75;
+}
+.ContextMenu .graph .nvd3 .x .nv-axis .nv-axisMaxMin text,
+.ContextMenu .graph .nvd3 .x2 .nv-axis .nv-axisMaxMin text,
+.ContextMenu .graph .nvd3 .x3 .nv-axis .nv-axisMaxMin text {
+  text-anchor: middle;
+}
+.ContextMenu .graph .nv-brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+.ContextMenu .graph .nvd3 .nv-bars rect {
+  fill-opacity: 0.75;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+  height: 100%;
+}
+.ContextMenu .graph .nvd3 .nv-bars rect.hover {
+  fill-opacity: 1;
+}
+.ContextMenu .graph .nvd3 .nv-bars .hover rect {
+  fill: lightblue;
+}
+.ContextMenu .graph .nvd3 .nv-bars text {
+  fill: rgba(0, 0, 0, 0);
+}
+.ContextMenu .graph .nvd3 .nv-bars .hover text {
+  fill: black;
+}
+.ContextMenu .graph .nvd3 .nv-multibar .nv-groups rect,
+.ContextMenu .graph .nvd3 .nv-multibarHorizontal .nv-groups rect,
+.ContextMenu .graph .nvd3 .nv-discretebar .nv-groups rect {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+}
+.ContextMenu .graph .nvd3 .nv-multibar .nv-groups rect:hover,
+.ContextMenu .graph .nvd3 .nv-multibarHorizontal .nv-groups rect:hover,
+.ContextMenu .graph .nvd3 .nv-discretebar .nv-groups rect:hover {
+  fill-opacity: 1;
+}
+.ContextMenu .graph .nvd3 .nv-discretebar .nv-groups text,
+.ContextMenu .graph .nvd3 .nv-multibarHorizontal .nv-groups text {
+  font-weight: bold;
+  fill: white;
+  stroke: rgba(0, 0, 0, 0);
+}
+.ContextMenu .graph .nvd3.nv-pie path {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+.ContextMenu .graph .nvd3.nv-pie .nv-pie-title {
+  font-size: 24px;
+  fill: rgba(19, 196, 249, 0.59);
+}
+.ContextMenu .graph .nvd3.nv-pie .nv-slice text {
+  stroke: #000;
+  stroke-width: 0;
+}
+.ContextMenu .graph .nvd3.nv-pie path {
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+}
+.ContextMenu .graph .nvd3.nv-pie .hover path {
+  fill-opacity: 0.7;
+}
+.ContextMenu .graph .nvd3.nv-pie .nv-label {
+  pointer-events: none;
+}
+.ContextMenu .graph .nvd3.nv-pie .nv-label rect {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+.ContextMenu .graph .nvd3 .nv-groups path.nv-line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+.ContextMenu .graph .nvd3 .nv-groups path.nv-line.nv-thin-line {
+  stroke-width: 1px;
+}
+.ContextMenu .graph .nvd3 .nv-groups path.nv-area {
+  stroke: none;
+}
+.ContextMenu .graph .nvd3 .nv-line.hover path {
+  stroke-width: 6px;
+}
+.ContextMenu .graph .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+.ContextMenu .graph .nvd3.nv-scatter.nv-single-point .nv-groups .nv-point {
+  fill-opacity: 0.5 !important;
+  stroke-opacity: 0.5 !important;
+}
+.ContextMenu .graph .with-transitions .nvd3 .nv-groups .nv-point {
+  transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+.ContextMenu .graph .nvd3.nv-scatter .nv-groups .nv-point.hover,
+.ContextMenu .graph .nvd3 .nv-groups .nv-point.hover {
+  stroke-width: 7px;
+  fill-opacity: 0.95 !important;
+  stroke-opacity: 0.95 !important;
+}
+.ContextMenu .graph .nvd3 .nv-point-paths path {
+  stroke: #aaa;
+  stroke-opacity: 0;
+  fill: #eee;
+  fill-opacity: 0;
+}
+.ContextMenu .graph .nvd3 .nv-indexLine {
+  cursor: ew-resize;
+}
+.ContextMenu .graph .nvd3 .nv-distribution {
+  pointer-events: none;
+}
+.ContextMenu .graph .nvd3 .nv-groups .nv-point.hover {
+  stroke-width: 20px;
+  stroke-opacity: 0.5;
+}
+.ContextMenu .graph .nvd3 .nv-scatter .nv-point.hover {
+  fill-opacity: 1;
+}
+.ContextMenu .graph .nvd3.nv-stackedarea path.nv-area {
+  fill-opacity: 0.7;
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+}
+.ContextMenu .graph .nvd3.nv-stackedarea path.nv-area.hover {
+  fill-opacity: 0.9;
+}
+.ContextMenu .graph .nvd3.nv-stackedarea .nv-groups .nv-point {
+  stroke-opacity: 0;
+  fill-opacity: 0;
+}
+.ContextMenu .graph .nvd3.nv-linePlusBar .nv-bar rect {
+  fill-opacity: 0.75;
+}
+.ContextMenu .graph .nvd3.nv-linePlusBar .nv-bar rect:hover {
+  fill-opacity: 1;
+}
+.ContextMenu .graph .nvd3.nv-bullet {
+  font: 10px sans-serif;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-measure {
+  fill-opacity: 0.8;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-measure:hover {
+  fill-opacity: 1;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-marker {
+  stroke: #000;
+  stroke-width: 2px;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-markerTriangle {
+  stroke: #000;
+  fill: #fff;
+  stroke-width: 1.5px;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-tick line {
+  stroke: #666;
+  stroke-width: 0.5px;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-range.nv-s0 {
+  fill: #eee;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-range.nv-s1 {
+  fill: #ddd;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-range.nv-s2 {
+  fill: #ccc;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-subtitle {
+  fill: #999;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-range {
+  fill: #bababa;
+  fill-opacity: 0.4;
+}
+.ContextMenu .graph .nvd3.nv-bullet .nv-range:hover {
+  fill-opacity: 0.7;
+}
+.ContextMenu .graph .nvd3.nv-sparkline path {
+  fill: none;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus g.nv-hoverValue {
+  pointer-events: none;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-hoverValue line {
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus,
+.ContextMenu .graph .nvd3.nv-sparklineplus g {
+  pointer-events: all;
+}
+.ContextMenu .graph .nvd3 .nv-hoverArea {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-xValue,
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-yValue {
+  stroke-width: 0;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-yValue {
+  stroke: #f66;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-maxValue {
+  stroke: #2ca02c;
+  fill: #2ca02c;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-minValue {
+  stroke: #d62728;
+  fill: #d62728;
+}
+.ContextMenu .graph .nvd3.nv-sparklineplus .nv-currentValue {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.ContextMenu .graph .nvd3.nv-ohlcBar .nv-ticks .nv-tick {
+  stroke-width: 1px;
+}
+.ContextMenu .graph .nvd3.nv-ohlcBar .nv-ticks .nv-tick.hover {
+  stroke-width: 2px;
+}
+.ContextMenu .graph .nvd3.nv-ohlcBar .nv-ticks .nv-tick.positive {
+  stroke: #2ca02c;
+}
+.ContextMenu .graph .nvd3.nv-ohlcBar .nv-ticks .nv-tick.negative {
+  stroke: #d62728;
+}
+.ContextMenu .graph .nvd3.nv-historicalStockChart .nv-axis .nv-axislabel {
+  font-weight: bold;
+}
+.ContextMenu .graph .nvd3.nv-historicalStockChart .nv-dragTarget {
+  fill-opacity: 0;
+  stroke: none;
+  cursor: move;
+}
+.ContextMenu .graph .nvd3 .nv-brush .extent {
+  fill-opacity: 0 !important;
+}
+.ContextMenu .graph .nvd3 .nv-brushBackground rect {
+  stroke: #000;
+  stroke-width: 0.4;
+  fill: #fff;
+  fill-opacity: 0.7;
+}
+.ContextMenu .graph .nvd3 .background path {
+  fill: none;
+  stroke: #EEE;
+  stroke-opacity: 0.4;
+  shape-rendering: crispEdges;
+}
+.ContextMenu .graph .nvd3 .foreground path {
+  fill: none;
+  stroke-opacity: 0.7;
+}
+.ContextMenu .graph .nvd3 .brush .extent {
+  fill-opacity: 0.3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+.ContextMenu .graph .nvd3 .axis line, .ContextMenu .graph .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.ContextMenu .graph .nvd3 .nv-interactiveGuideLine {
+  pointer-events: none;
+}
+.ContextMenu .graph .nvd3 line.nv-guideline {
+  stroke: #ccc;
+}
+.ContextMenu .nvtooltip {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ContextMenu .nvtooltip.with-transitions, .ContextMenu .with-transitions .nvtooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+.ContextMenu .nvtooltip.x-nvtooltip,
+.ContextMenu .nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+.ContextMenu .nvtooltip.y-nvtooltip {
+  left: 0 !important;
+}
+.ContextMenu .nvtooltip h4 {
+  display: inline-block;
+}
+.ContextMenu .nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+  display: inline-block;
+}
+.ContextMenu .nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.ContextMenu .nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.ContextMenu .nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.ContextMenu .nvtooltip table td.key {
+  font-weight: normal;
+}
+.ContextMenu .nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+.ContextMenu .nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.ContextMenu .nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.ContextMenu .nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.ContextMenu .nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+
+/********************
+* TOOLTIP CSS
+*/
+.nvtooltip {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  /* color: white; */
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*Give tooltips that old fade in transition by
+putting a "with-transitions" class on the container div.
+*/
+.nvtooltip.with-transitions, .with-transitions .nvtooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+
+.nvtooltip.x-nvtooltip,
+.nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+
+.nvtooltip.y-nvtooltip {
+  left: 0 !important;
+}
+
+.nvtooltip h4 {
+  display: inline-block;
+}
+
+.nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+  display: inline-block;
+}
+
+.nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+
+.nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+
+.nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+
+.nvtooltip table td.key {
+  font-weight: normal;
+}
+
+.nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+
+.nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+
+.nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+
+.nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQTIzQkE7QUFBQTtBQUFBO0FBbUNBO0FBQUE7QUFBQTs7QUE1NUJBO0VBQ0M7RUFDTTtFQUNBO0VBQ0E7RUFDTjtFQUNBO0VBQ0E7RUFDQTs7QUFFTTtFQUNJOztBQUlYO0VBQ0k7O0FBRUo7RUFDQzs7QUFFRDtFQUNDOztBQUtEO0VBQ0M7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDOztBQUVEO0VBQ0k7O0FBSUo7RUFDQztBQUFzQztFQUN0QztBQUFrSjtFQUNsSjtBQUFpSjtFQUNqSjtBQUErSTtFQUMvSTs7QUFFRDtFQUNDO0FBQXFDO0VBQ3JDO0FBQTZRO0VBQzdRO0FBQXVRO0VBQ3ZRO0FBQXFRO0VBQ3JROztBQUVEO0VBQ0M7QUFBaUc7RUFDakc7QUFBbUc7RUFDbkc7QUFBaUc7RUFDakc7O0FBRUQ7RUFDQztBQUEwRjtFQUMxRjtBQUE0RjtFQUM1RjtBQUEwRjtFQUMxRjs7QUFFRDtFQUNDO0FBQXdDO0VBQ3hDO0FBQW1HO0VBQ25HO0FBQXFHO0VBQ3JHO0FBQW1HO0VBQ25HOztBQUVEO0VBQ0M7QUFBd0M7RUFDeEM7QUFBeUg7RUFDekg7QUFBMEg7RUFDMUg7QUFBd0g7RUFDeEg7O0FBRUQ7RUFDQztBQUF3QztFQUN4QztBQUE4SztFQUM5SztBQUE2SztFQUM3SztBQUEySztFQUMzSzs7QUFHRDtFQUNDO0VBQ0E7O0FBRUM7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVEO0VBQ0M7O0FBRUQ7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBS0g7RUFDQztFQUNBOztBQUVDO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRDtFQUNDOztBQUVEO0VBQ0M7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUtIO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUFtQjtFQUNuQjtFQUNBOztBQUVBO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBRUE7RUFDQTs7QUFFRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUQ7RUFDQztFQUNBOztBQUtGO0VBRUM7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUFFQTtBQUFBO0FBQUE7QUFpQ0E7QUFBQTtBQUFBO0FBYUE7QUFBQTtBQUFBO0FBbUNBO0FBQUE7QUFBQTtBQW1HQTtBQUFBO0FBQUE7QUFVQTtBQUFBO0FBQUE7QUFhQTtBQUFBO0FBQUE7QUFpREE7QUFBQTtBQUFBO0FBVUE7QUFBQTtBQUFBO0FBbUNBO0FBQUE7QUFBQTtBQTJCQTtBQUFBO0FBQUE7QUF1Q0E7QUFBQTtBQUFBO0FBOERBO0FBQUE7QUFBQTtBQVNBO0FBQUE7QUFBQTtBQWNBO0FBQUE7QUFBQTtBQXVCQTtBQUFBO0FBQUE7QUFhQTtBQUFBO0FBQUE7QUEwQkE7QUFBQTtBQUFBO0FBcURBO0FBQUE7QUFBQTtBQTBDQTtBQUFBO0FBQUE7QUE4QkE7QUFBQTtBQUFBOztBQXZuQkE7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQU1EO0VBQ0M7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBOztBQU9EO0VBRUM7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFPRDtFQUNDO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7QUFHRDtBQUFBO0VBRUM7O0FBR0Q7RUFDQzs7QUFFRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFJRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBUUQ7RUFDQztFQUNBOztBQVFEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFRRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtBQUFBO0VBRUM7O0FBR0Q7QUFBQTtBQUFBO0VBR0M7O0FBUUQ7RUFDQztFQUNBOztBQVlEO0VBRUM7RUFFQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQVFEO0FBQUE7QUFBQTtFQUdDO0VBRUE7RUFDQTtFQUNBOztBQUdEO0FBQUE7QUFBQTtFQUdDOztBQUdEO0FBQUE7RUFFQztFQUNBO0VBQ0E7O0FBT0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFJRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUdEO0VBQ0M7O0FBRUQ7RUFDQzs7QUFFRDtFQUNDO0VBQ0E7O0FBT0Q7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBSUQ7RUFDQzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBSUQ7RUFDQztFQUNBO0VBQ0E7O0FBSUQ7QUFBQTtFQUVDO0VBQ0E7RUFDQTs7QUFJRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUtEO0VBQ0M7O0FBUUQ7RUFDQzs7QUFRRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFRRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQzs7QUFJRDtFQUNDO0VBQ0E7O0FBUUQ7RUFDQzs7QUFHRDtFQUNDOztBQVFEO0VBQWtCOztBQUNsQjtFQUE4Qjs7QUFDOUI7RUFBb0M7O0FBQ3BDO0VBQTZCO0VBQWM7O0FBQzNDO0VBQXFDO0VBQWM7RUFBWTs7QUFDL0Q7RUFBZ0M7RUFBYzs7QUFDOUM7RUFBa0M7O0FBQ2xDO0VBQWtDOztBQUNsQztFQUFrQzs7QUFDbEM7RUFBNEI7RUFBaUI7O0FBQzdDO0VBQStCOztBQUcvQjtFQUNDO0VBQ0E7O0FBRUQ7RUFDQzs7QUFRRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0FBQUE7RUFFQzs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7QUFBQTtFQUVDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQU9EO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBUUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7O0FBUUQ7RUFDQzs7QUFFRDtFQUNDOztBQVVGO0VBRUM7RUFFQTtFQUNBO0VBQ0E7RUFDQTtBQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBT0Q7RUFDQztFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7O0FBR0Q7QUFBQTtFQUVDOztBQUdEO0VBQ0M7O0FBRUQ7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBSUQ7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBRUQ7RUFDQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOzs7QUFLRDtBQUFBO0FBQUE7QUFJQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7QUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFJQTtBQUFBO0FBQUE7QUFHQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7O0FBR0E7QUFBQTtFQUVBOzs7QUFHQTtFQUNBOzs7QUFFQTtFQUNBOzs7QUFHQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOzs7QUFHQTtFQUNBO0VBQ0E7OztBQUdBO0VBQ0E7RUFDQTs7O0FBSUE7RUFDQTtFQUNBOzs7QUFHQTtFQUNBOzs7QUFFQTtFQUNBO0VBQ0E7OztBQUdBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdBO0VBQ0E7RUFDQTs7O0FBR0E7RUFDQTtFQUNBIiwiZmlsZSI6ImFwcC5jc3MifQ== */
