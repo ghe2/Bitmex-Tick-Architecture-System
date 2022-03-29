@@ -24,5 +24,5 @@ To subscribe to topics, send them as a comma-separated list in your connection s
 
 wss://ws.bitmex.com/realtime?subscribe=instrument,orderBookL2_25:XBTUSD
 
-kdb+ and websocket 
+##kdb+ and websocket 
 Simple Web application which uses kdb+ to provide real-time updating of tables based on user queries. Please see examples at https://github.com/jonathonmcmurray/ws.q
