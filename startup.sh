@@ -22,5 +22,5 @@ q tick/r.q localhost:5000 localhost:5002 -p 5005 >> rdbLog.txt & \
 #q tick/r.q 2>&1 >> rdb.txt &
 
 cd $BASE_DIRECTORY
-q feedhandler_allLevel.q -p 5008 
+q feedhandler_allLevels.q -p 5008 
 
