@@ -1,5 +1,5 @@
 /connect to tickerplant, if it doesn't exist just publish data locally for insertion
-/h:.[hopen;(`:localhost:5000;1000);0i];
+/h:.[hopen;(`:localhost:5000;10000);0i];
 h:neg hopen `:localhost:5000;
 pub:{$[h=0;
         neg[h](`upd   ;x;y);
@@ -7,6 +7,8 @@ pub:{$[h=0;
         ]};
 
 upd:upsert;
+
+/\l ws-client_0.2.2.q
 /conda install -c jmcmurray ws-client ws-server
 .utl.require"ws-client";
 
