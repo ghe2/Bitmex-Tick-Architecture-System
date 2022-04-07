@@ -1,0 +1,6 @@
+export BASE_DIRECTORY=`pwd`
+export ON_DISK_HDB=$BASE_DIRECTORY"/data/"
+export TICK_DIRECTORY=$BASE_DIRECTORY"/tick/"
+export TP_PORT=3000
+## TO BE REMOVED OR REDACTCTED
+export WEBSOCKET_KEY="wss://eth-kovan.alchemyapi.io/v2/"$ALCHEMY_KEY
