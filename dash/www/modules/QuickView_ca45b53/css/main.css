@@ -1,0 +1,1460 @@
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 95%;
+}
+
+.quick-view .component-build-view {
+  width: 100%;
+  height: 100%;
+}
+.quick-view .component-build-view .errorMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  z-index: 1001;
+  display: none;
+  background-color: rgba(12, 12, 12, 0.4);
+  font-size: 14px;
+}
+.quick-view .component-build-view .errorMessage .errorPanel {
+  transition: display 0.1s ease-in;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  right: 10px;
+  min-height: 45px;
+  z-index: 1;
+  padding: 5px;
+  max-width: 500px;
+  margin: auto;
+}
+.quick-view .component-build-view .errorMessage .errorPanel .errorTitle {
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  margin-right: 7px;
+}
+.quick-view .component-build-view .errorMessage .errorPanel .errorTitle::after {
+  content: ":";
+}
+.quick-view .component-build-view .errorMessage .errorPanel .errorTitle i {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: -2px;
+  margin: 0 3px -2px 0;
+}
+.quick-view .component-build-view .errorMessage .errorPanel .errorText {
+  color: #3c3c3c;
+}
+.quick-view .component-build-view .errorMessage.Error .ui-state-warning,
+.quick-view .component-build-view .errorMessage.Error .ui-state-highlight {
+  display: none;
+}
+.quick-view .component-build-view .errorMessage.Error i {
+  color: #dd0000;
+}
+.quick-view .component-build-view .errorMessage.Error .ui-state-error {
+  border: 1px solid #dd0000;
+  background: #f0e8e5;
+}
+.quick-view .component-build-view .errorMessage.Warning .ui-state-error,
+.quick-view .component-build-view .errorMessage.Warning .ui-state-highlight {
+  display: none;
+}
+.quick-view .component-build-view .errorMessage.Warning > .errorPanel > .errorTitle {
+  margin-right: 2px;
+}
+.quick-view .component-build-view .errorMessage.Warning > .errorPanel > .errorTitle > span {
+  display: none;
+}
+.quick-view .component-build-view .errorMessage.Warning .ui-state-warning {
+  border: 1px solid #009EEF;
+  background: #454546;
+}
+.quick-view .component-build-view .errorMessage.Warning .errorText,
+.quick-view .component-build-view .errorMessage.Warning .errorTitle {
+  color: #ccc;
+}
+.quick-view .component-build-view .errorMessage.Warning .errorText::after,
+.quick-view .component-build-view .errorMessage.Warning .errorTitle::after {
+  content: "";
+}
+.quick-view .component-build-view .errorMessage.Info .ui-state-error,
+.quick-view .component-build-view .errorMessage.Info .ui-state-warning {
+  display: none;
+}
+.quick-view .component-build-view .errorMessage.Info .ui-state-highlight {
+  border: 1px solid #009EEF;
+  background: #454546;
+}
+.quick-view .component-build-view .errorMessage.Info .errorText,
+.quick-view .component-build-view .errorMessage.Info .errorTitle {
+  color: #ccc;
+}
+.quick-view .component-build-view .errorMessage.Info i {
+  color: #009EEF;
+}
+.quick-view .component-build-view .queryStatus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  z-index: 1001;
+  display: none;
+  background-color: rgba(40, 40, 40, 0.75);
+  font-size: 14px;
+}
+.quick-view .component-build-view .queryStatus .statusPanel {
+  display: none;
+  transition: display 0.1s ease-in;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  right: 10px;
+  min-height: 45px;
+  z-index: 1;
+  padding: 5px;
+}
+.quick-view .component-build-view .queryStatus .statusPanel .statusTitle {
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  margin-right: 7px;
+}
+.quick-view .component-build-view .queryStatus .statusPanel .statusTitle i {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: -2px;
+  margin: 0 3px -2px 0;
+}
+.quick-view .component-build-view .queryStatus .statusPanel .statusText {
+  color: #3c3c3c;
+}
+.quick-view .component-build-view .queryStatus.Error .statusPanel.Error {
+  display: block;
+}
+.quick-view .component-build-view .queryStatus.Error i {
+  color: #dd0000;
+}
+.quick-view .component-build-view .queryStatus.Error .ui-state-error {
+  border: 1px solid #dd0000;
+  background: #f0e8e5;
+}
+.quick-view .component-build-view .queryStatus.Warning .statusPanel.Warning {
+  display: block;
+}
+.quick-view .component-build-view .queryStatus.Warning .statusPanel.Warning > .statusTitle {
+  margin-right: 2px;
+}
+.quick-view .component-build-view .queryStatus.Warning .statusPanel.Warning > .statusTitle > span {
+  display: none;
+}
+.quick-view .component-build-view .queryStatus.Warning .ui-state-warning {
+  border: 1px solid #009EEF;
+  background: #454546;
+}
+.quick-view .component-build-view .queryStatus.Warning .statusText,
+.quick-view .component-build-view .queryStatus.Warning .statusTitle {
+  color: #ccc;
+}
+.quick-view .component-build-view .queryStatus.Info .statusPanel.Info {
+  display: block;
+}
+.quick-view .component-build-view .queryStatus.Info .ui-state-highlight {
+  border: 1px solid #009EEF;
+  background: #454546;
+}
+.quick-view .component-build-view .queryStatus.Info .statusText,
+.quick-view .component-build-view .queryStatus.Info .statusTitle {
+  color: #ccc;
+}
+.quick-view .component-build-view .queryStatus.Info i {
+  color: #009EEF;
+}
+.quick-view .component-build-view .queryStatus.Loading .statusPanel.Loading {
+  display: block;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  min-height: initial;
+}
+.quick-view .component-build-view .queryStatus.Loading .ui-state-highlight {
+  border: 1px solid #009EEF;
+  background: #454546;
+}
+.quick-view .component-build-view .queryStatus.Loading .statusText,
+.quick-view .component-build-view .queryStatus.Loading .statusTitle {
+  color: #ccc;
+  margin-right: 0px;
+}
+.quick-view .component-build-view .queryStatus.Loading i {
+  color: #009EEF;
+}
+.quick-view .component-build-view .queryStatus.NoResults .statusPanel.NoResults {
+  display: block;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  min-height: initial;
+}
+.quick-view .component-build-view .queryStatus.NoResults .ui-state-highlight {
+  background: #333;
+  border: 1px solid #555;
+}
+.quick-view .component-build-view .queryStatus.NoResults .statusText,
+.quick-view .component-build-view .queryStatus.NoResults .statusTitle {
+  color: #ccc;
+  font-weight: normal;
+}
+.quick-view .component-build-view .queryStatus.NoResults .statusPanel .statusTitle i {
+  color: #ccc;
+  margin-left: 5px;
+  margin-right: 6px;
+}
+
+.Light .errorMessage, .Light .queryStatus {
+  color: #fff;
+  background-color: rgba(248, 248, 248, 0.75) !important;
+}
+.Light .errorMessage.Warning .ui-state-warning, .Light .queryStatus.Warning .ui-state-warning {
+  background-color: rgba(248, 248, 248, 0.75) !important;
+}
+.Light .errorMessage.Warning .errorText,
+.Light .errorMessage.Warning .errorTitle,
+.Light .errorMessage.Warning .statusText,
+.Light .errorMessage.Warning .statusTitle, .Light .queryStatus.Warning .errorText,
+.Light .queryStatus.Warning .errorTitle,
+.Light .queryStatus.Warning .statusText,
+.Light .queryStatus.Warning .statusTitle {
+  color: #030303 !important;
+}
+.Light .errorMessage.NoResults .ui-state-highlight, .Light .queryStatus.NoResults .ui-state-highlight {
+  background: #fff !important;
+  border: 1px solid #eee !important;
+}
+.Light .errorMessage.NoResults .statusText,
+.Light .errorMessage.NoResults .statusTitle, .Light .errorMessage.NoResults i, .Light .queryStatus.NoResults .statusText,
+.Light .queryStatus.NoResults .statusTitle, .Light .queryStatus.NoResults i {
+  color: #030303 !important;
+}
+.Light .errorMessage.NoResults .statusPanel .statusTitle i, .Light .queryStatus.NoResults .statusPanel .statusTitle i {
+  color: #030303 !important;
+}
+
+.no-touch .kx-light.toolbar,
+.no-touch .kx-light.document-view-div {
+  /*
+  ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+         box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+  	border-radius: 0px;
+  	background-color: #efefef;
+              //#999;
+  }
+
+  ::-webkit-scrollbar { 
+  	width: 14px;
+  	background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  	border-radius: 0px;
+  	border: 1px solid #ddd;
+         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+         box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  	background-color: #ccc;
+  }
+
+  ::-webkit-scrollbar-corner {
+  	background-color: #eee;
+  }
+
+     scrollbar-face-color: #ccc;
+     scrollbar-highlight-color: #ccc;
+     scrollbar-3dlight-color: #ddd;
+     scrollbar-darkshadow-color: #ddd;
+     scrollbar-shadow-color: #ccc;
+     scrollbar-arrow-color: #ccc;
+     scrollbar-track-color: #efefef;
+
+     /* https://www.w3.org/TR/css-scrollbars-1/
+     scrollbar-color: #ccc #efefef; */
+  background: #ffffff;
+  color: #202020;
+}
+.no-touch .kx-light.toolbar .ui-dialog-content ui-widget-content,
+.no-touch .kx-light.document-view-div .ui-dialog-content ui-widget-content {
+  border-color: transparent;
+}
+
+.no-touch .kx-light {
+  /*
+  ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+         box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+  	border-radius: 0px;
+  	background-color: #efefef;
+              //#999;
+  }
+
+  ::-webkit-scrollbar { 
+  	width: 14px;
+  	background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  	border-radius: 0px;
+  	border: 1px solid #ddd;
+         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+         box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  	background-color: #ccc;
+  }
+
+  ::-webkit-scrollbar-corner {
+  	background-color: #eee;
+  }
+
+     scrollbar-face-color: #ccc;
+     scrollbar-highlight-color: #ccc;
+     scrollbar-3dlight-color: #ddd;
+     scrollbar-darkshadow-color: #ddd;
+     scrollbar-shadow-color: #ccc;
+     scrollbar-arrow-color: #ccc;
+     scrollbar-track-color: #efefef;
+
+     /* https://www.w3.org/TR/css-scrollbars-1/
+     scrollbar-color: #ccc #efefef; */
+}
+.no-touch .kx-light .ui-dialog-content ui-widget-content,
+.no-touch .kx-light .ui-dialog-titlebar,
+.no-touch .kx-light .ui-dialog-content,
+.no-touch .kx-light .ui-dialog-buttonpane {
+  border-color: transparent;
+}
+.no-touch .kx-light .quick-base .ui-dialog-content .loginErrorPanel {
+  color: #000;
+}
+.no-touch .kx-light .select2-container .select2-dropdown, .no-touch .kx-light .select2-container.Light .select2-dropdown, .no-touch .kx-light .select2-container.Dark .select2-dropdown {
+  background: #F0F0F0;
+  color: #000;
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  background-color: #efefef;
+}
+.no-touch .kx-light .select2-container .select2-results__option[aria-selected=true],
+.no-touch .kx-light .select2-container .select2-results__option--highlighted, .no-touch .kx-light .select2-container.Light .select2-results__option[aria-selected=true],
+.no-touch .kx-light .select2-container.Light .select2-results__option--highlighted, .no-touch .kx-light .select2-container.Dark .select2-results__option[aria-selected=true],
+.no-touch .kx-light .select2-container.Dark .select2-results__option--highlighted {
+  background-color: #c8c8c8;
+}
+.no-touch .kx-light .rich-text-editor-dialog .editor .nicEdit-main {
+  color: #000;
+}
+.no-touch .kx-light .Dark {
+  scrollbar-face-color: #505050;
+  scrollbar-highlight-color: #606060;
+  scrollbar-3dlight-color: #606060;
+  scrollbar-darkshadow-color: #606060;
+  scrollbar-shadow-color: #606060;
+  scrollbar-arrow-color: #606060;
+  scrollbar-track-color: #303030;
+  /* https://www.w3.org/TR/css-scrollbars-1/ */
+  scrollbar-color: #505050 #303030;
+}
+.no-touch .kx-light .Dark .ui-widget-header, .no-touch .kx-light .Dark .ui-widget-content, .no-touch .kx-light .Dark .ui-state-default {
+  background: #424242 !important;
+  color: #fff;
+}
+.no-touch .kx-light .Dark .ui-widget-header a, .no-touch .kx-light .Dark .ui-widget-content a, .no-touch .kx-light .Dark .ui-state-default a {
+  color: #fff;
+}
+.no-touch .kx-light .Dark ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  background-color: #303030;
+}
+.no-touch .kx-light .Dark ::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+}
+.no-touch .kx-light .Dark ::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border: 1px solid #606060;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #505050;
+}
+.no-touch .kx-light .Dark ::-webkit-scrollbar-corner {
+  background-color: #222222;
+}
+.no-touch .kx-light .select2-container, .no-touch .kx-light .select2-container.Light, .no-touch .kx-light .select2-container.Dark {
+  /*
+  ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+         box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+  	border-radius: 0px;
+  	background-color: #efefef;
+              //#999;
+  }
+
+  ::-webkit-scrollbar { 
+  	width: 14px;
+  	background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  	border-radius: 0px;
+  	border: 1px solid #ddd;
+         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+         box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  	background-color: #ccc;
+  }
+
+  ::-webkit-scrollbar-corner {
+  	background-color: #eee;
+  }
+
+     scrollbar-face-color: #ccc;
+     scrollbar-highlight-color: #ccc;
+     scrollbar-3dlight-color: #ddd;
+     scrollbar-darkshadow-color: #ddd;
+     scrollbar-shadow-color: #ccc;
+     scrollbar-arrow-color: #ccc;
+     scrollbar-track-color: #efefef;
+
+     /* https://www.w3.org/TR/css-scrollbars-1/
+     scrollbar-color: #ccc #efefef; */
+}
+.no-touch .kx-light.notificator .panel.ui-widget-content {
+  background: #F0F0F0;
+}
+
+.quick-view {
+  /*overflow: auto;*/
+}
+.quick-view .toolbar-div {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.quick-view .dialog-panel {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+}
+.quick-view .loadingScreen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+.quick-view .notificator {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 102;
+  font-size: 12px;
+  margin: 1em;
+}
+.quick-view .notificator .status-failure {
+  color: #ff0000;
+}
+.quick-view .notificator .panel {
+  padding: 1em;
+  background: #3f3f3f;
+}
+.quick-view .notificator .panel .items .failed-logins {
+  height: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.quick-view .notificator .title {
+  margin-bottom: 1em;
+}
+.quick-view .notificator .info {
+  color: #8d8d8d;
+}
+.quick-view .notificator .close-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.quick-view .notificator .close-button:not(.ui-state-hover) {
+  background: transparent;
+  border-color: transparent;
+}
+.quick-view .notificator .close-button .fa-times {
+  margin-top: -5px;
+  margin-left: -8px;
+}
+.quick-view .main-toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 33px;
+  background-color: #343434;
+  border-bottom: 1px solid #000000;
+  z-index: 2;
+  vertical-align: bottom;
+  user-select: none;
+}
+.quick-view .main-toolbar > div {
+  font-size: 0.85em;
+}
+.quick-view .main-toolbar .document-selector {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+.quick-view .main-toolbar .main {
+  position: absolute;
+  left: 240px;
+  top: 2px;
+}
+.quick-view .main-toolbar .main > label {
+  height: 28px;
+  width: 28px;
+  margin: 0;
+  overflow: hidden;
+}
+.quick-view .main-toolbar .main > label > span {
+  font-size: 14px;
+}
+.quick-view .main-toolbar .main > a {
+  font-size: 14px;
+  height: 28px;
+  width: 28px;
+  margin: 0;
+  overflow: hidden;
+}
+.quick-view .main-toolbar .main > a.save-dash .save-in-progress {
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+  color: #00AEFF;
+}
+.quick-view .main-toolbar .main > a.save-dash .save-pending {
+  display: none;
+  position: absolute;
+  right: 1px;
+  top: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #00AEFF;
+}
+.quick-view .main-toolbar .main > a.save-dash.changed .save-pending {
+  display: block;
+}
+.quick-view .main-toolbar .main > a.save-dash.saving .save-in-progress {
+  display: block;
+}
+.quick-view .main-toolbar .main > a.save-dash.saving .save-pending {
+  display: none;
+}
+.quick-view .main-toolbar .ui-button.ui-state-default:not(.ui-state-hover):not(.ui-state-active) {
+  background: transparent;
+  border-color: transparent;
+}
+.quick-view .main-toolbar .connectionStatus {
+  transition: display 0.3s ease-in;
+  display: none;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 340px;
+  white-space: nowrap;
+  top: 3px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  line-height: 34px;
+  font-size: 12px;
+  text-align: right;
+}
+.quick-view .main-toolbar .connectionStatus .fa {
+  display: inline-block;
+  margin-right: 10px;
+}
+.quick-view .main-toolbar > .profile {
+  position: absolute;
+  right: 136px;
+  top: 2px;
+  min-width: 50px;
+  max-width: 300px;
+}
+.quick-view .main-toolbar > .profile button {
+  height: 30px;
+}
+.quick-view .main-toolbar > .profile button > .ui-button-text > * {
+  display: inline-block;
+}
+.quick-view .main-toolbar > .profile button > .ui-button-text .user-name-wrap {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.quick-view .main-toolbar > .profile > span {
+  padding-left: 2px;
+}
+.quick-view .main-toolbar > .profile i {
+  position: relative;
+  bottom: 2px;
+  width: 1.6em;
+  font-size: 13.6px;
+}
+.quick-view .main-toolbar > .logo {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  width: 124px;
+  height: 22px;
+  background: transparent url(../images/logo-light.svg) no-repeat 0px 0px;
+  background-size: contain;
+  opacity: 0.6;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+.quick-view .main-toolbar > .logo:hover {
+  -webkit-transition: opacity 1s ease-in 1s, filter 1s ease-in 1s;
+  -moz-transition: opacity 1s ease-in 1s, filter 1s ease-in 1s;
+  transition: opacity 1s ease-in 1s, filter 1s ease-in 1s;
+  opacity: 1;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.quick-view .document-view-div {
+  position: absolute;
+  left: 0;
+  top: 33px;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*Dashboard level styles*/
+}
+.quick-view .document-view-div .Dark {
+  scrollbar-face-color: #505050;
+  scrollbar-highlight-color: #606060;
+  scrollbar-3dlight-color: #606060;
+  scrollbar-darkshadow-color: #606060;
+  scrollbar-shadow-color: #606060;
+  scrollbar-arrow-color: #606060;
+  scrollbar-track-color: #303030;
+  /* https://www.w3.org/TR/css-scrollbars-1/ */
+  scrollbar-color: #505050 #303030;
+}
+.quick-view .document-view-div .Dark ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  background-color: #303030;
+}
+.quick-view .document-view-div .Dark ::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+}
+.quick-view .document-view-div .Dark ::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border: 1px solid #606060;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #505050;
+}
+.quick-view .document-view-div .Dark ::-webkit-scrollbar-corner {
+  background-color: #222222;
+}
+.quick-view .document-view-div .Light {
+  /*
+  ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+         box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+  	border-radius: 0px;
+  	background-color: #efefef;
+              //#999;
+  }
+
+  ::-webkit-scrollbar { 
+  	width: 14px;
+  	background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  	border-radius: 0px;
+  	border: 1px solid #ddd;
+         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+         box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  	background-color: #ccc;
+  }
+
+  ::-webkit-scrollbar-corner {
+  	background-color: #eee;
+  }
+
+     scrollbar-face-color: #ccc;
+     scrollbar-highlight-color: #ccc;
+     scrollbar-3dlight-color: #ddd;
+     scrollbar-darkshadow-color: #ddd;
+     scrollbar-shadow-color: #ccc;
+     scrollbar-arrow-color: #ccc;
+     scrollbar-track-color: #efefef;
+
+     /* https://www.w3.org/TR/css-scrollbars-1/
+     scrollbar-color: #ccc #efefef; */
+}
+.quick-view .document-view-div .document-view {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.quick-view .document-view-div .document-view .worksheet {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.quick-view .document-view-div .document-view .screen-view.panel > .worksheet > .grid-stack {
+  margin: 10px;
+}
+.quick-view .document-view-div .document-view .screen-view.panel > .worksheet > .row-highlight-item {
+  margin: 0px 10px;
+}
+.quick-view .document-view-div .document-view > .ui-dialog.popup-dialog {
+  margin-top: 33px;
+}
+.quick-view .document-view-div .document-view > .ui-dialog.popup-dialog > .dialog > .content-panel {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border: none;
+}
+.quick-view .document-view-div .document-view > .ui-dialog.popup-dialog > .ui-dialog-titlebar {
+  min-height: 15px;
+}
+.quick-view .document-view-div.Light {
+  background-color: #f8f8f8;
+}
+.quick-view .document-view-div.Dark {
+  background-color: #282828;
+}
+.quick-view.print-mode .document-view-div {
+  top: 0;
+}
+.quick-view.print-mode .Dark .document-view {
+  background: #282828;
+}
+.quick-view.print-mode .Light .document-view {
+  background: #f8f8f8;
+}
+.quick-view.print-mode .main-toolbar {
+  display: none;
+}
+.quick-view.share-dash-dialog {
+  margin-top: 1em;
+  text-align: center;
+}
+.quick-view.share-dash-dialog input.share-dash-url {
+  width: 95%;
+}
+.quick-view.share-dash-dialog .share-meta {
+  margin-top: 1em;
+  position: relative;
+  text-align: center;
+}
+.quick-view.share-dash-dialog .share-meta .share-info {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.quick-view.share-dash-dialog .share-shorten {
+  position: absolute;
+  right: 2.5%;
+}
+.quick-view.share-dash-dialog.show-info .share-info {
+  opacity: 1;
+}
+.quick-view .create-pdf-dialog .bbf-form fieldset {
+  border-color: transparent;
+}
+.quick-view .create-pdf-dialog .bbf-form fieldset .bbf-field > label {
+  width: 32%;
+}
+.quick-view .create-pdf-dialog .bbf-form fieldset .bbf-field > .bbf-editor {
+  margin-left: 32%;
+  width: 67%;
+}
+.quick-view .create-pdf-dialog .bbf-form fieldset > ul > li:nth-child(2) label {
+  margin-top: 4px;
+}
+.quick-view.is-lite .lnkFullExport {
+  display: none;
+}
+
+.ui-autocomplete.ui-front {
+  z-index: 1010;
+}
+
+.kx-light .main-toolbar {
+  background: #f0f0f0;
+  border-color: #bababa;
+}
+.kx-light .main-toolbar .selection .select2-selection__rendered {
+  color: #404040;
+  text-shadow: none;
+}
+.kx-light .main-toolbar .selection .select2-selection__arrow b {
+  border-color: #404040 transparent transparent transparent;
+}
+.kx-light .main-toolbar .logo {
+  background-image: url(../images/logo-dark.svg);
+}
+.kx-light .main-toolbar .logo path {
+  fill: #005C98;
+}
+.kx-light .main-toolbar .ui-button {
+  color: #303030;
+}
+.kx-light .main-toolbar .ui-button.ui-state-hover {
+  background-image: none;
+  background-color: transparent;
+}
+
+.no-touch .kx-darkroom {
+  scrollbar-face-color: #505050;
+  scrollbar-highlight-color: #606060;
+  scrollbar-3dlight-color: #606060;
+  scrollbar-darkshadow-color: #606060;
+  scrollbar-shadow-color: #606060;
+  scrollbar-arrow-color: #606060;
+  scrollbar-track-color: #303030;
+  /* https://www.w3.org/TR/css-scrollbars-1/ */
+  scrollbar-color: #505050 #303030;
+}
+.no-touch .kx-darkroom ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  background-color: #303030;
+}
+.no-touch .kx-darkroom ::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+}
+.no-touch .kx-darkroom ::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border: 1px solid #606060;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #505050;
+}
+.no-touch .kx-darkroom ::-webkit-scrollbar-corner {
+  background-color: #222222;
+}
+.no-touch .kx-light {
+  /*
+  ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+         box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+  	border-radius: 0px;
+  	background-color: #efefef;
+              //#999;
+  }
+
+  ::-webkit-scrollbar { 
+  	width: 14px;
+  	background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  	border-radius: 0px;
+  	border: 1px solid #ddd;
+         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+         box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  	background-color: #ccc;
+  }
+
+  ::-webkit-scrollbar-corner {
+  	background-color: #eee;
+  }
+
+     scrollbar-face-color: #ccc;
+     scrollbar-highlight-color: #ccc;
+     scrollbar-3dlight-color: #ddd;
+     scrollbar-darkshadow-color: #ddd;
+     scrollbar-shadow-color: #ccc;
+     scrollbar-arrow-color: #ccc;
+     scrollbar-track-color: #efefef;
+
+     /* https://www.w3.org/TR/css-scrollbars-1/
+     scrollbar-color: #ccc #efefef; */
+}
+
+body.pdf .toolbar-div {
+  display: none;
+  height: 0 !important;
+}
+body.pdf .document-view-div {
+  top: 0 !important;
+}
+body.pdf .pdf-filters-info {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  z-index: 999999;
+  color: black;
+}
+
+html.pdf-flow-layout {
+  height: auto;
+  min-height: auto;
+  overflow: auto;
+}
+html.pdf-flow-layout > body {
+  height: auto;
+  min-height: auto;
+}
+html.pdf-flow-layout > body > #appdiv {
+  height: auto;
+}
+html.pdf-flow-layout > body > #appdiv > .document-view-div {
+  position: relative;
+}
+html.pdf-flow-layout > body > #appdiv > .document-view-div > .document-view {
+  position: relative;
+}
+html.pdf-flow-layout > body > #appdiv > .document-view-div > .document-view > .screen-view-div > .screen-view > .worksheet {
+  position: relative;
+  overflow: hidden;
+}
+html.pdf-flow-layout > body > #appdiv > .document-view-div > .document-view > .screen-view-div > .screen-view > .worksheet .grid-stack {
+  position: relative;
+  height: auto !important;
+  margin: 0 !important;
+}
+html.pdf-flow-layout > body > #appdiv > .document-view-div > .document-view > .screen-view-div > .screen-view > .worksheet .grid-stack .grid-stack-item {
+  position: absolute;
+}
+html.pdf-flow-layout > body > #appdiv > .document-view-div > .document-view > .screen-view-div > .screen-view > .worksheet .grid-stack .grid-stack-item.pdf-expandable {
+  position: relative;
+  height: auto;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9ub3JtYWxpemUuc2NzcyIsIl92aWV3LmNvbXBvbmVudFZpZXcuc2NzcyIsIl9reC1saWdodC5zY3NzIiwiX2dsb2JhbC5zY3NzIiwibWFpbi5zY3NzIiwiYm91cmJvbi9hZGRvbnMvX3ByZWZpeGVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFFQTtBQUFBO0FBQUE7QUFJQTtBQUFBO0FBQUE7QUFJQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7RUFZSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0VBR0k7RUFDQTtFQUNBOzs7QUFHSjtBQUFBO0FBQUE7QUFBQTtBQUtBO0VBQ0k7RUFDQTs7O0FBR0o7QUFBQTtBQUFBO0FBQUE7QUFLQTtFQUNJOzs7QUFHSjtBQUFBO0FBQUE7QUFJQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFPQTtFQUNJO0FBQWlCO0VBQ2pCO0FBQTRCO0VBQzVCO0FBQWdDOzs7QUFHcEM7QUFBQTtBQUFBO0FBQUE7QUFLQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0VBS0k7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0VBQ0k7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0FBQUE7QUFBQTtBQUlBO0VBQ0k7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0FBQUE7RUFFSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQU1BO0VBQ0k7RUFDQTs7O0FBR0o7RUFDSTtFQUNBOzs7QUFHSjtFQUNJO0VBQ0E7OztBQUdKO0VBQ0k7RUFDQTs7O0FBR0o7RUFDSTtFQUNBOzs7QUFHSjtFQUNJO0VBQ0E7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0VBQ0k7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0FBQUE7RUFFSTs7O0FBR0o7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBQUE7QUFLQTtFQUNJO0VBQ0E7RUFDQTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7RUFDSTtFQUNBOzs7QUFHSjtBQUFBO0FBQUE7QUFJQTtBQUFBO0VBRUk7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0FBQUE7QUFBQTtBQUFBO0VBSUk7RUFDQTtFQUNBOzs7QUFHSjtBQUFBO0FBQUE7QUFJQTtFQUNJO0VBQ0E7RUFDQTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtFQUVJO0VBQ0E7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0VBQ0k7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0FBQUE7RUFFSTtFQUNBO0VBQ0E7RUFDQTs7O0FBR0o7RUFDSTs7O0FBR0o7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0FBQUE7RUFJSTs7O0FBR0o7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0VBR0k7OztBQUdKO0FBQUE7QUFBQTtBQUlBO0FBQUE7RUFFSTtFQUNBOzs7QUFHSjtBQUFBO0FBQUE7QUFJQTtBQUFBO0FBQUE7QUFBQTtBQUtBO0VBQ0k7QUFBVztFQUNYO0FBQWlDOzs7QUFHckM7QUFBQTtBQUFBO0FBSUE7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0FBSUE7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0FBSUE7RUFDSTs7O0FBR0o7QUFBQTtBQUFBO0FBSUE7RUFDSTtFQUNBO0VBQ0E7OztBQUdKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFNQTtFQUNJO0FBQVc7RUFDWDtFQUNBO0FBQXFCO0VBQ3JCO0FBQW9COzs7QUFHeEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBT0E7QUFBQTtBQUFBO0FBQUE7RUFJSTtBQUFpQjtFQUNqQjtBQUFXO0VBQ1g7QUFBMEI7RUFDMUI7QUFBeUI7OztBQUc3QjtBQUFBO0FBQUE7QUFBQTtBQUtBO0FBQUE7RUFFSTs7O0FBR0o7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBT0E7QUFBQTtFQUVJOzs7QUFHSjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFVQTtBQUFBO0FBQUE7QUFBQTtFQUlJO0FBQTRCO0VBQzVCO0FBQWlCO0VBQ2pCO0FBQXFCOzs7QUFHekI7QUFBQTtBQUFBO0FBSUE7QUFBQTtFQUVJOzs7QUFHSjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFPQTtBQUFBO0VBRUk7QUFBd0I7RUFDeEI7QUFBWTtFQUNaO0FBQWU7RUFDZjtBQUFjOzs7QUFHbEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQU1BO0VBQ0k7QUFBK0I7RUFDL0I7RUFDQTtBQUFpQztFQUNqQzs7O0FBR0o7QUFBQTtBQUFBO0FBQUE7QUFLQTtFQUNJOzs7QUFHSjtBQUFBO0FBQUE7QUFJQTtBQUFBO0VBRUk7RUFDQTs7O0FBR0o7QUFBQTtBQUFBO0FBQUE7QUFLQTtFQUNJO0FBQWdCO0VBQ2hCO0FBQXFCOzs7QUFHekI7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUFBO0FBSUE7RUFDSTtFQUNBO0VBQ0E7OztBQ3pnQko7RUFDQztFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVZO0VBQ0E7O0FBR1o7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBSUY7RUFDQzs7QUFNRDtBQUFBO0VBRUM7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7O0FBS0Q7QUFBQTtFQUVnQjs7QUFHSjtFQUNJOztBQUVBO0VBQ0k7O0FBSXBCO0VBQ0M7RUFDZTs7QUFHaEI7QUFBQTtFQUVnQjs7QUFFQTtBQUFBO0VBQ0k7O0FBTXBCO0FBQUE7RUFHQzs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7QUFBQTtFQUVDOztBQUlEO0VBQ0M7O0FBYUg7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUlGO0VBQ0M7O0FBTUQ7RUFDQzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFLRDtFQUNnQjs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7O0FBS3hCO0VBQ0M7RUFDZTs7QUFHSjtBQUFBO0VBRUk7O0FBS2hCO0VBQ0M7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0FBQUE7RUFFQzs7QUFHRDtFQUNDOztBQUtEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7QUFBQTtFQUVDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFLRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0FBQUE7RUFFQztFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBOzs7QUFRRDtFQUNJO0VBQ0E7O0FBR0k7RUFDSTs7QUFHSjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtFQUlJOztBQUtKO0VBQ0k7RUFDQTs7QUFHSjtBQUFBO0FBQUE7RUFFSTs7QUFHSjtFQUNJOzs7QUMvU2hCO0FBQUE7QUNpQkk7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtFRFZBO0VBQ0E7O0FBR0E7QUFBQTtFQUNJOzs7QUFJUjtBQ0NJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7O0FER0g7QUFBQTtBQUFBO0FBQUE7RUFJTzs7QUFHUDtFQUNDOztBQUtEO0VBQ0M7RUFDQTtFQUVBO0VBQ0E7RUFDQTs7QUFLQTtBQUFBO0FBQUE7QUFBQTtFQUVDOztBQUtEO0VBQ0M7O0FBSUY7RUN5Qkc7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUFFQTtFQUNBOztBRGpDRjtFQUVDO0VBQ0E7O0FBRUE7RUFDQzs7QUNQQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBRFJQO0FDckRHO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7O0FEMERJO0VBQ0k7OztBRTNGWjtBQUNJOztBQUNBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNOO0VBQ007O0FBSUo7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFFSjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFJUjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFLWjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUlKO0VBQ0k7RUFDQTtFQUNB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 */

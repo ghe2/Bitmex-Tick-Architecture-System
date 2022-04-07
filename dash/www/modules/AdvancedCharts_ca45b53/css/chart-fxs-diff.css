@@ -1,0 +1,437 @@
+.charting.fxs.ChartRoot, .charting.fxs .ChartDiv {
+  background-color: transparent;
+}
+.charting.fxs .alert-icon {
+  background-image: url("../images/lcgdark/alert-icon.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+}
+.charting.fxs .ui-state-default .ui-icon-save-chart {
+  background-image: url("../images/lcgdark/icn_save.png");
+}
+.charting.fxs .ui-state-hover .ui-icon-save-chart {
+  background-image: url("../images/lcgdark/icn_save.png");
+}
+.charting.fxs .ui-state-default .ui-icon-tweet-chart {
+  background-image: url("../images/lcgdark/twitter_Inactive.png");
+}
+.charting.fxs .ui-state-hover .ui-icon-tweet-chart {
+  background-image: url("../images/lcgdark/twitter_Rollover.png");
+}
+.charting.fxs .ui-state-default .ui-icon-email-chart {
+  background-image: url("../images/lcgdark/mail_Inactive.png");
+}
+.charting.fxs .ui-state-hover .ui-icon-email-chart {
+  background-image: url("../images/lcgdark/mail_Rollover.png");
+}
+.charting.fxs .ui-state-default .ui-icon-left-arrow {
+  background-image: url("../images/lcgdark/left-arrow.png");
+}
+.charting.fxs .ui-state-default .ui-icon-right-arrow {
+  background-image: url("../images/lcgdark/right-arrow.png");
+}
+.charting.fxs .ui-state-default .ui-icon-undo {
+  background-image: url("../images/lcgdark/undo_Inactive.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-undo {
+  background-image: url("../images/lcgdark/undo_Rollover.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-redo {
+  background-image: url("../images/lcgdark/redo_Inactive.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-redo {
+  background-image: url("../images/lcgdark/redo_Rollover.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-trash-bin {
+  background-image: url("../images/lcgdark/trash_bin_Inactive.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-trash-bin {
+  background-image: url("../images/lcgdark/trash_bin_Rollover.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-chart-zoom {
+  background-image: url("../images/lcgdark/icn_zoom.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-chart-zoom {
+  background-image: url("../images/lcgdark/icn_zoom.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-chart-zoom-selected,
+.charting.fxs .ui-state-hover .ui-icon-chart-zoom-selected {
+  background-image: url("../images/lcgdark/icn_zoom.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-chart-dna {
+  background-image: url("../images/lcgdark/iconPattern_Inactive.png");
+}
+.charting.fxs .ui-state-hover .ui-icon-chart-dna {
+  background-image: url("../images/lcgdark/iconPattern_Rollover.png");
+}
+.charting.fxs .ui-state-default .ui-icon-chart-dna-selected,
+.charting.fxs .ui-state-hover .ui-icon-chart-dna-selected {
+  background-image: url("../images/lcgdark/iconPattern_Rollover.png");
+}
+.charting.fxs .ui-state-default .ui-icon-chart-zoom-in {
+  background-image: url("../images/lcgdark/icn_plus.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-chart-zoom-in {
+  background-image: url("../images/lcgdark/icn_plus.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-chart-zoom-out {
+  background-image: url("../images/lcgdark/icn_minus.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-chart-zoom-out {
+  background-image: url("../images/lcgdark/icn_minus.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-chart-zoom-reset {
+  background-image: url("../images/lcgdark/zoom-reset.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-chart-zoom-reset {
+  background-image: url("../images/lcgdark/zoom-reset.png");
+  background-position: 0 0;
+}
+.charting.fxs .RangeSelectorDiv .ui-state-default .ui-icon-chart-calendar {
+  background-image: url("../images/lcgdark/calendar.png");
+  background-repeat: repeat;
+  background-color: transparent;
+}
+.charting.fxs .RangeSelectorDiv .ui-state-hover .ui-icon-chart-calendar {
+  background-image: url("../images/lcgdark/calendar.png");
+  background-repeat: repeat;
+  background-color: transparent;
+}
+.charting.fxs .ui-state-default .ui-icon-toolbox {
+  background-image: url("../images/lcgdark/toolbox-inactive.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-hover .ui-icon-toolbox {
+  background-image: url("../images/lcgdark/toolbox-rollover.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-toolbox-selected,
+.charting.fxs .ui-state-hover .ui-icon-toolbox-selected {
+  background-image: url("../images/lcgdark/toolbox-active.png");
+  background-position: 0 0;
+}
+.charting.fxs .ui-state-default .ui-icon-newwin,
+.charting.fxs .ui-state-hover .ui-icon-newwin {
+  background-image: url("../images/lcgdark/icn_newwin.png");
+  background-position: 0 0;
+}
+.charting.fxs .topScroll {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+.charting.fxs .topScroll .ui-slider-range {
+  border-top: 0;
+}
+.charting.fxs .topScroll .ui-slider-handle.ui-state-hover, .charting.fxs .topScroll .ui-slider-handle.ui-state-active {
+  border: 1px solid #9c8f74;
+  background: #76705d;
+  background-image: none;
+}
+.charting.fxs .bottomScroll {
+  border: none;
+  border-radius: 0;
+}
+.charting.fxs .bottomScroll .ui-slider-range {
+  background: #505050 none;
+}
+.charting.fxs .bottomScroll .ui-slider-range.ui-state-hover, .charting.fxs .bottomScroll .ui-slider-range.ui-state-active {
+  border: 1px solid #9c8f74;
+  background: #76705d;
+  background-image: none;
+}
+.charting.fxs.ui-widget-content {
+  border: 1px solid #707070;
+  background: #333333;
+  background-image: none;
+  color: #ffffff;
+}
+.charting.fxs.ui-widget-content a {
+  color: #ffffff;
+}
+.charting.fxs .ui-dialog-content {
+  border-width: 0;
+}
+.charting.fxs.ui-dialog {
+  z-index: 18888;
+}
+.charting.fxs.ui-dialog .ui-widget-header {
+  border: 1px solid #505050;
+  background: #3b3b3b url("images/ui-bg_highlight-soft_10_3b3b3b_1x100.png") 50% 50% repeat-x;
+  color: #ffffff;
+  font-weight: bold;
+}
+.charting.fxs .ui-selected {
+  background: #8b7c48;
+}
+.charting.fxs .toolbar .chart-menu ul,
+.charting.fxs .toolbar .chart-menu li,
+.charting.fxs .toolbar .chart-menu a,
+.charting.fxs .toolbar .chart-menu .ui-button-text,
+.charting.fxs .toolbar .chart-menu .chart-menu-text {
+  color: #c8c8c8;
+}
+.charting.fxs .toolbar .chart-menu .chart-menu-column-header {
+  color: #fff;
+}
+.charting.fxs .toolbar .chart-menu ul .ui-button.ui-state-hover,
+.charting.fxs .toolbar .chart-menu .ui-state-hover:not([role=tab]) {
+  background: none;
+  border-color: transparent;
+}
+.charting.fxs .toolbar .chart-menu ul .ui-button.ui-state-hover .ui-button-text,
+.charting.fxs .toolbar .chart-menu .ui-state-hover:not([role=tab]) .ui-button-text {
+  color: #fff;
+}
+.charting.fxs .toolbar .draw-menu .line-thickness a {
+  background: none;
+  border: none;
+}
+.charting.fxs .toolbar .draw-menu .line-thickness a.selected, .charting.fxs .toolbar .draw-menu .line-thickness a:hover {
+  color: #fff;
+}
+.charting.fxs .toolbar .ui-button.menu-button-active {
+  background: #808080;
+}
+.charting.fxs .chart-menu.ui-dialog-content {
+  color: #c8c8c8;
+}
+.charting.fxs .chart-menu.ui-dialog-content .chart-menu-column-header {
+  color: #fff;
+}
+.charting.fxs .chart-menu.ui-dialog-content ul, .charting.fxs .chart-menu.ui-dialog-content li, .charting.fxs .chart-menu.ui-dialog-content a, .charting.fxs .chart-menu.ui-dialog-content .chart-menu-text, .charting.fxs .chart-menu.ui-dialog-content .ui-button-text {
+  color: #c8c8c8;
+}
+.charting.fxs .chart-menu.ui-dialog-content ul.selected, .charting.fxs .chart-menu.ui-dialog-content li.selected, .charting.fxs .chart-menu.ui-dialog-content a.selected, .charting.fxs .chart-menu.ui-dialog-content .chart-menu-text.selected, .charting.fxs .chart-menu.ui-dialog-content .ui-button-text.selected {
+  color: #fff;
+}
+.charting.fxs .chart-menu.ui-dialog-content ul .ui-button.ui-state-hover, .charting.fxs .chart-menu.ui-dialog-content .ui-state-hover {
+  background: none;
+  border-color: transparent;
+  color: #fff;
+}
+.charting.fxs .chart-menu.ui-dialog-content ul .ui-button.ui-state-hover .ui-button-text, .charting.fxs .chart-menu.ui-dialog-content .ui-state-hover .ui-button-text {
+  color: #fff;
+}
+.charting.fxs .chart-menu.ui-dialog-content.draw-menu .line-thickness a:hover {
+  background: none;
+  border-color: transparent;
+  color: #fff;
+}
+.charting.fxs .trades-tabs .trades-content .ui-tabs-panel {
+  border: none;
+}
+.charting.fxs.context-menu {
+  box-shadow: 2px 3px 7px dimgray;
+}
+.charting.fxs .InfoBorder {
+  color: #ffffff;
+  border-color: 1px solid #a2adb5;
+  background-color: rgba(30, 30, 30, 0.7);
+}
+.charting.fxs .IndicatorsToolbar li {
+  background: none;
+  border-color: transparent;
+}
+.charting.fxs .IndicatorsToolbar li a {
+  color: #c8c8c8;
+}
+.charting.fxs .IndicatorsToolbar li a:hover {
+  color: #fff;
+}
+.charting.fxs .IndicatorForm .ui-state-default .ui-icon {
+  background-image: url("../../themes/chartingdark/images/ui-icons_cccccc_256x240.png");
+}
+.charting.fxs.untitledDialog .ui-widget-header {
+  border: none;
+  background: none;
+}
+.charting.fxs .axisText {
+  color: #fff;
+}
+.charting.fxs .manage-templates-dialog {
+  color: #c8c8c8;
+}
+.charting.fxs .manage-templates-dialog .detail-place {
+  border-color: #666;
+}
+.charting.fxs .manage-templates-dialog .list-place {
+  border-color: #666;
+}
+.charting.fxs .manage-templates-dialog .list-place ul li {
+  border-color: transparent;
+  background: none;
+}
+.charting.fxs .manage-templates-dialog .list-place ul li.ui-selectee.ui-selected, .charting.fxs .manage-templates-dialog .list-place ul li.ui-selectee:hover {
+  color: white;
+  border-color: transparent;
+  background: none;
+}
+.charting.fxs .manage-templates-dialog .list-place .template-title, .charting.fxs .manage-templates-dialog .list-place .template-value {
+  color: #fff;
+}
+.charting.fxs .manage-templates-dialog .current-view.current-view-selected, .charting.fxs .manage-templates-dialog .current-view:hover {
+  color: white;
+  background: none;
+  border-color: transparent;
+}
+.charting.fxs .manage-templates-dialog .template-title {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.charting.fxs .manage-templates-dialog .template-value {
+  color: #c8c8c8;
+}
+.charting.fxs .axisTextMinor {
+  color: #a3aeb6;
+}
+.charting.fxs .axisTextMajor {
+  color: #ffffff;
+}
+.charting.fxs .evo-pop {
+  width: auto;
+}
+.charting.fxs .evo-palette th, .charting.fxs .evo-palette-ie th {
+  border: 0;
+}
+.charting.fxs .evo-palette, .charting.fxs .evo-palette-ie {
+  border-collapse: separate;
+  border-spacing: 2px 0px;
+}
+.charting.fxs .visual-settings table .settings-section tr {
+  height: 24px;
+}
+.charting.fxs .visual-settings table .settings-section tr .evo-pop tr {
+  height: auto;
+}
+.charting.fxs .toolbar-btn.ui-state-default {
+  background: none;
+  background-color: #505050;
+  border-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$topColor", endColorstr="$bottomColor", GradientType=0 );
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top, #585858 0%, #505050 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #585858 0%, #505050 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #585858 0%, #505050 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #585858), color-stop(1, #505050));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #585858 0%, #505050 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #585858 0%, #505050 100%);
+  color: #ffffff;
+}
+.charting.fxs .toolbar-btn.ui-state-default.ui-state-hover {
+  background: none;
+  background-color: #606060;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$topColor", endColorstr="$bottomColor", GradientType=0 );
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top, #686868 0%, #606060 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #686868 0%, #606060 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #686868 0%, #606060 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #686868), color-stop(1, #606060));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #686868 0%, #606060 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #686868 0%, #606060 100%);
+}
+.charting.fxs .toolbar-right {
+  right: 2px;
+}
+.charting.fxs .toolbar-right .ask.toolbar-btn.ui-state-hover .ui-button-text b, .charting.fxs .toolbar-right .bid.toolbar-btn.ui-state-hover .ui-button-text b {
+  background-color: #e8e8e8;
+}
+.charting.fxs .zoom-btns.ui-button {
+  width: 29px;
+  height: 29px;
+  border-radius: 4px;
+  background: none;
+  background-color: #000000;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$topColor", endColorstr="$bottomColor", GradientType=0 );
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top, #101010 0%, #000000 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #101010 0%, #000000 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #101010 0%, #000000 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #101010), color-stop(1, #000000));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #101010 0%, #000000 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #101010 0%, #000000 100%);
+}
+.charting.fxs .toolbar .ui-button-icon-only {
+  font-size: 11px;
+}
+.charting.fxs .toolbar-left {
+  margin-top: 1px;
+}
+.charting.fxs .toolbar-left .stock-picker-div {
+  margin-top: -1px !important;
+}
+.charting.fxs .toolbar-left .stock-picker-div input {
+  font-size: 12px !important;
+}
+.charting.fxs .ui-button-text-only .ui-button-text {
+  padding: 4px 9px;
+}
+.charting.fxs .ui-button-icon-only .ui-button-text,
+.charting.fxs .ui-button-icons-only .ui-button-text {
+  padding: 4px;
+  font-size: 11px;
+}
+.charting.fxs .buttons-div {
+  margin-top: 0;
+  border: 1px solid #202020;
+  border-bottom: none;
+  padding-left: 4px;
+}
+.charting.fxs .ui-button.ui-state-default.amend-btn, .charting.fxs .ui-button.ui-state-default.cancel-btn, .charting.fxs .ui-button.ui-state-default.close-trade-button, .charting.fxs .ui-button.ui-state-default.amend-trade-button {
+  padding: 0;
+}
+.charting.fxs .ui-button.ui-state-default.amend-btn .ui-button-text, .charting.fxs .ui-button.ui-state-default.cancel-btn .ui-button-text, .charting.fxs .ui-button.ui-state-default.close-trade-button .ui-button-text, .charting.fxs .ui-button.ui-state-default.amend-trade-button .ui-button-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2px 6px;
+}
+.charting.fxs .ui-button.ui-state-default.amend-btn, .charting.fxs .ui-button.ui-state-default.amend-trade-button {
+  background: #0076c0;
+}
+.charting.fxs .ui-button.ui-state-default.amend-btn.ui-state-hover, .charting.fxs .ui-button.ui-state-default.amend-trade-button.ui-state-hover {
+  background: #4da1d1;
+}
+.charting.fxs .ui-button.ui-state-default.cancel-btn, .charting.fxs .ui-button.ui-state-default.close-trade-button {
+  background: #ec174a;
+}
+.charting.fxs .ui-button.ui-state-default.cancel-btn.ui-state-hover, .charting.fxs .ui-button.ui-state-default.close-trade-button.ui-state-hover {
+  background: #f15d81;
+}
+.charting.fxs.mobile .ui-button.ui-state-hover.amend-btn, .charting.fxs.mobile .ui-button.ui-state-hover.cancel-btn, .charting.fxs.mobile .ui-button.ui-state-hover.close-trade-button, .charting.fxs.mobile .ui-button.ui-state-hover.amend-trade-button {
+  border-color: transparent;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYXJ0LWZ4cy1kaWZmLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUJJO0VBQ0k7O0FBS0E7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7QUFBQTtFQUVJO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0FBQUE7RUFFSTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUVKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFJSjtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0FBQUE7RUFFSTtFQUNBOztBQUdKO0FBQUE7RUFFSTtFQUNBOztBQVFSO0VBQ0k7RUFDQTtFQUNBOztBQUNBO0VBQ0k7O0FBR0E7RUFDSTtFQUNBO0VBQ0E7O0FBS1o7RUFDSTtFQUNBOztBQUVBO0VBQ0k7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7O0FBTVo7RUFDQztFQUNBO0VBQ0c7RUFDSDs7QUFFRztFQUNDOztBQUlMO0VBQ0k7O0FBR0o7RUFFSTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUtSO0VBQ0M7O0FBTVU7QUFBQTtBQUFBO0FBQUE7QUFBQTtFQUtJOztBQUdKO0VBQ0k7O0FBSUo7QUFBQTtFQUVJO0VBQ0E7O0FBQ0E7QUFBQTtFQUNJOztBQU1SO0VBQ0k7RUFDQTs7QUFDQTtFQUNJOztBQUtsQjtFQUVVOztBQUlSO0VBWUk7O0FBWEE7RUFDSTs7QUFHSjtFQUNJOztBQUNBO0VBQ0k7O0FBTVI7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTs7QUFJUjtFQUNJOztBQU9KO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBSUE7RUFDSTtFQUNBOztBQUVBO0VBQ0k7O0FBRUE7RUFDSTs7QUFNaEI7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUNJO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSTtFQUNJO0VBQ0E7O0FBRUE7RUFFSTtFQUNBO0VBQ0E7O0FBSVo7RUFDSTs7QUFLWjtFQUVJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUlSO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0M7O0FBR0Q7RUFDSTtFQUNBOztBQUlKO0VBQ0k7O0FBRUE7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQXJjSjtBQUNBO0VBQ0E7QUFDQTtFQUNBO0FBQ0E7RUFDQTtBQUNBO0VBQ0E7QUFDQTtFQUNBO0FBQ0E7RUFDQTtFQTJiSTs7QUFFQTtFQUNJO0VBQ0E7RUEzY1I7QUFDQTtFQUNBO0FBQ0E7RUFDQTtBQUNBO0VBQ0E7QUFDQTtFQUNBO0FBQ0E7RUFDQTtBQUNBO0VBQ0E7O0FBb2NBO0VBQ0k7O0FBR1E7RUFDSTs7QUFPWjtFQUNJO0VBQWE7RUFDYjtFQUNBO0VBQ0E7RUFoZVI7QUFDQTtFQUNBO0FBQ0E7RUFDQTtBQUNBO0VBQ0E7QUFDQTtFQUNBO0FBQ0E7RUFDQTtBQUNBO0VBQ0E7O0FBMGRJO0VBQ0k7O0FBSVI7RUFDSTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7O0FBS1o7RUFDSTs7QUFHSjtBQUFBO0VBR0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUlBO0VBSUk7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFJUjtFQUVJOztBQUVBO0VBQ0k7O0FBSVI7RUFFSTs7QUFFQTtFQUNJOztBQU9KO0VBSUkiLCJmaWxlIjoiY2hhcnQtZnhzLWRpZmYuY3NzIn0= */

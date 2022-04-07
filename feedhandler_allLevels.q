@@ -8,9 +8,9 @@ pub:{$[h=0;
 
 upd:upsert;
 
-\l ws-client_0.2.2.q
+/\l ws-client_0.2.2.q
 /conda install -c jmcmurray ws-client ws-server
-/.utl.require"ws-client";
+.utl.require"ws-client";
 
 /Initialise displaying tables 
 orderbook:([]`s#time:"n"$();`g#sym:`$();side:`$();price:"f"$();size:"f"$();id:"f"$();action:`$());
@@ -78,5 +78,4 @@ vwap_depth:{$[any z<=s:sums x;(deltas z & s) wavg y;0nf]};
     ];
     };
 
-/.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2";`.bitmex.upd];
-.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2:XBTUSD";`.bitmex.upd];
+.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2";`.bitmex.upd];

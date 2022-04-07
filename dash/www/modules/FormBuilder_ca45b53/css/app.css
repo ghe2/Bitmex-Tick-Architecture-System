@@ -1,0 +1,155 @@
+.Form-Builder {
+  position: absolute;
+  font-size: 13px;
+  overflow: auto;
+  width: 100%;
+  max-height: 100%;
+}
+.Form-Builder fieldset {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.Form-Builder fieldset legend:not(:empty) {
+  padding: 0 4px;
+}
+.Form-Builder fieldset.Layout-Row {
+  flex-direction: row;
+}
+.Form-Builder .form-group {
+  width: 100%;
+}
+.Form-Builder .form-group .form-field {
+  padding: 5px 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: initial;
+}
+.Form-Builder .form-group .form-field .label {
+  margin-right: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.Form-Builder .form-group .form-field .label label {
+  float: initial;
+  width: initial;
+}
+.Form-Builder .form-group .form-field .editor {
+  width: initial;
+  margin-left: initial;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.Form-Builder .form-group .form-field .editor.error {
+  border: 1px solid red;
+}
+.Form-Builder .form-group .form-field .editor input {
+  border: 1px solid #6D6D6D;
+  border-radius: 3px;
+  background-color: #303030;
+  color: white;
+  padding: 4px;
+  min-width: 35px;
+}
+.Form-Builder .form-group .form-field .editor input:focus, .Form-Builder .form-group .form-field .editor input:hover {
+  border: 1px solid #00AEFF;
+}
+.Form-Builder .form-group .form-field .editor input:focus.ui-spinner-input, .Form-Builder .form-group .form-field .editor input:hover.ui-spinner-input {
+  border: none;
+}
+.Form-Builder .form-group .form-field .editor input.ui-spinner-input {
+  border: none;
+  padding: 2px;
+}
+.Form-Builder .form-group .form-field .editor input, .Form-Builder .form-group .form-field .editor span.select2 {
+  box-sizing: border-box;
+  width: 100%;
+}
+.Form-Builder .form-group .form-field .editor span.ui-spinner:focus, .Form-Builder .form-group .form-field .editor span.ui-spinner:hover {
+  border: 1px solid #00AEFF;
+}
+.Form-Builder .form-group .form-field .editor .select2-selection:focus, .Form-Builder .form-group .form-field .editor .select2-selection:hover {
+  border-color: #00AEFF;
+}
+.Form-Builder .form-group .form-field .error {
+  color: red;
+}
+.Form-Builder .form-group .form-field.hidden {
+  display: none;
+}
+.Form-Builder .form-group.hidden {
+  display: none;
+}
+.Form-Builder .options {
+  pointer-events: all;
+  cursor: pointer;
+}
+.Form-Builder .form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Form-Builder .form-buttons button {
+  margin: 15px;
+  flex-grow: 1;
+}
+.Form-Builder .form-buttons button.ui-button {
+  font-size: 12px;
+}
+.Form-Builder .hidden {
+  display: none;
+}
+.Form-Builder.hide-borders fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.Form-Builder.hide-titles legend {
+  display: none;
+}
+.Form-Builder.Center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Form-Builder.Left {
+  left: 0;
+}
+.Form-Builder.Right {
+  right: 0;
+}
+.Form-Builder.Middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Form-Builder.Top {
+  top: 0;
+}
+.Form-Builder.Bottom {
+  bottom: 0;
+}
+.Form-Builder.Center.Middle {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kx-light, .Light {
+  color: black;
+}
+.kx-light .Form-Builder .form-group .form-field .editor input, .Light .Form-Builder .form-group .form-field .editor input {
+  color: black;
+  background-color: transparent;
+}
+.kx-light .Form-Builder .form-group .form-field .editor input:not(:hover), .Light .Form-Builder .form-group .form-field .editor input:not(:hover) {
+  border-color: #aeaeae;
+}
+.kx-light .Form-Builder .form-group .form-field .editor .select2-selection--single, .kx-light .Form-Builder .form-group .form-field .editor .select2-selection--multiple, .Light .Form-Builder .form-group .form-field .editor .select2-selection--single, .Light .Form-Builder .form-group .form-field .editor .select2-selection--multiple {
+  background: #dcdcdc;
+}
+.kx-light .Form-Builder .form-buttons button.ui-state-hover, .Light .Form-Builder .form-buttons button.ui-state-hover {
+  border-color: #00AEFF;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0k7O0FBR0o7RUFDSTs7QUFJUjtFQUNJOztBQUNBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFFSTtFQUNBOztBQUlSO0VBRUk7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDSTs7QUFFSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUNBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUlSO0VBQ0k7RUFDQTs7QUFFSjtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTs7QUFHSjtFQUNJOztBQUlSO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7O0FBQ0E7RUFDSTs7QUFLWjtFQUNJOztBQUlBO0VBQ0k7RUFDQTtFQUNBOztBQUtKO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTtFQUNBOzs7QUFJUjtFQUNJOztBQU1nQjtFQUNJO0VBQ0E7O0FBQ0E7RUFDSTs7QUFNUjtFQUNJOztBQU9aO0VBQ0kiLCJmaWxlIjoiYXBwLmNzcyJ9 */

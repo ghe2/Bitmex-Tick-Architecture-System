@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* gk: MIXINS */
+/* PALLETE */
+.OrderBook.Light .chart-div > svg .axis {
+  fill: black;
+}
+.OrderBook.Light .chart-div > svg .axis path,
+.OrderBook.Light .chart-div > svg .axis line {
+  stroke: black;
+}
+.OrderBook .tick line {
+  stroke-opacity: 0.3;
+}
+.OrderBook .chart-div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.OrderBook .chart-div > svg .axis {
+  font-size: 12px;
+  fill: #efefef;
+}
+.OrderBook .chart-div > svg .axis path,
+.OrderBook .chart-div > svg .axis line {
+  fill: none;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+.OrderBook .chart-div > svg .y.axis {
+  transform: translateX(-1px);
+}
+.OrderBook .chart-div > .tooltip {
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 5px;
+  color: white;
+  opacity: 0;
+  border-radius: 6px;
+  line-height: 13px;
+  white-space: pre-line;
+  pointer-events: none !important;
+  z-index: 2;
+}
+.OrderBook .chart-div > .tooltip ul {
+  margin: 0;
+  list-style: none;
+  padding: 1px 0px;
+}
+.OrderBook .chart-div > .tooltip ul li:before {
+  content: "■";
+  padding: 0 5px 0 0;
+}
+.OrderBook .chart-div > .tooltip ul li.buy:before {
+  color: green;
+}
+.OrderBook .chart-div > .tooltip ul li.sell:before {
+  color: red;
+}
+.OrderBook .chart-div > .zoomIn,
+.OrderBook .chart-div > .zoomOut,
+.OrderBook .chart-div > .lockY,
+.OrderBook .chart-div > .lockX,
+.OrderBook .chart-div > .reset {
+  display: block;
+  position: absolute;
+  top: -31px;
+  right: 50px;
+  width: 28px;
+  height: 24px;
+}
+.OrderBook .chart-div > .zoomIn {
+  right: 120px;
+  border-radius: 3px 0 0 3px;
+}
+.OrderBook .chart-div > .zoomOut {
+  right: 90px;
+  border-radius: 0 3px 3px 0;
+}
+.OrderBook .chart-div > .lockY {
+  right: 150px;
+  border-radius: 0 3px 3px 0;
+}
+.OrderBook .chart-div > .lockY .ui-button-text {
+  position: relative;
+  left: -21px;
+  top: -23px;
+  font-size: 14px;
+}
+.OrderBook .chart-div > .lockY .ui-icon {
+  opacity: 0.5;
+  position: relative;
+  left: 6px;
+  top: 12px;
+  font-size: 10px;
+}
+.OrderBook .chart-div > .lockX {
+  right: 180px;
+  border-radius: 0 3px 3px 0;
+}
+.OrderBook .chart-div > .lockX .ui-button-text {
+  position: relative;
+  left: -21px;
+  top: -23px;
+  font-size: 14px;
+}
+.OrderBook .chart-div > .lockX .ui-icon {
+  opacity: 0.5;
+  position: relative;
+  left: 6px;
+  top: 12px;
+  font-size: 10px;
+}
+
+div[data-componentid=OrderBook] .component-build-view .queryStatus .statusPanel .statusTitle {
+  display: block;
+}
+div[data-componentid=OrderBook] .component-build-view .queryStatus .statusPanel .statusText {
+  white-space: pre-line;
+}
+
+.OrderBook {
+  padding: 0;
+  overflow: visible !important;
+  border: transparent !important;
+  background: transparent !important;
+}
+.OrderBook.Light {
+  background-color: transparent;
+  border-color: transparent;
+}
+.OrderBook.Light > div {
+  color: black;
+}
+.OrderBook.Light > div > div > div > .ui-button {
+  background: #d4d4d4;
+  color: black;
+}
+.OrderBook > div {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.OrderBook > div.statusBar {
+  bottom: auto;
+  padding: 5px;
+}
+.OrderBook > div.book {
+  top: 25px;
+}
+.OrderBook .orderBookErrors {
+  color: #f6ecb5;
+  font-size: 1.6em;
+  width: 20px;
+  height: 20px;
+  right: 220px;
+  top: 4px;
+  position: absolute;
+  display: none;
+}
+.OrderBook .ui-tabs-nav, .OrderBook li.ui-state-default, .OrderBook a.ui-state-default {
+  background: none !important;
+  border: none !important;
+  font-size: 13px;
+}
+.OrderBook .ui-tabs-nav a:hover, .OrderBook li.ui-state-default a:hover, .OrderBook a.ui-state-default a:hover {
+  text-shadow: 0px 0px 1px;
+}
+.OrderBook .ui-tabs-active a {
+  border-bottom: 2px solid #25A9E0;
+  height: 13px;
+}
+.OrderBook .ui-tabs-panel {
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  z-index: 10;
+}
+.OrderBook .ui-tabs-panel > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.OrderBook .ui-tabs-panel > div .slick-header-column {
+  pointer-events: none;
+}
+.OrderBook .ui-tabs-panel > div .slick-resizable-handle {
+  pointer-events: all;
+}
+.OrderBook .ui-tabs-panel div > .buy,
+.OrderBook .ui-tabs-panel div > .buyBook {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 50%;
+  bottom: 0;
+  font-size: 14px;
+}
+.OrderBook .ui-tabs-panel div > .sell,
+.OrderBook .ui-tabs-panel div > .sellBook {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+.OrderBook .fps {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 16px;
+  color: #666;
+}
+.OrderBook #OrderBook-2 .slick-group .slick-cell > .slick-group-toggle {
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-position: right center;
+  z-index: 10;
+  opacity: 0.65;
+}
+.OrderBook #OrderBook-2 .slick-group .slick-cell > .slick-group-toggle:hover {
+  opacity: 1;
+}
+.OrderBook #OrderBook-2 .slick-group .slick-cell > .slick-group-title {
+  display: inline-block;
+}
+.OrderBook #OrderBook-2 .slick-group .slick-cell > .slick-group-title > .lblGroupSummary {
+  width: auto;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  padding: 2px;
+}
+.OrderBook #OrderBook-2 .buyBook .slick-group .slick-cell {
+  text-align: right;
+}
+.OrderBook #OrderBook-2 .buyBook .slick-group .slick-cell > .slick-group-title {
+  padding-right: 18px;
+}
+.OrderBook #OrderBook-2 .buyBook .slick-group .slick-cell > .slick-group-title > .lblGroupSummary {
+  left: 50%;
+  right: 25%;
+}
+.OrderBook #OrderBook-2 .buyBook .slick-group .slick-cell .slick-group-toggle {
+  float: right;
+}
+.OrderBook #OrderBook-2 .buyBook .slick-group .slick-cell .lblGropRowCount {
+  position: absolute;
+  right: 58%;
+  top: 0;
+}
+.OrderBook #OrderBook-2 .sellBook .slick-group .slick-cell > .slick-group-toggle {
+  background-position: 5px center;
+}
+.OrderBook #OrderBook-2 .sellBook .slick-group .slick-cell > .slick-group-title {
+  padding-left: 18px;
+}
+.OrderBook #OrderBook-2 .sellBook .slick-group .slick-cell > .slick-group-title > .lblGroupSummary {
+  float: right;
+  left: 25%;
+  right: 50%;
+}
+.OrderBook #OrderBook-2 .sellBook .slick-group .slick-cell .lblGropRowCount {
+  position: absolute;
+  left: 58%;
+  top: 0;
+}
+.OrderBook #OrderBook-2 .lblGroupSummary > b {
+  font-weight: normal;
+}
+.OrderBook #OrderBook-2 .lblGroupSummary > i {
+  display: none;
+}
+.OrderBook #OrderBook-1 .ui-resizable-handle, .OrderBook #OrderBook-2 .ui-resizable-handle {
+  display: block !important;
+}
+.OrderBook .ui-resizable-e {
+  width: 2px;
+  right: -4px;
+  border-width: 0px 3px;
+  border-color: #303030;
+  border-style: solid;
+  margin-left: -8px;
+  background: #666;
+  transition: background-color 0.5s ease;
+}
+.OrderBook.Light .ui-resizable-e {
+  border-color: #F0F0F0;
+  background: #CCC;
+}
+.OrderBook .ui-resizable-e:hover {
+  background-color: #00AEFF;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9nbG9iYWwuc2NzcyIsIl9jaGFydC5zY3NzIiwiYXBwLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFDO0FBV0Q7QUNSRztFQUNDOztBQUVBO0FBQUE7RUFFQzs7QUFNSjtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFRHJCRDtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FDb0JFO0VBQ0M7RUFDQTs7QUFDQTtBQUFBO0VBRUM7RUFDQTtFQUNBOztBQUlGO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFLSDtBQUFBO0FBQUE7QUFBQTtBQUFBO0VBS0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQztFQUNBOztBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlGO0VBQ0M7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7O0FDbklJO0VBQ0k7O0FBR0o7RUFDSTs7O0FBS1o7RUFDQztFQUNBO0VBQ0E7RUFDRzs7QUFHSDtFQUNDO0VBQ0E7O0FBQ0E7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7O0FBS0g7RUFFQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNNOztBQUdOO0VBQ0M7RUFDQTtFQUNBOztBQUVBO0VBQ0E7O0FBSUQ7RUFDQztFQUNBOztBQUdGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdTO0VBQ0k7O0FBR0o7RUFDSTs7QUFJZDtBQUFBO0VBRUM7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdEO0FBQUE7RUFFQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUY7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUlBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNTO0VBQ1Q7RUFDQTs7QUFFQTtFQUNDOztBQUlGO0VBQ0M7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUtIO0VBQ0M7O0FBRUE7RUFDQzs7QUFDQTtFQUNDO0VBQ0E7O0FBSUY7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUFLRDtFQUNVOztBQUdWO0VBQ0M7O0FBQ0E7RUFDQztFQUNBO0VBQ0E7O0FBSUY7RUFDQztFQUNBO0VBQ0E7O0FBSUY7RUFBb0M7O0FBQ3BDO0VBQW9DOztBQUc3QjtFQUVJOztBQUlYO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFBd0IiLCJmaWxlIjoiYXBwLmNzcyJ9 */

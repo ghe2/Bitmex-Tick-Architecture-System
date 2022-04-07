@@ -1,0 +1,271 @@
+Area,Group,Provence,Rent,PercentageChange,Rooms
+Dublin 1,Dublin,Leinster,988,4,1
+Dublin 2,Dublin,Leinster,1486,10.8,1
+Dublin 3,Dublin,Leinster,1248,17.7,1
+Dublin 4,Dublin,Leinster,1517,17.2,1
+Dublin 5,Dublin,Leinster,867,-1.9,1
+Dublin 6,Dublin,Leinster,1517,-2.5,1
+Dublin 6W,Dublin,Leinster,1144,-6,1
+Dublin 7,Dublin,Leinster,932,-7,1
+Dublin 8,Dublin,Leinster,945,-7.1,1
+Dublin 9,Dublin,Leinster,888,-4.6,1
+Dublin 10,Dublin,Leinster,602,-3.6,1
+Dublin 11,Dublin,Leinster,672,-6.6,1
+Dublin 12,Dublin,Leinster,771,-5.8,1
+Dublin 13,Dublin,Leinster,880,-4.6,1
+Dublin 14,Dublin,Leinster,1109,-5.9,1
+Dublin 15,Dublin,Leinster,689,-4.9,1
+Dublin 16,Dublin,Leinster,953,-5.2,1
+Dublin 17,Dublin,Leinster,581,-9,1
+Dublin 18,Dublin,Leinster,1023,-9.2,1
+Dublin 20,Dublin,Leinster,784,-6.9,1
+Dublin 22,Dublin,Leinster,576,-3.4,1
+Dublin 24,Dublin,Leinster,624,-3.6,1
+North Dublin Co,Dublin,Leinster,689,-4.7,1
+South Dublin,Dublin,Leinster,1222,-8.7,1
+West Dublin,Dublin,Leinster,659,-5,1
+Cork City,City Other,Munster,533,-4.1,1
+Galway City,City Other,Connacht,516,-4.6,1
+Limerick City,City Other,Munster,399,-1.3,1
+Waterford City,City Other,Munster,342,-2.2,1
+Meath,Leinster Non Dublin,Leinster,451,-8.5,1
+Kildare,Leinster Non Dublin,Leinster,472,-8.8,1
+Wicklow,Leinster Non Dublin,Leinster,585,-10.3,1
+Louth,Leinster Non Dublin,Leinster,390,-10.7,1
+Longford,Leinster Non Dublin,Leinster,217,-10,1
+Offaly,Leinster Non Dublin,Leinster,308,-11.3,1
+Westmeath,Leinster Non Dublin,Leinster,351,-5.4,1
+Laois,Leinster Non Dublin,Leinster,308,-9.1,1
+Carlow,Leinster Non Dublin,Leinster,312,-9.7,1
+Kilkenny,Leinster Non Dublin,Leinster,351,-11.6,1
+Wexford,Leinster Non Dublin,Leinster,321,-10.9,1
+Waterford Co,Munster Non City,Munster,407,0.7,1
+Kerry,Munster Non City,Munster,347,-2.1,1
+Cork Co,Munster Non City,Munster,407,-3.4,1
+Clare,Munster Non City,Munster,342,-2.2,1
+Limerick Co,Munster Non City,Munster,321,-4.4,1
+Tipperary,Munster Non City,Munster,321,-3,1
+Galway Co,Connacht Non City,Connacht,312,10.1,1
+Mayo,Connacht Non City,Connacht,264,9.3,1
+Roscommon,Connacht Non City,Connacht,230,12,1
+Sligo,Connacht Non City,Connacht,269,14.5,1
+Leitrim,Connacht Non City,Connacht,225,8.1,1
+Donegal,Ulster Non City,Ulster,234,8.3,1
+Cavan,Ulster Non City,Ulster,247,6.6,1
+Monaghan,Ulster Non City,Ulster,295,9.4,1
+Dublin 1,Dublin,Leinster,1421,-0.1,2
+Dublin 2,Dublin,Leinster,1881,1.8,2
+Dublin 3,Dublin,Leinster,1668,9.1,2
+Dublin 4,Dublin,Leinster,2011,3.1,2
+Dublin 5,Dublin,Leinster,1192,1,2
+Dublin 6,Dublin,Leinster,2076,0.3,2
+Dublin 6W,Dublin,Leinster,1569,-3.3,2
+Dublin 7,Dublin,Leinster,1278,-4.3,2
+Dublin 8,Dublin,Leinster,1291,-4.4,2
+Dublin 9,Dublin,Leinster,1213,-1.9,2
+Dublin 10,Dublin,Leinster,823,-0.8,2
+Dublin 11,Dublin,Leinster,923,-3.9,2
+Dublin 12,Dublin,Leinster,1057,-3,2
+Dublin 13,Dublin,Leinster,1209,-1.8,2
+Dublin 14,Dublin,Leinster,1521,-3.1,2
+Dublin 15,Dublin,Leinster,945,-2.2,2
+Dublin 16,Dublin,Leinster,1304,-2.4,2
+Dublin 17,Dublin,Leinster,797,-6.4,2
+Dublin 18,Dublin,Leinster,1404,-6.5,2
+Dublin 20,Dublin,Leinster,1075,-4.2,2
+Dublin 22,Dublin,Leinster,793,-0.6,2
+Dublin 24,Dublin,Leinster,854,-0.8,2
+North Dublin Co,Dublin,Leinster,945,-1.9,2
+South Dublin,Dublin,Leinster,1677,-6,2
+West Dublin,Dublin,Leinster,901,-2.2,2
+Cork City,City Other,Munster,724,1.2,2
+Galway City,City Other,Connacht,698,0.6,2
+Limerick City,City Other,Munster,537,4.1,2
+Waterford City,City Other,Munster,464,3.1,2
+Meath,Leinster Non Dublin,Leinster,598,-4.3,2
+Kildare,Leinster Non Dublin,Leinster,628,-4.6,2
+Wicklow,Leinster Non Dublin,Leinster,780,-6.2,2
+Louth,Leinster Non Dublin,Leinster,516,-6.6,2
+Longford,Leinster Non Dublin,Leinster,286,-5.8,2
+Offaly,Leinster Non Dublin,Leinster,407,-7.1,2
+Westmeath,Leinster Non Dublin,Leinster,468,-1,2
+Laois,Leinster Non Dublin,Leinster,407,-4.9,2
+Carlow,Leinster Non Dublin,Leinster,420,-5.5,2
+Kilkenny,Leinster Non Dublin,Leinster,472,-7.5,2
+Wexford,Leinster Non Dublin,Leinster,429,-6.7,2
+Waterford Co,Munster Non City,Munster,485,1.6,2
+Kerry,Munster Non City,Munster,416,-1.2,2
+Cork Co,Munster Non City,Munster,485,-2.6,2
+Clare,Munster Non City,Munster,412,-1.4,2
+Limerick Co,Munster Non City,Munster,381,-3.6,2
+Tipperary,Munster Non City,Munster,381,-2.2,2
+Galway Co,Connacht Non City,Connacht,394,4.1,2
+Mayo,Connacht Non City,Connacht,334,3.4,2
+Roscommon,Connacht Non City,Connacht,286,5.9,2
+Sligo,Connacht Non City,Connacht,342,8.3,2
+Leitrim,Connacht Non City,Connacht,282,2.2,2
+Donegal,Ulster Non City,Ulster,299,2.4,2
+Cavan,Ulster Non City,Ulster,316,0.8,2
+Monaghan,Ulster Non City,Ulster,368,3.5,2
+Dublin 1,Dublin,Leinster,1850,-0.4,3
+Dublin 2,Dublin,Leinster,2336,-0.8,3
+Dublin 3,Dublin,Leinster,2067,2.4,3
+Dublin 4,Dublin,Leinster,2916,0.8,3
+Dublin 5,Dublin,Leinster,1642,2.3,3
+Dublin 6,Dublin,Leinster,2869,1.6,3
+Dublin 6W,Dublin,Leinster,2162,-2,3
+Dublin 7,Dublin,Leinster,1764,-3.1,3
+Dublin 8,Dublin,Leinster,1785,-3.2,3
+Dublin 9,Dublin,Leinster,1677,-0.6,3
+Dublin 10,Dublin,Leinster,1140,0.5,3
+Dublin 11,Dublin,Leinster,1274,-2.6,3
+Dublin 12,Dublin,Leinster,1460,-1.8,3
+Dublin 13,Dublin,Leinster,1664,-0.5,3
+Dublin 14,Dublin,Leinster,2102,-1.9,3
+Dublin 15,Dublin,Leinster,1304,-0.9,3
+Dublin 16,Dublin,Leinster,1798,-1.1,3
+Dublin 17,Dublin,Leinster,1096,-5.1,3
+Dublin 18,Dublin,Leinster,1937,-5.3,3
+Dublin 20,Dublin,Leinster,1482,-2.9,3
+Dublin 22,Dublin,Leinster,1092,0.7,3
+Dublin 24,Dublin,Leinster,1179,0.5,3
+North Dublin Co,Dublin,Leinster,1304,-0.6,3
+South Dublin,Dublin,Leinster,2310,-4.8,3
+West Dublin,Dublin,Leinster,1244,-0.9,3
+Cork City,City Other,Munster,1040,-1.5,3
+Galway City,City Other,Connacht,1010,-2,3
+Limerick City,City Other,Munster,776,1.4,3
+Waterford City,City Other,Munster,672,0.4,3
+Meath,Leinster Non Dublin,Leinster,815,-2.2,3
+Kildare,Leinster Non Dublin,Leinster,858,-2.6,3
+Wicklow,Leinster Non Dublin,Leinster,1066,-4.2,3
+Louth,Leinster Non Dublin,Leinster,706,-4.6,3
+Longford,Leinster Non Dublin,Leinster,394,-3.8,3
+Offaly,Leinster Non Dublin,Leinster,559,-5.2,3
+Westmeath,Leinster Non Dublin,Leinster,637,1.1,3
+Laois,Leinster Non Dublin,Leinster,559,-2.9,3
+Carlow,Leinster Non Dublin,Leinster,572,-3.5,3
+Kilkenny,Leinster Non Dublin,Leinster,641,-5.5,3
+Wexford,Leinster Non Dublin,Leinster,585,-4.8,3
+Waterford Co,Munster Non City,Munster,676,4,3
+Kerry,Munster Non City,Munster,576,1.1,3
+Cork Co,Munster Non City,Munster,672,-0.2,3
+Clare,Munster Non City,Munster,568,0.9,3
+Limerick Co,Munster Non City,Munster,533,-1.3,3
+Tipperary,Munster Non City,Munster,533,0.2,3
+Galway Co,Connacht Non City,Connacht,533,5,3
+Mayo,Connacht Non City,Connacht,455,4.4,3
+Roscommon,Connacht Non City,Connacht,390,6.9,3
+Sligo,Connacht Non City,Connacht,459,9.3,3
+Leitrim,Connacht Non City,Connacht,386,3.1,3
+Donegal,Ulster Non City,Ulster,403,3.4,3
+Cavan,Ulster Non City,Ulster,425,1.7,3
+Monaghan,Ulster Non City,Ulster,503,4.4,3
+Dublin 1,Dublin,Leinster,2652,5.2,4
+Dublin 2,Dublin,Leinster,3480,8.6,4
+Dublin 3,Dublin,Leinster,3241,8.5,4
+Dublin 4,Dublin,Leinster,4567,1.9,4
+Dublin 5,Dublin,Leinster,2834,11.2,4
+Dublin 6,Dublin,Leinster,4944,10.4,4
+Dublin 6W,Dublin,Leinster,3731,6.5,4
+Dublin 7,Dublin,Leinster,3042,5.3,4
+Dublin 8,Dublin,Leinster,3077,5.2,4
+Dublin 9,Dublin,Leinster,2890,8,4
+Dublin 10,Dublin,Leinster,1963,9.2,4
+Dublin 11,Dublin,Leinster,2193,5.8,4
+Dublin 12,Dublin,Leinster,2518,6.7,4
+Dublin 13,Dublin,Leinster,2873,8.1,4
+Dublin 14,Dublin,Leinster,3623,6.6,4
+Dublin 15,Dublin,Leinster,2249,7.7,4
+Dublin 16,Dublin,Leinster,3103,7.4,4
+Dublin 17,Dublin,Leinster,1894,3.1,4
+Dublin 18,Dublin,Leinster,3341,2.9,4
+Dublin 20,Dublin,Leinster,2552,5.5,4
+Dublin 22,Dublin,Leinster,1885,9.4,4
+Dublin 24,Dublin,Leinster,2032,9.2,4
+North Dublin Co,Dublin,Leinster,2249,8,4
+South Dublin,Dublin,Leinster,3987,3.4,4
+West Dublin,Dublin,Leinster,2145,7.6,4
+Cork City,City Other,Munster,1885,10.3,4
+Galway City,City Other,Connacht,1824,9.7,4
+Limerick City,City Other,Munster,1400,13.5,4
+Waterford City,City Other,Munster,1213,12.4,4
+Meath,Leinster Non Dublin,Leinster,1621,1.5,4
+Kildare,Leinster Non Dublin,Leinster,1699,1.2,4
+Wicklow,Leinster Non Dublin,Leinster,2115,-0.5,4
+Louth,Leinster Non Dublin,Leinster,1404,-0.9,4
+Longford,Leinster Non Dublin,Leinster,780,0,4
+Offaly,Leinster Non Dublin,Leinster,1109,-1.5,4
+Westmeath,Leinster Non Dublin,Leinster,1265,5.1,4
+Laois,Leinster Non Dublin,Leinster,1109,0.9,4
+Carlow,Leinster Non Dublin,Leinster,1135,0.2,4
+Kilkenny,Leinster Non Dublin,Leinster,1274,-1.8,4
+Wexford,Leinster Non Dublin,Leinster,1166,-1.1,4
+Waterford Co,Munster Non City,Munster,1382,8.4,4
+Kerry,Munster Non City,Munster,1174,5.4,4
+Cork Co,Munster Non City,Munster,1374,3.9,4
+Clare,Munster Non City,Munster,1161,5.1,4
+Limerick Co,Munster Non City,Munster,1088,2.9,4
+Tipperary,Munster Non City,Munster,1088,4.3,4
+Galway Co,Connacht Non City,Connacht,1114,12.2,4
+Mayo,Connacht Non City,Connacht,949,11.5,4
+Roscommon,Connacht Non City,Connacht,819,14.2,4
+Sligo,Connacht Non City,Connacht,971,16.8,4
+Leitrim,Connacht Non City,Connacht,806,10.2,4
+Donegal,Ulster Non City,Ulster,845,10.4,4
+Cavan,Ulster Non City,Ulster,893,8.7,4
+Monaghan,Ulster Non City,Ulster,1053,11.6,4
+Dublin 1,Dublin,Leinster,3068,-6.5,5
+Dublin 2,Dublin,Leinster,3722,-7.2,5
+Dublin 3,Dublin,Leinster,3787,3.4,5
+Dublin 4,Dublin,Leinster,5269,-3.1,5
+Dublin 5,Dublin,Leinster,3116,7.1,5
+Dublin 6,Dublin,Leinster,5443,6.3,5
+Dublin 6W,Dublin,Leinster,4108,2.5,5
+Dublin 7,Dublin,Leinster,3345,1.4,5
+Dublin 8,Dublin,Leinster,3389,1.3,5
+Dublin 9,Dublin,Leinster,3185,4,5
+Dublin 10,Dublin,Leinster,2162,5.2,5
+Dublin 11,Dublin,Leinster,2414,1.9,5
+Dublin 12,Dublin,Leinster,2773,2.8,5
+Dublin 13,Dublin,Leinster,3163,4.1,5
+Dublin 14,Dublin,Leinster,3987,2.7,5
+Dublin 15,Dublin,Leinster,2479,3.7,5
+Dublin 16,Dublin,Leinster,3415,3.4,5
+Dublin 17,Dublin,Leinster,2084,-0.7,5
+Dublin 18,Dublin,Leinster,3675,-0.9,5
+Dublin 20,Dublin,Leinster,2812,1.6,5
+Dublin 22,Dublin,Leinster,2076,5.4,5
+Dublin 24,Dublin,Leinster,2236,5.1,5
+North Dublin Co,Dublin,Leinster,2474,4,5
+South Dublin,Dublin,Leinster,4385,-0.4,5
+West Dublin,Dublin,Leinster,2357,3.6,5
+Cork City,City Other,Munster,2206,4.2,5
+Galway City,City Other,Connacht,2136,3.7,5
+Limerick City,City Other,Munster,1642,7.3,5
+Waterford City,City Other,Munster,1421,6.2,5
+Meath,Leinster Non Dublin,Leinster,1738,1.7,5
+Kildare,Leinster Non Dublin,Leinster,1820,1.3,5
+Wicklow,Leinster Non Dublin,Leinster,2262,-0.3,5
+Louth,Leinster Non Dublin,Leinster,1499,-0.8,5
+Longford,Leinster Non Dublin,Leinster,836,0.1,5
+Offaly,Leinster Non Dublin,Leinster,1187,-1.4,5
+Westmeath,Leinster Non Dublin,Leinster,1352,5.2,5
+Laois,Leinster Non Dublin,Leinster,1187,1,5
+Carlow,Leinster Non Dublin,Leinster,1213,0.4,5
+Kilkenny,Leinster Non Dublin,Leinster,1365,-1.7,5
+Wexford,Leinster Non Dublin,Leinster,1248,-0.9,5
+Waterford,Munster Non City,Munster,1434,10.3,5
+Kerry,Munster Non City,Munster,1222,7.3,5
+Cork,Munster Non City,Munster,1430,5.9,5
+Clare,Munster Non City,Munster,1209,7.1,5
+Limerick,Munster Non City,Munster,1127,4.8,5
+Tipperary,Munster Non City,Munster,1127,6.3,5
+Galway,Connacht Non City,Connacht,1118,5.1,5
+Mayo,Connacht Non City,Connacht,953,4.5,5
+Roscommon,Connacht Non City,Connacht,819,7,5
+Sligo,Connacht Non City,Connacht,971,9.4,5
+Leitrim,Connacht Non City,Connacht,806,3.2,5
+Donegal,Ulster Non City,Ulster,845,3.5,5
+Cavan,Ulster Non City,Ulster,897,1.8,5
+Monaghan,Ulster Non City,Ulster,1053,4.5,5

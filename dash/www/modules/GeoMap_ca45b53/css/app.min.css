@@ -1,0 +1,5933 @@
+.GeoMap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.GeoMap .contextmenu {
+  color: #000;
+  background: #fff;
+  border: 1px solid grey;
+  z-index: 10;
+  position: relative;
+  width: 140px;
+}
+
+.GeoMap .contextmenu .closecontextMenu {
+  float: right;
+}
+
+.GeoMap .contextmenu div {
+  padding: 15px;
+}
+
+.GeoMap .contextmenu a {
+  display: inline-block;
+  color: grey;
+  font-size: 12px;
+}
+
+.GeoMap .q0-9 {
+  fill: rgba(217, 231, 247, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q1-9 {
+  fill: rgba(197, 220, 247, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q2-9 {
+  fill: rgba(180, 210, 247, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q3-9 {
+  fill: rgba(116, 175, 247, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q4-9 {
+  fill: rgba(86, 158, 247, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q5-9 {
+  fill: rgba(56, 142, 247, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q6-9 {
+  fill: rgba(48, 122, 211, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q7-9 {
+  fill: rgba(44, 111, 193, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q8-9 {
+  fill: rgba(38, 95, 165, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .q9-9 {
+  fill: rgba(22, 62, 112, 0.5);
+  stroke: rgba(255, 229, 229, 0.5);
+}
+
+.GeoMap .mapInfoWindowTabs .ui-widget-content {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #303030;
+}
+
+.GeoMap .info-box {
+  position: absolute;
+  background-color: white;
+  top: 200px;
+  left: 1200px;
+  background-color: white;
+  border: 1px solid #ead6df;
+  padding: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #4d4d4d;
+  display: none;
+}
+
+.GeoMap .over {
+  width: 100%;
+}
+
+.GeoMap .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.GeoMap .frame > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.GeoMap .graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.GeoMap .title {
+  text-align: center;
+}
+
+.GeoMap.dark {
+  background: #303030;
+  color: white;
+}
+
+.GeoMap.dark .graph text {
+  fill: white;
+}
+
+.GeoMap.dark .infoBubble {
+  color: #303030;
+}
+
+.GeoMap.light {
+  background: #fff;
+  color: #000;
+}
+
+.GeoMap.light .graph text {
+  fill: black;
+}
+
+.GeoMap.light .infoBubble {
+  color: #303030;
+}
+
+.GeoMap .stations, .GeoMap .stations svg {
+  position: absolute;
+}
+
+.GeoMap .stations svg {
+  width: 60px;
+  height: 20px;
+  padding-right: 100px;
+  font: 10px sans-serif;
+}
+
+.GeoMap .stations circle {
+  fill: brown;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.GeoMap .tooltip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  opacity: 1 !important;
+  border: solid #4D4D4D 1px !important;
+  background: #10151C !important;
+  padding: 8px 11px;
+  color: white !important;
+  border-radius: 6px;
+  white-space: pre-line;
+  box-shadow: 0 0 7px black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none table;
+  user-select-margin: 6px;
+  user-select-border-spacing: 0;
+}
+
+.GeoMap .tooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+
+.GeoMap .tooltip table td.key {
+  font-weight: normal;
+}
+
+.GeoMap .tooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+
+.GeoMap .tooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.GeoMap .tooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+
+.GeoMap .tooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+
+.GeoMap .background {
+  fill: none;
+  pointer-events: all;
+}
+
+.GeoMap #states {
+  fill: #aaa;
+}
+
+.GeoMap #states .active {
+  display: none;
+}
+
+.GeoMap #state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.GeoMap .county-boundary {
+  fill: #aaa;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.GeoMap .county-boundary:hover, .GeoMap .state:hover {
+  fill: orange;
+}
+
+.GeoMap #counties path {
+  stroke: #fff;
+  stroke-width: 0.25px;
+}
+
+.GeoMap #states path {
+  fill: none;
+  stroke: #303030;
+  stroke-width: 1.5px;
+}
+
+.GeoMap .city text {
+  font-size: 11px;
+  text-shadow: none;
+  fill: white;
+}
+
+.GeoMap .Dark {
+  background: #303030;
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .Dark #counties path {
+  stroke: #fff;
+  stroke-width: 0.25px;
+}
+
+.GeoMap .Dark #states path {
+  fill: none;
+  stroke: #303030;
+  stroke-width: 1.5px;
+}
+
+.GeoMap .Dark .city text {
+  font-size: 11px;
+  text-shadow: none;
+  fill: white;
+}
+
+.GeoMap .Light {
+  background: #fff !important;
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .Light #counties path {
+  stroke: #303030;
+  stroke-width: 0.25px;
+}
+
+.GeoMap .Light #states path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.GeoMap .Light .city text {
+  font-size: 11px;
+  text-shadow: none;
+  fill: #303030;
+}
+
+.GeoMap .legend text {
+  font-size: 11px;
+  text-shadow: none;
+  fill: black;
+}
+
+.GeoMap .Blues {
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .Oranges {
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .Purples {
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .Reds {
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .Greens {
+  width: 100%;
+  height: 100%;
+}
+
+.GeoMap .YlGn .q0-3 {
+  fill: #f7fcb9;
+}
+
+.GeoMap .YlGn .q1-3 {
+  fill: #addd8e;
+}
+
+.GeoMap .YlGn .q2-3 {
+  fill: #31a354;
+}
+
+.GeoMap .YlGn .q0-4 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGn .q1-4 {
+  fill: #c2e699;
+}
+
+.GeoMap .YlGn .q2-4 {
+  fill: #78c679;
+}
+
+.GeoMap .YlGn .q3-4 {
+  fill: #238443;
+}
+
+.GeoMap .YlGn .q0-5 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGn .q1-5 {
+  fill: #c2e699;
+}
+
+.GeoMap .YlGn .q2-5 {
+  fill: #78c679;
+}
+
+.GeoMap .YlGn .q3-5 {
+  fill: #31a354;
+}
+
+.GeoMap .YlGn .q4-5 {
+  fill: #006837;
+}
+
+.GeoMap .YlGn .q0-6 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGn .q1-6 {
+  fill: #d9f0a3;
+}
+
+.GeoMap .YlGn .q2-6 {
+  fill: #addd8e;
+}
+
+.GeoMap .YlGn .q3-6 {
+  fill: #78c679;
+}
+
+.GeoMap .YlGn .q4-6 {
+  fill: #31a354;
+}
+
+.GeoMap .YlGn .q5-6 {
+  fill: #006837;
+}
+
+.GeoMap .YlGn .q0-7 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGn .q1-7 {
+  fill: #d9f0a3;
+}
+
+.GeoMap .YlGn .q2-7 {
+  fill: #addd8e;
+}
+
+.GeoMap .YlGn .q3-7 {
+  fill: #78c679;
+}
+
+.GeoMap .YlGn .q4-7 {
+  fill: #41ab5d;
+}
+
+.GeoMap .YlGn .q5-7 {
+  fill: #238443;
+}
+
+.GeoMap .YlGn .q6-7 {
+  fill: #005a32;
+}
+
+.GeoMap .YlGn .q0-8 {
+  fill: #ffffe5;
+}
+
+.GeoMap .YlGn .q1-8 {
+  fill: #f7fcb9;
+}
+
+.GeoMap .YlGn .q2-8 {
+  fill: #d9f0a3;
+}
+
+.GeoMap .YlGn .q3-8 {
+  fill: #addd8e;
+}
+
+.GeoMap .YlGn .q4-8 {
+  fill: #78c679;
+}
+
+.GeoMap .YlGn .q5-8 {
+  fill: #41ab5d;
+}
+
+.GeoMap .YlGn .q6-8 {
+  fill: #238443;
+}
+
+.GeoMap .YlGn .q7-8 {
+  fill: #005a32;
+}
+
+.GeoMap .YlGn .q0-9 {
+  fill: #ffffe5;
+}
+
+.GeoMap .YlGn .q1-9 {
+  fill: #f7fcb9;
+}
+
+.GeoMap .YlGn .q2-9 {
+  fill: #d9f0a3;
+}
+
+.GeoMap .YlGn .q3-9 {
+  fill: #addd8e;
+}
+
+.GeoMap .YlGn .q4-9 {
+  fill: #78c679;
+}
+
+.GeoMap .YlGn .q5-9 {
+  fill: #41ab5d;
+}
+
+.GeoMap .YlGn .q6-9 {
+  fill: #238443;
+}
+
+.GeoMap .YlGn .q7-9 {
+  fill: #006837;
+}
+
+.GeoMap .YlGn .q8-9 {
+  fill: #004529;
+}
+
+.GeoMap .YlGnBu .q0-3 {
+  fill: #edf8b1;
+}
+
+.GeoMap .YlGnBu .q1-3 {
+  fill: #7fcdbb;
+}
+
+.GeoMap .YlGnBu .q2-3 {
+  fill: #2c7fb8;
+}
+
+.GeoMap .YlGnBu .q0-4 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGnBu .q1-4 {
+  fill: #a1dab4;
+}
+
+.GeoMap .YlGnBu .q2-4 {
+  fill: #41b6c4;
+}
+
+.GeoMap .YlGnBu .q3-4 {
+  fill: #225ea8;
+}
+
+.GeoMap .YlGnBu .q0-5 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGnBu .q1-5 {
+  fill: #a1dab4;
+}
+
+.GeoMap .YlGnBu .q2-5 {
+  fill: #41b6c4;
+}
+
+.GeoMap .YlGnBu .q3-5 {
+  fill: #2c7fb8;
+}
+
+.GeoMap .YlGnBu .q4-5 {
+  fill: #253494;
+}
+
+.GeoMap .YlGnBu .q0-6 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGnBu .q1-6 {
+  fill: #c7e9b4;
+}
+
+.GeoMap .YlGnBu .q2-6 {
+  fill: #7fcdbb;
+}
+
+.GeoMap .YlGnBu .q3-6 {
+  fill: #41b6c4;
+}
+
+.GeoMap .YlGnBu .q4-6 {
+  fill: #2c7fb8;
+}
+
+.GeoMap .YlGnBu .q5-6 {
+  fill: #253494;
+}
+
+.GeoMap .YlGnBu .q0-7 {
+  fill: #ffc;
+}
+
+.GeoMap .YlGnBu .q1-7 {
+  fill: #c7e9b4;
+}
+
+.GeoMap .YlGnBu .q2-7 {
+  fill: #7fcdbb;
+}
+
+.GeoMap .YlGnBu .q3-7 {
+  fill: #41b6c4;
+}
+
+.GeoMap .YlGnBu .q4-7 {
+  fill: #1d91c0;
+}
+
+.GeoMap .YlGnBu .q5-7 {
+  fill: #225ea8;
+}
+
+.GeoMap .YlGnBu .q6-7 {
+  fill: #0c2c84;
+}
+
+.GeoMap .YlGnBu .q0-8 {
+  fill: #ffffd9;
+}
+
+.GeoMap .YlGnBu .q1-8 {
+  fill: #edf8b1;
+}
+
+.GeoMap .YlGnBu .q2-8 {
+  fill: #c7e9b4;
+}
+
+.GeoMap .YlGnBu .q3-8 {
+  fill: #7fcdbb;
+}
+
+.GeoMap .YlGnBu .q4-8 {
+  fill: #41b6c4;
+}
+
+.GeoMap .YlGnBu .q5-8 {
+  fill: #1d91c0;
+}
+
+.GeoMap .YlGnBu .q6-8 {
+  fill: #225ea8;
+}
+
+.GeoMap .YlGnBu .q7-8 {
+  fill: #0c2c84;
+}
+
+.GeoMap .YlGnBu .q0-9 {
+  fill: #ffffd9;
+}
+
+.GeoMap .YlGnBu .q1-9 {
+  fill: #edf8b1;
+}
+
+.GeoMap .YlGnBu .q2-9 {
+  fill: #c7e9b4;
+}
+
+.GeoMap .YlGnBu .q3-9 {
+  fill: #7fcdbb;
+}
+
+.GeoMap .YlGnBu .q4-9 {
+  fill: #41b6c4;
+}
+
+.GeoMap .YlGnBu .q5-9 {
+  fill: #1d91c0;
+}
+
+.GeoMap .YlGnBu .q6-9 {
+  fill: #225ea8;
+}
+
+.GeoMap .YlGnBu .q7-9 {
+  fill: #253494;
+}
+
+.GeoMap .YlGnBu .q8-9 {
+  fill: #081d58;
+}
+
+.GeoMap .GnBu .q0-3 {
+  fill: #e0f3db;
+}
+
+.GeoMap .GnBu .q1-3 {
+  fill: #a8ddb5;
+}
+
+.GeoMap .GnBu .q2-3 {
+  fill: #43a2ca;
+}
+
+.GeoMap .GnBu .q0-4 {
+  fill: #f0f9e8;
+}
+
+.GeoMap .GnBu .q1-4 {
+  fill: #bae4bc;
+}
+
+.GeoMap .GnBu .q2-4 {
+  fill: #7bccc4;
+}
+
+.GeoMap .GnBu .q3-4 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .GnBu .q0-5 {
+  fill: #f0f9e8;
+}
+
+.GeoMap .GnBu .q1-5 {
+  fill: #bae4bc;
+}
+
+.GeoMap .GnBu .q2-5 {
+  fill: #7bccc4;
+}
+
+.GeoMap .GnBu .q3-5 {
+  fill: #43a2ca;
+}
+
+.GeoMap .GnBu .q4-5 {
+  fill: #0868ac;
+}
+
+.GeoMap .GnBu .q0-6 {
+  fill: #f0f9e8;
+}
+
+.GeoMap .GnBu .q1-6 {
+  fill: #ccebc5;
+}
+
+.GeoMap .GnBu .q2-6 {
+  fill: #a8ddb5;
+}
+
+.GeoMap .GnBu .q3-6 {
+  fill: #7bccc4;
+}
+
+.GeoMap .GnBu .q4-6 {
+  fill: #43a2ca;
+}
+
+.GeoMap .GnBu .q5-6 {
+  fill: #0868ac;
+}
+
+.GeoMap .GnBu .q0-7 {
+  fill: #f0f9e8;
+}
+
+.GeoMap .GnBu .q1-7 {
+  fill: #ccebc5;
+}
+
+.GeoMap .GnBu .q2-7 {
+  fill: #a8ddb5;
+}
+
+.GeoMap .GnBu .q3-7 {
+  fill: #7bccc4;
+}
+
+.GeoMap .GnBu .q4-7 {
+  fill: #4eb3d3;
+}
+
+.GeoMap .GnBu .q5-7 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .GnBu .q6-7 {
+  fill: #08589e;
+}
+
+.GeoMap .GnBu .q0-8 {
+  fill: #f7fcf0;
+}
+
+.GeoMap .GnBu .q1-8 {
+  fill: #e0f3db;
+}
+
+.GeoMap .GnBu .q2-8 {
+  fill: #ccebc5;
+}
+
+.GeoMap .GnBu .q3-8 {
+  fill: #a8ddb5;
+}
+
+.GeoMap .GnBu .q4-8 {
+  fill: #7bccc4;
+}
+
+.GeoMap .GnBu .q5-8 {
+  fill: #4eb3d3;
+}
+
+.GeoMap .GnBu .q6-8 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .GnBu .q7-8 {
+  fill: #08589e;
+}
+
+.GeoMap .GnBu .q0-9 {
+  fill: #f7fcf0;
+}
+
+.GeoMap .GnBu .q1-9 {
+  fill: #e0f3db;
+}
+
+.GeoMap .GnBu .q2-9 {
+  fill: #ccebc5;
+}
+
+.GeoMap .GnBu .q3-9 {
+  fill: #a8ddb5;
+}
+
+.GeoMap .GnBu .q4-9 {
+  fill: #7bccc4;
+}
+
+.GeoMap .GnBu .q5-9 {
+  fill: #4eb3d3;
+}
+
+.GeoMap .GnBu .q6-9 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .GnBu .q7-9 {
+  fill: #0868ac;
+}
+
+.GeoMap .GnBu .q8-9 {
+  fill: #084081;
+}
+
+.GeoMap .BuGn .q0-3 {
+  fill: #e5f5f9;
+}
+
+.GeoMap .BuGn .q1-3 {
+  fill: #99d8c9;
+}
+
+.GeoMap .BuGn .q2-3 {
+  fill: #2ca25f;
+}
+
+.GeoMap .BuGn .q0-4 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuGn .q1-4 {
+  fill: #b2e2e2;
+}
+
+.GeoMap .BuGn .q2-4 {
+  fill: #66c2a4;
+}
+
+.GeoMap .BuGn .q3-4 {
+  fill: #238b45;
+}
+
+.GeoMap .BuGn .q0-5 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuGn .q1-5 {
+  fill: #b2e2e2;
+}
+
+.GeoMap .BuGn .q2-5 {
+  fill: #66c2a4;
+}
+
+.GeoMap .BuGn .q3-5 {
+  fill: #2ca25f;
+}
+
+.GeoMap .BuGn .q4-5 {
+  fill: #006d2c;
+}
+
+.GeoMap .BuGn .q0-6 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuGn .q1-6 {
+  fill: #ccece6;
+}
+
+.GeoMap .BuGn .q2-6 {
+  fill: #99d8c9;
+}
+
+.GeoMap .BuGn .q3-6 {
+  fill: #66c2a4;
+}
+
+.GeoMap .BuGn .q4-6 {
+  fill: #2ca25f;
+}
+
+.GeoMap .BuGn .q5-6 {
+  fill: #006d2c;
+}
+
+.GeoMap .BuGn .q0-7 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuGn .q1-7 {
+  fill: #ccece6;
+}
+
+.GeoMap .BuGn .q2-7 {
+  fill: #99d8c9;
+}
+
+.GeoMap .BuGn .q3-7 {
+  fill: #66c2a4;
+}
+
+.GeoMap .BuGn .q4-7 {
+  fill: #41ae76;
+}
+
+.GeoMap .BuGn .q5-7 {
+  fill: #238b45;
+}
+
+.GeoMap .BuGn .q6-7 {
+  fill: #005824;
+}
+
+.GeoMap .BuGn .q0-8 {
+  fill: #f7fcfd;
+}
+
+.GeoMap .BuGn .q1-8 {
+  fill: #e5f5f9;
+}
+
+.GeoMap .BuGn .q2-8 {
+  fill: #ccece6;
+}
+
+.GeoMap .BuGn .q3-8 {
+  fill: #99d8c9;
+}
+
+.GeoMap .BuGn .q4-8 {
+  fill: #66c2a4;
+}
+
+.GeoMap .BuGn .q5-8 {
+  fill: #41ae76;
+}
+
+.GeoMap .BuGn .q6-8 {
+  fill: #238b45;
+}
+
+.GeoMap .BuGn .q7-8 {
+  fill: #005824;
+}
+
+.GeoMap .BuGn .q0-9 {
+  fill: #f7fcfd;
+}
+
+.GeoMap .BuGn .q1-9 {
+  fill: #e5f5f9;
+}
+
+.GeoMap .BuGn .q2-9 {
+  fill: #ccece6;
+}
+
+.GeoMap .BuGn .q3-9 {
+  fill: #99d8c9;
+}
+
+.GeoMap .BuGn .q4-9 {
+  fill: #66c2a4;
+}
+
+.GeoMap .BuGn .q5-9 {
+  fill: #41ae76;
+}
+
+.GeoMap .BuGn .q6-9 {
+  fill: #238b45;
+}
+
+.GeoMap .BuGn .q7-9 {
+  fill: #006d2c;
+}
+
+.GeoMap .BuGn .q8-9 {
+  fill: #00441b;
+}
+
+.GeoMap .PuBuGn .q0-3 {
+  fill: #ece2f0;
+}
+
+.GeoMap .PuBuGn .q1-3 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBuGn .q2-3 {
+  fill: #1c9099;
+}
+
+.GeoMap .PuBuGn .q0-4 {
+  fill: #f6eff7;
+}
+
+.GeoMap .PuBuGn .q1-4 {
+  fill: #bdc9e1;
+}
+
+.GeoMap .PuBuGn .q2-4 {
+  fill: #67a9cf;
+}
+
+.GeoMap .PuBuGn .q3-4 {
+  fill: #02818a;
+}
+
+.GeoMap .PuBuGn .q0-5 {
+  fill: #f6eff7;
+}
+
+.GeoMap .PuBuGn .q1-5 {
+  fill: #bdc9e1;
+}
+
+.GeoMap .PuBuGn .q2-5 {
+  fill: #67a9cf;
+}
+
+.GeoMap .PuBuGn .q3-5 {
+  fill: #1c9099;
+}
+
+.GeoMap .PuBuGn .q4-5 {
+  fill: #016c59;
+}
+
+.GeoMap .PuBuGn .q0-6 {
+  fill: #f6eff7;
+}
+
+.GeoMap .PuBuGn .q1-6 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBuGn .q2-6 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBuGn .q3-6 {
+  fill: #67a9cf;
+}
+
+.GeoMap .PuBuGn .q4-6 {
+  fill: #1c9099;
+}
+
+.GeoMap .PuBuGn .q5-6 {
+  fill: #016c59;
+}
+
+.GeoMap .PuBuGn .q0-7 {
+  fill: #f6eff7;
+}
+
+.GeoMap .PuBuGn .q1-7 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBuGn .q2-7 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBuGn .q3-7 {
+  fill: #67a9cf;
+}
+
+.GeoMap .PuBuGn .q4-7 {
+  fill: #3690c0;
+}
+
+.GeoMap .PuBuGn .q5-7 {
+  fill: #02818a;
+}
+
+.GeoMap .PuBuGn .q6-7 {
+  fill: #016450;
+}
+
+.GeoMap .PuBuGn .q0-8 {
+  fill: #fff7fb;
+}
+
+.GeoMap .PuBuGn .q1-8 {
+  fill: #ece2f0;
+}
+
+.GeoMap .PuBuGn .q2-8 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBuGn .q3-8 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBuGn .q4-8 {
+  fill: #67a9cf;
+}
+
+.GeoMap .PuBuGn .q5-8 {
+  fill: #3690c0;
+}
+
+.GeoMap .PuBuGn .q6-8 {
+  fill: #02818a;
+}
+
+.GeoMap .PuBuGn .q7-8 {
+  fill: #016450;
+}
+
+.GeoMap .PuBuGn .q0-9 {
+  fill: #fff7fb;
+}
+
+.GeoMap .PuBuGn .q1-9 {
+  fill: #ece2f0;
+}
+
+.GeoMap .PuBuGn .q2-9 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBuGn .q3-9 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBuGn .q4-9 {
+  fill: #67a9cf;
+}
+
+.GeoMap .PuBuGn .q5-9 {
+  fill: #3690c0;
+}
+
+.GeoMap .PuBuGn .q6-9 {
+  fill: #02818a;
+}
+
+.GeoMap .PuBuGn .q7-9 {
+  fill: #016c59;
+}
+
+.GeoMap .PuBuGn .q8-9 {
+  fill: #014636;
+}
+
+.GeoMap .PuBu .q0-3 {
+  fill: #ece7f2;
+}
+
+.GeoMap .PuBu .q1-3 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBu .q2-3 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .PuBu .q0-4 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuBu .q1-4 {
+  fill: #bdc9e1;
+}
+
+.GeoMap .PuBu .q2-4 {
+  fill: #74a9cf;
+}
+
+.GeoMap .PuBu .q3-4 {
+  fill: #0570b0;
+}
+
+.GeoMap .PuBu .q0-5 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuBu .q1-5 {
+  fill: #bdc9e1;
+}
+
+.GeoMap .PuBu .q2-5 {
+  fill: #74a9cf;
+}
+
+.GeoMap .PuBu .q3-5 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .PuBu .q4-5 {
+  fill: #045a8d;
+}
+
+.GeoMap .PuBu .q0-6 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuBu .q1-6 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBu .q2-6 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBu .q3-6 {
+  fill: #74a9cf;
+}
+
+.GeoMap .PuBu .q4-6 {
+  fill: #2b8cbe;
+}
+
+.GeoMap .PuBu .q5-6 {
+  fill: #045a8d;
+}
+
+.GeoMap .PuBu .q0-7 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuBu .q1-7 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBu .q2-7 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBu .q3-7 {
+  fill: #74a9cf;
+}
+
+.GeoMap .PuBu .q4-7 {
+  fill: #3690c0;
+}
+
+.GeoMap .PuBu .q5-7 {
+  fill: #0570b0;
+}
+
+.GeoMap .PuBu .q6-7 {
+  fill: #034e7b;
+}
+
+.GeoMap .PuBu .q0-8 {
+  fill: #fff7fb;
+}
+
+.GeoMap .PuBu .q1-8 {
+  fill: #ece7f2;
+}
+
+.GeoMap .PuBu .q2-8 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBu .q3-8 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBu .q4-8 {
+  fill: #74a9cf;
+}
+
+.GeoMap .PuBu .q5-8 {
+  fill: #3690c0;
+}
+
+.GeoMap .PuBu .q6-8 {
+  fill: #0570b0;
+}
+
+.GeoMap .PuBu .q7-8 {
+  fill: #034e7b;
+}
+
+.GeoMap .PuBu .q0-9 {
+  fill: #fff7fb;
+}
+
+.GeoMap .PuBu .q1-9 {
+  fill: #ece7f2;
+}
+
+.GeoMap .PuBu .q2-9 {
+  fill: #d0d1e6;
+}
+
+.GeoMap .PuBu .q3-9 {
+  fill: #a6bddb;
+}
+
+.GeoMap .PuBu .q4-9 {
+  fill: #74a9cf;
+}
+
+.GeoMap .PuBu .q5-9 {
+  fill: #3690c0;
+}
+
+.GeoMap .PuBu .q6-9 {
+  fill: #0570b0;
+}
+
+.GeoMap .PuBu .q7-9 {
+  fill: #045a8d;
+}
+
+.GeoMap .PuBu .q8-9 {
+  fill: #023858;
+}
+
+.GeoMap .BuPu .q0-3 {
+  fill: #e0ecf4;
+}
+
+.GeoMap .BuPu .q1-3 {
+  fill: #9ebcda;
+}
+
+.GeoMap .BuPu .q2-3 {
+  fill: #8856a7;
+}
+
+.GeoMap .BuPu .q0-4 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuPu .q1-4 {
+  fill: #b3cde3;
+}
+
+.GeoMap .BuPu .q2-4 {
+  fill: #8c96c6;
+}
+
+.GeoMap .BuPu .q3-4 {
+  fill: #88419d;
+}
+
+.GeoMap .BuPu .q0-5 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuPu .q1-5 {
+  fill: #b3cde3;
+}
+
+.GeoMap .BuPu .q2-5 {
+  fill: #8c96c6;
+}
+
+.GeoMap .BuPu .q3-5 {
+  fill: #8856a7;
+}
+
+.GeoMap .BuPu .q4-5 {
+  fill: #810f7c;
+}
+
+.GeoMap .BuPu .q0-6 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuPu .q1-6 {
+  fill: #bfd3e6;
+}
+
+.GeoMap .BuPu .q2-6 {
+  fill: #9ebcda;
+}
+
+.GeoMap .BuPu .q3-6 {
+  fill: #8c96c6;
+}
+
+.GeoMap .BuPu .q4-6 {
+  fill: #8856a7;
+}
+
+.GeoMap .BuPu .q5-6 {
+  fill: #810f7c;
+}
+
+.GeoMap .BuPu .q0-7 {
+  fill: #edf8fb;
+}
+
+.GeoMap .BuPu .q1-7 {
+  fill: #bfd3e6;
+}
+
+.GeoMap .BuPu .q2-7 {
+  fill: #9ebcda;
+}
+
+.GeoMap .BuPu .q3-7 {
+  fill: #8c96c6;
+}
+
+.GeoMap .BuPu .q4-7 {
+  fill: #8c6bb1;
+}
+
+.GeoMap .BuPu .q5-7 {
+  fill: #88419d;
+}
+
+.GeoMap .BuPu .q6-7 {
+  fill: #6e016b;
+}
+
+.GeoMap .BuPu .q0-8 {
+  fill: #f7fcfd;
+}
+
+.GeoMap .BuPu .q1-8 {
+  fill: #e0ecf4;
+}
+
+.GeoMap .BuPu .q2-8 {
+  fill: #bfd3e6;
+}
+
+.GeoMap .BuPu .q3-8 {
+  fill: #9ebcda;
+}
+
+.GeoMap .BuPu .q4-8 {
+  fill: #8c96c6;
+}
+
+.GeoMap .BuPu .q5-8 {
+  fill: #8c6bb1;
+}
+
+.GeoMap .BuPu .q6-8 {
+  fill: #88419d;
+}
+
+.GeoMap .BuPu .q7-8 {
+  fill: #6e016b;
+}
+
+.GeoMap .BuPu .q0-9 {
+  fill: #f7fcfd;
+}
+
+.GeoMap .BuPu .q1-9 {
+  fill: #e0ecf4;
+}
+
+.GeoMap .BuPu .q2-9 {
+  fill: #bfd3e6;
+}
+
+.GeoMap .BuPu .q3-9 {
+  fill: #9ebcda;
+}
+
+.GeoMap .BuPu .q4-9 {
+  fill: #8c96c6;
+}
+
+.GeoMap .BuPu .q5-9 {
+  fill: #8c6bb1;
+}
+
+.GeoMap .BuPu .q6-9 {
+  fill: #88419d;
+}
+
+.GeoMap .BuPu .q7-9 {
+  fill: #810f7c;
+}
+
+.GeoMap .BuPu .q8-9 {
+  fill: #4d004b;
+}
+
+.GeoMap .RdPu .q0-3 {
+  fill: #fde0dd;
+}
+
+.GeoMap .RdPu .q1-3 {
+  fill: #fa9fb5;
+}
+
+.GeoMap .RdPu .q2-3 {
+  fill: #c51b8a;
+}
+
+.GeoMap .RdPu .q0-4 {
+  fill: #feebe2;
+}
+
+.GeoMap .RdPu .q1-4 {
+  fill: #fbb4b9;
+}
+
+.GeoMap .RdPu .q2-4 {
+  fill: #f768a1;
+}
+
+.GeoMap .RdPu .q3-4 {
+  fill: #ae017e;
+}
+
+.GeoMap .RdPu .q0-5 {
+  fill: #feebe2;
+}
+
+.GeoMap .RdPu .q1-5 {
+  fill: #fbb4b9;
+}
+
+.GeoMap .RdPu .q2-5 {
+  fill: #f768a1;
+}
+
+.GeoMap .RdPu .q3-5 {
+  fill: #c51b8a;
+}
+
+.GeoMap .RdPu .q4-5 {
+  fill: #7a0177;
+}
+
+.GeoMap .RdPu .q0-6 {
+  fill: #feebe2;
+}
+
+.GeoMap .RdPu .q1-6 {
+  fill: #fcc5c0;
+}
+
+.GeoMap .RdPu .q2-6 {
+  fill: #fa9fb5;
+}
+
+.GeoMap .RdPu .q3-6 {
+  fill: #f768a1;
+}
+
+.GeoMap .RdPu .q4-6 {
+  fill: #c51b8a;
+}
+
+.GeoMap .RdPu .q5-6 {
+  fill: #7a0177;
+}
+
+.GeoMap .RdPu .q0-7 {
+  fill: #feebe2;
+}
+
+.GeoMap .RdPu .q1-7 {
+  fill: #fcc5c0;
+}
+
+.GeoMap .RdPu .q2-7 {
+  fill: #fa9fb5;
+}
+
+.GeoMap .RdPu .q3-7 {
+  fill: #f768a1;
+}
+
+.GeoMap .RdPu .q4-7 {
+  fill: #dd3497;
+}
+
+.GeoMap .RdPu .q5-7 {
+  fill: #ae017e;
+}
+
+.GeoMap .RdPu .q6-7 {
+  fill: #7a0177;
+}
+
+.GeoMap .RdPu .q0-8 {
+  fill: #fff7f3;
+}
+
+.GeoMap .RdPu .q1-8 {
+  fill: #fde0dd;
+}
+
+.GeoMap .RdPu .q2-8 {
+  fill: #fcc5c0;
+}
+
+.GeoMap .RdPu .q3-8 {
+  fill: #fa9fb5;
+}
+
+.GeoMap .RdPu .q4-8 {
+  fill: #f768a1;
+}
+
+.GeoMap .RdPu .q5-8 {
+  fill: #dd3497;
+}
+
+.GeoMap .RdPu .q6-8 {
+  fill: #ae017e;
+}
+
+.GeoMap .RdPu .q7-8 {
+  fill: #7a0177;
+}
+
+.GeoMap .RdPu .q0-9 {
+  fill: #fff7f3;
+}
+
+.GeoMap .RdPu .q1-9 {
+  fill: #fde0dd;
+}
+
+.GeoMap .RdPu .q2-9 {
+  fill: #fcc5c0;
+}
+
+.GeoMap .RdPu .q3-9 {
+  fill: #fa9fb5;
+}
+
+.GeoMap .RdPu .q4-9 {
+  fill: #f768a1;
+}
+
+.GeoMap .RdPu .q5-9 {
+  fill: #dd3497;
+}
+
+.GeoMap .RdPu .q6-9 {
+  fill: #ae017e;
+}
+
+.GeoMap .RdPu .q7-9 {
+  fill: #7a0177;
+}
+
+.GeoMap .RdPu .q8-9 {
+  fill: #49006a;
+}
+
+.GeoMap .PuRd .q0-3 {
+  fill: #e7e1ef;
+}
+
+.GeoMap .PuRd .q1-3 {
+  fill: #c994c7;
+}
+
+.GeoMap .PuRd .q2-3 {
+  fill: #dd1c77;
+}
+
+.GeoMap .PuRd .q0-4 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuRd .q1-4 {
+  fill: #d7b5d8;
+}
+
+.GeoMap .PuRd .q2-4 {
+  fill: #df65b0;
+}
+
+.GeoMap .PuRd .q3-4 {
+  fill: #ce1256;
+}
+
+.GeoMap .PuRd .q0-5 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuRd .q1-5 {
+  fill: #d7b5d8;
+}
+
+.GeoMap .PuRd .q2-5 {
+  fill: #df65b0;
+}
+
+.GeoMap .PuRd .q3-5 {
+  fill: #dd1c77;
+}
+
+.GeoMap .PuRd .q4-5 {
+  fill: #980043;
+}
+
+.GeoMap .PuRd .q0-6 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuRd .q1-6 {
+  fill: #d4b9da;
+}
+
+.GeoMap .PuRd .q2-6 {
+  fill: #c994c7;
+}
+
+.GeoMap .PuRd .q3-6 {
+  fill: #df65b0;
+}
+
+.GeoMap .PuRd .q4-6 {
+  fill: #dd1c77;
+}
+
+.GeoMap .PuRd .q5-6 {
+  fill: #980043;
+}
+
+.GeoMap .PuRd .q0-7 {
+  fill: #f1eef6;
+}
+
+.GeoMap .PuRd .q1-7 {
+  fill: #d4b9da;
+}
+
+.GeoMap .PuRd .q2-7 {
+  fill: #c994c7;
+}
+
+.GeoMap .PuRd .q3-7 {
+  fill: #df65b0;
+}
+
+.GeoMap .PuRd .q4-7 {
+  fill: #e7298a;
+}
+
+.GeoMap .PuRd .q5-7 {
+  fill: #ce1256;
+}
+
+.GeoMap .PuRd .q6-7 {
+  fill: #91003f;
+}
+
+.GeoMap .PuRd .q0-8 {
+  fill: #f7f4f9;
+}
+
+.GeoMap .PuRd .q1-8 {
+  fill: #e7e1ef;
+}
+
+.GeoMap .PuRd .q2-8 {
+  fill: #d4b9da;
+}
+
+.GeoMap .PuRd .q3-8 {
+  fill: #c994c7;
+}
+
+.GeoMap .PuRd .q4-8 {
+  fill: #df65b0;
+}
+
+.GeoMap .PuRd .q5-8 {
+  fill: #e7298a;
+}
+
+.GeoMap .PuRd .q6-8 {
+  fill: #ce1256;
+}
+
+.GeoMap .PuRd .q7-8 {
+  fill: #91003f;
+}
+
+.GeoMap .PuRd .q0-9 {
+  fill: #f7f4f9;
+}
+
+.GeoMap .PuRd .q1-9 {
+  fill: #e7e1ef;
+}
+
+.GeoMap .PuRd .q2-9 {
+  fill: #d4b9da;
+}
+
+.GeoMap .PuRd .q3-9 {
+  fill: #c994c7;
+}
+
+.GeoMap .PuRd .q4-9 {
+  fill: #df65b0;
+}
+
+.GeoMap .PuRd .q5-9 {
+  fill: #e7298a;
+}
+
+.GeoMap .PuRd .q6-9 {
+  fill: #ce1256;
+}
+
+.GeoMap .PuRd .q7-9 {
+  fill: #980043;
+}
+
+.GeoMap .PuRd .q8-9 {
+  fill: #67001f;
+}
+
+.GeoMap .OrRd .q0-3 {
+  fill: #fee8c8;
+}
+
+.GeoMap .OrRd .q1-3 {
+  fill: #fdbb84;
+}
+
+.GeoMap .OrRd .q2-3 {
+  fill: #e34a33;
+}
+
+.GeoMap .OrRd .q0-4 {
+  fill: #fef0d9;
+}
+
+.GeoMap .OrRd .q1-4 {
+  fill: #fdcc8a;
+}
+
+.GeoMap .OrRd .q2-4 {
+  fill: #fc8d59;
+}
+
+.GeoMap .OrRd .q3-4 {
+  fill: #d7301f;
+}
+
+.GeoMap .OrRd .q0-5 {
+  fill: #fef0d9;
+}
+
+.GeoMap .OrRd .q1-5 {
+  fill: #fdcc8a;
+}
+
+.GeoMap .OrRd .q2-5 {
+  fill: #fc8d59;
+}
+
+.GeoMap .OrRd .q3-5 {
+  fill: #e34a33;
+}
+
+.GeoMap .OrRd .q4-5 {
+  fill: #b30000;
+}
+
+.GeoMap .OrRd .q0-6 {
+  fill: #fef0d9;
+}
+
+.GeoMap .OrRd .q1-6 {
+  fill: #fdd49e;
+}
+
+.GeoMap .OrRd .q2-6 {
+  fill: #fdbb84;
+}
+
+.GeoMap .OrRd .q3-6 {
+  fill: #fc8d59;
+}
+
+.GeoMap .OrRd .q4-6 {
+  fill: #e34a33;
+}
+
+.GeoMap .OrRd .q5-6 {
+  fill: #b30000;
+}
+
+.GeoMap .OrRd .q0-7 {
+  fill: #fef0d9;
+}
+
+.GeoMap .OrRd .q1-7 {
+  fill: #fdd49e;
+}
+
+.GeoMap .OrRd .q2-7 {
+  fill: #fdbb84;
+}
+
+.GeoMap .OrRd .q3-7 {
+  fill: #fc8d59;
+}
+
+.GeoMap .OrRd .q4-7 {
+  fill: #ef6548;
+}
+
+.GeoMap .OrRd .q5-7 {
+  fill: #d7301f;
+}
+
+.GeoMap .OrRd .q6-7 {
+  fill: #900;
+}
+
+.GeoMap .OrRd .q0-8 {
+  fill: #fff7ec;
+}
+
+.GeoMap .OrRd .q1-8 {
+  fill: #fee8c8;
+}
+
+.GeoMap .OrRd .q2-8 {
+  fill: #fdd49e;
+}
+
+.GeoMap .OrRd .q3-8 {
+  fill: #fdbb84;
+}
+
+.GeoMap .OrRd .q4-8 {
+  fill: #fc8d59;
+}
+
+.GeoMap .OrRd .q5-8 {
+  fill: #ef6548;
+}
+
+.GeoMap .OrRd .q6-8 {
+  fill: #d7301f;
+}
+
+.GeoMap .OrRd .q7-8 {
+  fill: #900;
+}
+
+.GeoMap .OrRd .q0-9 {
+  fill: #fff7ec;
+}
+
+.GeoMap .OrRd .q1-9 {
+  fill: #fee8c8;
+}
+
+.GeoMap .OrRd .q2-9 {
+  fill: #fdd49e;
+}
+
+.GeoMap .OrRd .q3-9 {
+  fill: #fdbb84;
+}
+
+.GeoMap .OrRd .q4-9 {
+  fill: #fc8d59;
+}
+
+.GeoMap .OrRd .q5-9 {
+  fill: #ef6548;
+}
+
+.GeoMap .OrRd .q6-9 {
+  fill: #d7301f;
+}
+
+.GeoMap .OrRd .q7-9 {
+  fill: #b30000;
+}
+
+.GeoMap .OrRd .q8-9 {
+  fill: #7f0000;
+}
+
+.GeoMap .YlOrRd .q0-3 {
+  fill: #ffeda0;
+}
+
+.GeoMap .YlOrRd .q1-3 {
+  fill: #feb24c;
+}
+
+.GeoMap .YlOrRd .q2-3 {
+  fill: #f03b20;
+}
+
+.GeoMap .YlOrRd .q0-4 {
+  fill: #ffffb2;
+}
+
+.GeoMap .YlOrRd .q1-4 {
+  fill: #fecc5c;
+}
+
+.GeoMap .YlOrRd .q2-4 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .YlOrRd .q3-4 {
+  fill: #e31a1c;
+}
+
+.GeoMap .YlOrRd .q0-5 {
+  fill: #ffffb2;
+}
+
+.GeoMap .YlOrRd .q1-5 {
+  fill: #fecc5c;
+}
+
+.GeoMap .YlOrRd .q2-5 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .YlOrRd .q3-5 {
+  fill: #f03b20;
+}
+
+.GeoMap .YlOrRd .q4-5 {
+  fill: #bd0026;
+}
+
+.GeoMap .YlOrRd .q0-6 {
+  fill: #ffffb2;
+}
+
+.GeoMap .YlOrRd .q1-6 {
+  fill: #fed976;
+}
+
+.GeoMap .YlOrRd .q2-6 {
+  fill: #feb24c;
+}
+
+.GeoMap .YlOrRd .q3-6 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .YlOrRd .q4-6 {
+  fill: #f03b20;
+}
+
+.GeoMap .YlOrRd .q5-6 {
+  fill: #bd0026;
+}
+
+.GeoMap .YlOrRd .q0-7 {
+  fill: #ffffb2;
+}
+
+.GeoMap .YlOrRd .q1-7 {
+  fill: #fed976;
+}
+
+.GeoMap .YlOrRd .q2-7 {
+  fill: #feb24c;
+}
+
+.GeoMap .YlOrRd .q3-7 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .YlOrRd .q4-7 {
+  fill: #fc4e2a;
+}
+
+.GeoMap .YlOrRd .q5-7 {
+  fill: #e31a1c;
+}
+
+.GeoMap .YlOrRd .q6-7 {
+  fill: #b10026;
+}
+
+.GeoMap .YlOrRd .q0-8 {
+  fill: #ffc;
+}
+
+.GeoMap .YlOrRd .q1-8 {
+  fill: #ffeda0;
+}
+
+.GeoMap .YlOrRd .q2-8 {
+  fill: #fed976;
+}
+
+.GeoMap .YlOrRd .q3-8 {
+  fill: #feb24c;
+}
+
+.GeoMap .YlOrRd .q4-8 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .YlOrRd .q5-8 {
+  fill: #fc4e2a;
+}
+
+.GeoMap .YlOrRd .q6-8 {
+  fill: #e31a1c;
+}
+
+.GeoMap .YlOrRd .q7-8 {
+  fill: #b10026;
+}
+
+.GeoMap .YlOrRd .q0-9 {
+  fill: #ffc;
+}
+
+.GeoMap .YlOrRd .q1-9 {
+  fill: #ffeda0;
+}
+
+.GeoMap .YlOrRd .q2-9 {
+  fill: #fed976;
+}
+
+.GeoMap .YlOrRd .q3-9 {
+  fill: #feb24c;
+}
+
+.GeoMap .YlOrRd .q4-9 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .YlOrRd .q5-9 {
+  fill: #fc4e2a;
+}
+
+.GeoMap .YlOrRd .q6-9 {
+  fill: #e31a1c;
+}
+
+.GeoMap .YlOrRd .q7-9 {
+  fill: #bd0026;
+}
+
+.GeoMap .YlOrRd .q8-9 {
+  fill: #800026;
+}
+
+.GeoMap .YlOrBr .q0-3 {
+  fill: #fff7bc;
+}
+
+.GeoMap .YlOrBr .q1-3 {
+  fill: #fec44f;
+}
+
+.GeoMap .YlOrBr .q2-3 {
+  fill: #d95f0e;
+}
+
+.GeoMap .YlOrBr .q0-4 {
+  fill: #ffffd4;
+}
+
+.GeoMap .YlOrBr .q1-4 {
+  fill: #fed98e;
+}
+
+.GeoMap .YlOrBr .q2-4 {
+  fill: #fe9929;
+}
+
+.GeoMap .YlOrBr .q3-4 {
+  fill: #cc4c02;
+}
+
+.GeoMap .YlOrBr .q0-5 {
+  fill: #ffffd4;
+}
+
+.GeoMap .YlOrBr .q1-5 {
+  fill: #fed98e;
+}
+
+.GeoMap .YlOrBr .q2-5 {
+  fill: #fe9929;
+}
+
+.GeoMap .YlOrBr .q3-5 {
+  fill: #d95f0e;
+}
+
+.GeoMap .YlOrBr .q4-5 {
+  fill: #993404;
+}
+
+.GeoMap .YlOrBr .q0-6 {
+  fill: #ffffd4;
+}
+
+.GeoMap .YlOrBr .q1-6 {
+  fill: #fee391;
+}
+
+.GeoMap .YlOrBr .q2-6 {
+  fill: #fec44f;
+}
+
+.GeoMap .YlOrBr .q3-6 {
+  fill: #fe9929;
+}
+
+.GeoMap .YlOrBr .q4-6 {
+  fill: #d95f0e;
+}
+
+.GeoMap .YlOrBr .q5-6 {
+  fill: #993404;
+}
+
+.GeoMap .YlOrBr .q0-7 {
+  fill: #ffffd4;
+}
+
+.GeoMap .YlOrBr .q1-7 {
+  fill: #fee391;
+}
+
+.GeoMap .YlOrBr .q2-7 {
+  fill: #fec44f;
+}
+
+.GeoMap .YlOrBr .q3-7 {
+  fill: #fe9929;
+}
+
+.GeoMap .YlOrBr .q4-7 {
+  fill: #ec7014;
+}
+
+.GeoMap .YlOrBr .q5-7 {
+  fill: #cc4c02;
+}
+
+.GeoMap .YlOrBr .q6-7 {
+  fill: #8c2d04;
+}
+
+.GeoMap .YlOrBr .q0-8 {
+  fill: #ffffe5;
+}
+
+.GeoMap .YlOrBr .q1-8 {
+  fill: #fff7bc;
+}
+
+.GeoMap .YlOrBr .q2-8 {
+  fill: #fee391;
+}
+
+.GeoMap .YlOrBr .q3-8 {
+  fill: #fec44f;
+}
+
+.GeoMap .YlOrBr .q4-8 {
+  fill: #fe9929;
+}
+
+.GeoMap .YlOrBr .q5-8 {
+  fill: #ec7014;
+}
+
+.GeoMap .YlOrBr .q6-8 {
+  fill: #cc4c02;
+}
+
+.GeoMap .YlOrBr .q7-8 {
+  fill: #8c2d04;
+}
+
+.GeoMap .YlOrBr .q0-9 {
+  fill: #ffffe5;
+}
+
+.GeoMap .YlOrBr .q1-9 {
+  fill: #fff7bc;
+}
+
+.GeoMap .YlOrBr .q2-9 {
+  fill: #fee391;
+}
+
+.GeoMap .YlOrBr .q3-9 {
+  fill: #fec44f;
+}
+
+.GeoMap .YlOrBr .q4-9 {
+  fill: #fe9929;
+}
+
+.GeoMap .YlOrBr .q5-9 {
+  fill: #ec7014;
+}
+
+.GeoMap .YlOrBr .q6-9 {
+  fill: #cc4c02;
+}
+
+.GeoMap .YlOrBr .q7-9 {
+  fill: #993404;
+}
+
+.GeoMap .YlOrBr .q8-9 {
+  fill: #662506;
+}
+
+.GeoMap .Purples .q0-3 {
+  fill: #efedf5;
+}
+
+.GeoMap .Purples .q1-3 {
+  fill: #bcbddc;
+}
+
+.GeoMap .Purples .q2-3 {
+  fill: #756bb1;
+}
+
+.GeoMap .Purples .q0-4 {
+  fill: #f2f0f7;
+}
+
+.GeoMap .Purples .q1-4 {
+  fill: #cbc9e2;
+}
+
+.GeoMap .Purples .q2-4 {
+  fill: #9e9ac8;
+}
+
+.GeoMap .Purples .q3-4 {
+  fill: #6a51a3;
+}
+
+.GeoMap .Purples .q0-5 {
+  fill: #f2f0f7;
+}
+
+.GeoMap .Purples .q1-5 {
+  fill: #cbc9e2;
+}
+
+.GeoMap .Purples .q2-5 {
+  fill: #9e9ac8;
+}
+
+.GeoMap .Purples .q3-5 {
+  fill: #756bb1;
+}
+
+.GeoMap .Purples .q4-5 {
+  fill: #54278f;
+}
+
+.GeoMap .Purples .q0-6 {
+  fill: #f2f0f7;
+}
+
+.GeoMap .Purples .q1-6 {
+  fill: #dadaeb;
+}
+
+.GeoMap .Purples .q2-6 {
+  fill: #bcbddc;
+}
+
+.GeoMap .Purples .q3-6 {
+  fill: #9e9ac8;
+}
+
+.GeoMap .Purples .q4-6 {
+  fill: #756bb1;
+}
+
+.GeoMap .Purples .q5-6 {
+  fill: #54278f;
+}
+
+.GeoMap .Purples .q0-7 {
+  fill: #f2f0f7;
+}
+
+.GeoMap .Purples .q1-7 {
+  fill: #dadaeb;
+}
+
+.GeoMap .Purples .q2-7 {
+  fill: #bcbddc;
+}
+
+.GeoMap .Purples .q3-7 {
+  fill: #9e9ac8;
+}
+
+.GeoMap .Purples .q4-7 {
+  fill: #807dba;
+}
+
+.GeoMap .Purples .q5-7 {
+  fill: #6a51a3;
+}
+
+.GeoMap .Purples .q6-7 {
+  fill: #4a1486;
+}
+
+.GeoMap .Purples .q0-8 {
+  fill: #fcfbfd;
+}
+
+.GeoMap .Purples .q1-8 {
+  fill: #efedf5;
+}
+
+.GeoMap .Purples .q2-8 {
+  fill: #dadaeb;
+}
+
+.GeoMap .Purples .q3-8 {
+  fill: #bcbddc;
+}
+
+.GeoMap .Purples .q4-8 {
+  fill: #9e9ac8;
+}
+
+.GeoMap .Purples .q5-8 {
+  fill: #807dba;
+}
+
+.GeoMap .Purples .q6-8 {
+  fill: #6a51a3;
+}
+
+.GeoMap .Purples .q7-8 {
+  fill: #4a1486;
+}
+
+.GeoMap .Purples .q0-9 {
+  fill: #fcfbfd;
+}
+
+.GeoMap .Purples .q1-9 {
+  fill: #efedf5;
+}
+
+.GeoMap .Purples .q2-9 {
+  fill: #dadaeb;
+}
+
+.GeoMap .Purples .q3-9 {
+  fill: #bcbddc;
+}
+
+.GeoMap .Purples .q4-9 {
+  fill: #9e9ac8;
+}
+
+.GeoMap .Purples .q5-9 {
+  fill: #807dba;
+}
+
+.GeoMap .Purples .q6-9 {
+  fill: #6a51a3;
+}
+
+.GeoMap .Purples .q7-9 {
+  fill: #54278f;
+}
+
+.GeoMap .Purples .q8-9 {
+  fill: #3f007d;
+}
+
+.GeoMap .Blues .q0-3 {
+  fill: #deebf7;
+}
+
+.GeoMap .Blues .q1-3 {
+  fill: #9ecae1;
+}
+
+.GeoMap .Blues .q2-3 {
+  fill: #3182bd;
+}
+
+.GeoMap .Blues .q0-4 {
+  fill: #eff3ff;
+}
+
+.GeoMap .Blues .q1-4 {
+  fill: #bdd7e7;
+}
+
+.GeoMap .Blues .q2-4 {
+  fill: #6baed6;
+}
+
+.GeoMap .Blues .q3-4 {
+  fill: #2171b5;
+}
+
+.GeoMap .Blues .q0-5 {
+  fill: #eff3ff;
+}
+
+.GeoMap .Blues .q1-5 {
+  fill: #bdd7e7;
+}
+
+.GeoMap .Blues .q2-5 {
+  fill: #6baed6;
+}
+
+.GeoMap .Blues .q3-5 {
+  fill: #3182bd;
+}
+
+.GeoMap .Blues .q4-5 {
+  fill: #08519c;
+}
+
+.GeoMap .Blues .q0-6 {
+  fill: #eff3ff;
+}
+
+.GeoMap .Blues .q1-6 {
+  fill: #c6dbef;
+}
+
+.GeoMap .Blues .q2-6 {
+  fill: #9ecae1;
+}
+
+.GeoMap .Blues .q3-6 {
+  fill: #6baed6;
+}
+
+.GeoMap .Blues .q4-6 {
+  fill: #3182bd;
+}
+
+.GeoMap .Blues .q5-6 {
+  fill: #08519c;
+}
+
+.GeoMap .Blues .q0-7 {
+  fill: #eff3ff;
+}
+
+.GeoMap .Blues .q1-7 {
+  fill: #c6dbef;
+}
+
+.GeoMap .Blues .q2-7 {
+  fill: #9ecae1;
+}
+
+.GeoMap .Blues .q3-7 {
+  fill: #6baed6;
+}
+
+.GeoMap .Blues .q4-7 {
+  fill: #4292c6;
+}
+
+.GeoMap .Blues .q5-7 {
+  fill: #2171b5;
+}
+
+.GeoMap .Blues .q6-7 {
+  fill: #084594;
+}
+
+.GeoMap .Blues .q0-8 {
+  fill: #f7fbff;
+}
+
+.GeoMap .Blues .q1-8 {
+  fill: #deebf7;
+}
+
+.GeoMap .Blues .q2-8 {
+  fill: #c6dbef;
+}
+
+.GeoMap .Blues .q3-8 {
+  fill: #9ecae1;
+}
+
+.GeoMap .Blues .q4-8 {
+  fill: #6baed6;
+}
+
+.GeoMap .Blues .q5-8 {
+  fill: #4292c6;
+}
+
+.GeoMap .Blues .q6-8 {
+  fill: #2171b5;
+}
+
+.GeoMap .Blues .q7-8 {
+  fill: #084594;
+}
+
+.GeoMap .Blues .q0-9 {
+  fill: #f7fbff;
+}
+
+.GeoMap .Blues .q1-9 {
+  fill: #deebf7;
+}
+
+.GeoMap .Blues .q2-9 {
+  fill: #c6dbef;
+}
+
+.GeoMap .Blues .q3-9 {
+  fill: #9ecae1;
+}
+
+.GeoMap .Blues .q4-9 {
+  fill: #6baed6;
+}
+
+.GeoMap .Blues .q5-9 {
+  fill: #4292c6;
+}
+
+.GeoMap .Blues .q6-9 {
+  fill: #2171b5;
+}
+
+.GeoMap .Blues .q7-9 {
+  fill: #08519c;
+}
+
+.GeoMap .Blues .q8-9 {
+  fill: #08306b;
+}
+
+.GeoMap .Greens .q0-3 {
+  fill: #e5f5e0;
+}
+
+.GeoMap .Greens .q1-3 {
+  fill: #a1d99b;
+}
+
+.GeoMap .Greens .q2-3 {
+  fill: #31a354;
+}
+
+.GeoMap .Greens .q0-4 {
+  fill: #edf8e9;
+}
+
+.GeoMap .Greens .q1-4 {
+  fill: #bae4b3;
+}
+
+.GeoMap .Greens .q2-4 {
+  fill: #74c476;
+}
+
+.GeoMap .Greens .q3-4 {
+  fill: #238b45;
+}
+
+.GeoMap .Greens .q0-5 {
+  fill: #edf8e9;
+}
+
+.GeoMap .Greens .q1-5 {
+  fill: #bae4b3;
+}
+
+.GeoMap .Greens .q2-5 {
+  fill: #74c476;
+}
+
+.GeoMap .Greens .q3-5 {
+  fill: #31a354;
+}
+
+.GeoMap .Greens .q4-5 {
+  fill: #006d2c;
+}
+
+.GeoMap .Greens .q0-6 {
+  fill: #edf8e9;
+}
+
+.GeoMap .Greens .q1-6 {
+  fill: #c7e9c0;
+}
+
+.GeoMap .Greens .q2-6 {
+  fill: #a1d99b;
+}
+
+.GeoMap .Greens .q3-6 {
+  fill: #74c476;
+}
+
+.GeoMap .Greens .q4-6 {
+  fill: #31a354;
+}
+
+.GeoMap .Greens .q5-6 {
+  fill: #006d2c;
+}
+
+.GeoMap .Greens .q0-7 {
+  fill: #edf8e9;
+}
+
+.GeoMap .Greens .q1-7 {
+  fill: #c7e9c0;
+}
+
+.GeoMap .Greens .q2-7 {
+  fill: #a1d99b;
+}
+
+.GeoMap .Greens .q3-7 {
+  fill: #74c476;
+}
+
+.GeoMap .Greens .q4-7 {
+  fill: #41ab5d;
+}
+
+.GeoMap .Greens .q5-7 {
+  fill: #238b45;
+}
+
+.GeoMap .Greens .q6-7 {
+  fill: #005a32;
+}
+
+.GeoMap .Greens .q0-8 {
+  fill: #f7fcf5;
+}
+
+.GeoMap .Greens .q1-8 {
+  fill: #e5f5e0;
+}
+
+.GeoMap .Greens .q2-8 {
+  fill: #c7e9c0;
+}
+
+.GeoMap .Greens .q3-8 {
+  fill: #a1d99b;
+}
+
+.GeoMap .Greens .q4-8 {
+  fill: #74c476;
+}
+
+.GeoMap .Greens .q5-8 {
+  fill: #41ab5d;
+}
+
+.GeoMap .Greens .q6-8 {
+  fill: #238b45;
+}
+
+.GeoMap .Greens .q7-8 {
+  fill: #005a32;
+}
+
+.GeoMap .Greens .q0-9 {
+  fill: #f7fcf5;
+}
+
+.GeoMap .Greens .q1-9 {
+  fill: #e5f5e0;
+}
+
+.GeoMap .Greens .q2-9 {
+  fill: #c7e9c0;
+}
+
+.GeoMap .Greens .q3-9 {
+  fill: #a1d99b;
+}
+
+.GeoMap .Greens .q4-9 {
+  fill: #74c476;
+}
+
+.GeoMap .Greens .q5-9 {
+  fill: #41ab5d;
+}
+
+.GeoMap .Greens .q6-9 {
+  fill: #238b45;
+}
+
+.GeoMap .Greens .q7-9 {
+  fill: #006d2c;
+}
+
+.GeoMap .Greens .q8-9 {
+  fill: #00441b;
+}
+
+.GeoMap .Oranges .q0-3 {
+  fill: #fee6ce;
+}
+
+.GeoMap .Oranges .q1-3 {
+  fill: #fdae6b;
+}
+
+.GeoMap .Oranges .q2-3 {
+  fill: #e6550d;
+}
+
+.GeoMap .Oranges .q0-4 {
+  fill: #feedde;
+}
+
+.GeoMap .Oranges .q1-4 {
+  fill: #fdbe85;
+}
+
+.GeoMap .Oranges .q2-4 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .Oranges .q3-4 {
+  fill: #d94701;
+}
+
+.GeoMap .Oranges .q0-5 {
+  fill: #feedde;
+}
+
+.GeoMap .Oranges .q1-5 {
+  fill: #fdbe85;
+}
+
+.GeoMap .Oranges .q2-5 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .Oranges .q3-5 {
+  fill: #e6550d;
+}
+
+.GeoMap .Oranges .q4-5 {
+  fill: #a63603;
+}
+
+.GeoMap .Oranges .q0-6 {
+  fill: #feedde;
+}
+
+.GeoMap .Oranges .q1-6 {
+  fill: #fdd0a2;
+}
+
+.GeoMap .Oranges .q2-6 {
+  fill: #fdae6b;
+}
+
+.GeoMap .Oranges .q3-6 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .Oranges .q4-6 {
+  fill: #e6550d;
+}
+
+.GeoMap .Oranges .q5-6 {
+  fill: #a63603;
+}
+
+.GeoMap .Oranges .q0-7 {
+  fill: #feedde;
+}
+
+.GeoMap .Oranges .q1-7 {
+  fill: #fdd0a2;
+}
+
+.GeoMap .Oranges .q2-7 {
+  fill: #fdae6b;
+}
+
+.GeoMap .Oranges .q3-7 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .Oranges .q4-7 {
+  fill: #f16913;
+}
+
+.GeoMap .Oranges .q5-7 {
+  fill: #d94801;
+}
+
+.GeoMap .Oranges .q6-7 {
+  fill: #8c2d04;
+}
+
+.GeoMap .Oranges .q0-8 {
+  fill: #fff5eb;
+}
+
+.GeoMap .Oranges .q1-8 {
+  fill: #fee6ce;
+}
+
+.GeoMap .Oranges .q2-8 {
+  fill: #fdd0a2;
+}
+
+.GeoMap .Oranges .q3-8 {
+  fill: #fdae6b;
+}
+
+.GeoMap .Oranges .q4-8 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .Oranges .q5-8 {
+  fill: #f16913;
+}
+
+.GeoMap .Oranges .q6-8 {
+  fill: #d94801;
+}
+
+.GeoMap .Oranges .q7-8 {
+  fill: #8c2d04;
+}
+
+.GeoMap .Oranges .q0-9 {
+  fill: #fff5eb;
+}
+
+.GeoMap .Oranges .q1-9 {
+  fill: #fee6ce;
+}
+
+.GeoMap .Oranges .q2-9 {
+  fill: #fdd0a2;
+}
+
+.GeoMap .Oranges .q3-9 {
+  fill: #fdae6b;
+}
+
+.GeoMap .Oranges .q4-9 {
+  fill: #fd8d3c;
+}
+
+.GeoMap .Oranges .q5-9 {
+  fill: #f16913;
+}
+
+.GeoMap .Oranges .q6-9 {
+  fill: #d94801;
+}
+
+.GeoMap .Oranges .q7-9 {
+  fill: #a63603;
+}
+
+.GeoMap .Oranges .q8-9 {
+  fill: #7f2704;
+}
+
+.GeoMap .Reds .q0-3 {
+  fill: #fee0d2;
+}
+
+.GeoMap .Reds .q1-3 {
+  fill: #fc9272;
+}
+
+.GeoMap .Reds .q2-3 {
+  fill: #de2d26;
+}
+
+.GeoMap .Reds .q0-4 {
+  fill: #fee5d9;
+}
+
+.GeoMap .Reds .q1-4 {
+  fill: #fcae91;
+}
+
+.GeoMap .Reds .q2-4 {
+  fill: #fb6a4a;
+}
+
+.GeoMap .Reds .q3-4 {
+  fill: #cb181d;
+}
+
+.GeoMap .Reds .q0-5 {
+  fill: #fee5d9;
+}
+
+.GeoMap .Reds .q1-5 {
+  fill: #fcae91;
+}
+
+.GeoMap .Reds .q2-5 {
+  fill: #fb6a4a;
+}
+
+.GeoMap .Reds .q3-5 {
+  fill: #de2d26;
+}
+
+.GeoMap .Reds .q4-5 {
+  fill: #a50f15;
+}
+
+.GeoMap .Reds .q0-6 {
+  fill: #fee5d9;
+}
+
+.GeoMap .Reds .q1-6 {
+  fill: #fcbba1;
+}
+
+.GeoMap .Reds .q2-6 {
+  fill: #fc9272;
+}
+
+.GeoMap .Reds .q3-6 {
+  fill: #fb6a4a;
+}
+
+.GeoMap .Reds .q4-6 {
+  fill: #de2d26;
+}
+
+.GeoMap .Reds .q5-6 {
+  fill: #a50f15;
+}
+
+.GeoMap .Reds .q0-7 {
+  fill: #fee5d9;
+}
+
+.GeoMap .Reds .q1-7 {
+  fill: #fcbba1;
+}
+
+.GeoMap .Reds .q2-7 {
+  fill: #fc9272;
+}
+
+.GeoMap .Reds .q3-7 {
+  fill: #fb6a4a;
+}
+
+.GeoMap .Reds .q4-7 {
+  fill: #ef3b2c;
+}
+
+.GeoMap .Reds .q5-7 {
+  fill: #cb181d;
+}
+
+.GeoMap .Reds .q6-7 {
+  fill: #99000d;
+}
+
+.GeoMap .Reds .q0-8 {
+  fill: #fff5f0;
+}
+
+.GeoMap .Reds .q1-8 {
+  fill: #fee0d2;
+}
+
+.GeoMap .Reds .q2-8 {
+  fill: #fcbba1;
+}
+
+.GeoMap .Reds .q3-8 {
+  fill: #fc9272;
+}
+
+.GeoMap .Reds .q4-8 {
+  fill: #fb6a4a;
+}
+
+.GeoMap .Reds .q5-8 {
+  fill: #ef3b2c;
+}
+
+.GeoMap .Reds .q6-8 {
+  fill: #cb181d;
+}
+
+.GeoMap .Reds .q7-8 {
+  fill: #99000d;
+}
+
+.GeoMap .Reds .q0-9 {
+  fill: #fff5f0;
+}
+
+.GeoMap .Reds .q1-9 {
+  fill: #fee0d2;
+}
+
+.GeoMap .Reds .q2-9 {
+  fill: #fcbba1;
+}
+
+.GeoMap .Reds .q3-9 {
+  fill: #fc9272;
+}
+
+.GeoMap .Reds .q4-9 {
+  fill: #fb6a4a;
+}
+
+.GeoMap .Reds .q5-9 {
+  fill: #ef3b2c;
+}
+
+.GeoMap .Reds .q6-9 {
+  fill: #cb181d;
+}
+
+.GeoMap .Reds .q7-9 {
+  fill: #a50f15;
+}
+
+.GeoMap .Reds .q8-9 {
+  fill: #67000d;
+}
+
+.GeoMap .Greys .q0-3 {
+  fill: #f0f0f0;
+}
+
+.GeoMap .Greys .q1-3 {
+  fill: #bdbdbd;
+}
+
+.GeoMap .Greys .q2-3 {
+  fill: #636363;
+}
+
+.GeoMap .Greys .q0-4 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .Greys .q1-4 {
+  fill: #ccc;
+}
+
+.GeoMap .Greys .q2-4 {
+  fill: #969696;
+}
+
+.GeoMap .Greys .q3-4 {
+  fill: #525252;
+}
+
+.GeoMap .Greys .q0-5 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .Greys .q1-5 {
+  fill: #ccc;
+}
+
+.GeoMap .Greys .q2-5 {
+  fill: #969696;
+}
+
+.GeoMap .Greys .q3-5 {
+  fill: #636363;
+}
+
+.GeoMap .Greys .q4-5 {
+  fill: #252525;
+}
+
+.GeoMap .Greys .q0-6 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .Greys .q1-6 {
+  fill: #d9d9d9;
+}
+
+.GeoMap .Greys .q2-6 {
+  fill: #bdbdbd;
+}
+
+.GeoMap .Greys .q3-6 {
+  fill: #969696;
+}
+
+.GeoMap .Greys .q4-6 {
+  fill: #636363;
+}
+
+.GeoMap .Greys .q5-6 {
+  fill: #252525;
+}
+
+.GeoMap .Greys .q0-7 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .Greys .q1-7 {
+  fill: #d9d9d9;
+}
+
+.GeoMap .Greys .q2-7 {
+  fill: #bdbdbd;
+}
+
+.GeoMap .Greys .q3-7 {
+  fill: #969696;
+}
+
+.GeoMap .Greys .q4-7 {
+  fill: #737373;
+}
+
+.GeoMap .Greys .q5-7 {
+  fill: #525252;
+}
+
+.GeoMap .Greys .q6-7 {
+  fill: #252525;
+}
+
+.GeoMap .Greys .q0-8 {
+  fill: white;
+}
+
+.GeoMap .Greys .q1-8 {
+  fill: #f0f0f0;
+}
+
+.GeoMap .Greys .q2-8 {
+  fill: #d9d9d9;
+}
+
+.GeoMap .Greys .q3-8 {
+  fill: #bdbdbd;
+}
+
+.GeoMap .Greys .q4-8 {
+  fill: #969696;
+}
+
+.GeoMap .Greys .q5-8 {
+  fill: #737373;
+}
+
+.GeoMap .Greys .q6-8 {
+  fill: #525252;
+}
+
+.GeoMap .Greys .q7-8 {
+  fill: #252525;
+}
+
+.GeoMap .Greys .q0-9 {
+  fill: white;
+}
+
+.GeoMap .Greys .q1-9 {
+  fill: #f0f0f0;
+}
+
+.GeoMap .Greys .q2-9 {
+  fill: #d9d9d9;
+}
+
+.GeoMap .Greys .q3-9 {
+  fill: #bdbdbd;
+}
+
+.GeoMap .Greys .q4-9 {
+  fill: #969696;
+}
+
+.GeoMap .Greys .q5-9 {
+  fill: #737373;
+}
+
+.GeoMap .Greys .q6-9 {
+  fill: #525252;
+}
+
+.GeoMap .Greys .q7-9 {
+  fill: #252525;
+}
+
+.GeoMap .Greys .q8-9 {
+  fill: black;
+}
+
+.GeoMap .PuOr .q0-3 {
+  fill: #f1a340;
+}
+
+.GeoMap .PuOr .q1-3 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PuOr .q2-3 {
+  fill: #998ec3;
+}
+
+.GeoMap .PuOr .q0-4 {
+  fill: #e66101;
+}
+
+.GeoMap .PuOr .q1-4 {
+  fill: #fdb863;
+}
+
+.GeoMap .PuOr .q2-4 {
+  fill: #b2abd2;
+}
+
+.GeoMap .PuOr .q3-4 {
+  fill: #5e3c99;
+}
+
+.GeoMap .PuOr .q0-5 {
+  fill: #e66101;
+}
+
+.GeoMap .PuOr .q1-5 {
+  fill: #fdb863;
+}
+
+.GeoMap .PuOr .q2-5 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PuOr .q3-5 {
+  fill: #b2abd2;
+}
+
+.GeoMap .PuOr .q4-5 {
+  fill: #5e3c99;
+}
+
+.GeoMap .PuOr .q0-6 {
+  fill: #b35806;
+}
+
+.GeoMap .PuOr .q1-6 {
+  fill: #f1a340;
+}
+
+.GeoMap .PuOr .q2-6 {
+  fill: #fee0b6;
+}
+
+.GeoMap .PuOr .q3-6 {
+  fill: #d8daeb;
+}
+
+.GeoMap .PuOr .q4-6 {
+  fill: #998ec3;
+}
+
+.GeoMap .PuOr .q5-6 {
+  fill: #542788;
+}
+
+.GeoMap .PuOr .q0-7 {
+  fill: #b35806;
+}
+
+.GeoMap .PuOr .q1-7 {
+  fill: #f1a340;
+}
+
+.GeoMap .PuOr .q2-7 {
+  fill: #fee0b6;
+}
+
+.GeoMap .PuOr .q3-7 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PuOr .q4-7 {
+  fill: #d8daeb;
+}
+
+.GeoMap .PuOr .q5-7 {
+  fill: #998ec3;
+}
+
+.GeoMap .PuOr .q6-7 {
+  fill: #542788;
+}
+
+.GeoMap .PuOr .q0-8 {
+  fill: #b35806;
+}
+
+.GeoMap .PuOr .q1-8 {
+  fill: #e08214;
+}
+
+.GeoMap .PuOr .q2-8 {
+  fill: #fdb863;
+}
+
+.GeoMap .PuOr .q3-8 {
+  fill: #fee0b6;
+}
+
+.GeoMap .PuOr .q4-8 {
+  fill: #d8daeb;
+}
+
+.GeoMap .PuOr .q5-8 {
+  fill: #b2abd2;
+}
+
+.GeoMap .PuOr .q6-8 {
+  fill: #8073ac;
+}
+
+.GeoMap .PuOr .q7-8 {
+  fill: #542788;
+}
+
+.GeoMap .PuOr .q0-9 {
+  fill: #b35806;
+}
+
+.GeoMap .PuOr .q1-9 {
+  fill: #e08214;
+}
+
+.GeoMap .PuOr .q2-9 {
+  fill: #fdb863;
+}
+
+.GeoMap .PuOr .q3-9 {
+  fill: #fee0b6;
+}
+
+.GeoMap .PuOr .q4-9 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PuOr .q5-9 {
+  fill: #d8daeb;
+}
+
+.GeoMap .PuOr .q6-9 {
+  fill: #b2abd2;
+}
+
+.GeoMap .PuOr .q7-9 {
+  fill: #8073ac;
+}
+
+.GeoMap .PuOr .q8-9 {
+  fill: #542788;
+}
+
+.GeoMap .PuOr .q0-10 {
+  fill: #7f3b08;
+}
+
+.GeoMap .PuOr .q1-10 {
+  fill: #b35806;
+}
+
+.GeoMap .PuOr .q2-10 {
+  fill: #e08214;
+}
+
+.GeoMap .PuOr .q3-10 {
+  fill: #fdb863;
+}
+
+.GeoMap .PuOr .q4-10 {
+  fill: #fee0b6;
+}
+
+.GeoMap .PuOr .q5-10 {
+  fill: #d8daeb;
+}
+
+.GeoMap .PuOr .q6-10 {
+  fill: #b2abd2;
+}
+
+.GeoMap .PuOr .q7-10 {
+  fill: #8073ac;
+}
+
+.GeoMap .PuOr .q8-10 {
+  fill: #542788;
+}
+
+.GeoMap .PuOr .q9-10 {
+  fill: #2d004b;
+}
+
+.GeoMap .PuOr .q0-11 {
+  fill: #7f3b08;
+}
+
+.GeoMap .PuOr .q1-11 {
+  fill: #b35806;
+}
+
+.GeoMap .PuOr .q2-11 {
+  fill: #e08214;
+}
+
+.GeoMap .PuOr .q3-11 {
+  fill: #fdb863;
+}
+
+.GeoMap .PuOr .q4-11 {
+  fill: #fee0b6;
+}
+
+.GeoMap .PuOr .q5-11 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PuOr .q6-11 {
+  fill: #d8daeb;
+}
+
+.GeoMap .PuOr .q7-11 {
+  fill: #b2abd2;
+}
+
+.GeoMap .PuOr .q8-11 {
+  fill: #8073ac;
+}
+
+.GeoMap .PuOr .q9-11 {
+  fill: #542788;
+}
+
+.GeoMap .PuOr .q10-11 {
+  fill: #2d004b;
+}
+
+.GeoMap .BrBG .q0-3 {
+  fill: #d8b365;
+}
+
+.GeoMap .BrBG .q1-3 {
+  fill: whitesmoke;
+}
+
+.GeoMap .BrBG .q2-3 {
+  fill: #5ab4ac;
+}
+
+.GeoMap .BrBG .q0-4 {
+  fill: #a6611a;
+}
+
+.GeoMap .BrBG .q1-4 {
+  fill: #dfc27d;
+}
+
+.GeoMap .BrBG .q2-4 {
+  fill: #80cdc1;
+}
+
+.GeoMap .BrBG .q3-4 {
+  fill: #018571;
+}
+
+.GeoMap .BrBG .q0-5 {
+  fill: #a6611a;
+}
+
+.GeoMap .BrBG .q1-5 {
+  fill: #dfc27d;
+}
+
+.GeoMap .BrBG .q2-5 {
+  fill: whitesmoke;
+}
+
+.GeoMap .BrBG .q3-5 {
+  fill: #80cdc1;
+}
+
+.GeoMap .BrBG .q4-5 {
+  fill: #018571;
+}
+
+.GeoMap .BrBG .q0-6 {
+  fill: #8c510a;
+}
+
+.GeoMap .BrBG .q1-6 {
+  fill: #d8b365;
+}
+
+.GeoMap .BrBG .q2-6 {
+  fill: #f6e8c3;
+}
+
+.GeoMap .BrBG .q3-6 {
+  fill: #c7eae5;
+}
+
+.GeoMap .BrBG .q4-6 {
+  fill: #5ab4ac;
+}
+
+.GeoMap .BrBG .q5-6 {
+  fill: #01665e;
+}
+
+.GeoMap .BrBG .q0-7 {
+  fill: #8c510a;
+}
+
+.GeoMap .BrBG .q1-7 {
+  fill: #d8b365;
+}
+
+.GeoMap .BrBG .q2-7 {
+  fill: #f6e8c3;
+}
+
+.GeoMap .BrBG .q3-7 {
+  fill: whitesmoke;
+}
+
+.GeoMap .BrBG .q4-7 {
+  fill: #c7eae5;
+}
+
+.GeoMap .BrBG .q5-7 {
+  fill: #5ab4ac;
+}
+
+.GeoMap .BrBG .q6-7 {
+  fill: #01665e;
+}
+
+.GeoMap .BrBG .q0-8 {
+  fill: #8c510a;
+}
+
+.GeoMap .BrBG .q1-8 {
+  fill: #bf812d;
+}
+
+.GeoMap .BrBG .q2-8 {
+  fill: #dfc27d;
+}
+
+.GeoMap .BrBG .q3-8 {
+  fill: #f6e8c3;
+}
+
+.GeoMap .BrBG .q4-8 {
+  fill: #c7eae5;
+}
+
+.GeoMap .BrBG .q5-8 {
+  fill: #80cdc1;
+}
+
+.GeoMap .BrBG .q6-8 {
+  fill: #35978f;
+}
+
+.GeoMap .BrBG .q7-8 {
+  fill: #01665e;
+}
+
+.GeoMap .BrBG .q0-9 {
+  fill: #8c510a;
+}
+
+.GeoMap .BrBG .q1-9 {
+  fill: #bf812d;
+}
+
+.GeoMap .BrBG .q2-9 {
+  fill: #dfc27d;
+}
+
+.GeoMap .BrBG .q3-9 {
+  fill: #f6e8c3;
+}
+
+.GeoMap .BrBG .q4-9 {
+  fill: whitesmoke;
+}
+
+.GeoMap .BrBG .q5-9 {
+  fill: #c7eae5;
+}
+
+.GeoMap .BrBG .q6-9 {
+  fill: #80cdc1;
+}
+
+.GeoMap .BrBG .q7-9 {
+  fill: #35978f;
+}
+
+.GeoMap .BrBG .q8-9 {
+  fill: #01665e;
+}
+
+.GeoMap .BrBG .q0-10 {
+  fill: #543005;
+}
+
+.GeoMap .BrBG .q1-10 {
+  fill: #8c510a;
+}
+
+.GeoMap .BrBG .q2-10 {
+  fill: #bf812d;
+}
+
+.GeoMap .BrBG .q3-10 {
+  fill: #dfc27d;
+}
+
+.GeoMap .BrBG .q4-10 {
+  fill: #f6e8c3;
+}
+
+.GeoMap .BrBG .q5-10 {
+  fill: #c7eae5;
+}
+
+.GeoMap .BrBG .q6-10 {
+  fill: #80cdc1;
+}
+
+.GeoMap .BrBG .q7-10 {
+  fill: #35978f;
+}
+
+.GeoMap .BrBG .q8-10 {
+  fill: #01665e;
+}
+
+.GeoMap .BrBG .q9-10 {
+  fill: #003c30;
+}
+
+.GeoMap .BrBG .q0-11 {
+  fill: #543005;
+}
+
+.GeoMap .BrBG .q1-11 {
+  fill: #8c510a;
+}
+
+.GeoMap .BrBG .q2-11 {
+  fill: #bf812d;
+}
+
+.GeoMap .BrBG .q3-11 {
+  fill: #dfc27d;
+}
+
+.GeoMap .BrBG .q4-11 {
+  fill: #f6e8c3;
+}
+
+.GeoMap .BrBG .q5-11 {
+  fill: whitesmoke;
+}
+
+.GeoMap .BrBG .q6-11 {
+  fill: #c7eae5;
+}
+
+.GeoMap .BrBG .q7-11 {
+  fill: #80cdc1;
+}
+
+.GeoMap .BrBG .q8-11 {
+  fill: #35978f;
+}
+
+.GeoMap .BrBG .q9-11 {
+  fill: #01665e;
+}
+
+.GeoMap .BrBG .q10-11 {
+  fill: #003c30;
+}
+
+.GeoMap .PRGn .q0-3 {
+  fill: #af8dc3;
+}
+
+.GeoMap .PRGn .q1-3 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PRGn .q2-3 {
+  fill: #7fbf7b;
+}
+
+.GeoMap .PRGn .q0-4 {
+  fill: #7b3294;
+}
+
+.GeoMap .PRGn .q1-4 {
+  fill: #c2a5cf;
+}
+
+.GeoMap .PRGn .q2-4 {
+  fill: #a6dba0;
+}
+
+.GeoMap .PRGn .q3-4 {
+  fill: #008837;
+}
+
+.GeoMap .PRGn .q0-5 {
+  fill: #7b3294;
+}
+
+.GeoMap .PRGn .q1-5 {
+  fill: #c2a5cf;
+}
+
+.GeoMap .PRGn .q2-5 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PRGn .q3-5 {
+  fill: #a6dba0;
+}
+
+.GeoMap .PRGn .q4-5 {
+  fill: #008837;
+}
+
+.GeoMap .PRGn .q0-6 {
+  fill: #762a83;
+}
+
+.GeoMap .PRGn .q1-6 {
+  fill: #af8dc3;
+}
+
+.GeoMap .PRGn .q2-6 {
+  fill: #e7d4e8;
+}
+
+.GeoMap .PRGn .q3-6 {
+  fill: #d9f0d3;
+}
+
+.GeoMap .PRGn .q4-6 {
+  fill: #7fbf7b;
+}
+
+.GeoMap .PRGn .q5-6 {
+  fill: #1b7837;
+}
+
+.GeoMap .PRGn .q0-7 {
+  fill: #762a83;
+}
+
+.GeoMap .PRGn .q1-7 {
+  fill: #af8dc3;
+}
+
+.GeoMap .PRGn .q2-7 {
+  fill: #e7d4e8;
+}
+
+.GeoMap .PRGn .q3-7 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PRGn .q4-7 {
+  fill: #d9f0d3;
+}
+
+.GeoMap .PRGn .q5-7 {
+  fill: #7fbf7b;
+}
+
+.GeoMap .PRGn .q6-7 {
+  fill: #1b7837;
+}
+
+.GeoMap .PRGn .q0-8 {
+  fill: #762a83;
+}
+
+.GeoMap .PRGn .q1-8 {
+  fill: #9970ab;
+}
+
+.GeoMap .PRGn .q2-8 {
+  fill: #c2a5cf;
+}
+
+.GeoMap .PRGn .q3-8 {
+  fill: #e7d4e8;
+}
+
+.GeoMap .PRGn .q4-8 {
+  fill: #d9f0d3;
+}
+
+.GeoMap .PRGn .q5-8 {
+  fill: #a6dba0;
+}
+
+.GeoMap .PRGn .q6-8 {
+  fill: #5aae61;
+}
+
+.GeoMap .PRGn .q7-8 {
+  fill: #1b7837;
+}
+
+.GeoMap .PRGn .q0-9 {
+  fill: #762a83;
+}
+
+.GeoMap .PRGn .q1-9 {
+  fill: #9970ab;
+}
+
+.GeoMap .PRGn .q2-9 {
+  fill: #c2a5cf;
+}
+
+.GeoMap .PRGn .q3-9 {
+  fill: #e7d4e8;
+}
+
+.GeoMap .PRGn .q4-9 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PRGn .q5-9 {
+  fill: #d9f0d3;
+}
+
+.GeoMap .PRGn .q6-9 {
+  fill: #a6dba0;
+}
+
+.GeoMap .PRGn .q7-9 {
+  fill: #5aae61;
+}
+
+.GeoMap .PRGn .q8-9 {
+  fill: #1b7837;
+}
+
+.GeoMap .PRGn .q0-10 {
+  fill: #40004b;
+}
+
+.GeoMap .PRGn .q1-10 {
+  fill: #762a83;
+}
+
+.GeoMap .PRGn .q2-10 {
+  fill: #9970ab;
+}
+
+.GeoMap .PRGn .q3-10 {
+  fill: #c2a5cf;
+}
+
+.GeoMap .PRGn .q4-10 {
+  fill: #e7d4e8;
+}
+
+.GeoMap .PRGn .q5-10 {
+  fill: #d9f0d3;
+}
+
+.GeoMap .PRGn .q6-10 {
+  fill: #a6dba0;
+}
+
+.GeoMap .PRGn .q7-10 {
+  fill: #5aae61;
+}
+
+.GeoMap .PRGn .q8-10 {
+  fill: #1b7837;
+}
+
+.GeoMap .PRGn .q9-10 {
+  fill: #00441b;
+}
+
+.GeoMap .PRGn .q0-11 {
+  fill: #40004b;
+}
+
+.GeoMap .PRGn .q1-11 {
+  fill: #762a83;
+}
+
+.GeoMap .PRGn .q2-11 {
+  fill: #9970ab;
+}
+
+.GeoMap .PRGn .q3-11 {
+  fill: #c2a5cf;
+}
+
+.GeoMap .PRGn .q4-11 {
+  fill: #e7d4e8;
+}
+
+.GeoMap .PRGn .q5-11 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PRGn .q6-11 {
+  fill: #d9f0d3;
+}
+
+.GeoMap .PRGn .q7-11 {
+  fill: #a6dba0;
+}
+
+.GeoMap .PRGn .q8-11 {
+  fill: #5aae61;
+}
+
+.GeoMap .PRGn .q9-11 {
+  fill: #1b7837;
+}
+
+.GeoMap .PRGn .q10-11 {
+  fill: #00441b;
+}
+
+.GeoMap .PiYG .q0-3 {
+  fill: #e9a3c9;
+}
+
+.GeoMap .PiYG .q1-3 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PiYG .q2-3 {
+  fill: #a1d76a;
+}
+
+.GeoMap .PiYG .q0-4 {
+  fill: #d01c8b;
+}
+
+.GeoMap .PiYG .q1-4 {
+  fill: #f1b6da;
+}
+
+.GeoMap .PiYG .q2-4 {
+  fill: #b8e186;
+}
+
+.GeoMap .PiYG .q3-4 {
+  fill: #4dac26;
+}
+
+.GeoMap .PiYG .q0-5 {
+  fill: #d01c8b;
+}
+
+.GeoMap .PiYG .q1-5 {
+  fill: #f1b6da;
+}
+
+.GeoMap .PiYG .q2-5 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PiYG .q3-5 {
+  fill: #b8e186;
+}
+
+.GeoMap .PiYG .q4-5 {
+  fill: #4dac26;
+}
+
+.GeoMap .PiYG .q0-6 {
+  fill: #c51b7d;
+}
+
+.GeoMap .PiYG .q1-6 {
+  fill: #e9a3c9;
+}
+
+.GeoMap .PiYG .q2-6 {
+  fill: #fde0ef;
+}
+
+.GeoMap .PiYG .q3-6 {
+  fill: #e6f5d0;
+}
+
+.GeoMap .PiYG .q4-6 {
+  fill: #a1d76a;
+}
+
+.GeoMap .PiYG .q5-6 {
+  fill: #4d9221;
+}
+
+.GeoMap .PiYG .q0-7 {
+  fill: #c51b7d;
+}
+
+.GeoMap .PiYG .q1-7 {
+  fill: #e9a3c9;
+}
+
+.GeoMap .PiYG .q2-7 {
+  fill: #fde0ef;
+}
+
+.GeoMap .PiYG .q3-7 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PiYG .q4-7 {
+  fill: #e6f5d0;
+}
+
+.GeoMap .PiYG .q5-7 {
+  fill: #a1d76a;
+}
+
+.GeoMap .PiYG .q6-7 {
+  fill: #4d9221;
+}
+
+.GeoMap .PiYG .q0-8 {
+  fill: #c51b7d;
+}
+
+.GeoMap .PiYG .q1-8 {
+  fill: #de77ae;
+}
+
+.GeoMap .PiYG .q2-8 {
+  fill: #f1b6da;
+}
+
+.GeoMap .PiYG .q3-8 {
+  fill: #fde0ef;
+}
+
+.GeoMap .PiYG .q4-8 {
+  fill: #e6f5d0;
+}
+
+.GeoMap .PiYG .q5-8 {
+  fill: #b8e186;
+}
+
+.GeoMap .PiYG .q6-8 {
+  fill: #7fbc41;
+}
+
+.GeoMap .PiYG .q7-8 {
+  fill: #4d9221;
+}
+
+.GeoMap .PiYG .q0-9 {
+  fill: #c51b7d;
+}
+
+.GeoMap .PiYG .q1-9 {
+  fill: #de77ae;
+}
+
+.GeoMap .PiYG .q2-9 {
+  fill: #f1b6da;
+}
+
+.GeoMap .PiYG .q3-9 {
+  fill: #fde0ef;
+}
+
+.GeoMap .PiYG .q4-9 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PiYG .q5-9 {
+  fill: #e6f5d0;
+}
+
+.GeoMap .PiYG .q6-9 {
+  fill: #b8e186;
+}
+
+.GeoMap .PiYG .q7-9 {
+  fill: #7fbc41;
+}
+
+.GeoMap .PiYG .q8-9 {
+  fill: #4d9221;
+}
+
+.GeoMap .PiYG .q0-10 {
+  fill: #8e0152;
+}
+
+.GeoMap .PiYG .q1-10 {
+  fill: #c51b7d;
+}
+
+.GeoMap .PiYG .q2-10 {
+  fill: #de77ae;
+}
+
+.GeoMap .PiYG .q3-10 {
+  fill: #f1b6da;
+}
+
+.GeoMap .PiYG .q4-10 {
+  fill: #fde0ef;
+}
+
+.GeoMap .PiYG .q5-10 {
+  fill: #e6f5d0;
+}
+
+.GeoMap .PiYG .q6-10 {
+  fill: #b8e186;
+}
+
+.GeoMap .PiYG .q7-10 {
+  fill: #7fbc41;
+}
+
+.GeoMap .PiYG .q8-10 {
+  fill: #4d9221;
+}
+
+.GeoMap .PiYG .q9-10 {
+  fill: #276419;
+}
+
+.GeoMap .PiYG .q0-11 {
+  fill: #8e0152;
+}
+
+.GeoMap .PiYG .q1-11 {
+  fill: #c51b7d;
+}
+
+.GeoMap .PiYG .q2-11 {
+  fill: #de77ae;
+}
+
+.GeoMap .PiYG .q3-11 {
+  fill: #f1b6da;
+}
+
+.GeoMap .PiYG .q4-11 {
+  fill: #fde0ef;
+}
+
+.GeoMap .PiYG .q5-11 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .PiYG .q6-11 {
+  fill: #e6f5d0;
+}
+
+.GeoMap .PiYG .q7-11 {
+  fill: #b8e186;
+}
+
+.GeoMap .PiYG .q8-11 {
+  fill: #7fbc41;
+}
+
+.GeoMap .PiYG .q9-11 {
+  fill: #4d9221;
+}
+
+.GeoMap .PiYG .q10-11 {
+  fill: #276419;
+}
+
+.GeoMap .RdBu .q0-3 {
+  fill: #ef8a62;
+}
+
+.GeoMap .RdBu .q1-3 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .RdBu .q2-3 {
+  fill: #67a9cf;
+}
+
+.GeoMap .RdBu .q0-4 {
+  fill: #ca0020;
+}
+
+.GeoMap .RdBu .q1-4 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdBu .q2-4 {
+  fill: #92c5de;
+}
+
+.GeoMap .RdBu .q3-4 {
+  fill: #0571b0;
+}
+
+.GeoMap .RdBu .q0-5 {
+  fill: #ca0020;
+}
+
+.GeoMap .RdBu .q1-5 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdBu .q2-5 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .RdBu .q3-5 {
+  fill: #92c5de;
+}
+
+.GeoMap .RdBu .q4-5 {
+  fill: #0571b0;
+}
+
+.GeoMap .RdBu .q0-6 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdBu .q1-6 {
+  fill: #ef8a62;
+}
+
+.GeoMap .RdBu .q2-6 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdBu .q3-6 {
+  fill: #d1e5f0;
+}
+
+.GeoMap .RdBu .q4-6 {
+  fill: #67a9cf;
+}
+
+.GeoMap .RdBu .q5-6 {
+  fill: #2166ac;
+}
+
+.GeoMap .RdBu .q0-7 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdBu .q1-7 {
+  fill: #ef8a62;
+}
+
+.GeoMap .RdBu .q2-7 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdBu .q3-7 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .RdBu .q4-7 {
+  fill: #d1e5f0;
+}
+
+.GeoMap .RdBu .q5-7 {
+  fill: #67a9cf;
+}
+
+.GeoMap .RdBu .q6-7 {
+  fill: #2166ac;
+}
+
+.GeoMap .RdBu .q0-8 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdBu .q1-8 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdBu .q2-8 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdBu .q3-8 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdBu .q4-8 {
+  fill: #d1e5f0;
+}
+
+.GeoMap .RdBu .q5-8 {
+  fill: #92c5de;
+}
+
+.GeoMap .RdBu .q6-8 {
+  fill: #4393c3;
+}
+
+.GeoMap .RdBu .q7-8 {
+  fill: #2166ac;
+}
+
+.GeoMap .RdBu .q0-9 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdBu .q1-9 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdBu .q2-9 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdBu .q3-9 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdBu .q4-9 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .RdBu .q5-9 {
+  fill: #d1e5f0;
+}
+
+.GeoMap .RdBu .q6-9 {
+  fill: #92c5de;
+}
+
+.GeoMap .RdBu .q7-9 {
+  fill: #4393c3;
+}
+
+.GeoMap .RdBu .q8-9 {
+  fill: #2166ac;
+}
+
+.GeoMap .RdBu .q0-10 {
+  fill: #67001f;
+}
+
+.GeoMap .RdBu .q1-10 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdBu .q2-10 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdBu .q3-10 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdBu .q4-10 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdBu .q5-10 {
+  fill: #d1e5f0;
+}
+
+.GeoMap .RdBu .q6-10 {
+  fill: #92c5de;
+}
+
+.GeoMap .RdBu .q7-10 {
+  fill: #4393c3;
+}
+
+.GeoMap .RdBu .q8-10 {
+  fill: #2166ac;
+}
+
+.GeoMap .RdBu .q9-10 {
+  fill: #053061;
+}
+
+.GeoMap .RdBu .q0-11 {
+  fill: #67001f;
+}
+
+.GeoMap .RdBu .q1-11 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdBu .q2-11 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdBu .q3-11 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdBu .q4-11 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdBu .q5-11 {
+  fill: #f7f7f7;
+}
+
+.GeoMap .RdBu .q6-11 {
+  fill: #d1e5f0;
+}
+
+.GeoMap .RdBu .q7-11 {
+  fill: #92c5de;
+}
+
+.GeoMap .RdBu .q8-11 {
+  fill: #4393c3;
+}
+
+.GeoMap .RdBu .q9-11 {
+  fill: #2166ac;
+}
+
+.GeoMap .RdBu .q10-11 {
+  fill: #053061;
+}
+
+.GeoMap .RdGy .q0-3 {
+  fill: #ef8a62;
+}
+
+.GeoMap .RdGy .q1-3 {
+  fill: white;
+}
+
+.GeoMap .RdGy .q2-3 {
+  fill: #999;
+}
+
+.GeoMap .RdGy .q0-4 {
+  fill: #ca0020;
+}
+
+.GeoMap .RdGy .q1-4 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdGy .q2-4 {
+  fill: #bababa;
+}
+
+.GeoMap .RdGy .q3-4 {
+  fill: #404040;
+}
+
+.GeoMap .RdGy .q0-5 {
+  fill: #ca0020;
+}
+
+.GeoMap .RdGy .q1-5 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdGy .q2-5 {
+  fill: white;
+}
+
+.GeoMap .RdGy .q3-5 {
+  fill: #bababa;
+}
+
+.GeoMap .RdGy .q4-5 {
+  fill: #404040;
+}
+
+.GeoMap .RdGy .q0-6 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdGy .q1-6 {
+  fill: #ef8a62;
+}
+
+.GeoMap .RdGy .q2-6 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdGy .q3-6 {
+  fill: #e0e0e0;
+}
+
+.GeoMap .RdGy .q4-6 {
+  fill: #999;
+}
+
+.GeoMap .RdGy .q5-6 {
+  fill: #4d4d4d;
+}
+
+.GeoMap .RdGy .q0-7 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdGy .q1-7 {
+  fill: #ef8a62;
+}
+
+.GeoMap .RdGy .q2-7 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdGy .q3-7 {
+  fill: white;
+}
+
+.GeoMap .RdGy .q4-7 {
+  fill: #e0e0e0;
+}
+
+.GeoMap .RdGy .q5-7 {
+  fill: #999;
+}
+
+.GeoMap .RdGy .q6-7 {
+  fill: #4d4d4d;
+}
+
+.GeoMap .RdGy .q0-8 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdGy .q1-8 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdGy .q2-8 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdGy .q3-8 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdGy .q4-8 {
+  fill: #e0e0e0;
+}
+
+.GeoMap .RdGy .q5-8 {
+  fill: #bababa;
+}
+
+.GeoMap .RdGy .q6-8 {
+  fill: #878787;
+}
+
+.GeoMap .RdGy .q7-8 {
+  fill: #4d4d4d;
+}
+
+.GeoMap .RdGy .q0-9 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdGy .q1-9 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdGy .q2-9 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdGy .q3-9 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdGy .q4-9 {
+  fill: white;
+}
+
+.GeoMap .RdGy .q5-9 {
+  fill: #e0e0e0;
+}
+
+.GeoMap .RdGy .q6-9 {
+  fill: #bababa;
+}
+
+.GeoMap .RdGy .q7-9 {
+  fill: #878787;
+}
+
+.GeoMap .RdGy .q8-9 {
+  fill: #4d4d4d;
+}
+
+.GeoMap .RdGy .q0-10 {
+  fill: #67001f;
+}
+
+.GeoMap .RdGy .q1-10 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdGy .q2-10 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdGy .q3-10 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdGy .q4-10 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdGy .q5-10 {
+  fill: #e0e0e0;
+}
+
+.GeoMap .RdGy .q6-10 {
+  fill: #bababa;
+}
+
+.GeoMap .RdGy .q7-10 {
+  fill: #878787;
+}
+
+.GeoMap .RdGy .q8-10 {
+  fill: #4d4d4d;
+}
+
+.GeoMap .RdGy .q9-10 {
+  fill: #1a1a1a;
+}
+
+.GeoMap .RdGy .q0-11 {
+  fill: #67001f;
+}
+
+.GeoMap .RdGy .q1-11 {
+  fill: #b2182b;
+}
+
+.GeoMap .RdGy .q2-11 {
+  fill: #d6604d;
+}
+
+.GeoMap .RdGy .q3-11 {
+  fill: #f4a582;
+}
+
+.GeoMap .RdGy .q4-11 {
+  fill: #fddbc7;
+}
+
+.GeoMap .RdGy .q5-11 {
+  fill: white;
+}
+
+.GeoMap .RdGy .q6-11 {
+  fill: #e0e0e0;
+}
+
+.GeoMap .RdGy .q7-11 {
+  fill: #bababa;
+}
+
+.GeoMap .RdGy .q8-11 {
+  fill: #878787;
+}
+
+.GeoMap .RdGy .q9-11 {
+  fill: #4d4d4d;
+}
+
+.GeoMap .RdGy .q10-11 {
+  fill: #1a1a1a;
+}
+
+.GeoMap .RdYlBu .q0-3 {
+  fill: #fc8d59;
+}
+
+.GeoMap .RdYlBu .q1-3 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlBu .q2-3 {
+  fill: #91bfdb;
+}
+
+.GeoMap .RdYlBu .q0-4 {
+  fill: #d7191c;
+}
+
+.GeoMap .RdYlBu .q1-4 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlBu .q2-4 {
+  fill: #abd9e9;
+}
+
+.GeoMap .RdYlBu .q3-4 {
+  fill: #2c7bb6;
+}
+
+.GeoMap .RdYlBu .q0-5 {
+  fill: #d7191c;
+}
+
+.GeoMap .RdYlBu .q1-5 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlBu .q2-5 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlBu .q3-5 {
+  fill: #abd9e9;
+}
+
+.GeoMap .RdYlBu .q4-5 {
+  fill: #2c7bb6;
+}
+
+.GeoMap .RdYlBu .q0-6 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlBu .q1-6 {
+  fill: #fc8d59;
+}
+
+.GeoMap .RdYlBu .q2-6 {
+  fill: #fee090;
+}
+
+.GeoMap .RdYlBu .q3-6 {
+  fill: #e0f3f8;
+}
+
+.GeoMap .RdYlBu .q4-6 {
+  fill: #91bfdb;
+}
+
+.GeoMap .RdYlBu .q5-6 {
+  fill: #4575b4;
+}
+
+.GeoMap .RdYlBu .q0-7 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlBu .q1-7 {
+  fill: #fc8d59;
+}
+
+.GeoMap .RdYlBu .q2-7 {
+  fill: #fee090;
+}
+
+.GeoMap .RdYlBu .q3-7 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlBu .q4-7 {
+  fill: #e0f3f8;
+}
+
+.GeoMap .RdYlBu .q5-7 {
+  fill: #91bfdb;
+}
+
+.GeoMap .RdYlBu .q6-7 {
+  fill: #4575b4;
+}
+
+.GeoMap .RdYlBu .q0-8 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlBu .q1-8 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlBu .q2-8 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlBu .q3-8 {
+  fill: #fee090;
+}
+
+.GeoMap .RdYlBu .q4-8 {
+  fill: #e0f3f8;
+}
+
+.GeoMap .RdYlBu .q5-8 {
+  fill: #abd9e9;
+}
+
+.GeoMap .RdYlBu .q6-8 {
+  fill: #74add1;
+}
+
+.GeoMap .RdYlBu .q7-8 {
+  fill: #4575b4;
+}
+
+.GeoMap .RdYlBu .q0-9 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlBu .q1-9 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlBu .q2-9 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlBu .q3-9 {
+  fill: #fee090;
+}
+
+.GeoMap .RdYlBu .q4-9 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlBu .q5-9 {
+  fill: #e0f3f8;
+}
+
+.GeoMap .RdYlBu .q6-9 {
+  fill: #abd9e9;
+}
+
+.GeoMap .RdYlBu .q7-9 {
+  fill: #74add1;
+}
+
+.GeoMap .RdYlBu .q8-9 {
+  fill: #4575b4;
+}
+
+.GeoMap .RdYlBu .q0-10 {
+  fill: #a50026;
+}
+
+.GeoMap .RdYlBu .q1-10 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlBu .q2-10 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlBu .q3-10 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlBu .q4-10 {
+  fill: #fee090;
+}
+
+.GeoMap .RdYlBu .q5-10 {
+  fill: #e0f3f8;
+}
+
+.GeoMap .RdYlBu .q6-10 {
+  fill: #abd9e9;
+}
+
+.GeoMap .RdYlBu .q7-10 {
+  fill: #74add1;
+}
+
+.GeoMap .RdYlBu .q8-10 {
+  fill: #4575b4;
+}
+
+.GeoMap .RdYlBu .q9-10 {
+  fill: #313695;
+}
+
+.GeoMap .RdYlBu .q0-11 {
+  fill: #a50026;
+}
+
+.GeoMap .RdYlBu .q1-11 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlBu .q2-11 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlBu .q3-11 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlBu .q4-11 {
+  fill: #fee090;
+}
+
+.GeoMap .RdYlBu .q5-11 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlBu .q6-11 {
+  fill: #e0f3f8;
+}
+
+.GeoMap .RdYlBu .q7-11 {
+  fill: #abd9e9;
+}
+
+.GeoMap .RdYlBu .q8-11 {
+  fill: #74add1;
+}
+
+.GeoMap .RdYlBu .q9-11 {
+  fill: #4575b4;
+}
+
+.GeoMap .RdYlBu .q10-11 {
+  fill: #313695;
+}
+
+.GeoMap .Spectral .q0-3 {
+  fill: #fc8d59;
+}
+
+.GeoMap .Spectral .q1-3 {
+  fill: #ffffbf;
+}
+
+.GeoMap .Spectral .q2-3 {
+  fill: #99d594;
+}
+
+.GeoMap .Spectral .q0-4 {
+  fill: #d7191c;
+}
+
+.GeoMap .Spectral .q1-4 {
+  fill: #fdae61;
+}
+
+.GeoMap .Spectral .q2-4 {
+  fill: #abdda4;
+}
+
+.GeoMap .Spectral .q3-4 {
+  fill: #2b83ba;
+}
+
+.GeoMap .Spectral .q0-5 {
+  fill: #d7191c;
+}
+
+.GeoMap .Spectral .q1-5 {
+  fill: #fdae61;
+}
+
+.GeoMap .Spectral .q2-5 {
+  fill: #ffffbf;
+}
+
+.GeoMap .Spectral .q3-5 {
+  fill: #abdda4;
+}
+
+.GeoMap .Spectral .q4-5 {
+  fill: #2b83ba;
+}
+
+.GeoMap .Spectral .q0-6 {
+  fill: #d53e4f;
+}
+
+.GeoMap .Spectral .q1-6 {
+  fill: #fc8d59;
+}
+
+.GeoMap .Spectral .q2-6 {
+  fill: #fee08b;
+}
+
+.GeoMap .Spectral .q3-6 {
+  fill: #e6f598;
+}
+
+.GeoMap .Spectral .q4-6 {
+  fill: #99d594;
+}
+
+.GeoMap .Spectral .q5-6 {
+  fill: #3288bd;
+}
+
+.GeoMap .Spectral .q0-7 {
+  fill: #d53e4f;
+}
+
+.GeoMap .Spectral .q1-7 {
+  fill: #fc8d59;
+}
+
+.GeoMap .Spectral .q2-7 {
+  fill: #fee08b;
+}
+
+.GeoMap .Spectral .q3-7 {
+  fill: #ffffbf;
+}
+
+.GeoMap .Spectral .q4-7 {
+  fill: #e6f598;
+}
+
+.GeoMap .Spectral .q5-7 {
+  fill: #99d594;
+}
+
+.GeoMap .Spectral .q6-7 {
+  fill: #3288bd;
+}
+
+.GeoMap .Spectral .q0-8 {
+  fill: #d53e4f;
+}
+
+.GeoMap .Spectral .q1-8 {
+  fill: #f46d43;
+}
+
+.GeoMap .Spectral .q2-8 {
+  fill: #fdae61;
+}
+
+.GeoMap .Spectral .q3-8 {
+  fill: #fee08b;
+}
+
+.GeoMap .Spectral .q4-8 {
+  fill: #e6f598;
+}
+
+.GeoMap .Spectral .q5-8 {
+  fill: #abdda4;
+}
+
+.GeoMap .Spectral .q6-8 {
+  fill: #66c2a5;
+}
+
+.GeoMap .Spectral .q7-8 {
+  fill: #3288bd;
+}
+
+.GeoMap .Spectral .q0-9 {
+  fill: #d53e4f;
+}
+
+.GeoMap .Spectral .q1-9 {
+  fill: #f46d43;
+}
+
+.GeoMap .Spectral .q2-9 {
+  fill: #fdae61;
+}
+
+.GeoMap .Spectral .q3-9 {
+  fill: #fee08b;
+}
+
+.GeoMap .Spectral .q4-9 {
+  fill: #ffffbf;
+}
+
+.GeoMap .Spectral .q5-9 {
+  fill: #e6f598;
+}
+
+.GeoMap .Spectral .q6-9 {
+  fill: #abdda4;
+}
+
+.GeoMap .Spectral .q7-9 {
+  fill: #66c2a5;
+}
+
+.GeoMap .Spectral .q8-9 {
+  fill: #3288bd;
+}
+
+.GeoMap .Spectral .q0-10 {
+  fill: #9e0142;
+}
+
+.GeoMap .Spectral .q1-10 {
+  fill: #d53e4f;
+}
+
+.GeoMap .Spectral .q2-10 {
+  fill: #f46d43;
+}
+
+.GeoMap .Spectral .q3-10 {
+  fill: #fdae61;
+}
+
+.GeoMap .Spectral .q4-10 {
+  fill: #fee08b;
+}
+
+.GeoMap .Spectral .q5-10 {
+  fill: #e6f598;
+}
+
+.GeoMap .Spectral .q6-10 {
+  fill: #abdda4;
+}
+
+.GeoMap .Spectral .q7-10 {
+  fill: #66c2a5;
+}
+
+.GeoMap .Spectral .q8-10 {
+  fill: #3288bd;
+}
+
+.GeoMap .Spectral .q9-10 {
+  fill: #5e4fa2;
+}
+
+.GeoMap .Spectral .q0-11 {
+  fill: #9e0142;
+}
+
+.GeoMap .Spectral .q1-11 {
+  fill: #d53e4f;
+}
+
+.GeoMap .Spectral .q2-11 {
+  fill: #f46d43;
+}
+
+.GeoMap .Spectral .q3-11 {
+  fill: #fdae61;
+}
+
+.GeoMap .Spectral .q4-11 {
+  fill: #fee08b;
+}
+
+.GeoMap .Spectral .q5-11 {
+  fill: #ffffbf;
+}
+
+.GeoMap .Spectral .q6-11 {
+  fill: #e6f598;
+}
+
+.GeoMap .Spectral .q7-11 {
+  fill: #abdda4;
+}
+
+.GeoMap .Spectral .q8-11 {
+  fill: #66c2a5;
+}
+
+.GeoMap .Spectral .q9-11 {
+  fill: #3288bd;
+}
+
+.GeoMap .Spectral .q10-11 {
+  fill: #5e4fa2;
+}
+
+.GeoMap .RdYlGn .q0-3 {
+  fill: #fc8d59;
+}
+
+.GeoMap .RdYlGn .q1-3 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlGn .q2-3 {
+  fill: #91cf60;
+}
+
+.GeoMap .RdYlGn .q0-4 {
+  fill: #d7191c;
+}
+
+.GeoMap .RdYlGn .q1-4 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlGn .q2-4 {
+  fill: #a6d96a;
+}
+
+.GeoMap .RdYlGn .q3-4 {
+  fill: #1a9641;
+}
+
+.GeoMap .RdYlGn .q0-5 {
+  fill: #d7191c;
+}
+
+.GeoMap .RdYlGn .q1-5 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlGn .q2-5 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlGn .q3-5 {
+  fill: #a6d96a;
+}
+
+.GeoMap .RdYlGn .q4-5 {
+  fill: #1a9641;
+}
+
+.GeoMap .RdYlGn .q0-6 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlGn .q1-6 {
+  fill: #fc8d59;
+}
+
+.GeoMap .RdYlGn .q2-6 {
+  fill: #fee08b;
+}
+
+.GeoMap .RdYlGn .q3-6 {
+  fill: #d9ef8b;
+}
+
+.GeoMap .RdYlGn .q4-6 {
+  fill: #91cf60;
+}
+
+.GeoMap .RdYlGn .q5-6 {
+  fill: #1a9850;
+}
+
+.GeoMap .RdYlGn .q0-7 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlGn .q1-7 {
+  fill: #fc8d59;
+}
+
+.GeoMap .RdYlGn .q2-7 {
+  fill: #fee08b;
+}
+
+.GeoMap .RdYlGn .q3-7 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlGn .q4-7 {
+  fill: #d9ef8b;
+}
+
+.GeoMap .RdYlGn .q5-7 {
+  fill: #91cf60;
+}
+
+.GeoMap .RdYlGn .q6-7 {
+  fill: #1a9850;
+}
+
+.GeoMap .RdYlGn .q0-8 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlGn .q1-8 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlGn .q2-8 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlGn .q3-8 {
+  fill: #fee08b;
+}
+
+.GeoMap .RdYlGn .q4-8 {
+  fill: #d9ef8b;
+}
+
+.GeoMap .RdYlGn .q5-8 {
+  fill: #a6d96a;
+}
+
+.GeoMap .RdYlGn .q6-8 {
+  fill: #66bd63;
+}
+
+.GeoMap .RdYlGn .q7-8 {
+  fill: #1a9850;
+}
+
+.GeoMap .RdYlGn .q0-9 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlGn .q1-9 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlGn .q2-9 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlGn .q3-9 {
+  fill: #fee08b;
+}
+
+.GeoMap .RdYlGn .q4-9 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlGn .q5-9 {
+  fill: #d9ef8b;
+}
+
+.GeoMap .RdYlGn .q6-9 {
+  fill: #a6d96a;
+}
+
+.GeoMap .RdYlGn .q7-9 {
+  fill: #66bd63;
+}
+
+.GeoMap .RdYlGn .q8-9 {
+  fill: #1a9850;
+}
+
+.GeoMap .RdYlGn .q0-10 {
+  fill: #a50026;
+}
+
+.GeoMap .RdYlGn .q1-10 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlGn .q2-10 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlGn .q3-10 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlGn .q4-10 {
+  fill: #fee08b;
+}
+
+.GeoMap .RdYlGn .q5-10 {
+  fill: #d9ef8b;
+}
+
+.GeoMap .RdYlGn .q6-10 {
+  fill: #a6d96a;
+}
+
+.GeoMap .RdYlGn .q7-10 {
+  fill: #66bd63;
+}
+
+.GeoMap .RdYlGn .q8-10 {
+  fill: #1a9850;
+}
+
+.GeoMap .RdYlGn .q9-10 {
+  fill: #006837;
+}
+
+.GeoMap .RdYlGn .q0-11 {
+  fill: #a50026;
+}
+
+.GeoMap .RdYlGn .q1-11 {
+  fill: #d73027;
+}
+
+.GeoMap .RdYlGn .q2-11 {
+  fill: #f46d43;
+}
+
+.GeoMap .RdYlGn .q3-11 {
+  fill: #fdae61;
+}
+
+.GeoMap .RdYlGn .q4-11 {
+  fill: #fee08b;
+}
+
+.GeoMap .RdYlGn .q5-11 {
+  fill: #ffffbf;
+}
+
+.GeoMap .RdYlGn .q6-11 {
+  fill: #d9ef8b;
+}
+
+.GeoMap .RdYlGn .q7-11 {
+  fill: #a6d96a;
+}
+
+.GeoMap .RdYlGn .q8-11 {
+  fill: #66bd63;
+}
+
+.GeoMap .RdYlGn .q9-11 {
+  fill: #1a9850;
+}
+
+.GeoMap .RdYlGn .q10-11 {
+  fill: #006837;
+}
+
+.GeoMap .highlight {
+  background: #eee;
+  position: relative;
+  margin-left: 3em;
+  border-left: solid 1px #aaa;
+}
+
+.GeoMap .highlight.ex {
+  padding: 0.5em;
+}
+
+.GeoMap .highlight .lineno {
+  position: absolute;
+  text-align: right;
+  width: 2em;
+  left: -3em;
+  color: #ccc;
+}
+
+.GeoMap .highlight .c {
+  color: #998;
+  font-style: italic;
+}
+
+.GeoMap .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.GeoMap .highlight .k {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .o {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .cm {
+  color: #998;
+  font-style: italic;
+}
+
+.GeoMap .highlight .cp {
+  color: #999;
+  font-weight: bold;
+}
+
+.GeoMap .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.GeoMap .highlight .cs {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.GeoMap .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.GeoMap .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.GeoMap .highlight .ge {
+  font-style: italic;
+}
+
+.GeoMap .highlight .gr {
+  color: #a00;
+}
+
+.GeoMap .highlight .gh {
+  color: #999;
+}
+
+.GeoMap .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.GeoMap .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.GeoMap .highlight .go {
+  color: #888;
+}
+
+.GeoMap .highlight .gp {
+  color: #555;
+}
+
+.GeoMap .highlight .gs {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .gu {
+  color: #aaa;
+}
+
+.GeoMap .highlight .gt {
+  color: #a00;
+}
+
+.GeoMap .highlight .kc {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .kd {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .kp {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .kr {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .kt {
+  color: #458;
+  font-weight: bold;
+}
+
+.GeoMap .highlight .m {
+  color: #099;
+}
+
+.GeoMap .highlight .s {
+  color: #d14;
+}
+
+.GeoMap .highlight .na {
+  color: #008080;
+}
+
+.GeoMap .highlight .nb {
+  color: #0086B3;
+}
+
+.GeoMap .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.GeoMap .highlight .no {
+  color: #008080;
+}
+
+.GeoMap .highlight .ni {
+  color: #800080;
+}
+
+.GeoMap .highlight .ne {
+  color: #900;
+  font-weight: bold;
+}
+
+.GeoMap .highlight .nf {
+  color: #900;
+  font-weight: bold;
+}
+
+.GeoMap .highlight .nn {
+  color: #555;
+}
+
+.GeoMap .highlight .nt {
+  color: #000080;
+}
+
+.GeoMap .highlight .nv {
+  color: #008080;
+}
+
+.GeoMap .highlight .ow {
+  font-weight: bold;
+}
+
+.GeoMap .highlight .w {
+  color: #bbb;
+}
+
+.GeoMap .highlight .mf {
+  color: #099;
+}
+
+.GeoMap .highlight .mh {
+  color: #099;
+}
+
+.GeoMap .highlight .mi {
+  color: #099;
+}
+
+.GeoMap .highlight .mo {
+  color: #099;
+}
+
+.GeoMap .highlight .sb {
+  color: #d14;
+}
+
+.GeoMap .highlight .sc {
+  color: #d14;
+}
+
+.GeoMap .highlight .sd {
+  color: #d14;
+}
+
+.GeoMap .highlight .s2 {
+  color: #d14;
+}
+
+.GeoMap .highlight .se {
+  color: #d14;
+}
+
+.GeoMap .highlight .sh {
+  color: #d14;
+}
+
+.GeoMap .highlight .si {
+  color: #d14;
+}
+
+.GeoMap .highlight .sx {
+  color: #d14;
+}
+
+.GeoMap .highlight .sr {
+  color: #009926;
+}
+
+.GeoMap .highlight .s1 {
+  color: #d14;
+}
+
+.GeoMap .highlight .ss {
+  color: #990073;
+}
+
+.GeoMap .highlight .bp {
+  color: #999;
+}
+
+.GeoMap .highlight .vc {
+  color: #008080;
+}
+
+.GeoMap .highlight .vg {
+  color: #008080;
+}
+
+.GeoMap .highlight .vi {
+  color: #008080;
+}
+
+.GeoMap .highlight .il {
+  color: #099;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5taW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQVE7RUFBa0I7RUFBTTtFQUFPO0VBQVE7OztBQUFTO0VBQXFCO0VBQVc7RUFBZ0I7RUFBc0I7RUFBVztFQUFrQjs7O0FBQVk7RUFBdUM7OztBQUFZO0VBQXlCOzs7QUFBYTtFQUF1QjtFQUFxQjtFQUFXOzs7QUFBZTtFQUFjO0VBQTJCOzs7QUFBNkI7RUFBYztFQUEyQjs7O0FBQTZCO0VBQWM7RUFBMkI7OztBQUE2QjtFQUFjO0VBQTJCOzs7QUFBNkI7RUFBYztFQUEwQjs7O0FBQTZCO0VBQWM7RUFBMEI7OztBQUE2QjtFQUFjO0VBQTBCOzs7QUFBNkI7RUFBYztFQUEwQjs7O0FBQTZCO0VBQWM7RUFBeUI7OztBQUE2QjtFQUFjO0VBQXlCOzs7QUFBNkI7RUFBOEM7RUFBc0I7RUFBZ0I7OztBQUFjO0VBQWtCO0VBQWtCO0VBQXVCO0VBQVU7RUFBWTtFQUF1QjtFQUF5QjtFQUFhO0VBQW9DO0VBQWU7RUFBYzs7O0FBQWE7RUFBYzs7O0FBQVc7RUFBZTtFQUFrQjtFQUFNO0VBQU87RUFBUTs7O0FBQVM7RUFBbUI7RUFBa0I7RUFBTTtFQUFPO0VBQVE7OztBQUFTO0VBQWU7RUFBa0I7RUFBTTtFQUFPO0VBQVE7OztBQUFTO0VBQWU7OztBQUFrQjtFQUFhO0VBQW1COzs7QUFBWTtFQUF5Qjs7O0FBQVc7RUFBeUI7OztBQUFjO0VBQWM7RUFBZ0I7OztBQUFXO0VBQTBCOzs7QUFBVztFQUEwQjs7O0FBQWM7RUFBd0M7OztBQUFrQjtFQUFzQjtFQUFXO0VBQVk7RUFBb0I7OztBQUFxQjtFQUF5QjtFQUFXO0VBQWE7OztBQUFtQjtFQUFpQjtFQUFjO0VBQWlCO0VBQWE7RUFBMkI7RUFBVztFQUFrQjtFQUFjO0VBQWlCO0VBQWE7RUFBMkI7RUFBVztFQUFrQjtFQUFvQjtFQUFtQztFQUE2QjtFQUFpQjtFQUFzQjtFQUFrQjtFQUFxQjtFQUF5QjtFQUFrQjtFQUFlO0VBQWdCO0VBQW9CO0VBQW1CO0VBQTJCO0VBQXlCO0VBQXdCO0VBQXNCO0VBQXFCO0VBQXVCO0VBQXVCOzs7QUFBNkI7RUFBMEI7RUFBc0I7OztBQUFzQjtFQUE4Qjs7O0FBQW1CO0VBQWdDO0VBQWlCOzs7QUFBaUI7RUFBdUM7RUFBc0I7RUFBMEI7RUFBd0I7RUFBdUI7OztBQUFxQjtFQUFpRDtFQUFVO0VBQVc7OztBQUFzQjtFQUF5QjtFQUFZOzs7QUFBa0I7RUFBb0I7RUFBVTs7O0FBQW1CO0VBQWdCOzs7QUFBVTtFQUF3Qjs7O0FBQWE7RUFBdUI7RUFBVTtFQUFZO0VBQW1CO0VBQXNCO0VBQXFCOzs7QUFBb0I7RUFBeUI7RUFBVTtFQUFZOzs7QUFBa0I7RUFBb0Q7OztBQUFZO0VBQXVCO0VBQVk7OztBQUFtQjtFQUFxQjtFQUFVO0VBQWU7OztBQUFtQjtFQUFtQjtFQUFlO0VBQWlCOzs7QUFBVztFQUFjO0VBQW1CO0VBQVc7OztBQUFZO0VBQTZCO0VBQVk7OztBQUFtQjtFQUEyQjtFQUFVO0VBQWU7OztBQUFtQjtFQUF5QjtFQUFlO0VBQWlCOzs7QUFBVztFQUFlO0VBQTBCO0VBQVc7OztBQUFZO0VBQThCO0VBQWU7OztBQUFtQjtFQUE0QjtFQUFVO0VBQVk7OztBQUFtQjtFQUEwQjtFQUFlO0VBQWlCOzs7QUFBYTtFQUFxQjtFQUFlO0VBQWlCOzs7QUFBVztFQUFlO0VBQVc7OztBQUFZO0VBQWlCO0VBQVc7OztBQUFZO0VBQWlCO0VBQVc7OztBQUFZO0VBQWM7RUFBVzs7O0FBQVk7RUFBZ0I7RUFBVzs7O0FBQVk7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFVO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBVTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFVO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFVO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFVO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBVTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFVO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFVO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFVO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQVU7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBVTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFVO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBVTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQVU7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBVztFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFXO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQVc7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBZ0I7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBZ0I7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWdCO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBZ0I7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBZ0I7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFXO0VBQW9COzs7QUFBVTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQVc7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFVO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQVc7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBVTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFXO0VBQW9COzs7QUFBYTtFQUFvQjs7O0FBQWE7RUFBb0I7OztBQUFhO0VBQW9COzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQVc7RUFBcUI7OztBQUFhO0VBQXFCOzs7QUFBYTtFQUFxQjs7O0FBQWE7RUFBcUI7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF3Qjs7O0FBQWE7RUFBd0I7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQXlCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQXlCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQXlCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQXlCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQXlCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQXlCOzs7QUFBYTtFQUF5Qjs7O0FBQWE7RUFBeUI7OztBQUFhO0VBQTBCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUFzQjs7O0FBQWE7RUFBc0I7OztBQUFhO0VBQXNCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXVCOzs7QUFBYTtFQUF1Qjs7O0FBQWE7RUFBdUI7OztBQUFhO0VBQXdCOzs7QUFBYTtFQUFtQjtFQUFnQjtFQUFrQjtFQUFnQjs7O0FBQTJCO0VBQXNCOzs7QUFBYTtFQUEyQjtFQUFrQjtFQUFpQjtFQUFVO0VBQVU7OztBQUFXO0VBQXNCO0VBQVc7OztBQUFrQjtFQUF3QjtFQUFjOzs7QUFBeUI7RUFBc0I7OztBQUFpQjtFQUFzQjs7O0FBQWlCO0VBQXVCO0VBQVc7OztBQUFrQjtFQUF1QjtFQUFXOzs7QUFBaUI7RUFBdUI7RUFBVzs7O0FBQWtCO0VBQXVCO0VBQVc7RUFBaUI7OztBQUFrQjtFQUF1QjtFQUFXOzs7QUFBc0I7RUFBMEI7RUFBVzs7O0FBQXNCO0VBQXVCOzs7QUFBa0I7RUFBdUI7OztBQUFXO0VBQXVCOzs7QUFBVztFQUF1QjtFQUFXOzs7QUFBc0I7RUFBMEI7RUFBVzs7O0FBQXNCO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFpQjtFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFXO0VBQXVCOzs7QUFBaUI7RUFBdUI7OztBQUFpQjtFQUF1Qjs7O0FBQWlCO0VBQXVCOzs7QUFBaUI7RUFBdUI7RUFBVzs7O0FBQWlCO0VBQXNCOzs7QUFBVztFQUFzQjs7O0FBQVc7RUFBdUI7OztBQUFjO0VBQXVCOzs7QUFBYztFQUF1QjtFQUFXOzs7QUFBaUI7RUFBdUI7OztBQUFjO0VBQXVCOzs7QUFBYztFQUF1QjtFQUFXOzs7QUFBaUI7RUFBdUI7RUFBVzs7O0FBQWlCO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQWM7RUFBdUI7OztBQUFjO0VBQXVCOzs7QUFBaUI7RUFBc0I7OztBQUFXO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFXO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFXO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFXO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFXO0VBQXVCOzs7QUFBYztFQUF1Qjs7O0FBQVc7RUFBdUI7OztBQUFjO0VBQXVCOzs7QUFBVztFQUF1Qjs7O0FBQWM7RUFBdUI7OztBQUFjO0VBQXVCOzs7QUFBYztFQUF1QiIsImZpbGUiOiJhcHAubWluLmNzcyJ9 */

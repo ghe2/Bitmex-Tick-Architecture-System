@@ -1,0 +1,600 @@
+{
+  "autocompleteItems": [
+    {
+      "label": ".Q.addmonths",
+      "detail": "Adds y months to a date x"
+    },
+    {
+      "label": ".Q.addr",
+      "detail": "Returns the ip-address as an integer (same format as .z.a) from a hostname symbol"
+    },
+    {
+      "label": ".Q.chk",
+      "detail": "Fills missing tables. Syntax .Q.chk[`:hdb]. Note that the kdb+ process must have write permission for the hdb area so that it can create missing tables. If it reports an error similar to, No such file or directory, then please check that the process has write permissions for that filesystem."
+    },
+    {
+      "label": ".Q.cn",
+      "detail": "Count a partitioned table (passed by value). Populates .Q.pn cache."
+    },
+    {
+      "label": ".Q.dd",
+      "detail": "Shorthand for ` sv x,`$string y. Useful for creating filepaths, suffixed stock symbols, etc. Syntax: .Q.dd[`:dir]`file"
+    },
+    {
+      "label": ".Q.dpft",
+      "detail": "Syntax: dpft[directory;partition;`p#field;tablename]. Saves a table splayed to a specific partition of a database sorted (`p#) on a specified field. The table cannot be keyed at present. This will fail with an `unmappable error if there are columns which are not vectors or simple nested columns (e.g. char vectors for each row). It also rearranges the columns of the table so that the column specified by f is second in the table (the first column in the table will be the virtual column determined by the partitioning e.g. date). It returns the table name if it was successful."
+    },
+    {
+      "label": ".Q.dsftg",
+      "detail": "dsftg(loop M&1000000 rows at a time - load/process/save). [(dst;part;table);(src;offset;length);fields;(types;widths);postproc]"
+    },
+    {
+      "label": ".Q.def",
+      "detail": "Defaults and types can be provided with .Q.def. Syntax: .Q.def[`abc`xyz`efg!(1;2.;`a)].Q.opt .z.x"
+    },
+    {
+      "label": ".Q.en",
+      "detail": "Enumerates columns of type varchar before saving the table splayed."
+    },
+    {
+      "label": ".Q.f",
+      "detail": "Multiplies the incoming number by the number of significant digits you request, rounds it to a long, stringifies it, then then positions the '.' at the number of sig digits from the right."
+    },
+    {
+      "label": ".Q.fc",
+      "detail": "Parallel on cut - runs multiple threads if possible."
+    },
+    {
+      "label": ".Q.ff",
+      "detail": "Appends columns to a table with null values. x - table to modify, y - table of columns to add to x and set to null."
+    },
+    {
+      "label": ".Q.fk",
+      "detail": "Will return ` if the column is not an fkey or `tab if the column is a fkey into tab."
+    },
+    {
+      "label": ".Q.fmt",
+      "detail": "Formats a number. eg. .Q.fmt[6;2]each 1 234 '1.00' '234.00'"
+    },
+    {
+      "label": ".Q.fs",
+      "detail": "Loops over a file and grabs convenient sized lumps of complete records ('\n' delimited) and allows you to apply a function to each record. This enables you to implement a streaming algorithm to convert a large CSV file into an on-disk Kdb+ database without holding the data in memory all at once."
+    },
+    {
+      "label": ".Q.fps",
+      "detail": ".Q.fs for pipes. Reads conveniently sized lumps of complete records ('\n' delimited) from a pipe and allows you to apply a function to each record. This enables you to implement a streaming algorithm to convert a large CSV file into an on-disk Kdb+ database without holding the data in memory all at once."
+    },
+    {
+      "label": ".Q.fsn",
+      "detail": "Loops over a file and grabs specifically sized lumps of complete records ('\n' delimited) and allows you to apply a function to each record. This enables you to implement a streaming algorithm to convert a large CSV file into an on-disk Kdb+ database without holding the data in memory all at once."
+    },
+    {
+      "label": ".Q.ft",
+      "detail": "Takes a function designed for simple (non-keyed) tables, and creates a new function that also works on keyed tables. The function should take two arguments, with the table as the second argument. The function's result should be a table with at least as many key columns as the argument table. The method converts the keyed table to a simple table, applies the function, then converts back to keyed"
+    },
+    {
+      "label": ".Q.fu",
+      "detail": "On application of an expensive function f to every element of a vector with repeats, it's better to apply f to every unique element of the vector and then to copy those results to the whole vector. This has been raised to the status of an operator."
+    },
+    {
+      "label": ".Q.gc",
+      "detail": "Invokes the garbage collector, returning memory to the OS"
+    },
+    {
+      "label": ".Q.hdpf",
+      "detail": "Save all tables by calling .Q.dpft, clear tables, and send reload message to hdb. hdpf[historicalport;directory;partition;`p#field]"
+    },
+    {
+      "label": ".Q.hg",
+      "detail": "Convenience function for performing an http[s] GET query. It expects a single argument, the url of interest."
+    },
+    {
+      "label": ".Q.hp",
+      "detail": "Convenience function for performing an http[s] POST query. It expects a single argument, the url of interest."
+    },
+    {
+      "label": ".Q.host",
+      "detail": "return the ip-address as an integer (same format as .z.a) from a hostname symbol"
+    },
+    {
+      "label": ".Q.id",
+      "detail": "Used on atoms to remove non-alphanumeric characters, or on tables to rename columns by removing characters that interfere with select/exec/update and adding '1' to column names which clash with commands in .q namespace. Updated in kdb+3.2 to include .Q.res for checking collisions."
+    },
+    {
+      "label": ".Q.ind",
+      "detail": "Takes a table and (long!) indices into the table - and returns the appropriate rows. Syntax: .Q.ind[trade;2 3j]"
+    },
+    {
+      "label": ".Q.j10",
+      "detail": "Encode and decode strings of length up to 10(j10) against the restricted alphabet .Q.b6. (base64)"
+    },
+    {
+      "label": ".Q.x10",
+      "detail": "Encode and decode strings of length up to 10(x10) against the restricted alphabet .Q.b6. (base64)"
+    },
+    {
+      "label": ".Q.j12",
+      "detail": "Encode and decode strings of length up to 12(j12) against the restricted alphabet .Q.nA. (base36)"
+    },
+    {
+      "label": ".Q.x12",
+      "detail": "Encode and decode strings of length up to 12(x12) against the restricted alphabet .Q.nA. (base36)"
+    },
+    {
+      "label": ".Q.k",
+      "detail": "Checked against .z.K at startup to ensure that the executable and the copy of q.k being used are compatible."
+    },
+    {
+      "label": ".Q.l",
+      "detail": "Implements \\l"
+    },
+    {
+      "label": ".Q.MAP",
+      "detail": "Keeps partitions mapped to avoid the overhead of repeated file system calls during a select."
+    },
+    {
+      "label": ".Q.opt",
+      "detail": "Converts command-line options to a dictionary. eg. .Q.opt .z.x"
+    },
+    {
+      "label": ".Q.par",
+      "detail": "Locate a table (sensitive to par.txt). par[dir;part;table]"
+    },
+    {
+      "label": ".Q.qp",
+      "detail": "Returns 1b if given a partitioned table, 0b if given a splayed table, and 0 for anything else."
+    },
+    {
+      "label": ".Q.qt",
+      "detail": "Returns 1b if x is a table, 0b otherwise."
+    },
+    {
+      "label": ".Q.res",
+      "detail": "Contains the k control words and verbs defined as symbols. key `.q contains the functions defined to extend k to the q language. Hence to get the full list of reserved words for the current version, use .Q.res,key`.q"
+    },
+    {
+      "label": ".Q.s",
+      "detail": "Format an object to plain text, as used by the q console. Obeys console width and height set by \\c. Syntax .Q.s ([h:1 2 3] m: 4 5 6)"
+    },
+    {
+      "label": ".Q.ty",
+      "detail": "Returns character type code of argument."
+    },
+    {
+      "label": ".Q.v",
+      "detail": "Given a file handle sym, returns the splayed table stored there. Given any other sym, returns the global of that name. Given anything else, returns its argument."
+    },
+    {
+      "label": ".Q.V",
+      "detail": "Returns a table as a dictionary of column values. In the case of a partitioned table, it returns only the last partition (n.b. the partition field values themselves are not restricted to the last partition but include the whole range)."
+    },
+    {
+      "label": ".Q.view",
+      "detail": "Set a subview. Syntax: .Q.view 2#date"
+    },
+    {
+      "label": ".Q.w",
+      "detail": "Accumulates the memory stats from w into a more readable dictionary."
+    },
+    {
+      "label": ".Q.x",
+      "detail": "Set by .Q.opt."
+    },
+    {
+      "label": ".Q.Xf",
+      "detail": "Used to create an empty nested vector file. Expects 2 parameters, data type and filename. eg. .Q.Xf[\"C\";`:emptyNestedCharVector]"
+    },
+    {
+      "label": ".Q.pf",
+      "detail": "In partitioned dbs, contains the name of the partition type. Possible values are `date`month`year`int."
+    },
+    {
+      "label": ".Q.pt",
+      "detail": "In partitioned dbs, contains a list of partitioned tables."
+    },
+    {
+      "label": ".Q.PD",
+      "detail": "In partitioned dbs, contains a list of partition locations - conformant to .Q.PV - which represents the partition location for each partition. .Q.PV!.Q.PD can be used to create a dictionary of partition-to-location information."
+    },
+    {
+      "label": ".Q.PV",
+      "detail": "In partitioned dbs, contains a list of partition locations - conformant to .Q.PD - which represents the partition location for each partition. .Q.PV!.Q.PD can be used to create a dictionary of partition-to-location information."
+    },
+    {
+      "label": ".Q.pd",
+      "detail": "In partitioned dbs, .Q.PD as modified by .Q.view."
+    },
+    {
+      "label": ".Q.pv",
+      "detail": "In partitioned dbs, .Q.PV as modified by .Q.view."
+    },
+    {
+      "label": ".Q.pn",
+      "detail": "In partitioned dbs, contains a dictionary of cached partition counts - conformant to .Q.pt, each conformant to .Q.pv - as populated by .Q.cn. .Q.pv!flip .Q.pn can be used to create a crosstab of table-to-partition-counts information (once .Q.pn is fully populated)."
+    },
+    {
+      "label": ".Q.bv",
+      "detail": "Invoke .Q.bv[] to (re)populate .Q.vt/.Q.vp, which are used inside .Q.p1 during the partitioned select .Q.ps."
+    },
+    {
+      "label": ".Q.vp",
+      "detail": "In partitioned dbs, contains a dictionary of table schemas for tables with missing partitions, as populated by .Q.bv."
+    },
+    {
+      "label": ".Q.P",
+      "detail": "In segmented dbs, contains a list of the segments (i.e. the contents of par.txt)."
+    },
+    {
+      "label": ".Q.D",
+      "detail": "In segmented dbs, contains a list of the partitions - conformant to .Q.P - that are present in each segment. .Q.P!.Q.D can be used to create a dictionary of partition-to-segment information."
+    },
+    {
+      "label": ".Q.u",
+      "detail": "In segmented dbs, true if each partition is uniquely found in one segment. E.g. true if segmenting is date-based, false if name-based. Always true in partitioned dbs."
+    },
+    {
+      "label": ".z.a",
+      "detail": "Returns the IP address as a 32-bit integer."
+    },
+    {
+      "label": ".z.ac",
+      "detail": "Http authenticate from cookie. Allows users to define custom code to extract Single Sign On (SSO) token cookies from the http header and verify it, decoding and returning the username, or instructing what action to take."
+    },
+    {
+      "label": ".z.b",
+      "detail": "Returns the dependency dictionary."
+    },
+    {
+      "label": ".z.bm",
+      "detail": "KDB+ validates incoming ipc messages to check that data structures are well formed, reporting 'badMsg and disconnecting senders of malformed data structures. The raw message is captured for analysis via the callback .z.bm."
+    },
+    {
+      "label": ".z.c",
+      "detail": "Physical core count."
+    },
+    {
+      "label": ".z.e",
+      "detail": "TLS connection status."
+    },
+    {
+      "label": ".z.exit",
+      "detail": "Exit behavior callback. Default: NOOP."
+    },
+    {
+      "label": ".z.f",
+      "detail": "Returns the name of the q script as a symbol."
+    },
+    {
+      "label": ".z.h",
+      "detail": "Returns the host name as a symbol."
+    },
+    {
+      "label": ".z.i",
+      "detail": "Returns the process id as an integer."
+    },
+    {
+      "label": ".z.k",
+      "detail": "Returns the date on which the version of kdb+ being used was released."
+    },
+    {
+      "label": ".z.K",
+      "detail": "Return the major version number of the version of kdb+ being used as a float."
+    },
+    {
+      "label": ".z.l",
+      "detail": "Returns the license information as a list of strings."
+    },
+    {
+      "label": ".z.n",
+      "detail": "System GMT time (as timespan) in nanoseconds."
+    },
+    {
+      "label": ".z.N",
+      "detail": "System local time (as timespan) in nanoseconds."
+    },
+    {
+      "label": ".z.o",
+      "detail": "Return the kdb+ operating system version as a symbol."
+    },
+    {
+      "label": ".z.p",
+      "detail": "System gmt timestamp in nanoseconds."
+    },
+    {
+      "label": ".z.P",
+      "detail": "System localtime timestamp in nanoseconds."
+    },
+    {
+      "label": ".z.pc",
+      "detail": "Port close - Called AFTER a connection has been closed."
+    },
+    {
+      "label": ".z.pg",
+      "detail": "Port get - When .z.pg is set, it is called with the object that is passed to this kdb+ session via a synchronous request. The return value, if any, is returned to the calling task."
+    },
+    {
+      "label": ".z.pd",
+      "detail": "Peach handles - Indicating that N worker processes should be used for executing the function supplied to peach, kdb+ gets the handles to those worker processes by calling .z.pd[]. Syntax: .z.pd:`u#hopen each 20000+til 4"
+    },
+    {
+      "label": ".z.ph",
+      "detail": "Port HttpGet - Called when a synchronous http request comes into the kdb+ session."
+    },
+    {
+      "label": ".z.pi",
+      "detail": "The default handler for input."
+    },
+    {
+      "label": ".z.pm",
+      "detail": "Pass http OPTIONS method through to .z.pm as (`OPTIONS;requestText;requestHeaderDict)."
+    },
+    {
+      "label": ".z.po",
+      "detail": "Port open - Called when a connection to a kdb+ session has been initialized."
+    },
+    {
+      "label": ".z.pp",
+      "detail": "Port post - Called when an http postrequest comes into the kdb+ session."
+    },
+    {
+      "label": ".z.ps",
+      "detail": "Port set - When .z.ps is set, it is called with the object that is passed to this kdb+ session via an asynchronous request. The return value is discarded."
+    },
+    {
+      "label": ".z.pw",
+      "detail": "Validate user - Called AFTER the -u/-U checks, and BEFORE .z.po when opening a new connection to a kdb+ session."
+    },
+    {
+      "label": ".z.q",
+      "detail": "Quiet mode"
+    },
+    {
+      "label": ".z.s",
+      "detail": "Self - Returns the current function. Can be used to generate recursive function calls."
+    },
+    {
+      "label": ".z.ts",
+      "detail": "Function which is invoked on intervals of the timer variable (\t)."
+    },
+    {
+      "label": ".z.u",
+      "detail": "User ID - Returns user's name as a symbol."
+    },
+    {
+      "label": ".z.vs",
+      "detail": "Value set - Once .z.vs is defined, it is called with two arguments. The first argument is the symbol of the variable that is being modified and the second is the index."
+    },
+    {
+      "label": ".z.w",
+      "detail": "Connection handle, 0 for current session console."
+    },
+    {
+      "label": ".z.wc",
+      "detail": "Websocket close - Called after a websocket connection has been closed."
+    },
+    {
+      "label": ".z.wo",
+      "detail": "Websocket open - Called when a websocket connection to a kdb+ session has been initialized."
+    },
+    {
+      "label": ".z.W",
+      "detail": "Handles - Returns a dictionary of ipc handles with the number of bytes waiting in their output queues."
+    },
+    {
+      "label": ".z.ws",
+      "detail": "Websockets - Called when a message on a websocket arrives."
+    },
+    {
+      "label": ".z.x",
+      "detail": "Returns the command line arguments as a list of strings."
+    },
+    {
+      "label": ".z.X",
+      "detail": "Returns a list of char vectors of the raw, unfiltered cmd line with which kdb+ was invoked, including the name under which q was invoked as well as single-letter arguments."
+    },
+    {
+      "label": ".z.z",
+      "detail": "Returns UTC time as a datetime scalar."
+    },
+    {
+      "label": ".z.Z",
+      "detail": "Returns local time as a datetime scalar."
+    },
+    {
+      "label": ".z.t",
+      "detail": "Returns UTC time as `time. Shorthand for `time$.z.z"
+    },
+    {
+      "label": ".z.T",
+      "detail": "Returns local time as `time. Shorthand for `time$.z.Z"
+    },
+    {
+      "label": ".z.d",
+      "detail": "Returns UTC time as `date. Shorthand for `date$.z.z"
+    },
+    {
+      "label": ".z.D",
+      "detail": "Returns local time as `date. Shorthand for `date$.z.Z"
+    },
+    {
+      "label": ".z.zd",
+      "detail": "Zip defaults - If defined, is an integer list of default parameters for logical block size, compression algorithm and compression level that apply when saving to files with no file extension."
+    },
+    {
+      "label": ".h.br",
+      "detail": "The string '<br>'."
+    },
+    {
+      "label": ".h.c0",
+      "detail": "A web color used by the web console."
+    },
+    {
+      "label": ".h.c1",
+      "detail": "A web color used by the web console."
+    },
+    {
+      "label": ".h.cd",
+      "detail": ".csv from data. Converts a table or a list of columns to comma separated values."
+    },
+    {
+      "label": ".h.code",
+      "detail": "TBD"
+    },
+    {
+      "label": ".h.eb",
+      "detail": "Creates part of an Excel workbook. Used by .h.ed."
+    },
+    {
+      "label": ".h.ed",
+      "detail": "Excel workbook from Data."
+    },
+    {
+      "label": ".h.edsn",
+      "detail": "TBD"
+    },
+    {
+      "label": ".h.es",
+      "detail": "Creates part of an Excel workbook. Used by .h.ed."
+    },
+    {
+      "label": ".h.ex",
+      "detail": "Creates part of an Excel workbook. Used by .h.ed."
+    },
+    {
+      "label": ".h.fram",
+      "detail": "Creates an HTML page with two frames. Takes three string arguments: the title; the location of the left frame; the location of the right frame."
+    },
+    {
+      "label": ".h.ha",
+      "detail": "Insert HTML hyperlink tag with a anchor, like <a href='ANCHOR'>TEXT<a>. Takes 2 parameters ANCHOR; TEXT."
+    },
+    {
+      "label": ".h.hb",
+      "detail": "Same as .h.ha, but adds a 'target=v' parameter to the tag."
+    },
+    {
+      "label": ".h.hc",
+      "detail": "HTML escape for '<'."
+    },
+    {
+      "label": ".h.he",
+      "detail": "Takes one string argument. Escapes < characters, adds a \" at the front, and then creates an HTTP 400 error (Bad Request) with that content."
+    },
+    {
+      "label": ".h.hn",
+      "detail": "Creates an HTTP error from three arguments: a string containing the type of error; a symbol holding the response type (e.g. `csv), and a string containing the content."
+    },
+    {
+      "label": ".h.hp",
+      "detail": "Contains the string 'html'."
+    },
+    {
+      "label": ".h.hr",
+      "detail": "Takes one argument, a strnig, and creates a horizontal rule with one \" - \" for each character in the string. Used for displaying tables."
+    },
+    {
+      "label": ".h.ht",
+      "detail": "HTML documentation generator for http://kx.com/q/d/"
+    },
+    {
+      "label": ".h.hta",
+      "detail": "Insert start tag declaration with set of attributes like: <TAG ATTR1='VAL1' ATTR2='VAL2'>. E.g. .h.hta[`a;(`href`target)!('http://www.example.com';'_blank')]"
+    },
+    {
+      "label": ".h.htac",
+      "detail": "Insert tag declaration with set of attributes like: <TAG ATTR1='VAL1' ATTR2='VAL2'>BODY</TAG>. E.g. .h.htac[`a;(`href`target)!('http://www.example.com';'_blank');'Example.com Main Page']"
+    },
+    {
+      "label": ".h.htc",
+      "detail": "Inserts simple tag with body without attributes like: <TAG>BODY</TAG>. E.g. .h.htc[`tag;'value']"
+    },
+    {
+      "label": ".h.html",
+      "detail": "Inserts simple HTML structure. Function takes only one argument: BODY of html."
+    },
+    {
+      "label": ".h.http",
+      "detail": "Replaces all text started in http:// to html hyperlink."
+    },
+    {
+      "label": ".h.hu",
+      "detail": "Hex URI (escaping): Replace URI-unsafe characters with %xx. E.g. .h.hu 'http://www.kx.com' http%3a%2f%2fwww.kx.com"
+    },
+    {
+      "label": ".h.hug",
+      "detail": "Hex URI (table) Generator: Generate a mapping from characters to %xx escape sequences except for the set of characters passed as the argument (which get mapped to themselves)."
+    },
+    {
+      "label": ".h.hy",
+      "detail": "Takes two arguments, a symbol and a string. Creates a valid HTTP response, with content type determined by that symbol, and with the string as the content."
+    },
+    {
+      "label": ".h.iso8601",
+      "detail": "Takes one numeric argument. Converts it to a timestamp, and returns it as a string in ISO 8601 style."
+    },
+    {
+      "label": ".h.jx",
+      "detail": "Renders HTML pagers for tables."
+    },
+    {
+      "label": ".h.logo",
+      "detail": "A kx.com logo in HTML format."
+    },
+    {
+      "label": ".h.nbr",
+      "detail": "Takes one string argument. Returns a '<nobr>' HTML tag with that argument inside."
+    },
+    {
+      "label": ".h.pre",
+      "detail": "Takes one argument, a list of strings. Returns a '<pre>' HTML tag displaying those strings, with appropriate newlines."
+    },
+    {
+      "label": ".h.sa",
+      "detail": "Some CSS styling used in the web console."
+    },
+    {
+      "label": ".h.sb",
+      "detail": "Some CSS styling used in the web console."
+    },
+    {
+      "label": ".h.sc",
+      "detail": "List of characters that do not need to be escaped in URIs. See .h.hu."
+    },
+    {
+      "label": ".h.td",
+      "detail": "TSV from Data."
+    },
+    {
+      "label": ".h.text",
+      "detail": "Takes one argument, a list of strings. Returns HTML code with each string in its own."
+    },
+    {
+      "label": ".h.tx",
+      "detail": "A dictionary of file types (`csv, `txt, `xml, `xls) and corresponding conversion functions (.h.cd, .h.td, .h.xd, .h.ed)."
+    },
+    {
+      "label": ".h.ty",
+      "detail": "A dictionary of response types (e.g. `csv, `bmp, `doc) and corresponding Media Types."
+    },
+    {
+      "label": ".h.uh",
+      "detail": "URI Hex (unescaping): Replace %xx sequences with character equivalents."
+    },
+    {
+      "label": ".h.xd",
+      "detail": "XML from Data."
+    },
+    {
+      "label": ".h.xmp",
+      "detail": "Takes one argument, a list of strings. Returns HTML code displaying the strings, separated by newlines, inside an 'xmp' tag."
+    },
+    {
+      "label": ".h.xs",
+      "detail": "XML substitutions for entities."
+    },
+    {
+      "label": ".h.xt",
+      "detail": "TBD"
+    }
+  ]
+}

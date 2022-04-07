@@ -1,0 +1,69 @@
+.ChartGL {
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  position: absolute;
+}
+.ChartGL .legend-div {
+  position: relative;
+}
+.ChartGL .GL-highlight-rule {
+  position: absolute;
+}
+.ChartGL .legend-div, .ChartGL .GL-highlight-rule {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+  text-align: center;
+}
+.ChartGL .legend-div ul, .ChartGL .GL-highlight-rule ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ChartGL .legend-div ul li, .ChartGL .GL-highlight-rule ul li {
+  cursor: pointer;
+  display: inline-flex;
+}
+.ChartGL > canvas,
+.ChartGL > .overlay {
+  position: absolute;
+}
+.ChartGL > .overlay > path {
+  fill: rgba(40, 40, 40, 0.4);
+  stroke-width: 1;
+}
+.ChartGL > .overlay line,
+.ChartGL > .overlay rect {
+  stroke-width: 1;
+  stroke: #e6e6e6;
+}
+.ChartGL > .overlay line.drag-line {
+  marker-start: url(#sArrow);
+  marker-end: url(#eArrow);
+}
+.ChartGL > .overlay marker {
+  fill: #e6e6e6;
+}
+.ChartGL.Light > .tooltip {
+  background: #d4d4d4;
+  color: black;
+}
+
+.kx-light .ChartGL > .overlay > path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.kx-light .ChartGL > .overlay line,
+.kx-light .ChartGL > .overlay rect {
+  stroke: black;
+}
+.kx-light .ChartGL > .overlay marker {
+  fill: black;
+}
+.kx-light .ChartGL > .tooltip {
+  background: #d4d4d4;
+  color: black;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0k7RUFDQTtFQUNBOztBQUNBO0VBQ0k7RUFDQTs7QUFLVjtBQUFBO0VBRUU7O0FBSUE7RUFDRTtFQUNBOztBQUdGO0FBQUE7RUFFRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOztBQUtGO0VBQ0U7RUFDQTs7O0FBT0Y7RUFDRTs7QUFHRjtBQUFBO0VBRUU7O0FBR0Y7RUFDRTs7QUFJSjtFQUNFO0VBQ0EiLCJmaWxlIjoiYXBwLmNzcyJ9 */

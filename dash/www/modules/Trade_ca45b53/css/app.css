@@ -1,0 +1,426 @@
+.settings-menu {
+  width: 240px;
+  background-color: whitesmoke;
+  position: absolute;
+  border: 1px solid lightgray;
+  z-index: 100;
+  display: none;
+}
+.settings-menu .row .label,
+.settings-menu .row .control {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 7px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.settings-menu .row .label {
+  width: 45%;
+}
+.settings-menu .row .control {
+  width: 50%;
+}
+.settings-menu .buttonset {
+  border: none;
+}
+.settings-menu .buttonset .ui-menu-item {
+  padding: 7px;
+}
+.settings-menu .ext-link i {
+  float: right;
+  bottom: auto;
+  width: auto;
+  padding: 2px 4px;
+}
+.settings-menu .breadcrumbs label {
+  pointer-events: none;
+}
+.settings-menu .breadcrumbs .ui-checkboxradio-icon {
+  display: none;
+  float: right;
+  bottom: auto;
+  width: auto;
+  padding: 2px 4px;
+}
+.settings-menu .breadcrumbs.checked .ui-checkboxradio-icon {
+  display: block;
+}
+
+.lQuote {
+  float: left;
+}
+.lQuote .vol {
+  float: left;
+  padding-left: 4px;
+}
+.lQuote .tick {
+  display: inline-block;
+  text-align: right;
+}
+.lQuote .price {
+  padding-left: 100px;
+}
+.lQuote .price .side {
+  text-align: left;
+  background: transparent;
+}
+.lQuote .price > div {
+  border-right: solid 1px lightgray;
+}
+
+.rQuote {
+  float: right;
+}
+.rQuote .vol {
+  float: right;
+  text-align: right;
+  padding-right: 4px;
+}
+.rQuote .tick {
+  display: inline-block;
+  text-align: left;
+}
+.rQuote .price {
+  padding-right: 100px;
+}
+.rQuote .price .side {
+  text-align: right;
+  background: transparent;
+}
+.rQuote .price > div {
+  border-left: solid 1px lightgray;
+}
+
+.lQuote, .rQuote {
+  padding-top: 5px;
+  width: 50%;
+}
+.lQuote .price > div, .rQuote .price > div {
+  text-align: center;
+}
+.lQuote .val, .rQuote .val {
+  display: block;
+}
+.lQuote .minor, .rQuote .minor {
+  vertical-align: super;
+}
+.lQuote .increase > div, .rQuote .increase > div {
+  background-color: #D1FED9;
+}
+.lQuote .decrease > div, .rQuote .decrease > div {
+  background-color: #FAD7D6;
+}
+
+.quoteBox {
+  height: 46px;
+}
+
+.graphDetails {
+  width: 72px;
+  display: inline-block;
+}
+
+.rGraph, .lGraph {
+  width: calc(50% - 40px);
+  display: inline-block;
+}
+.rGraph td, .lGraph td {
+  display: table-cell;
+}
+.rGraph td span, .lGraph td span {
+  padding: 0px 5px 0px 5px;
+  white-space: nowrap;
+  display: block;
+  border: 1px solid lightgray;
+  background-color: lightsteelblue;
+  font-size: 10px;
+  text-align: center;
+}
+.rGraph tr, .lGraph tr {
+  vertical-align: bottom;
+}
+
+.rGraph {
+  float: right;
+}
+
+.graphTable {
+  width: 100%;
+}
+
+.menu {
+  height: 30px;
+  background-image: linear-gradient(whitesmoke, lightgray);
+  color: black;
+}
+.menu .add, .menu .save {
+  float: right;
+  padding: 0px 5px 0px 5px;
+}
+.menu .add :hover, .menu .save :hover {
+  color: #00AEFF;
+}
+
+.select2-container--Trade > .select2-dropdown {
+  max-height: 350px;
+  overflow: auto;
+}
+
+.Trade .select2-dropdown {
+  font-size: 12px;
+}
+.Trade .tradePanel {
+  position: absolute;
+}
+.Trade .tradePanel > div {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  margin: 5px;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  height: 197px;
+  border: 1px solid lightgray;
+  background: whitesmoke;
+  color: white;
+  border-radius: 3px;
+}
+.Trade .tradePanel > div > .floorCodes {
+  clear: both;
+  background-image: linear-gradient(whitesmoke, lightgray);
+  font-size: 10px;
+  margin-top: -5px;
+}
+.Trade .tradePanel > div > .floorCodes .lfloorCodediv {
+  width: calc(50% - 40px);
+  display: inline-block;
+}
+.Trade .tradePanel > div > .floorCodes .floorCodedivdetails {
+  width: 73px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 4px;
+}
+.Trade .tradePanel > div > .floorCodes .rfloorCodediv {
+  width: calc(50% - 40px);
+  float: right;
+}
+.Trade .tradePanel > div > .floorCodes table {
+  border: 1px solid lightgray;
+  width: 100%;
+}
+.Trade .tradePanel > div > .floorCodes td {
+  display: table-cell;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 16%;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+.Trade .tradePanel > div > .vwap {
+  clear: both;
+}
+.Trade .tradePanel > div > .vwap .emptyR {
+  border-top: solid 1px transparent;
+  border-left: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+}
+.Trade .tradePanel > div > .vwap .emptyL {
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+}
+.Trade .tradePanel > div > .vwap .lvwapdiv {
+  width: calc(50% - 40px);
+  display: inline-block;
+}
+.Trade .tradePanel > div > .vwap .vwapdivdetails {
+  width: 72px;
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  vertical-align: top;
+  font-size: 10px;
+}
+.Trade .tradePanel > div > .vwap .vwapdivdetails td {
+  border: 1px solid transparent;
+}
+.Trade .tradePanel > div > .vwap .rvwapdiv {
+  width: calc(50% - 40px);
+  float: right;
+}
+.Trade .tradePanel > div > .vwap table {
+  border: 1px solid lightgray;
+  width: 100%;
+}
+.Trade .tradePanel > div > .vwap td {
+  display: table-cell;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 16%;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+.Trade .tradePanel > div > .vwap tr:nth-child(even) {
+  color: black;
+  font-weight: bold;
+}
+.Trade .tradePanel > div > .vwap tr:nth-child(odd) {
+  color: gray;
+}
+.Trade .tradePanel > div > .drag {
+  background-image: linear-gradient(whitesmoke, lightgray);
+  height: 30px;
+  line-height: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.Trade .tradePanel > div > .drag .select2 {
+  vertical-align: top;
+}
+.Trade .tradePanel > div > .drag .security {
+  float: left;
+}
+.Trade .tradePanel > div > .drag .security .select-sym {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+.Trade .tradePanel > div > .drag .select2-selection {
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  height: 25px;
+}
+.Trade .tradePanel > div > .drag .preset {
+  font-weight: normal;
+  font-size: 11px;
+  float: right;
+  padding-right: 5px;
+  border-bottom: 4px dashed red;
+  height: 25px;
+}
+.Trade .tradePanel > div > .drag .settings, .Trade .tradePanel > div > .drag .remove {
+  user-select: none;
+  cursor: pointer;
+  float: right;
+  padding: 0px 7px 0px 6px;
+}
+.Trade .tradePanel > div > .drag .settings:hover > i, .Trade .tradePanel > div > .drag .remove:hover > i {
+  color: #00AEFF;
+}
+.Trade .tradePanel > div > .drag .settings > i, .Trade .tradePanel > div > .drag .remove > i {
+  pointer-events: none;
+}
+.Trade .tradePanel > div .cell-1 {
+  width: 100%;
+}
+.Trade .tradePanel > div .cell-2 {
+  width: 50% !important;
+}
+.Trade .tradePanel > div .cell-3 {
+  width: 33% !important;
+}
+.Trade .tradePanel > div .cell-4 {
+  width: 25% !important;
+}
+.Trade .tradePanel > div .cell-5 {
+  width: 20% !important;
+}
+.Trade .tradePanel > div .cell-6 {
+  width: 16.6% !important;
+}
+.Trade .tradePanel > div .cell-7 {
+  width: 14.28% !important;
+}
+.Trade .tradePanel > div .cell-8 {
+  width: 12.5% !important;
+}
+.Trade .tradePanel > div .cell-9 {
+  width: 11.11% !important;
+}
+.Trade .tradePanel > div .cell-10 {
+  width: 10% !important;
+}
+.Trade .tradePanel > div .cell-11 {
+  width: 9.09% !important;
+}
+.Trade .tradePanel > div .cell-12 {
+  width: 8.33% !important;
+}
+.Trade .tradePanel > div .cell-13 {
+  width: 7.69% !important;
+}
+.Trade .tradePanel > div .cell-14 {
+  width: 7.14% !important;
+}
+.Trade .tradePanel > div .cell-15 {
+  width: 6.66% !important;
+}
+.Trade.Light .tradePanel > div {
+  color: black;
+}
+.Trade.Dark .tradePanel > div {
+  /*-webkit-box-shadow: 1px 1px 6px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 1px 6px 0px rgba(255, 255, 255, 0.75);*/
+  border: 1px solid #404040;
+  background: #2e2e2e;
+  color: white;
+}
+.Trade.Dark .tradePanel > div .settings-menu {
+  background-color: #404040;
+  border: 1px solid #464646;
+}
+.Trade.Dark .tradePanel > div > .floorCodes {
+  clear: both;
+  background-image: linear-gradient(#464646, #404040);
+}
+.Trade.Dark .tradePanel > div > .floorCodes table {
+  border: 1px solid #404040;
+}
+.Trade.Dark .tradePanel > div > .floorCodes td {
+  border: 1px solid #404040;
+}
+.Trade.Dark .tradePanel > div > .vwap table {
+  border: 1px solid #404040;
+}
+.Trade.Dark .tradePanel > div > .vwap td {
+  border: 1px solid #404040;
+  color: white;
+}
+.Trade.Dark .tradePanel > div > .drag {
+  background-image: linear-gradient(#464646, #404040);
+}
+.Trade.Dark .tradePanel > div > .drag .select-sym {
+  color: white;
+}
+.Trade.Dark .tradePanel > div > .drag .select2-selection__rendered {
+  color: white;
+}
+.Trade .cmenu {
+  width: 250px;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: none;
+  background: #ffffff;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+.Trade .cmenu .cmenu-options {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0;
+}
+.Trade .cmenu .cmenu-options .cmenu-option {
+  font-size: 11px;
+  color: black;
+  padding: 4px 10px 4px 20px;
+  cursor: pointer;
+}
+.Trade .cmenu .cmenu-options .cmenu-option:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9zZXR0aW5nc01lbnUuc2NzcyIsIl9xdW90ZXMuc2NzcyIsIl9ncmFwaHMuc2NzcyIsIl9tZW51LnNjc3MiLCJhcHAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSTtBQUFBO0VBRUk7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTs7QUFFQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUE7RUFDSTs7O0FDMURoQjtFQUNJOztBQUNBO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7O0FBSUY7RUFDRTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBSVI7RUFDSTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS1I7RUFDSTtFQUNBOztBQUVBO0VBQ0U7O0FBRUY7RUFDSTs7QUFFRjtFQUNFOztBQUVKO0VBQ0U7O0FBRUY7RUFDRTs7O0FBSU47RUFDRTs7O0FDMUVGO0VBQ0k7RUFDQTs7O0FBR0o7RUFDSTtFQUNBOztBQUNBO0VBQ0k7O0FBQ0E7RUFFSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJUjtFQUNJOzs7QUFHUjtFQUNJOzs7QUFHSjtFQUNJOzs7QUNoQ0o7RUFDSTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUVBO0VBQ0c7OztBQ0xYO0VBQ0U7RUFDQTs7O0FBSUE7RUFDRTs7QUFFRjtFQUNFOztBQUNBO0FBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVGO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJSjtFQUNJOztBQUNBO0VBQ0k7RUFDQTtFQUNBOztBQUVKO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdKO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7O0FBRUY7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBRUY7RUFDRTs7QUFLTjtFQUVFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUNBO0VBQ0U7RUFDQTtFQUNBOztBQUlKO0VBRUk7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0k7O0FBR0o7RUFDRTs7QUFLSjtFQUNFOztBQUVGO0VBQ0U7O0FBRUY7RUFDRTs7QUFFRjtFQUNFOztBQUVGO0VBQ0U7O0FBRUY7RUFDRTs7QUFFRjtFQUNFOztBQUVGO0VBQ0U7O0FBRUY7RUFDRTs7QUFFRjtFQUNFOztBQUVGO0VBQ0U7O0FBRUY7RUFDRTs7QUFFRjtFQUNFOztBQUVGO0VBQ0U7O0FBRUY7RUFDRTs7QUFPTjtFQUNFOztBQUlGO0FBQ0U7QUFBQTtBQUFBO0VBR0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBRUE7RUFDRTs7QUFFRjtFQUNFOztBQUlGO0VBQ0U7O0FBRUY7RUFDRTtFQUNBOztBQUdKO0VBQ0U7O0FBQ0E7RUFDQzs7QUFFRDtFQUNFOztBQUtSO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRSIsImZpbGUiOiJhcHAuY3NzIn0= */

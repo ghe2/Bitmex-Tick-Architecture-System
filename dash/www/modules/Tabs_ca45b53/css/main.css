@@ -1,0 +1,195 @@
+.basic-components-tabs {
+  color: black;
+  background-color: transparent;
+  position: relative;
+}
+.basic-components-tabs .ui-tabs-panel > .remove-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  font-size: 1.3em;
+  color: #b2b2b2;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+  text-shadow: -1px -1px 0 #101010, 1px -1px 0 #101010, -1px 1px 0 #101010, 1px 1px 0 #101010;
+}
+.basic-components-tabs .tabs-div {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > li {
+  border: none;
+  background: none;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > li > a {
+  font-size: 13px;
+  box-sizing: border-box;
+  height: 34px;
+  padding: 9px 28px 0;
+  border-bottom: 2px solid transparent;
+  outline: 0;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > li > a:hover {
+  text-shadow: 0px 0px 1px;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > li.ui-state-active a {
+  border-bottom-color: #25A9E0;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > li.ui-state-active a.Dark {
+  color: white;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > li.ui-state-active a.Light {
+  color: #333333;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > .ui-tabs-panel {
+  padding: 0;
+  top: 37px;
+}
+.basic-components-tabs .tabs-div > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  pointer-events: auto;
+}
+.basic-components-tabs .tabs-div > div > .component-build-view {
+  pointer-events: none;
+}
+.basic-components-tabs .tabs-div > div > .component-build-view.build-off {
+  pointer-events: all;
+}
+.basic-components-tabs .tabs-div > div.selected {
+  border: 1px solid #1EB8FF;
+  box-shadow: 0px 0px 4px #000000;
+  z-index: 99;
+}
+.basic-components-tabs .tabs-div > div.selected.copied {
+  border-style: dashed;
+}
+.basic-components-tabs .tabs-div > div.light {
+  background-color: white;
+}
+.basic-components-tabs .tabs-div .interaction-div {
+  display: none;
+  top: 0;
+}
+.basic-components-tabs .tabs-div .interaction-div .selection-div {
+  pointer-events: none;
+  border: 1px solid #1EB8FF;
+  position: absolute;
+  left: 0;
+  top: 33px;
+  right: 0;
+  bottom: 0;
+}
+.basic-components-tabs .tabs-div .interaction-div .selection-div > .remove-btn {
+  display: block;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav a {
+  font-size: 11px;
+}
+.basic-components-tabs .tabs-div > .ui-tabs-nav > .ui-state-disabled {
+  display: none;
+}
+.outlined .basic-components-tabs.drop-target > .ui-tabs > .ui-tabs-panel::after {
+  background-color: #484848;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+}
+.Light.outlined .basic-components-tabs.drop-target > .ui-tabs > .ui-tabs-panel::after {
+  background-color: #d0d0d0;
+}
+.basic-components-tabs.Light .ui-tabs-panel {
+  background: transparent;
+}
+
+.pdf #appdiv > .document-view-div > .document-view > .screen-view-div > .screen-view > .worksheet > .grid-stack > .grid-stack-item:not(.pdf-expandable) {
+  bottom: auto;
+}
+.pdf .pdf-expandable > .grid-stack-item-content > .component-build-view > .border-div {
+  position: relative !important;
+  height: 100%;
+}
+.pdf .pdf-expandable > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  position: relative !important;
+  height: 100%;
+}
+.pdf .pdf-expandable .basic-components-tabs {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+.pdf .pdf-expandable .basic-components-tabs .tabs-div {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  position: relative;
+}
+.pdf .pdf-expandable .basic-components-tabs .tabs-div > div:not(.interaction-div) {
+  display: block !important;
+  width: 100%;
+  position: relative;
+  top: auto !important;
+  padding: 0 !important;
+}
+.pdf .pdf-expandable .basic-components-tabs .tabs-div > div:not(.interaction-div) > .grid-stack-item-content > .component-build-view > .border-div {
+  position: relative !important;
+  height: 100%;
+}
+.pdf .pdf-expandable .basic-components-tabs .tabs-div > div:not(.interaction-div) > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  position: relative !important;
+  height: 100%;
+}
+.pdf .pdf-expandable.rendered {
+  height: auto;
+}
+.pdf .pdf-expandable.rendered > .grid-stack-item-content {
+  height: auto;
+  position: relative;
+}
+.pdf .pdf-expandable.rendered > .grid-stack-item-content > .component-build-view {
+  height: auto;
+}
+.pdf .pdf-expandable.rendered > .grid-stack-item-content > .component-build-view > .border-div {
+  height: auto;
+}
+.pdf .pdf-expandable.rendered > .grid-stack-item-content > .component-build-view > .border-div > .app-div {
+  height: auto;
+}
+
+.buildMode .basic-components-tabs .ui-tabs-panel:hover.selected > .remove-btn {
+  display: block;
+}
+.buildMode .grid-stack-item[data-componentid=Tabs]:hover.selected > .ui-resizable-se {
+  display: block !important;
+}
+.buildMode .grid-stack-item[data-componentid=Tabs]:hover.selected > .remove-btn {
+  display: block;
+}
+.buildMode .grid-stack-item[data-componentid=Tabs] > .ui-resizable-se {
+  display: none !important;
+}
+
+.quick-view .basic-components-tabs .tabs-div > div > .component-build-view {
+  pointer-events: auto;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDO0VBQ0E7RUFDQTs7QUFHTztFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJWDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNFOztBQUlIO0VBQ0M7O0FBRUE7RUFDQzs7QUFFRDtFQUNDOztBQUtIO0VBQ0M7RUFDQTs7QUFLRjtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBOztBQUVBO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7RUFDWTs7QUFFQTtFQUNJOztBQUlqQjtFQUNDOztBQUlGO0VBQ0M7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7O0FBTUY7RUFDQzs7QUFHUTtFQUNJOztBQU1mO0VBQ0M7RUFDQTtFQUNBO0VBQVE7RUFBUztFQUFXO0VBQzVCOztBQUdEO0VBQ0M7O0FBSUE7RUFDQzs7O0FBT0M7RUFDSTs7QUFLQTtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUtSO0VBQ0k7RUFDQTs7QUFHQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFJSTtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQVN4QjtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7O0FBRUE7RUFDSTs7O0FBWVo7RUFDSTs7QUFRUjtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTs7O0FBUVQ7RUFDQyIsImZpbGUiOiJtYWluLmNzcyJ9 */

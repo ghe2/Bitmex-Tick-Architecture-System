@@ -1,0 +1,312 @@
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons {
+  float: right;
+  font-size: 13px;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport {
+  /* dividers */
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport.link-disabled {
+  display: none;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport {
+  line-height: 20px;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot:hover,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport:hover,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport:hover,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport:hover {
+  cursor: pointer;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot .export-spinner,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport .export-spinner,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport .export-spinner,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport .export-spinner {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  font-size: 10px;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot.export-in-progress,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport.export-in-progress,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport.export-in-progress,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport.export-in-progress {
+  pointer-events: none;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot.link-disabled,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport.link-disabled,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport.link-disabled,
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport.link-disabled {
+  display: none;
+}
+.chartjs .chart-container .tools-panel .canvasChartpnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  display: inline-block;
+  content: " | ";
+  padding: 0 0.4em 0 0.2em;
+}
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport {
+  color: #CCC;
+}
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot,
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport,
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport,
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport {
+  color: #CCC;
+}
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot:hover,
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport:hover,
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport:hover,
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport:hover {
+  color: #00AEFF;
+}
+.chartjs .chart-container.dark .tools-panel .canvasChartpnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  color: #CCC;
+}
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport {
+  color: #000;
+}
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot,
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport,
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport,
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport {
+  color: #000;
+}
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkDownloadScreenshot:hover,
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkCsvExport:hover,
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkExcelExport:hover,
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a.lnkFullExport:hover {
+  color: #00AEFF;
+}
+.chartjs .chart-container.light .tools-panel .canvasChartpnlButtons span.lnksExport a:not(.link-disabled) ~ a:not(.link-disabled):before {
+  color: #000;
+}
+
+.chartjs div[data-componentid=ChartJS] {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+.chartjs div[data-componentid=ChartJS] .component-build-view .queryStatus .statusPanel .statusTitle {
+  display: block;
+}
+.chartjs div[data-componentid=ChartJS] .component-build-view .queryStatus .statusPanel .statusText {
+  white-space: pre-line;
+}
+.chartjs .legendItem {
+  display: flex;
+}
+.chartjs .legendText {
+  display: inline-block;
+}
+.chartjs .legendIcon {
+  display: inline-block;
+}
+.chartjs .legendLineBreak {
+  min-height: 10px;
+}
+.chartjs .horizontalLegend {
+  display: inline-block;
+}
+.chartjs .legendSpanbreak {
+  display: inline-block;
+  width: 30px;
+}
+.chartjs .chart-container {
+  /*TODO Theme*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.chartjs .chart-container.dark .tools-panel .icons {
+  color: #CCC;
+}
+.chartjs .chart-container.light .tools-panel .icons {
+  color: #000;
+}
+.chartjs .chart-container.light .tools-panel .chart {
+  background-color: #f8f8f8 !important;
+}
+.chartjs .chart-container.light .crosshair {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+.chartjs .chart-container.light .crosshair-selected {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.6);
+}
+.chartjs .chart-container .tools-panel {
+  position: absolute;
+  right: 3px;
+  font-size: 0px;
+}
+.chartjs .chart-container .tools-panel .icons {
+  opacity: 0.45;
+  font-size: 18px;
+  padding: 1px;
+  margin: 0px;
+  display: inline-block;
+}
+.chartjs .chart-container .tools-panel .active {
+  opacity: 1;
+}
+.chartjs .chart-container .tools-panel .active:hover {
+  color: #48C2FA;
+  cursor: pointer;
+}
+.chartjs .chart-container .tools-panel .pan-tool {
+  font-size: 13px;
+  position: relative;
+  top: -3px;
+  padding-bottom: 4px;
+  padding-top: 5px;
+  padding-right: 3px;
+}
+.chartjs .chart-container .tools-panel .pan-tool:hover {
+  color: #48C2FA;
+  cursor: pointer;
+  opacity: 1;
+}
+.chartjs .chart-container .tools-panel .hidden1 {
+  display: none;
+}
+.chartjs .chart-container .tools-panel .hidden {
+  display: none;
+}
+.chartjs .highlight-rules-dialog {
+  position: absolute;
+  bottom: 0;
+}
+.chartjs .highlight-rules-dialog .highlightRule-menu-item {
+  display: inline-block;
+}
+.chartjs .highlight-rules-dialog .highlightRule-menu-item svg {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 4px;
+}
+.chartjs .zoomchart {
+  pointer-events: none;
+}
+.chartjs .crosshair {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  pointer-events: none;
+  display: none;
+  width: 1px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+.chartjs .crosshair .crosshair-arrow {
+  display: none;
+  position: absolute;
+  left: -11px;
+  bottom: -10px;
+}
+.chartjs .light .crosshair {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.chartjs .crosshair-selected {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  pointer-events: none;
+  display: none;
+  width: 1px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+.chartjs .crosshair-selected .crosshair-arrow {
+  display: none;
+  position: absolute;
+  left: -11px;
+  bottom: -10px;
+}
+.chartjs .icons {
+  user-select: none;
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.chartjs .chart-legend {
+  height: 30px;
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+}
+.chartjs .chart-legend .strike {
+  text-decoration: line-through !important;
+}
+.chartjs .chart-legend .strike .legendText {
+  text-decoration: line-through !important;
+}
+.chartjs .chart-legend ul {
+  padding: 0;
+  margin: 0;
+}
+.chartjs .chart-legend ul li {
+  cursor: pointer;
+  display: inline-flex;
+}
+.chartjs .chart-legend ul li span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+.chartjs .tooltip {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  pointer-events: none;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  font-size: 12px;
+}
+.chartjs .tooltip table {
+  margin: 6px;
+  color: #F8F8F8;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-align: left;
+}
+.chartjs .loader {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.chartjs .active {
+  display: block;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9wbmxCdXR0b25zLnNjc3MiLCJhcHAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHWTtFQUNJO0VBQ0E7O0FBRUE7QUErQkk7O0FBOUJBO0VBQ0k7O0FBR0o7QUFBQTtBQUFBO0FBQUE7RUFJSSxhQ2ZQOztBRGlCTztBQUFBO0FBQUE7QUFBQTtFQUNJOztBQUdKO0FBQUE7QUFBQTtBQUFBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7QUFBQTtBQUFBO0FBQUE7RUFDSTs7QUFHSjtBQUFBO0FBQUE7QUFBQTtFQUNJOztBQU1KO0VBQ0k7RUFDQTtFQUNBOztBQU9wQjtFQUNJLE9DakRZOztBRGtEWjtBQUFBO0FBQUE7QUFBQTtFQUlJLE9DdERROztBRHVEUjtBQUFBO0FBQUE7QUFBQTtFQUNJLE9DMURIOztBRDhERDtFQUNJLE9DN0RJOztBRGlFaEI7RUFDSSxPQ2pFYTs7QURrRWI7QUFBQTtBQUFBO0FBQUE7RUFJSSxPQ3RFUzs7QUR1RVQ7QUFBQTtBQUFBO0FBQUE7RUFDSSxPQzNFSDs7QUQrRUQ7RUFDSSxPQzdFSzs7O0FBR3JCO0VBQ1k7QUFBMkI7RUFDL0I7QUFBd0I7RUFDeEI7QUFBdUI7QUFDdkI7RUFDQTtFQUNBOztBQUdJO0VBQ0k7O0FBR0o7RUFDSTs7QUFNaEI7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFFSjtFQUNJOztBQUVKO0VBQ0k7RUFDQTs7QUFHSjtBQUNBO0VBRUk7RUFDQTtFQUNBOztBQUdRO0VBQ0ksT0F4REk7O0FBK0RSO0VBQ0ksT0EvREs7O0FBaUVUO0VBQ0k7O0FBSVI7RUFDSTtFQUNBOztBQUVKO0VBQ0k7RUFDQTs7QUFHUjtFQUNJO0VBQ0E7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUtaO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUNBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBS1o7RUFDSTs7QUFHSjtFQUNJO0FBQTJCO0VBQzNCO0FBQXdCO0VBQ3hCO0FBQTBCO0VBQzFCO0FBQXVCO0VBQ3ZCO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUtKO0VBQ0k7O0FBSVI7RUFDSTtBQUEyQjtFQUMzQjtBQUF3QjtFQUN4QjtBQUEwQjtFQUMxQjtBQUF1QjtFQUN2QjtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFNUjtFQUNJO0VBQ0E7QUFBMkI7RUFDM0I7QUFBd0I7RUFDeEI7QUFBMEI7RUFDMUI7QUFBdUI7O0FBRzNCO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDSTs7QUFDQTtFQUNJOztBQUdSO0VBQ0k7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFNaEI7RUFDSTtBQUEyQjtFQUMzQjtBQUF3QjtFQUN4QjtBQUEwQjtFQUMxQjtBQUF1QjtFQUN2QjtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0k7RUFDSTtFQUNBO0VBQ0E7RUFFQTs7QUFLWjtFQUNJO0VBQ0E7O0FBR0o7RUFDSSIsImZpbGUiOiJhcHAuY3NzIn0= */

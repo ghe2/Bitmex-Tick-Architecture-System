@@ -1,0 +1,1460 @@
+.agg-view {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.agg-view > .add-row.ui-widget {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+}
+.agg-view .rows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.agg-view .rows .row {
+  position: relative;
+  border: 0px;
+  width: 100%;
+  height: 24px;
+  padding: 3px 0;
+}
+.agg-view .rows .row > * {
+  box-sizing: border-box;
+}
+.agg-view .rows .row .fn {
+  margin-top: 2px;
+}
+.agg-view .rows .row .col {
+  margin-top: 2px;
+}
+.agg-view .rows .row .user-input {
+  position: absolute;
+  top: 4px;
+  left: calc(50% + 7px);
+  width: calc(50% - 41px);
+}
+.agg-view .rows .row .del {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  text-align: center;
+}
+.agg-view .rows .row .del > .ui-icon {
+  margin-left: -3px;
+}
+
+.qb-data-dialog .accordion > .section .heading {
+  border: 0px none;
+  font-size: 13px;
+}
+.qb-data-dialog .accordion {
+  overflow: hidden;
+}
+.qb-data-dialog .accordion.animate .section {
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+}
+.qb-data-dialog .accordion > .section.expanded > .content {
+  margin-bottom: 10px;
+}
+.qb-data-dialog .accordion .data-error {
+  white-space: normal;
+  font-size: 14px;
+  border: 1px solid #009EEF;
+  background: #454546;
+  color: #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-right: 10px;
+  transform: translateY(-50%);
+}
+.qb-data-dialog .accordion .data-error i {
+  margin-right: 5px;
+}
+.qb-data-dialog .treeView {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.qb-data-dialog .treeView .search {
+  width: 100%;
+  height: 25px;
+}
+.qb-data-dialog .treeView .search i.fa {
+  margin: 7px -19px 0px 7px;
+  color: #ccc;
+  position: absolute;
+  top: 0px;
+}
+.qb-data-dialog .treeView .search .searchBox {
+  height: 25px;
+  background: #424242;
+  border: 1px solid #6d6d6d;
+  color: white;
+  padding: 4px 23px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.qb-data-dialog .treeView .search .searchBox:focus,
+.qb-data-dialog .treeView .search .searchBox:hover {
+  color: #fff;
+  border-color: #00aeff;
+  border-width: 1px;
+}
+.qb-data-dialog .treeView .search .clearSearch {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.qb-data-dialog .treeView .tree {
+  overflow: auto;
+  height: calc(100% - 25px);
+}
+.qb-data-dialog .treeView .tree.jstree.jstree-default .jstree-search {
+  color: white;
+}
+.qb-data-dialog .treeView .tree.jstree.jstree-default .jstree-node .jstree-anchor {
+  border: 1px solid transparent;
+}
+.qb-data-dialog .treeView .tree.jstree.jstree-default .jstree-node .jstree-anchor .jstree-icon.fa {
+  background: none;
+  font-size: 16px;
+}
+.qb-data-dialog .treeView .tree.jstree.jstree-default .jstree-node .jstree-anchor .jstree-icon.fa.streaming-icon {
+  color: #fe79b8;
+}
+.qb-data-dialog .treeView .tree.jstree.jstree-default .jstree-hidden,
+.qb-data-dialog .treeView .tree.jstree.jstree-default .jstree-node.jstree-hidden {
+  display: none;
+}
+.qb-data-dialog.qb-no-bindings .generate-value,
+.qb-data-dialog.qb-no-bindings .viewstate-apply,
+.qb-data-dialog.qb-no-bindings .viewstate-icon,
+.qb-data-dialog.qb-no-bindings .binding-apply,
+.qb-data-dialog.qb-no-bindings .binding-dropdown,
+.qb-data-dialog.qb-no-bindings .binding-clear-dialog {
+  display: none;
+}
+.qb-data-dialog.qb-use-bindings .generate-value,
+.qb-data-dialog.qb-use-bindings .viewstate-apply,
+.qb-data-dialog.qb-use-bindings .viewstate-icon,
+.qb-data-dialog.qb-use-bindings .binding-clear {
+  display: none;
+}
+.qb-data-dialog.qb-use-viewstates .binding-apply,
+.qb-data-dialog.qb-use-viewstates .binding-dropdown,
+.qb-data-dialog.qb-use-viewstates .binding-clear-dialog {
+  display: none;
+}
+.qb-data-dialog .paramsView {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 5px;
+  height: 100%;
+  overflow-y: hidden;
+  margin: 0 3px;
+}
+.qb-data-dialog .paramsView fieldset {
+  height: calc(100% - 15px);
+  border-color: #5a5a5a;
+}
+.qb-data-dialog .paramsView .analytic-form .propertiesPanel > fieldset {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-color: #5a5a5a;
+}
+.qb-data-dialog .paramsView .paramList {
+  margin: 0 0 0 2%;
+  height: 85%;
+  width: 97%;
+  overflow-y: auto;
+}
+.qb-data-dialog .paramsView .paramList.hide-scrollbar {
+  overflow-y: hidden;
+}
+.qb-data-dialog .paramsView .form-control {
+  height: 22px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.qb-data-dialog .paramsView .form-control > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 22px;
+}
+.qb-data-dialog .paramsView .form-control > label {
+  line-height: 22px;
+}
+.qb-data-dialog .paramsView .form-control input {
+  box-sizing: border-box;
+  height: 22px;
+  margin: 0;
+  text-indent: 4px;
+}
+.qb-data-dialog .paramsView .form-control .col1 {
+  width: 22%;
+}
+.qb-data-dialog .paramsView .form-control .col2 {
+  left: 23%;
+  width: 22%;
+}
+.qb-data-dialog .paramsView .form-control .col3 {
+  left: 46%;
+  right: 0;
+}
+.qb-data-dialog .paramsView .form-control .input-div {
+  overflow: hidden;
+}
+.qb-data-dialog .paramsView .form-control .input-div input,
+.qb-data-dialog .paramsView .form-control .input-div textarea,
+.qb-data-dialog .paramsView .form-control .input-div .tag-editor {
+  box-sizing: border-box;
+  height: 22px;
+  width: 100%;
+}
+.qb-data-dialog .paramsView .form-control .input-div .data-parameter-editor {
+  background: white;
+  color: black;
+  border: 1px solid #aeaeae;
+}
+.qb-data-dialog .paramsView .form-control .input-div input[type=checkbox] {
+  margin: 3px;
+  width: 16px;
+  height: 16px;
+}
+.qb-data-dialog .paramsView .form-control .input-div .hasDatepicker {
+  font-size: inherit !important;
+  height: 22px !important;
+  text-align: left;
+}
+.qb-data-dialog .paramsView .form-control .input-div .select2-selection--single {
+  border-radius: 3px;
+}
+.qb-data-dialog .paramsView .form-control .input-div .tag-editor {
+  font-size: 11px;
+}
+.qb-data-dialog .paramsView .form-control .input-div .tag-editor li {
+  margin: 2px 0px;
+}
+.qb-data-dialog .paramsView .form-control .input-div .ui-spinner {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  width: 100%;
+}
+.qb-data-dialog .paramsView .form-control .input-div .ui-spinner .ui-spinner-button {
+  display: none;
+}
+.qb-data-dialog .paramsView .form-control .input-div .ui-spinner:hover .ui-spinner-button {
+  display: block;
+}
+.qb-data-dialog .paramsView .form-control .input-div:hover .binding-apply,
+.qb-data-dialog .paramsView .form-control .input-div:hover .viewstate-apply {
+  opacity: 0.5;
+}
+.qb-data-dialog .paramsView .form-control .input-div:hover .generate-value {
+  opacity: 0.5;
+}
+.qb-data-dialog .paramsView .form-control .add-item-btn {
+  background: none;
+  border: none;
+  right: 0;
+  opacity: 0.5;
+}
+.qb-data-dialog .paramsView .form-control .add-item-btn:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .form-control .remove-item-btn {
+  position: absolute;
+  background: transparent;
+  border-color: transparent;
+  opacity: 0.5;
+}
+.qb-data-dialog .paramsView .form-control .remove-item-btn:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .form-control .binding-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(101%);
+}
+.qb-data-dialog .paramsView .form-control .binding-container input {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-left: 19px;
+  cursor: pointer;
+}
+.qb-data-dialog .paramsView .form-control .binding-container > i.fa.viewstate-icon {
+  pointer-events: none;
+}
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  left: 0;
+  top: 1px;
+  padding: 4px 2px 3px;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: black;
+}
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-icon:hover {
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-clear,
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-clear-dialog {
+  border: none;
+  font-size: 1.2em;
+  right: 3px;
+  top: 1px;
+  padding: 4px 2px 3px;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  color: black;
+}
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-clear:hover,
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-clear-dialog:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .form-control .binding-container i.binding-clear-dialog {
+  background: transparent;
+  right: 0px;
+  color: white;
+}
+.qb-data-dialog .paramsView .form-control i.binding-apply,
+.qb-data-dialog .paramsView .form-control i.viewstate-apply {
+  border: none;
+  font-size: 1.2em;
+  right: 1px;
+  top: 1px;
+  padding: 4px 2px 3px 4px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  background: white;
+  color: black;
+}
+.qb-data-dialog .paramsView .form-control i.binding-apply:hover,
+.qb-data-dialog .paramsView .form-control i.viewstate-apply:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .form-control .generate-value {
+  position: absolute;
+  border: none;
+  font-size: 1.2em;
+  right: 24px;
+  padding: 1px 2px 2px 1px;
+  opacity: 0;
+  width: 1.28571429em;
+  background: white;
+  color: black;
+  cursor: pointer;
+  top: 1px;
+}
+.qb-data-dialog .paramsView .form-control .generate-value > .fa-eye {
+  pointer-events: none;
+}
+.qb-data-dialog .paramsView .form-control .generate-value > .fa-cog {
+  pointer-events: none;
+  position: absolute;
+  top: 1px;
+  right: -3px;
+  font-size: 74%;
+  margin-top: 9px;
+}
+.qb-data-dialog .paramsView .form-control .generate-value:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .form-control .generate-value.disabled {
+  pointer-events: none;
+}
+.qb-data-dialog .paramsView .form-control:hover .binding-apply,
+.qb-data-dialog .paramsView .form-control:hover .viewstate-apply {
+  opacity: 0.5;
+}
+.qb-data-dialog .paramsView .form-control:hover .generate-value {
+  opacity: 0.5;
+}
+.qb-data-dialog .paramsView .form-control.is-bound .binding-container {
+  transform: translateX(0%);
+}
+.qb-data-dialog .paramsView .form-control.is-bound .value-input {
+  display: none;
+}
+.qb-data-dialog .paramsView .form-control .type-dropdown .type-select {
+  box-sizing: border-box;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
+.qb-data-dialog .paramsView .form-control .type-dropdown .select2-selection {
+  height: 22px;
+}
+.qb-data-dialog .paramsView .form-control .type-dropdown .select2-selection span {
+  line-height: 22px;
+}
+.qb-data-dialog .paramsView .form-control .binding-dropdown {
+  width: calc(100% - 24px);
+}
+.qb-data-dialog .paramsView .form-control .binding-dropdown .select2-selection--single {
+  height: 22px;
+}
+.qb-data-dialog .paramsView .form-control .binding-dropdown .select2-selection--single .select2-selection__rendered {
+  line-height: 22px;
+}
+.qb-data-dialog .paramsView .list-items .col3 {
+  width: auto;
+  right: 23px;
+}
+.qb-data-dialog .paramsView .list-items .col4 {
+  right: 0;
+  width: 20px;
+}
+.qb-data-dialog .paramsView .data-parameter[data-type=byte] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=byte] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=byte] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=double] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=double] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=double] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=float] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=float] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=float] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=int] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=int] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=int] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=long] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=long] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=long] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=minute] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=minute] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=minute] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=second] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=second] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=second] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=short] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=short] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=short] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=time] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=time] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=time] .viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=timespan] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=timespan] .binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=timespan] .viewstate-apply {
+  margin-right: 20px;
+}
+.qb-data-dialog .paramsView .data-parameter[data-type=boolean] .form-control .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=boolean] .form-control i.binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=boolean] .form-control i.viewstate-apply, .qb-data-dialog .paramsView .data-parameter[data-type=month] .form-control .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=month] .form-control i.binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=month] .form-control i.viewstate-apply {
+  background: none;
+  color: white;
+}
+.qb-data-dialog .paramsView .data-parameter[data-type=boolean] .form-control .generate-value:hover,
+.qb-data-dialog .paramsView .data-parameter[data-type=boolean] .form-control i.binding-apply:hover,
+.qb-data-dialog .paramsView .data-parameter[data-type=boolean] .form-control i.viewstate-apply:hover, .qb-data-dialog .paramsView .data-parameter[data-type=month] .form-control .generate-value:hover,
+.qb-data-dialog .paramsView .data-parameter[data-type=month] .form-control i.binding-apply:hover,
+.qb-data-dialog .paramsView .data-parameter[data-type=month] .form-control i.viewstate-apply:hover {
+  color: #1eb8ff;
+  opacity: 1;
+}
+.qb-data-dialog .paramsView .data-parameter[data-type=month] .generate-value,
+.qb-data-dialog .paramsView .data-parameter[data-type=month] i.binding-apply,
+.qb-data-dialog .paramsView .data-parameter[data-type=month] i.viewstate-apply {
+  margin-right: 16px;
+}
+.qb-data-dialog.ui-dialog .data-error {
+  margin-left: 10px;
+}
+
+.kx-light .qb-data-dialog .accordion .data-error,
+.Light .qb-data-dialog .accordion .data-error {
+  background: #F8F8F8;
+  color: black;
+}
+.kx-light .qb-data-dialog fieldset,
+.Light .qb-data-dialog fieldset {
+  border-color: #b0b0b0;
+}
+.kx-light .qb-data-dialog .tree.jstree.jstree-default .jstree-search,
+.Light .qb-data-dialog .tree.jstree.jstree-default .jstree-search {
+  color: black;
+}
+.kx-light .qb-data-dialog .treeView .search .searchBox,
+.Light .qb-data-dialog .treeView .search .searchBox {
+  background: white;
+  border: 1px solid #999;
+  color: black;
+}
+.kx-light .qb-data-dialog .data-parameter-editor[data-type=month] .generate-value,
+.kx-light .qb-data-dialog .data-parameter-editor[data-type=month] .binding-apply,
+.kx-light .qb-data-dialog .data-parameter-editor[data-type=month] .viewstate-apply,
+.Light .qb-data-dialog .data-parameter-editor[data-type=month] .generate-value,
+.Light .qb-data-dialog .data-parameter-editor[data-type=month] .binding-apply,
+.Light .qb-data-dialog .data-parameter-editor[data-type=month] .viewstate-apply {
+  color: black;
+}
+.kx-light .qb-data-dialog .jstree-default .jstree-wholerow-clicked,
+.Light .qb-data-dialog .jstree-default .jstree-wholerow-clicked {
+  background: #beebff;
+}
+.kx-light .qb-data-dialog .jstree-wholerow-hovered,
+.Light .qb-data-dialog .jstree-wholerow-hovered {
+  background: #e7f4f9;
+  border: 1px solid #beebff;
+}
+
+.filter-dialog .accordion > .section .heading {
+  border: 0px none;
+  font-size: 13px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.filter-dialog .accordion > .section .heading .selectDistinct {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  width: 65px;
+  font-size: 13px;
+}
+.filter-dialog .accordion > .section .heading .selectDistinct > label {
+  display: block;
+}
+.filter-dialog .accordion > .section .heading .selectDistinct > label span {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.filter-dialog .accordion > .section .heading .selectDistinct > label input {
+  vertical-align: text-bottom;
+}
+.filter-dialog .accordion {
+  overflow: hidden;
+}
+.filter-dialog .accordion .section .content {
+  overflow-x: auto;
+}
+
+.Light .filter-dialog .items-div.group {
+  border-color: #c0c0c0;
+}
+.Light .filter-dialog .items-div.empty {
+  border-color: transparent;
+}
+.Light .filter-dialog .items-div.empty .branch {
+  background-color: transparent;
+}
+.Light .filter-dialog .branch {
+  background: #c0c0c0;
+}
+
+.groupBy-dialog > .ui-dialog-titlebar > .dialog-icon {
+  margin: 0px 6px 0px -6px;
+  font-size: 12px;
+}
+.groupBy-dialog .accordion > .section .heading {
+  border: 0px none;
+  font-size: 13px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.groupBy-dialog .accordion {
+  overflow: hidden;
+}
+
+.update-dialog .accordion > .section .heading {
+  border: 0px none;
+  font-size: 13px;
+}
+.update-dialog .accordion {
+  overflow: hidden;
+}
+.update-dialog .updaterCheckbox {
+  margin: 0 14px 0 10px;
+}
+.update-dialog .transformUpdate {
+  height: calc(100% - 24px);
+  overflow-y: auto;
+  margin-top: 24px;
+}
+.update-dialog .transformUpdateNewRow {
+  position: absolute;
+  right: 20px;
+  margin-top: -23px;
+}
+.update-dialog .transformCondition .query-builder {
+  position: initial;
+}
+.update-dialog .update-table {
+  height: 100%;
+}
+.update-dialog .updaterRow {
+  height: 26px;
+  padding: 6px 4px;
+  display: flex;
+}
+.update-dialog .updaterRow .col1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.update-dialog .updaterRow .col1 .updaterCheckbox {
+  vertical-align: middle;
+}
+.update-dialog .updaterRow .col2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.update-dialog .updaterRow .col2 .updateText {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection {
+  display: inline-block;
+  vertical-align: middle;
+  flex-grow: 1;
+  position: relative;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection:hover .binding-apply {
+  opacity: 1;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection input {
+  width: 100%;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection input[type=checkbox] {
+  margin-top: 4px;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection input :not(input[type=checkbox]) {
+  height: 20px;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection input[type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .bbf-customlist {
+  width: 130px;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .value-wrap {
+  width: calc(100% - 25px);
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-wrap[use-viewstates=true] i.binding-clear-dialog {
+  color: black;
+  right: 3px;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-container {
+  width: calc(100% - 25px);
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-container input {
+  padding-left: 19px;
+  cursor: pointer;
+  width: 100%;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-container i.binding-clear-dialog {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  right: 0px;
+  top: 2px;
+  padding: 0.3em 0.1em;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-container i.binding-clear-dialog:hover {
+  opacity: 1;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-container i.viewstate-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  left: 0;
+  top: 0;
+  padding: 0.3em 0.1em;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: black;
+  pointer-events: none;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection .binding-container .viewstate-display {
+  cursor: pointer;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection i.binding-apply {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  right: 0px;
+  top: 0px;
+  padding: 0.3em 0.1em;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  color: gray;
+}
+.update-dialog .updaterRow .col2 .updaterColumSelection i.binding-apply:hover {
+  opacity: 1;
+}
+.update-dialog .updaterRow .col2 .updaterTrash {
+  border: transparent;
+  background: transparent;
+}
+.update-dialog .updaterRow .updaterValue {
+  height: 18px;
+  vertical-align: middle;
+}
+.update-dialog .prevNodeName {
+  margin-left: 94px;
+}
+.update-dialog .dropdown-container {
+  margin-left: 17px;
+}
+.update-dialog .updateColumnsDetails {
+  padding-bottom: 10px;
+}
+.update-dialog .updateDbDetails {
+  padding-top: 14px;
+  padding-bottom: 0px;
+}
+.update-dialog .text-box {
+  margin-left: 12px;
+}
+.update-dialog .updaterColumnsList {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  position: relative;
+  clear: both;
+}
+.update-dialog fieldset {
+  height: 180px;
+  margin-top: 20px;
+}
+
+.Light .update-dialog .items-div.group {
+  border-color: #c0c0c0;
+}
+.Light .update-dialog .items-div.empty {
+  border-color: transparent;
+}
+.Light .update-dialog .items-div.empty .branch {
+  background-color: transparent;
+}
+.Light .update-dialog .branch {
+  background: #c0c0c0;
+}
+.Light .update-dialog .updaterRow .col2 .updaterColumSelection .binding-container i.binding-clear-dialog {
+  color: black;
+}
+
+.select-view {
+  font-size: 12px;
+}
+.select-view .searchRow {
+  background-color: transparent;
+  margin-left: 29px;
+}
+.select-view .searchRow > input[type=checkbox] {
+  margin: 0px 6px 6px -21px;
+}
+.select-view .searchRow .search {
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  padding: 0 1px;
+  background: #424242;
+  border: 1px solid #6d6d6d;
+  color: white;
+}
+.select-view .closeIcon {
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+.select-view .rows {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.select-view .rows .row {
+  position: relative;
+  border: 0px;
+  width: 100%;
+  min-width: 250px;
+  min-height: 30px;
+  display: flex;
+  box-sizing: border-box;
+  align-content: center;
+}
+.select-view .rows .row input[type=checkbox] {
+  margin: 3px 8px;
+}
+.select-view .rows .row input:disabled,
+.select-view .rows .row select:disabled {
+  opacity: 0.5;
+}
+.select-view .rows .row > label {
+  background: transparent;
+  width: 45%;
+  min-width: 125px;
+  padding: 6px 0;
+  display: block;
+}
+.select-view .rows .row > label > i {
+  float: right;
+  padding-right: 8%;
+}
+.select-view .rows .row .user-input {
+  width: 55%;
+  min-width: 125px;
+}
+.select-view .rows .row .xbar {
+  width: 100%;
+}
+.select-view .rows .row .xbar td:first-child {
+  width: 54px;
+}
+.select-view .rows .row .xbar input[type=checkbox] {
+  margin: 3px;
+}
+.select-view .rows .row .xbar input[type=number], .select-view .rows .row .xbar select {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.select-view .rows .row .xbar select {
+  width: 62px;
+}
+.select-view .rows > div:nth-child(even) {
+  background-color: #303030;
+}
+.select-view .rows > div:nth-child(odd) {
+  background-color: #282828;
+}
+
+.kx-light .select-view .rows div:nth-child(even), .Light .select-view .rows div:nth-child(even) {
+  background-color: #f0f0f0;
+}
+.kx-light .select-view .rows div:nth-child(odd), .Light .select-view .rows div:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+.kx-light .select-view .searchRow .search, .Light .select-view .searchRow .search {
+  background: white;
+  border: 1px solid #b0b0b0;
+  color: black;
+}
+
+.join-dialog {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.join-dialog .transformJoinType {
+  padding: 0;
+  overflow: hidden;
+  margin: 2px 2px 0px 2px;
+}
+.join-dialog .transformJoinType > * {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 25px;
+  display: inline-block;
+}
+.join-dialog .transformJoinType .joinDDL {
+  top: 5px;
+  left: 5px;
+  width: 100px;
+}
+.join-dialog .transformJoinText {
+  min-height: 25px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.join-dialog .transformJoinText > span {
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 50%;
+  box-sizing: border-box;
+}
+.join-dialog .transformJoinText .swap {
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+.join-dialog .transformJoinText .swap > span {
+  padding: 1px 0;
+}
+.join-dialog .swpd .transformJoinText {
+  flex-direction: row-reverse;
+}
+.join-dialog .transformJoinTextDesc {
+  margin: 10px 2px;
+  min-width: 250px;
+  max-width: 100%;
+  white-space: normal;
+}
+.join-dialog .filterFieldset {
+  flex-grow: 1;
+  min-width: 250px;
+  max-width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #535353;
+  white-space: normal;
+}
+.join-dialog .filterFieldset .fieldSetDetails {
+  height: 100%;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin {
+  height: 100%;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables {
+  position: relative;
+  height: calc(100% - 25px);
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .disableRows .row {
+  pointer-events: none;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .disableRows .row label {
+  margin-left: 10px;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .disableRows .row input {
+  display: none;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows .row {
+  position: relative;
+  border: 0px;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows .row :hover {
+  cursor: pointer;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows .row input {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows .row label {
+  background: transparent;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows .row:hover {
+  cursor: pointer;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows div:nth-child(even) {
+  background-color: #303030;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows div:nth-child(odd) {
+  background-color: #282828;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .searchRow {
+  background-color: transparent;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .searchRow .search {
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  padding: 0 1px;
+  background: #424242;
+  border: 1px solid #6d6d6d;
+  color: white;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .closeIcon {
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .col1 {
+  left: 0%;
+  width: calc(50% - 20px);
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .col2 {
+  left: 50%;
+  width: calc(50% - 20px);
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .pnlGrid {
+  top: 0px;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin.swpd .transformJoinTables .col1 {
+  left: 50%;
+}
+.join-dialog .filterFieldset .fieldSetDetails .transformJoin.swpd .transformJoinTables .col2 {
+  left: 0%;
+}
+
+.kx-light .join-dialog .filterFieldset,
+.Light .join-dialog .filterFieldset {
+  border: 1px solid #b0b0b0;
+}
+.kx-light .join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows div:nth-child(even),
+.Light .join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows div:nth-child(even) {
+  background-color: #f0f0f0;
+}
+.kx-light .join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows div:nth-child(odd),
+.Light .join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .rows div:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+.kx-light .join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .searchRow .search,
+.Light .join-dialog .filterFieldset .fieldSetDetails .transformJoin .transformJoinTables .transformTable .searchRow .search {
+  background: white;
+  border: 1px solid #b0b0b0;
+  color: black;
+}
+
+.text-input {
+  margin: auto;
+}
+.text-input.useViewState .binding-container input[type=text] {
+  padding-left: 20px;
+  width: 100%;
+}
+.text-input.useViewState .binding-container i.binding-clear-dialog {
+  color: black;
+}
+.text-input.useViewState .binding-container i.binding-clear-dialog {
+  position: absolute;
+  right: 0;
+}
+.text-input:hover .binding-apply {
+  opacity: 1;
+}
+.text-input input[type=text] {
+  cursor: text;
+  width: 100%;
+  box-sizing: border-box;
+}
+.text-input .hide {
+  display: none !important;
+}
+.text-input .binding-container {
+  width: 100%;
+  display: flex;
+}
+.text-input .binding-container i.binding-clear-dialog {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  padding: 0.3em;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 2;
+  color: white;
+}
+.text-input .binding-container i.binding-clear-dialog:hover {
+  opacity: 1;
+}
+.text-input .binding-container .binding-dropdown {
+  flex-grow: 1;
+}
+.text-input .binding-container i.viewstate-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  left: 0;
+  top: 0;
+  padding: 0.3em 0.1em;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: black;
+  pointer-events: none;
+}
+.text-input .binding-container .viewstate-display {
+  cursor: pointer;
+}
+.text-input i.binding-apply {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  right: 0px;
+  top: 0px;
+  padding: 0.3em;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  color: gray;
+}
+.text-input i.binding-apply:hover {
+  opacity: 1;
+}
+
+.Light .select-view .rows .text-input .binding-container {
+  background-color: transparent;
+}
+.Light .text-input .binding-container i.binding-clear-dialog {
+  color: black;
+}
+
+.partition-view {
+  height: 100%;
+}
+.partition-view .data-parameter-container {
+  position: relative;
+  left: 30%;
+  top: -24px;
+  width: 70%;
+}
+.partition-view .data-parameter-container .col1, .partition-view .data-parameter-container .col2 {
+  display: none;
+}
+.partition-view .data-parameter-container .data-parameter {
+  margin-top: 0;
+}
+.partition-view .data-parameter-container .form-control .col1 {
+  left: 0;
+}
+.partition-view .data-parameter-container .form-control .col3 {
+  right: 5px;
+  left: 0px;
+}
+.partition-view .data-parameter-container .form-control .col3.has-label {
+  left: 30px;
+}
+.partition-view .data-parameter-container .form-control .col3 .select2-selection--single {
+  height: 24px;
+  border-radius: 3px;
+}
+.partition-view .operator-dropdown {
+  width: 28%;
+}
+
+.Dark .graph-container span {
+  color: #ffffff;
+}
+.Dark .graph-container .nodeErrorMessage {
+  color: #ffffff;
+}
+
+.kx-light .graph-container span, .Light .graph-container span {
+  color: #000000;
+}
+.kx-light .graph-container .nodeErrorMessage, .Light .graph-container .nodeErrorMessage {
+  color: #000000;
+}
+.kx-light .graph-container .vis-tooltip, .Light .graph-container .vis-tooltip {
+  color: white;
+}
+.kx-light .graph-container .custom-menu, .Light .graph-container .custom-menu {
+  border: 1px solid #696969;
+  white-space: nowrap;
+  font-family: sans-serif;
+  background: #efefef;
+  color: #000000;
+}
+.kx-light .graph-container .custom-menu .selectable, .Light .graph-container .custom-menu .selectable {
+  color: #000000;
+}
+.kx-light .graph-container .custom-menu .notselectable, .Light .graph-container .custom-menu .notselectable {
+  color: #c8c8c8;
+}
+.kx-light .graph-container .custom-menu .selectable:hover, .Light .graph-container .custom-menu .selectable:hover {
+  background-color: #c8c8c8;
+}
+.kx-light .graph-container .helpful-tip, .Light .graph-container .helpful-tip {
+  color: black;
+}
+
+.ui-dialog-titlebar > .dialog-icon {
+  font-family: "FontAwesome";
+  margin: 2px 6px 0px -6px;
+  float: left;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.graph-container {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+.graph-container .addFunction {
+  padding-top: 20px;
+}
+.graph-container .addFunctionBtn {
+  float: right;
+}
+.graph-container .nodeErrorMessage {
+  position: absolute;
+  bottom: 0;
+}
+.graph-container .nodeErrorMessage .fa-exclamation-triangle {
+  color: "#ff0000";
+}
+.graph-container .dropdown-label {
+  font-size: 11px;
+}
+.graph-container .graph-legend span {
+  padding-right: 20px;
+}
+.graph-container .databaseIcon {
+  padding-right: 7px;
+  background: #97C2FB;
+  border: solid 4px #97C2FB;
+  border-radius: 6px;
+  padding-left: 3px;
+}
+.graph-container .updateIcon {
+  padding-right: 7px;
+  background: #FF5B66;
+  border: solid 4px #FF5B66;
+  border-radius: 6px;
+  padding-left: 3px;
+}
+.graph-container .basicComponents_dropdown {
+  position: relative;
+}
+.graph-container .custom-menu {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #696969;
+  white-space: nowrap;
+  font-family: sans-serif;
+  background-color: #303030;
+  color: white;
+  border-radius: 5px;
+  padding: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.graph-container .custom-menu li {
+  padding: 8px 12px 8px 10px;
+  cursor: pointer;
+  font-size: 11px;
+}
+.graph-container .custom-menu .contextIcon {
+  padding-right: 5px;
+}
+.graph-container .custom-menu .selectable {
+  color: white;
+}
+.graph-container .custom-menu .notselectable {
+  color: #636363;
+}
+.graph-container .custom-menu .selectable:hover {
+  background-color: #636363;
+}
+.graph-container .helpful-tip {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+.graph-container .helpful-tip .fa {
+  margin-right: 5px;
+}
+.graph-container .nodeErrorMessage {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+  z-index: 1;
+  display: none;
+  border: 1px solid #dd0000;
+  border-radius: 4px;
+  background: #f0e8e5;
+  padding: 5px;
+}
+.graph-container .nodeErrorMessage i {
+  color: #dd0000;
+}
+.graph-container .nodeErrorMessage .errors-title {
+  display: inline-block;
+  margin-right: 7px;
+}
+.graph-container .nodeErrorMessage .errors-title i {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: -2px;
+  margin: 0 3px -2px 0;
+}
+.graph-container .nodeErrorMessage .errors-title span {
+  font-weight: bold;
+  color: #000;
+}
+.graph-container .nodeErrorMessage .errors-text {
+  color: #3c3c3c;
+}
+.graph-container .graph-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.graph-container .graph-content .accordion.animate .section {
+  transition: none;
+}
+.graph-container .graph-content .accordion fieldset {
+  border: 1px solid #535353;
+}
+.graph-container .graph-content .accordion .graph {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.graph-container .graph-content .accordion .side-dialog {
+  height: 100%;
+  width: calc(100% - 3px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-menu .menu-item {
+  height: 20px;
+  width: 20px;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-menu .menu-item.menu-icon {
+  font-family: "FontAwesome";
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-menu .menu-item.close-button {
+  float: right;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-menu .menu-item.close-button .ui-button-text {
+  padding: 0;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-menu .ui-button.ui-state-default:not(.ui-state-hover):not(.ui-state-active) {
+  background: transparent;
+  border-color: transparent;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-content {
+  width: 100%;
+  height: calc(100% - 65px);
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-content .accordion > .section .heading {
+  background: transparent;
+  border: 0px none;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-content.auto-save {
+  height: calc(100% - 25px);
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-content > div {
+  height: 100%;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-buttons {
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+.graph-container .graph-content .accordion .side-dialog .side-dialog-buttons .save-button {
+  display: block;
+}
+.graph-container .vis-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 200px;
+  border-radius: 6px;
+  font-size: 12px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: "Arial", "fontawesome", sans-serif;
+  padding: 6px;
+}
+.graph-container .vis-tooltip > div {
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.graph-container .graph-content .accordion fieldset {
+  border: 1px solid #b0b0b0;
+}
+
+.qb-data-dialog.ui-dialog > .ui-dialog-content, .filter-dialog.ui-dialog > .ui-dialog-content, .update-dialog.ui-dialog > .ui-dialog-content, .groupBy-dialog.ui-dialog > .ui-dialog-content {
+  box-sizing: content-box;
+}
+.qb-data-dialog.ui-dialog > .ui-dialog-content.accordion, .filter-dialog.ui-dialog > .ui-dialog-content.accordion, .update-dialog.ui-dialog > .ui-dialog-content.accordion, .groupBy-dialog.ui-dialog > .ui-dialog-content.accordion {
+  display: flex !important;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9hZ2dyZWdhdGVWaWV3LnNjc3MiLCJfZGF0YURpYWxvZy5zY3NzIiwiX2ZpbHRlckRpYWxvZy5zY3NzIiwiX2dyb3VwQnlEaWFsb2cuc2NzcyIsIl91cGRhdGVEaWFsb2cuc2NzcyIsIl9zZWxlY3RWaWV3LnNjc3MiLCJfam9pbkRpYWxvZy5zY3NzIiwiX3RleHRJbnB1dC5zY3NzIiwiX3BhcnRpdGlvblZpZXcuc2NzcyIsImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7OztBQ3hEaEI7RUFDSTtFQUNBOztBQUdKO0VBQ0k7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFLWjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0FBQUE7RUFFSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7O0FBR0k7RUFDSTs7QUFFSjtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFDQTtFQUNJOztBQUlaO0FBQUE7RUFFSTs7QUFPWjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7RUFNSTs7QUFLSjtBQUFBO0FBQUE7QUFBQTtFQUlJOztBQUtKO0FBQUE7QUFBQTtFQUdJOztBQUlSO0VBSUk7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFJUjtFQUNJLFFBcENTO0VBcUNUO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0EsUUE5Q0s7O0FBaURUO0VBQ0ksYUFsREs7O0FBcURUO0VBSUk7RUFDQSxRQTFESztFQTJETDtFQUNBOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJOztBQUVBO0FBQUE7QUFBQTtFQUdJO0VBQ0EsUUFwRkM7RUFxRkQ7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUlBO0VBQ0k7O0FBTVI7QUFBQTtFQUVJOztBQUdKO0VBQ0k7O0FBS1o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJLE9BM0pNO0VBNEpOOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSSxPQXZLTTtFQXdLTjs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBRUE7O0FBR0o7RUFDSTs7QUFTSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFJUjtBQUFBO0VBRUk7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtBQUFBO0VBQ0ksT0F4T0U7RUF5T0Y7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7O0FBY1I7QUFBQTtFQUVJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0FBQUE7RUFDSSxPQTVRTTtFQTZRTjs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJLE9BNVNNO0VBNlNOOztBQUdKO0VBQ0k7O0FBS0o7QUFBQTtFQUVJOztBQUdKO0VBQ0k7O0FBS0o7RUFDSTs7QUFHSjtFQUNJOztBQUtKO0VBQ0k7RUFDQSxRQTVVQztFQTZVRDtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJLFFBdlZDOztBQXlWRDtFQUNJLGFBMVZIOztBQStWVDtFQUNJOztBQUVBO0VBQ0ksUUFuV0M7O0FBcVdEO0VBQ0ksYUF0V0g7O0FBNldUO0VBQ0k7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBZUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0VBR0k7O0FBT0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtFQUdJO0VBQ0E7O0FBRUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtFQUNJLE9BclpGO0VBc1pFOztBQU9aO0FBQUE7QUFBQTtFQUdJOztBQU9aO0VBQ0k7OztBQVNBO0FBQUE7RUFDSTtFQUNBOztBQUdSO0FBQUE7RUFDSTs7QUFHQTtBQUFBO0VBQ0k7O0FBR1I7QUFBQTtFQUNJO0VBQ0E7RUFDQTs7QUFHQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7RUFHSTs7QUFJUjtBQUFBO0VBQ0k7O0FBR0o7QUFBQTtFQUNJO0VBQ0E7OztBQzdsQlI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUNBO0VBQ0k7RUFDQTs7QUFFSjtFQUNJOztBQU1oQjtFQUNJOztBQUdKO0VBQ0k7OztBQU9JO0VBQ0k7O0FBR0o7RUFDSTs7QUFFQTtFQUNJOztBQUtaO0VBQ0k7OztBQ3ZEUjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUdKO0VBQ0k7OztBQ2pCQTtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUVKO0VBQ0k7RUFDQTtFQUNBOztBQUVKO0VBQ0k7RUFDQTtFQUNBOztBQUlBO0VBQ0k7O0FBSVI7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdSO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7O0FBR0k7RUFDSTs7QUFJUjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFFSjtFQUNJOztBQUVKO0VBQ0k7O0FBR0o7RUFDSTs7QUFJQTtFQUNJO0VBQ0E7O0FBSVI7RUFDSTs7QUFHQTtFQUNJO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUtSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFLWjtFQUNJO0VBQ0E7O0FBSVI7RUFDSTtFQUNBOztBQUlSO0VBQ0k7O0FBR0o7RUFDSTs7QUFFSjtFQUNJOztBQUVKO0VBQ0k7RUFDQTs7QUFFSjtFQUNJOztBQUVKO0VBRUk7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7OztBQU9JO0VBQ0k7O0FBR0o7RUFDSTs7QUFFQTtFQUNJOztBQUtaO0VBQ0k7O0FBSUE7RUFDSTs7O0FDek9wQjtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtBQUFBO0VBRUk7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0k7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFNWjtFQUNJOztBQUdKO0VBQ0k7OztBQVNBO0VBQ0k7O0FBR0o7RUFDSTs7QUFLSjtFQUNJO0VBQ0E7RUFDQTs7O0FDL0hoQjtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFJUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUtaO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUVBO0VBQ0k7O0FBRUE7RUFDSTtFQUNBOztBQUdJO0VBQ0k7O0FBRUE7RUFDSTs7QUFHSjtFQUNJOztBQUtaO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0k7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBR0o7RUFDSTs7QUFJUjtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFJUjtFQUNJOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSVI7RUFDSTtFQUNBOztBQUdKO0VBQ0k7RUFDQTs7QUFHSjtFQUNJOztBQUtKO0VBQ0k7O0FBR0o7RUFDSTs7O0FBV2hCO0FBQUE7RUFDSTs7QUFNb0I7QUFBQTtFQUNJOztBQUdKO0FBQUE7RUFDSTs7QUFLSjtBQUFBO0VBQ0k7RUFDQTtFQUNBOzs7QUN2TnBDO0VBQ0k7O0FBSVE7RUFDSTtFQUNBOztBQUVKO0VBQ0k7O0FBRUo7RUFDSTtFQUNBOztBQU1SO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBSVI7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFFSTs7O0FBTVI7RUFDSTs7QUFJQTtFQUNJOzs7QUN4R1o7RUFDSTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7RUFDQTs7QUFLWjtFQUNJOzs7QUN6QkE7RUFDSTs7QUFFSjtFQUNJOzs7QUFPSjtFQUNJOztBQUVKO0VBQ0k7O0FBRUo7RUFDSTs7QUFFSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR1I7RUFDSTs7O0FBS1o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdKO0VBQ0M7RUFDRztFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBOztBQUNBO0VBQ0k7O0FBSVI7RUFDSTs7QUFJQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0o7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNJOztBQUlSO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHSjtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFHSjtFQUNJO0VBQ0E7O0FBSVI7RUFDSTs7QUFLUjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHSTtFQUNJOztBQUdKO0VBQ0k7O0FBR0o7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBSUo7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTs7QUFFQTtFQUNJOztBQUdKO0VBQ0k7O0FBRUE7RUFDSTs7QUFLWjtFQUNJO0VBQ0E7O0FBSVI7RUFDSTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTs7QUFHSjtFQUNJOztBQUdKO0VBQ0k7O0FBR1I7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNJOztBQVNwQjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUNBOztBQUVBO0VBQ0k7RUFDQTs7O0FBT1I7RUFDSTs7O0FBS0o7RUFDSTs7QUFFQTtFQUNJIiwiZmlsZSI6ImFwcC5jc3MifQ== */

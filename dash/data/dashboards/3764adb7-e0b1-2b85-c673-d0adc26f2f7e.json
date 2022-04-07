@@ -1,0 +1,3251 @@
+{
+  "id": "3764adb7-e0b1-2b85-c673-d0adc26f2f7e",
+  "name": "Demo Fitness Tracker",
+  "creationDate": "Wed, 30 May 2018 11:08:27 GMT",
+  "lastUpdateDate": "Mon, 11 May 2020 20:12:04 GMT",
+  "thumb": null,
+  "screenDetails": [
+    {
+      "label": "Screen 3",
+      "value": "c9afad02-1a58-9169-385d-cdf719a3ceb4"
+    }
+  ],
+  "screens": [
+    {
+      "id": "c9afad02-1a58-9169-385d-cdf719a3ceb4",
+      "name": "Screen 3",
+      "thumb": null,
+      "widgets": [
+        {
+          "id": "9ee06adc-1656-644-29a3-9a01addab9f7",
+          "layout": {
+            "row": 0,
+            "column": 0,
+            "rowSpan": 31,
+            "colSpan": 12
+          },
+          "component": {
+            "id": "component_11839",
+            "key": "Panel",
+            "options": {
+              "version": "4.4.0",
+              "Basics": {
+                "ComponentName": "panel",
+                "RelativeHeight": false,
+                "Advanced": true,
+                "UserLayout": false,
+                "ColCount": 12,
+                "Floatable": false,
+                "RowHeight": 25
+              },
+              "Style": {
+                "advanced": "/* Panel */\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] div.worksheet > div {\n\tposition: absolute !important;\n\ttop: 0;\n\tbottom: 0;\n\tleft: 0;\n\tright: 0;\n}\n\n[data-widgetid=\"304a48d-4e-6c51-317e-d96b105cc65\"] {\n\theight:45px;\n}\n/* Top Fill */\n\n[data-widgetid=\"c7ef6918-249b-bd55-f81c-beb341b91e30\"].advanced-item {\n\tbackground: #0071cd;\n\tz-index: -1;\n\tposition: absolute !important;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\theight: 80px;\n}\n\n\n/* Main elements (Common styles) */\n\n[data-widgetid=\"2feec885-e3bb-cdb6-6137-3beaa325ddd\"].advanced-item,\n[data-widgetid=\"d15080b3-5de0-598b-69a-aafbeecd802\"].advanced-item,\n[data-widgetid=\"b79f5d7-f026-fd36-8676-a2411159d770\"].advanced-item,\n[data-widgetid=\"f78d129b-3f5e-113d-5d0a-67479d96fe96\"].advanced-item,\n[data-widgetid=\"b1eea59-5c7f-39ed-fd1b-cc98b78cf1eb\"].advanced-item {\n\tposition: absolute !important;\n\tmin-height: auto;\n}\n\n\n/* Title */\n\n[data-widgetid=\"d15080b3-5de0-598b-69a-aafbeecd802\"].advanced-item {\n\ttop: 10px;\n\tleft: 0px;\n\theight: 40px;\n\twidth: 25%;\n\tmargin-left: 1em;\n}\n\n\n/* Main Chart */\n\n[data-widgetid=\"f78d129b-3f5e-113d-5d0a-67479d96fe96\"].advanced-item {\n\tbox-sizing: border-box;\n\ttop: 100px;\n\tbottom: 50%;\n\tleft: 0;\n\tright: 0;\n}\n\n/* Logo */\n\n[data-widgetid=\"2feec885-e3bb-cdb6-6137-3beaa325ddd\"].advanced-item {\n\tbox-sizing: border-box;\n\ttop: 0px;\n\tleft: 0px;\n\tmargin-left: 9px;\n\theight: 50px;\n\twidth: 300px;\n}\n\n[data-widgetid=\"2feec885-e3bb-cdb6-6137-3beaa325ddd\"].advanced-item .title {\n\tposition: absolute;\n\tfont-size: 26px;\n\tbottom: 8px;\n\tleft: 37px;\n\tright: 0;\n\tcolor: white;\n\ttext-align: left;\n}\n\n/* Playback */\n\n[data-widgetid=\"b1eea59-5c7f-39ed-fd1b-cc98b78cf1eb\"].advanced-item {\n\tbox-sizing: border-box;\n\ttop: 50px;\n\tleft: 0px;\n\theight: 30px;\n\twidth: 300px;\n}\n\n[data-widgetid=\"b1eea59-5c7f-39ed-fd1b-cc98b78cf1eb\"] input.slider {\n\tdisplay: none;\n}\n\n[data-widgetid=\"b1eea59-5c7f-39ed-fd1b-cc98b78cf1eb\"] .toggleArea {\n\tline-height: 28px;\n}\n\n[data-widgetid=\"b1eea59-5c7f-39ed-fd1b-cc98b78cf1eb\"] .toogleSwitch {\n\tdisplay: none !important;\n}\n\n\n/* Map */\n\n[data-widgetid=\"699560ab-2751-b1c6-60b7-cdfc9e05c37d\"] {\n\theight: 40%;\n\tbox-sizing: border-box;\n\tposition: absolute !important;\n\ttop: 50%;\n\tleft: 0;\n\tright: 0;\n}\n\n\n/* Top Stats (Common styles) */\n\n[data-widgetid=\"a695be7f-c9a-31b4-f52b-5854d9bbd7e6\"].advanced-item,\n[data-widgetid=\"ba15f32f-d54b-370a-e9aa-ce4647267c02\"].advanced-item,\n[data-widgetid=\"4f11eb33-5d6d-d709-ec0f-52a0cb606d29\"].advanced-item,\n[data-widgetid=\"b2bb053-62bc-416f-f1b3-3b8b47b72acb\"].advanced-item,\n[data-widgetid=\"9bac7669-551f-bfa5-2d1e-a5eedf1eb8a4\"].advanced-item {\n\tposition: absolute !important;\n\ttop: 0;\n\twidth: 15%;\n\tmin-height: auto;\n\theight: 80px;\n\tcolor: white;\n\tbox-sizing: border-box;\n\tborder: none;\n\tborder-bottom: 3px solid black;\n}\n\n[data-widgetid=\"2feec885-e3bb-cdb6-6137-3beaa325ddd\"].advanced-item .basicComponents_label {\n\tbackground: #0071cd;\n}\n\n[data-widgetid=\"a695be7f-c9a-31b4-f52b-5854d9bbd7e6\"].advanced-item .basicComponents_label,\n[data-widgetid=\"ba15f32f-d54b-370a-e9aa-ce4647267c02\"].advanced-item .basicComponents_label,\n[data-widgetid=\"4f11eb33-5d6d-d709-ec0f-52a0cb606d29\"].advanced-item .basicComponents_label,\n[data-widgetid=\"b2bb053-62bc-416f-f1b3-3b8b47b72acb\"].advanced-item .basicComponents_label,\n[data-widgetid=\"9bac7669-551f-bfa5-2d1e-a5eedf1eb8a4\"].advanced-item .basicComponents_label {\n\tcolor: white;\n}\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] .stat-container {\n\tmargin-left: 4em;\n}\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] .stat-icon {\n\tfont-size: 2em;\n\tposition: absolute;\n\tleft: 0;\n\ttop: 50%;\n\tmargin: -10px 0 0 0.5em;\n}\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] .stat-container .stat-primary {\n\tfont-size: 1.1em;\n}\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] .stat-container .stat-primary .stat-value {\n\tfont-size: 1.8em;\n\tfont-weight: bold;\n\tmargin-right: 0.2em;\n}\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] .stat-container .stat-description {\n\tcolor: #AAA;\n}\n\n[data-widgetid=\"9ee06adc-1656-644-29a3-9a01addab9f7\"] .stat-container .stat-secondary {}\n\n\n/* Distance stats */\n\n[data-widgetid=\"ba15f32f-d54b-370a-e9aa-ce4647267c02\"].advanced-item {\n\tleft: 25%;\n\tborder-color: #29335c;\n}\n\n\n/* Time stats */\n\n[data-widgetid=\"a695be7f-c9a-31b4-f52b-5854d9bbd7e6\"].advanced-item {\n\tleft: 40%;\n\tborder-color: #f3a812;\n}\n\n\n/* Heartrate stats */\n\n[data-widgetid=\"4f11eb33-5d6d-d709-ec0f-52a0cb606d29\"].advanced-item {\n\tleft: 55%;\n\tborder-color: #f70330;\n}\n\n\n/* Pace stats */\n\n[data-widgetid=\"b2bb053-62bc-416f-f1b3-3b8b47b72acb\"].advanced-item {\n\tleft: 70%;\n\tborder-color: #177fff;\n}\n\n\n/* Elevation stats */\n\n[data-widgetid=\"9bac7669-551f-bfa5-2d1e-a5eedf1eb8a4\"].advanced-item {\n\tleft: 85%;\n\tborder-color: #029102;\n}\n\n\n/* Bottom Bar Charts (Common) */\n\n[data-widgetid=\"e87e4824-e408-dd8d-4040-f507add3da0\"].advanced-item,\n[data-widgetid=\"fd6991d-4302-69bc-22b7-42012bfd14c8\"].advanced-item,\n[data-widgetid=\"350f4af0-cf17-1993-fd72-d8d0d33fc21f\"].advanced-item,\n[data-widgetid=\"f8b184f4-ae9d-a05b-1bea-88084b974c98\"].advanced-item,\n[data-widgetid=\"98b1913c-596b-393d-5d5a-f0fb3111c97f\"].advanced-item {\n\tposition: absolute !important;\n\tbottom: 0;\n\twidth: 20%;\n\tmin-height: auto;\n\theight: 80px;\n}\n\n\n/* Distance Bar Chart */\n\n[data-widgetid=\"f8b184f4-ae9d-a05b-1bea-88084b974c98\"] {\n\tleft: 0%;\n}\n\n\n/* Time Bar Chart */\n\n[data-widgetid=\"98b1913c-596b-393d-5d5a-f0fb3111c97f\"] {\n\tleft: 20%;\n}\n\n\n/* Heartrate Bar Chart */\n\n[data-widgetid=\"e87e4824-e408-dd8d-4040-f507add3da0\"] {\n\tleft: 40%;\n}\n\n\n/* Pace Bar Chart */\n\n[data-widgetid=\"fd6991d-4302-69bc-22b7-42012bfd14c8\"] {\n\tleft: 60%;\n}\n\n\n/* Altitude Bar Chart */\n\n[data-widgetid=\"350f4af0-cf17-1993-fd72-d8d0d33fc21f\"] {\n\tleft: 80%;\n}\n\n\n/* Query Mappers */\n\n[data-widgetid=\"e337b835-fbe-375d-2d75-5cbbeb218355\"].advanced-item {\n\tdisplay: none;\n\tposition: absolute !important;\n\ttop: 0;\n\twidth: 200px;\n\tmin-height: 100px;\n\tbackground: gray;\n}",
+                "cssClasses": ""
+              },
+              "Alignment": {
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "innerPaddingLeft": 0,
+                "innerPaddingRight": 0,
+                "innerPaddingTop": 0,
+                "innerPaddingBottom": 0,
+                "titlePaddingLeft": 0,
+                "titlePaddingRight": 0,
+                "titlePaddingTop": 7,
+                "titlePaddingBottom": 7
+              },
+              "format": {
+                "widgetTitle": "",
+                "titleFontSize": 16,
+                "titleHorizontal": "Center",
+                "titleColor": "",
+                "titleBottomBorderWidth": 0,
+                "titleFontBold": "",
+                "titleShadow": true,
+                "titleBackgroundColor": "",
+                "titleTransparentBackground": "",
+                "tileBorderWidth": 0,
+                "tileBorderRounding": 0,
+                "tileBorderColor": "#000000",
+                "tileBackgroundColor": "#cc52cc",
+                "tileTransparentBackground": true,
+                "tileShadow": false
+              }
+            },
+            "containerId": null,
+            "components": [],
+            "widgets": [
+              {
+                "id": "f78d129b-3f5e-113d-5d0a-67479d96fe96",
+                "layout": {
+                  "row": 24,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_12028",
+                  "key": "ChartJS",
+                  "options": {
+                    "Legend": {
+                      "LabelColor": "#000000"
+                    },
+                    "format": {
+                      "tileBackgroundColor": "#ffffff"
+                    },
+                    "Basics": {
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Focus": "2015-09-23T18:38:46.000Z"
+                    },
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "time",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_1139"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 20
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "TimeFormats": {
+                            "Distribution": "linear",
+                            "TriggerBreak": 86400000,
+                            "Break": 86400000,
+                            "Unit": "",
+                            "Year": "YYYY",
+                            "Quarter": "[Q]Q - YYYY",
+                            "Month": "MMM YYYY",
+                            "Week": "ll",
+                            "Day": "MMM D",
+                            "Hour": "hA",
+                            "Minute": "h:mm a",
+                            "Second": "h:mm:ss a",
+                            "Millisecond": "h:mm:ss.SSS a",
+                            "TooltipFormat": "",
+                            "IsoWeekday": false,
+                            "Round": false
+                          }
+                        }
+                      }
+                    ],
+                    "version": "4.3.1",
+                    "Zoom": {
+                      "ScrollZoom": false,
+                      "DragZoom": false,
+                      "DragPan": false,
+                      "YAdjust": "none"
+                    },
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_1142"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 20
+                        },
+                        "Title": {
+                          "Display": true,
+                          "LabelString": "BPM",
+                          "FontFamily": "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                          "FontSize": 12,
+                          "FontStyle": "normal",
+                          "FontColor": "#000000",
+                          "FontOpacity": 100
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 50,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        }
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 1,
+                          "_Label": "YAxis 2",
+                          "_AxisId": "axis_10700"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000"
+                        },
+                        "Title": {
+                          "Display": true,
+                          "LabelString": "Pace m/s",
+                          "FontFamily": "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                          "FontSize": 12,
+                          "FontStyle": "normal",
+                          "FontColor": "#000000",
+                          "FontOpacity": 100
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "UseMinMax": true,
+                          "UseDataRange": false,
+                          "SoftRange": false,
+                          "Max": 3.28,
+                          "Min": 3
+                        },
+                        "Position": "right"
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 2,
+                          "_Label": "YAxis 3",
+                          "_AxisId": "axis_11224"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000"
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Display": false
+                      }
+                    ],
+                    "Overlay": {
+                      "customTooltip": "<table><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{ #each points }}<tr><td><svg height='12' width = '12' > <rect style='fill:{{colors.backgroundColor}};stroke-width:3;stroke:{{colors.borderColor}}' height = '12' width = '12' > </rect></svg > {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>",
+                      "CrosshairsColor": "#f70330"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 0,
+                          "_LayerId": "layer_1148",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1",
+                            "YAxis 2",
+                            "YAxis 3"
+                          ],
+                          "_PossibleLayers": [
+                            "nofill",
+                            "Layer 2",
+                            "Layer 3",
+                            "origin"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Heart Rate",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#ff0033",
+                          "BackgroundOpacity": 43,
+                          "BorderColor": "#f70330",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Run Data"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "HeartRate",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        },
+                        "Interpolation": {
+                          "Interpolation": "Cubic",
+                          "LineTension": 4
+                        },
+                        "Line": {
+                          "FadeToTransparent": true,
+                          "Fill": "origin"
+                        },
+                        "Points": {
+                          "PointBackgroundColor": "#f70330",
+                          "PointBorderColor": "#f70330",
+                          "PointBorderWidth": 3.01,
+                          "PointHoverBackgroundColor": "#f70330",
+                          "PointHoverBorderColor": "#f70330",
+                          "PointHoverBorderWidth": 3.01
+                        }
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 1,
+                          "_LayerId": "layer_10656",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1",
+                            "YAxis 2",
+                            "YAxis 3"
+                          ],
+                          "_PossibleLayers": [
+                            "Layer 1",
+                            "nofill",
+                            "Layer 3",
+                            "origin"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Pace",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#8fc1ff",
+                          "BackgroundOpacity": 59,
+                          "BorderColor": "#177fff",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Run Data"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "Speed",
+                          "YAxisID": "YAxis 2",
+                          "XAxisID": "XAxis 1"
+                        },
+                        "Interpolation": {
+                          "Interpolation": "Cubic",
+                          "LineTension": 4
+                        },
+                        "Line": {
+                          "FadeToTransparent": true,
+                          "Fill": "origin"
+                        },
+                        "Points": {
+                          "PointBackgroundColor": "#7995b8",
+                          "PointBorderColor": "#7995b8",
+                          "PointBorderWidth": 3.01,
+                          "PointHoverBackgroundColor": "#7995b8",
+                          "PointHoverBorderColor": "#7995b8",
+                          "PointHoverBorderWidth": 3.01
+                        }
+                      },
+                      {
+                        "_Hidden": {
+                          "_Type": "Line",
+                          "_Index": 2,
+                          "_LayerId": "layer_11184",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1",
+                            "YAxis 2",
+                            "YAxis 3"
+                          ],
+                          "_PossibleLayers": [
+                            "Layer 1",
+                            "Layer 2",
+                            "nofill",
+                            "origin"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Elevation",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#74ff4a",
+                          "BackgroundOpacity": 43,
+                          "BorderColor": "#029102",
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Run Data"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "AltitudeMeters",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 3"
+                        },
+                        "Interpolation": {
+                          "Interpolation": "Cubic",
+                          "LineTension": 4
+                        },
+                        "Points": {
+                          "PointBackgroundColor": "#808387",
+                          "PointBorderColor": "#808387",
+                          "PointBorderWidth": 3.01,
+                          "PointHoverBackgroundColor": "#808387",
+                          "PointHoverBorderColor": "#808387",
+                          "PointHoverBorderWidth": 3.01
+                        }
+                      }
+                    ]
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 17801,
+                  "optionsVersion": 17814,
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "b1eea59-5c7f-39ed-fd1b-cc98b78cf1eb",
+                "layout": {
+                  "row": 48,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_12132",
+                  "key": "PlayBack",
+                  "options": {
+                    "possiblePeriod": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget"
+                    ],
+                    "Alignment": {
+                      "titlePaddingRight": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingRight": 0,
+                      "paddingRight": 0,
+                      "innerPaddingLeft": 0,
+                      "paddingTop": 0,
+                      "titlePaddingBottom": 7,
+                      "innerPaddingTop": 0,
+                      "titlePaddingTop": 7,
+                      "paddingLeft": 10
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "#FFFFFF",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": false,
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": true,
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#1c6db5",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    },
+                    "Basics": {
+                      "TimeColumn": "Time",
+                      "Speed": "8x",
+                      "MaxOverallTime": 60,
+                      "multiStateControl": true,
+                      "Mode": "Event",
+                      "SelectedColumn": "Time",
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Run Data"
+                      },
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "IntervalTime": 1,
+                      "speedControl": true,
+                      "Playing": 0,
+                      "ForcePause": false,
+                      "DisplayWarning": false
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "version": "4.4.0"
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 118,
+                  "optionsVersion": 118,
+                  "definitionId": "47",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "699560ab-2751-b1c6-60b7-cdfc9e05c37d",
+                "layout": {
+                  "row": 180,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_14297",
+                  "key": "GeoMap",
+                  "options": {
+                    "possibleFloats": [
+                      "Lat",
+                      "Long",
+                      "Alt"
+                    ],
+                    "Basics": {
+                      "Focus": "",
+                      "Theme": "Dark",
+                      "ComponentName": "GeoMap"
+                    },
+                    "overlayall": [],
+                    "Voronoi": {
+                      "DotColor": "0000ff",
+                      "ShowScale": false,
+                      "LineColor": "#ff0000",
+                      "Data": "",
+                      "Scale": "",
+                      "Opacity": 0.2,
+                      "ScaleColor": "blue"
+                    },
+                    "possibleStrings": [],
+                    "possibleDValues": [],
+                    "possibleShapes": [
+                      "use selected shape"
+                    ],
+                    "Points": {
+                      "Tracker": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Shape": "default",
+                      "TrackedItem": "Time",
+                      "ShapeColor": "#000000",
+                      "Latitude": "LatitudeDegrees",
+                      "ShapeColorDB": "use selected color",
+                      "ClusterShape": "default",
+                      "ShapeDB": "use selected shape",
+                      "Zoom": true,
+                      "Selected": "",
+                      "ShapeSize": 10,
+                      "ShapeHoverColor": "#000000",
+                      "Center": true,
+                      "ZoomBase": false,
+                      "ClusterSize": "default",
+                      "Cluster": true,
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Run Data"
+                      },
+                      "Longitude": "LongitudeDegrees",
+                      "ShapeSelectedColor": "#000000",
+                      "ShapeColorOpacity": 100,
+                      "ShapeHoverColorOpacity": 100,
+                      "TooltipData": "",
+                      "PointsInView": false,
+                      "ShowTooltip": true,
+                      "ShapeSelectedColorOpacity": 100,
+                      "Actions": [],
+                      "Title": "Time",
+                      "ShapeCanRotation": false
+                    },
+                    "Alignment": {
+                      "titlePaddingRight": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "paddingBottom": "0",
+                      "innerPaddingRight": 0,
+                      "paddingRight": "0",
+                      "innerPaddingLeft": 0,
+                      "paddingTop": "0",
+                      "titlePaddingBottom": 7,
+                      "innerPaddingTop": 0,
+                      "titlePaddingTop": 7,
+                      "paddingLeft": "0"
+                    },
+                    "Format": {
+                      "titlePaddingRight": 0,
+                      "titlePaddingLeft": 0,
+                      "titleFontSize": "16",
+                      "titleHorizontal": "Center",
+                      "titlePaddingBottom": 0,
+                      "titlePaddingTop": 0,
+                      "widgetTitle": ""
+                    },
+                    "possibleGKeys": [
+                      "default"
+                    ],
+                    "possibleLFloats": [],
+                    "Style": {
+                      "advanced": "[data-widgetid=\"699560ab-2751-b1c6-60b7-cdfc9e05c37d\"] div.GeoMap > div.frame > div.nicebox.controls > div.legend{\n\tdisplay: none;\n}",
+                      "cssClasses": ""
+                    },
+                    "vall": [],
+                    "all": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget"
+                    ],
+                    "possibleHFloats": [],
+                    "possiblePLatLong": [
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget"
+                    ],
+                    "format": {
+                      "titleFontSize": "16",
+                      "titleHorizontal": "Center",
+                      "titleColor": "#FFFFFF",
+                      "titleFontBold": false,
+                      "titleShadow": true,
+                      "titleTransparentBackground": false,
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": false,
+                      "tileShadow": false
+                    },
+                    "possibleColors": [
+                      "use selected color"
+                    ],
+                    "Heatmap": {
+                      "Radius": 20,
+                      "Gradient": "default",
+                      "Data": "",
+                      "Show": true,
+                      "Opacity": 100
+                    },
+                    "version": "4.4.0",
+                    "possibleImageString": [
+                      "none"
+                    ],
+                    "possible_viewstates": [
+                      "BarCharts/Gridline Opacity",
+                      "BarCharts/MaxAltitude",
+                      "BarCharts/MaxDistance",
+                      "BarCharts/MaxHeartRate",
+                      "BarCharts/MaxPace",
+                      "BarCharts/MaxTime",
+                      "BarCharts/Padding",
+                      "CountyData/Parish",
+                      "CountyData/Prv",
+                      "CountyData/county",
+                      "Heatmap/date",
+                      "Heatmap/heatmap",
+                      "Line/line",
+                      "Line/lineColor",
+                      "New node",
+                      "New node 2",
+                      "Property Index/zip",
+                      "Run/Sate",
+                      "StatRain",
+                      "address",
+                      "bounds",
+                      "county",
+                      "from",
+                      "max",
+                      "min",
+                      "region",
+                      "selected",
+                      "to"
+                    ],
+                    "possibleDString": [],
+                    "possibleVString": [],
+                    "possibleDKeys": [],
+                    "possible_dashboards": [
+                      {
+                        "title": "none",
+                        "value": "none"
+                      },
+                      {
+                        "title": "Demo Liquidity",
+                        "value": "34bc1f04-b59d-a35a-9942-3a6ee0c222fa"
+                      },
+                      {
+                        "title": "Demo Fitness Tracker",
+                        "value": "3764adb7-e0b1-2b85-c673-d0adc26f2f7e"
+                      },
+                      {
+                        "title": "Demo Property",
+                        "value": "39795426-db77-dea-becc-5d19218f9224"
+                      },
+                      {
+                        "title": "Demo Notifications",
+                        "value": "3fcc2766-f904-d2ba-4470-8e91d9e949de"
+                      },
+                      {
+                        "title": "Demo Visualize",
+                        "value": "53c5e521-2d14-4d6d-fe61-16ca42cea162"
+                      },
+                      {
+                        "title": "Demo Virtual Datasources",
+                        "value": "79e19013-f14e-ba9d-65f1-7adb3d238f55"
+                      },
+                      {
+                        "title": "Demo ChartIQ",
+                        "value": "7e2ae5d3-53b0-fa94-b7e0-31ef1eb681de"
+                      },
+                      {
+                        "title": "Demo Data",
+                        "value": "80c52499-cd0a-a1ca-46bb-178be3aaeed"
+                      },
+                      {
+                        "title": "Demo Stream",
+                        "value": "8e3e8c4f-8fd1-166e-fe4e-f49cc5504161"
+                      },
+                      {
+                        "title": "Demo Actions Examples",
+                        "value": "9252b787-d7cc-9bab-d20d-f19ffad41405"
+                      },
+                      {
+                        "title": "Demo Scatter",
+                        "value": "a44f280a-efcd-f550-a096-0ef7d1624e23"
+                      },
+                      {
+                        "title": "Demo Health",
+                        "value": "b206840b-2e64-4209-bacd-166c883928f"
+                      },
+                      {
+                        "title": "Demo",
+                        "value": "b417c690-e82d-375a-ed74-484286ccfce0"
+                      },
+                      {
+                        "title": "Demo Graph",
+                        "value": "b58fe5e3-d02f-3130-2e53-5bddc0bbac3d"
+                      },
+                      {
+                        "title": "Demo Sensors",
+                        "value": "c02f1251-9300-2c35-9efe-85a0b87665f4"
+                      },
+                      {
+                        "title": "Demo DrillDown",
+                        "value": "ca36fe7-d6c7-acfc-14b1-a08a706b49d1"
+                      },
+                      {
+                        "title": "My New Dashboard (1)",
+                        "value": "ced148ad-80bc-b11c-7967-09ed53dae6db"
+                      },
+                      {
+                        "title": "My New Dashboard (1)",
+                        "value": "89bec630-3620-3343-c3c0-05af67163661"
+                      }
+                    ],
+                    "MapDetails": {
+                      "CustomMarkers": "",
+                      "Type": "hybrid",
+                      "MapKey": "AIzaSyDbowUQV3uh--tRrjuN6iACvS_YFIWvvqg",
+                      "TrackChanges": true,
+                      "Bounds": "",
+                      "Zoom": 17,
+                      "CenterY": -6.218884075,
+                      "CenterX": 53.33720634,
+                      "Style": ""
+                    },
+                    "OverLay": {
+                      "LegendColor": "blue",
+                      "SelectedObjectRouting": [],
+                      "Bounds": "",
+                      "Data": "",
+                      "ImageNorth": 0,
+                      "ImageEast": 0,
+                      "GeoColumn": "states",
+                      "ColorDB": "",
+                      "ImageWest": 0,
+                      "DataGeoId": "",
+                      "ImageSrc": "none",
+                      "TooltipData": "",
+                      "ImageSouth": 0,
+                      "DataType": "GeoJSON",
+                      "DataGeo": "USA",
+                      "Selected": "",
+                      "GeoFilter": "",
+                      "ImageOpacity": 30,
+                      "LegendType": "percent",
+                      "ShowLegend": true,
+                      "GeoSelected": "",
+                      "ShowOverlay": false
+                    },
+                    "possibleTrack": [
+                      "Time",
+                      "LatitudeDegrees",
+                      "LongitudeDegrees",
+                      "AltitudeMeters",
+                      "DistanceMeters",
+                      "HeartRate",
+                      "Weight",
+                      "Seconds",
+                      "Pace",
+                      "Speed",
+                      "MinHeartTarget",
+                      "MaxHeartTarget"
+                    ],
+                    "tooltips": "",
+                    "Lines": {
+                      "Color": "#ff0000",
+                      "LabelText": "",
+                      "Data": "",
+                      "Selected": "",
+                      "LabelColor": "#ffffff",
+                      "ShowLabel": false,
+                      "LabelSize": 10,
+                      "ShowTooltip": false,
+                      "Geodesic": true
+                    },
+                    "possibleCircle": [],
+                    "Circles": {
+                      "Data": "",
+                      "StrokeColor": "",
+                      "StrokeWeight": "",
+                      "StrokeOpacity": "",
+                      "FillColor": "",
+                      "FillOpacity": "",
+                      "Radius": "",
+                      "Latitude": "",
+                      "Longitude": "",
+                      "ShowTooltip": false,
+                      "Tooltip": ""
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 448,
+                  "optionsVersion": 448,
+                  "definitionId": "46",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "e87e4824-e408-dd8d-4040-f507add3da0",
+                "layout": {
+                  "row": 96,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 4
+                },
+                "component": {
+                  "id": "component_11718",
+                  "key": "ChartJS",
+                  "options": {
+                    "Legend": {
+                      "LabelColor": "#000000",
+                      "Display": false
+                    },
+                    "format": {
+                      "widgetTitle": "Heart Rate",
+                      "tileBackgroundColor": "#ffffff"
+                    },
+                    "Basics": {
+                      "Hover": false,
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Focus": "2015-09-23T18:32:47.000Z",
+                      "Transpose": true
+                    },
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_1139"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 20
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "Precision": 0,
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Display": false
+                      }
+                    ],
+                    "version": "4.3.1",
+                    "Zoom": {
+                      "ScrollZoom": false,
+                      "DragZoom": false,
+                      "DragPan": false,
+                      "YAdjust": "none"
+                    },
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_1142"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/Gridline Opacity"
+                          }
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "Precision": 0,
+                          "MaxWidth": 50,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "UseMinMax": true,
+                          "UseDataRange": false,
+                          "SoftRange": false,
+                          "Max": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/MaxHeartRate"
+                          },
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "Overlay": {
+                      "customTooltip": "<table><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{ #each points }}<tr><td><svg height='12' width = '12' > <rect style='fill:{{colors.backgroundColor}};stroke-width:3;stroke:{{colors.borderColor}}' height = '12' width = '12' > </rect></svg > {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>",
+                      "CrosshairsColor": "#454545"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Bar",
+                          "_Index": 0,
+                          "_LayerId": "layer_1148",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Heart Rate",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#ff0033",
+                          "BackgroundOpacity": 76,
+                          "BorderColor": "#f70330",
+                          "BorderOpacity": 100,
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Point in Time"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "HeartRate",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        }
+                      }
+                    ],
+                    "Alignment": {
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0,
+                      "innerPaddingLeft": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      },
+                      "innerPaddingRight": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 12855,
+                  "optionsVersion": 12868,
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "fd6991d-4302-69bc-22b7-42012bfd14c8",
+                "layout": {
+                  "row": 108,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 4
+                },
+                "component": {
+                  "id": "component_11864",
+                  "key": "ChartJS",
+                  "options": {
+                    "Legend": {
+                      "LabelColor": "#000000",
+                      "Display": false
+                    },
+                    "format": {
+                      "widgetTitle": "Pace",
+                      "titleTransparentBackground": false,
+                      "tileBackgroundColor": "#ffffff"
+                    },
+                    "Basics": {
+                      "Hover": false,
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Focus": "2015-09-23T18:32:47.000Z",
+                      "Transpose": true
+                    },
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_1139"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 20
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Display": false
+                      }
+                    ],
+                    "version": "4.3.1",
+                    "Zoom": {
+                      "ScrollZoom": false,
+                      "DragZoom": false,
+                      "DragPan": false,
+                      "YAdjust": "none"
+                    },
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_10700"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/Gridline Opacity"
+                          }
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "Precision": 0,
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "UseMinMax": true,
+                          "UseDataRange": false,
+                          "SoftRange": false,
+                          "Max": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/MaxPace"
+                          },
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "Overlay": {
+                      "customTooltip": "<table><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{ #each points }}<tr><td><svg height='12' width = '12' > <rect style='fill:{{colors.backgroundColor}};stroke-width:3;stroke:{{colors.borderColor}}' height = '12' width = '12' > </rect></svg > {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>",
+                      "CrosshairsColor": "#454545"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Bar",
+                          "_Index": 0,
+                          "_LayerId": "layer_10656",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Pace",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#8fc1ff",
+                          "BackgroundOpacity": 81,
+                          "BorderColor": "#177fff",
+                          "BorderOpacity": 100,
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Point in Time"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "Pace",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        }
+                      }
+                    ],
+                    "Alignment": {
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0,
+                      "innerPaddingLeft": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      },
+                      "innerPaddingRight": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 12827,
+                  "optionsVersion": 12840,
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "350f4af0-cf17-1993-fd72-d8d0d33fc21f",
+                "layout": {
+                  "row": 120,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 4
+                },
+                "component": {
+                  "id": "component_12010",
+                  "key": "ChartJS",
+                  "options": {
+                    "Legend": {
+                      "LabelColor": "#000000",
+                      "Display": false
+                    },
+                    "format": {
+                      "widgetTitle": "Elevation",
+                      "tileBackgroundColor": "#ffffff"
+                    },
+                    "Basics": {
+                      "Hover": false,
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Focus": "2015-09-23T18:32:47.000Z",
+                      "Transpose": true
+                    },
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_1139"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 20
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Display": false
+                      }
+                    ],
+                    "version": "4.3.1",
+                    "Zoom": {
+                      "ScrollZoom": false,
+                      "DragZoom": false,
+                      "DragPan": false,
+                      "YAdjust": "none"
+                    },
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_1142"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/Gridline Opacity"
+                          }
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "Precision": 0,
+                          "MaxWidth": 50,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "UseMinMax": true,
+                          "UseDataRange": false,
+                          "SoftRange": false,
+                          "Max": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/MaxAltitude"
+                          },
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "Overlay": {
+                      "customTooltip": "<table><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{ #each points }}<tr><td><svg height='12' width = '12' > <rect style='fill:{{colors.backgroundColor}};stroke-width:3;stroke:{{colors.borderColor}}' height = '12' width = '12' > </rect></svg > {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>",
+                      "CrosshairsColor": "#454545"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Bar",
+                          "_Index": 0,
+                          "_LayerId": "layer_11184",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Elevation",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#74ff4a",
+                          "BorderColor": "#029102",
+                          "BorderOpacity": 100,
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Point in Time"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "AltitudeMeters",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        }
+                      }
+                    ],
+                    "Alignment": {
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0,
+                      "innerPaddingLeft": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      },
+                      "innerPaddingRight": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 12797,
+                  "optionsVersion": 12810,
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "f8b184f4-ae9d-a05b-1bea-88084b974c98",
+                "layout": {
+                  "row": 132,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 4
+                },
+                "component": {
+                  "id": "component_46667",
+                  "key": "ChartJS",
+                  "options": {
+                    "Legend": {
+                      "LabelColor": "#000000",
+                      "Display": false
+                    },
+                    "format": {
+                      "widgetTitle": "Distance",
+                      "tileBackgroundColor": "",
+                      "tileTransparentBackground": false
+                    },
+                    "Basics": {
+                      "Hover": false,
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Focus": "2015-09-23T18:32:47.000Z",
+                      "Transpose": true
+                    },
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_1139"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 18
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Display": false
+                      }
+                    ],
+                    "version": "4.3.1",
+                    "Zoom": {
+                      "ScrollZoom": false,
+                      "DragZoom": false,
+                      "DragPan": false,
+                      "YAdjust": "none"
+                    },
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_1142"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/Gridline Opacity"
+                          }
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "Precision": 0,
+                          "MaxWidth": 50,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "UseMinMax": true,
+                          "SoftRange": false,
+                          "UseDataRange": false,
+                          "Max": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/MaxDistance"
+                          },
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "Overlay": {
+                      "customTooltip": "<table><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{ #each points }}<tr><td><svg height='12' width = '12' > <rect style='fill:{{colors.backgroundColor}};stroke-width:3;stroke:{{colors.borderColor}}' height = '12' width = '12' > </rect></svg > {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>",
+                      "CrosshairsColor": "#454545"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Bar",
+                          "_Index": 0,
+                          "_LayerId": "layer_11184",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Distance",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#5c668c",
+                          "BackgroundOpacity": 77,
+                          "BorderColor": "#29335c",
+                          "BorderOpacity": 100,
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Point in Time"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "DistanceMeters",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        }
+                      }
+                    ],
+                    "Alignment": {
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0,
+                      "innerPaddingLeft": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      },
+                      "innerPaddingRight": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 12888,
+                  "optionsVersion": 12901,
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "98b1913c-596b-393d-5d5a-f0fb3111c97f",
+                "layout": {
+                  "row": 144,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 4
+                },
+                "component": {
+                  "id": "component_47219",
+                  "key": "ChartJS",
+                  "options": {
+                    "Legend": {
+                      "LabelColor": "#000000",
+                      "Display": false
+                    },
+                    "format": {
+                      "widgetTitle": "Time",
+                      "tileBackgroundColor": "#ffffff"
+                    },
+                    "Basics": {
+                      "Hover": false,
+                      "Selected": {
+                        "_dashboardsType": "viewstate",
+                        "value": "Run/Sate"
+                      },
+                      "Focus": "2015-09-23T18:32:47.000Z",
+                      "Transpose": true
+                    },
+                    "XAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "category",
+                          "_Index": 0,
+                          "_Label": "XAxis 1",
+                          "_AxisId": "axis_1139"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": 20
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "MaxWidth": 0,
+                          "_ReverseCache": false,
+                          "BeginAtZero": true,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Display": false
+                      }
+                    ],
+                    "version": "4.3.1",
+                    "Zoom": {
+                      "ScrollZoom": false,
+                      "DragZoom": false,
+                      "DragPan": false,
+                      "YAdjust": "none"
+                    },
+                    "YAxes": [
+                      {
+                        "_Hidden": {
+                          "_Type": "linear",
+                          "_Index": 0,
+                          "_Label": "YAxis 1",
+                          "_AxisId": "axis_1142"
+                        },
+                        "GridLines": {
+                          "GridLinesColor": "#000000",
+                          "GridLinesOpacity": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/Gridline Opacity"
+                          }
+                        },
+                        "Labels": {
+                          "FontColor": "#000000",
+                          "Format": "Number",
+                          "Precision": 0,
+                          "MaxWidth": 50,
+                          "_ReverseCache": false,
+                          "DateFormat": "YYYY-MM-DD"
+                        },
+                        "Range": {
+                          "UseMinMax": true,
+                          "SoftRange": false,
+                          "UseDataRange": false,
+                          "Max": {
+                            "_dashboardsType": "viewstate",
+                            "value": "BarCharts/MaxTime"
+                          },
+                          "Min": 0
+                        }
+                      }
+                    ],
+                    "Overlay": {
+                      "customTooltip": "<table><thead><tr style='padding-right: 10px;'> <th>{{ xLabel }} </th><th> </th > </tr></thead > {{ #each points }}<tr><td><svg height='12' width = '12' > <rect style='fill:{{colors.backgroundColor}};stroke-width:3;stroke:{{colors.borderColor}}' height = '12' width = '12' > </rect></svg > {{ layerName }}: </td><td style='padding-right: 10px; text-align: left;'>{{layerData}}</td > </tr>{{/each}}</table>",
+                      "CrosshairsColor": "#454545"
+                    },
+                    "Layers": [
+                      {
+                        "_Hidden": {
+                          "_Type": "Bar",
+                          "_Index": 0,
+                          "_LayerId": "layer_11184",
+                          "_PossibleColumns": [
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleRadius": [
+                            "Fixed Size",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleXAxes": [
+                            "XAxis 1"
+                          ],
+                          "_PossibleYAxes": [
+                            "YAxis 1"
+                          ],
+                          "_PossibleColumnsWithItself": [
+                            "<this>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ],
+                          "_PossibleColumnsWithXYKey": [
+                            "<thisX>",
+                            "<thisY>",
+                            "<thisName>",
+                            "Time",
+                            "LatitudeDegrees",
+                            "LongitudeDegrees",
+                            "AltitudeMeters",
+                            "DistanceMeters",
+                            "HeartRate",
+                            "Weight",
+                            "Seconds",
+                            "Pace",
+                            "Speed",
+                            "MinHeartTarget",
+                            "MaxHeartTarget"
+                          ]
+                        },
+                        "Basics": {
+                          "Name": "Time",
+                          "LegendLabelColor": "#ffffff",
+                          "BackgroundColor": "#f0b954",
+                          "BackgroundOpacity": 71,
+                          "BorderColor": "#f3a812",
+                          "BorderOpacity": 100,
+                          "Data": {
+                            "_dashboardsType": "data",
+                            "value": "Run Demo/Point in Time"
+                          }
+                        },
+                        "Axes": {
+                          "XAxisData": "Time",
+                          "YAxisData": "Seconds",
+                          "XAxisID": "XAxis 1",
+                          "YAxisID": "YAxis 1"
+                        }
+                      }
+                    ],
+                    "Alignment": {
+                      "titlePaddingTop": 0,
+                      "titlePaddingBottom": 0,
+                      "innerPaddingLeft": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      },
+                      "innerPaddingRight": {
+                        "_dashboardsType": "viewstate",
+                        "value": "BarCharts/Padding"
+                      }
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 12871,
+                  "optionsVersion": 12884,
+                  "definitionId": "1007",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "a695be7f-c9a-31b4-f52b-5854d9bbd7e6",
+                "layout": {
+                  "row": 60,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_75003",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "insert text here",
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Get Aggregates"
+                      },
+                      "Template": "<i class=\"stat-icon fa fa-clock-o\"></i>\n<div class=\"stat-container\">\n<div class=\"stat-primary\"><span class=\"stat-value\">{{this.0.formattedTime}}</span> </div>\n<div class=\"stat-description\">Time</div>\n</div>",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Left",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": false,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": "",
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": "",
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#1c6db5",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 54,
+                  "optionsVersion": 54,
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "ba15f32f-d54b-370a-e9aa-ce4647267c02",
+                "layout": {
+                  "row": 72,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_86037",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "insert text here",
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Get Aggregates"
+                      },
+                      "Template": "<i class=\"stat-icon fa fa-road\"></i>\n<div class=\"stat-container\">\n<div class=\"stat-primary\">\n\t<span class=\"stat-value\">{{addCommas (toFixed this.0.maxDistanceMeters)}}</span> m\n</div>\n<div class=\"stat-description\">Distance</div>\n</div>",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Left",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": false,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": "",
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": "",
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#1c6db5",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 74,
+                  "optionsVersion": 74,
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "4f11eb33-5d6d-d709-ec0f-52a0cb606d29",
+                "layout": {
+                  "row": 84,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_86097",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "insert text here",
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Get Aggregates"
+                      },
+                      "Template": "<i class=\"stat-icon fa fa-heartbeat\"></i>\n<div class=\"stat-container\">\n<div class=\"stat-primary\"><span class=\"stat-value\">{{this.0.avgHeartRate}}</span>bpm</div>\n<div class=\"stat-description\">Average Heart Rate</div>\n<div class=\"stat-secondary\">\n\tMin <span class=\"stat-value\">{{this.0.minHeartRate}}</span> | Max <span class=\"stat-value\">{{this.0.maxHeartRate}}</span>\n</div>\n</div>",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Left",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": false,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": "",
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": "",
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#1c6db5",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 66,
+                  "optionsVersion": 66,
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "b2bb053-62bc-416f-f1b3-3b8b47b72acb",
+                "layout": {
+                  "row": 156,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_11280",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "insert text here",
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Get Aggregates"
+                      },
+                      "Template": "<i class=\"stat-icon fa fa-tachometer\"></i>\n<div class=\"stat-container\">\n<div class=\"stat-primary\"><span class=\"stat-value\">{{toFixed this.0.avgPace 1}}</span>m/s</div>\n<div class=\"stat-description\">Average Pace</div>\n<div class=\"stat-secondary\">\n\t<span class=\"stat-value\">Max <span class=\"stat-value\">{{toFixed this.0.maxPace 1}}</span>\n</span></div>\n</div>",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Left",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": false,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": "",
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": "",
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 82,
+                  "optionsVersion": 82,
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "9bac7669-551f-bfa5-2d1e-a5eedf1eb8a4",
+                "layout": {
+                  "row": 168,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_11340",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "insert text here",
+                      "Data": {
+                        "_dashboardsType": "data",
+                        "value": "Run Demo/Get Aggregates"
+                      },
+                      "Template": "<i class=\"stat-icon fa fa-area-chart\"></i>\n<div class=\"stat-container\">\n<div class=\"stat-primary\"><span class=\"stat-value\">{{toFixed this.0.avgAltitudeMeters 1}}</span>m</div>\n<div class=\"stat-description\">Average Elevation</div>\n<div class=\"stat-secondary\">\n\tMin <span class=\"stat-value\">{{toFixed this.0.minAltitudeMeters 1}}</span> | Max <span class=\"stat-value\">{{toFixed this.0.maxAltitudeMeters 1}}</span>\n</div>\n</div>",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Left",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": false,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": "",
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": "",
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 76,
+                  "optionsVersion": 76,
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "c7ef6918-249b-bd55-f81c-beb341b91e30",
+                "layout": {
+                  "row": 36,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 12
+                },
+                "component": {
+                  "id": "component_11409",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "",
+                      "Data": "",
+                      "Template": "",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Center",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": false,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "widgetTitle": "",
+                      "titleFontSize": 16,
+                      "titleHorizontal": "Center",
+                      "titleColor": "",
+                      "titleBottomBorderWidth": 0,
+                      "titleFontBold": "",
+                      "titleShadow": true,
+                      "titleBackgroundColor": "",
+                      "titleTransparentBackground": "",
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": true,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "prevVersion": 12,
+                  "optionsVersion": 12,
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              },
+              {
+                "id": "2feec885-e3bb-cdb6-6137-3beaa325ddd",
+                "layout": {
+                  "row": 180,
+                  "column": 0,
+                  "rowSpan": 12,
+                  "colSpan": 6
+                },
+                "component": {
+                  "id": "component_16222",
+                  "key": "BasicComponents",
+                  "options": {
+                    "version": "4.5.0",
+                    "Basics": {
+                      "ComponentName": "label",
+                      "HtmlText": "<img alt=\"Kx\" align=\"left\" height=\"20px\" src=\"data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODguNzMgMjcyLjU1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmt4LWxvZ28td2hpdGU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTExNC4xNywxNThsNjMuNy03NC4zNSw1Ny42Myw3OS41MkwxNzQsMjQ5LjY5Wk0wLDBWMjcyLjU1SDYxLjE0VjE3NC4yMWw1OC41Niw5OC4zNEgyMzEuNDVsNDEuNjItNjMuMzRMMzE0LDI3Mi41NWg3NC43N0wzMDkuNTQsMTYzLjE2bDY4Ljg4LTk1SDMwNS44N2wtMzIuOCw1My43N0wyMzkuOTMsNjguMTRIMTE4LjU5bC01Ny40NSw3NFYwWiIvPjwvc3ZnPg==\">\n<div class=\"title\">Fitness Tracker</div>",
+                      "Data": "",
+                      "Template": "",
+                      "Theme": "Dark",
+                      "FontSize": 13,
+                      "horizontal": "Center",
+                      "vertical": "Middle",
+                      "tooltip": "",
+                      "AllowUnsafeContent": true,
+                      "version": "4.2.0s2"
+                    },
+                    "Style": {
+                      "advanced": "",
+                      "cssClasses": ""
+                    },
+                    "Alignment": {
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                      "paddingBottom": 0,
+                      "innerPaddingLeft": 0,
+                      "innerPaddingRight": 0,
+                      "innerPaddingTop": 0,
+                      "innerPaddingBottom": 0,
+                      "titlePaddingLeft": 0,
+                      "titlePaddingRight": 0,
+                      "titlePaddingTop": 7,
+                      "titlePaddingBottom": 7
+                    },
+                    "format": {
+                      "titleFontSize": "16",
+                      "titleHorizontal": "Center",
+                      "titleShadow": false,
+                      "tileBorderWidth": 0,
+                      "tileBorderRounding": 0,
+                      "tileBorderColor": "#000000",
+                      "tileBackgroundColor": "#ffffff",
+                      "tileTransparentBackground": false,
+                      "tileShadow": false
+                    }
+                  },
+                  "containerId": null,
+                  "components": [],
+                  "widgets": [],
+                  "definitionId": "17",
+                  "hasOnSettingsChange": true
+                }
+              }
+            ],
+            "prevVersion": 12109,
+            "optionsVersion": 12195,
+            "definitionId": "50",
+            "hasOnSettingsChange": true,
+            "rowCount": 180
+          }
+        }
+      ],
+      "relativeHeight": true,
+      "rowCount": 31,
+      "colCount": 12,
+      "floatable": false,
+      "isDefault": true
+    }
+  ],
+  "popups": [],
+  "tags": [],
+  "dashboardTheme": "Light",
+  "themeSwitchable": true,
+  "saveTimestamp": null,
+  "relativeHeight": true,
+  "rowCount": 31,
+  "colCount": 12,
+  "floatable": false,
+  "viewState": {
+    "address": {
+      "_default": "",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": ""
+    },
+    "CountyData": {
+      "Prv": {
+        "_default": "Munster",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "Munster"
+      },
+      "county": {
+        "_default": "",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": ""
+      },
+      "Parish": {
+        "_default": "",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": ""
+      }
+    },
+    "max": {
+      "_default": 10000000,
+      "_viewType": true,
+      "_type": "float",
+      "value": 10000000,
+      "_rolling": false
+    },
+    "New node 2": {
+      "_default": "",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": ""
+    },
+    "county": {
+      "_default": "Dublin",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": "Dublin"
+    },
+    "Run": {
+      "Sate": {
+        "_default": "2016-06-30T11:53:00.000000000Z",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "datetime",
+        "value": "2016-06-30T11:53:00.000000000Z"
+      }
+    },
+    "Heatmap": {
+      "date": {
+        "_default": "2017-08-21T00:00:00.000000000Z",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "datetime",
+        "value": "2017-08-21T00:00:00.000000000Z"
+      },
+      "heatmap": {
+        "_default": 1335740700,
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "int",
+        "value": 1335740700
+      }
+    },
+    "StatRain": {
+      "_default": "Population",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": "Population"
+    },
+    "Line": {
+      "line": {
+        "_default": "Tallaght - The Point",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "Tallaght - The Point"
+      },
+      "lineColor": {
+        "_default": "Red",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "Red"
+      }
+    },
+    "min": {
+      "_default": 0,
+      "_viewType": true,
+      "_type": "float",
+      "value": 0
+    },
+    "bounds": {
+      "_default": "",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": ""
+    },
+    "from": {
+      "_default": "2015-12-01T00:00:00.000Z",
+      "_viewType": true,
+      "_type": "date",
+      "value": "2015-12-01T00:00:00.000Z"
+    },
+    "New node": {
+      "_default": "",
+      "_viewType": true,
+      "_rolling": false,
+      "_type": "symbol",
+      "value": ""
+    },
+    "Property Index": {
+      "zip": {
+        "_default": "2",
+        "_viewType": true,
+        "_rolling": false,
+        "_type": "symbol",
+        "value": "2"
+      }
+    },
+    "to": {
+      "_default": "2016-01-01T00:00:00.000Z",
+      "_viewType": true,
+      "_type": "date",
+      "value": "2016-01-01T00:00:00.000Z"
+    },
+    "region": {
+      "_default": "\"*Dublin 1\"",
+      "_viewType": true,
+      "_type": "string",
+      "region": {
+        "_default": "*Dublin 1*",
+        "_viewType": true,
+        "_type": "string",
+        "value": "*Dublin 1*"
+      },
+      "value": "\"*Dublin 1\""
+    },
+    "selected": {
+      "_default": "",
+      "_viewType": true,
+      "_type": "symbol",
+      "value": "",
+      "_rolling": false
+    },
+    ".settings": {
+      "component_10591": {
+        "GroupingConfiguration": [],
+        "version": 538
+      },
+      "component_4194": {
+        "version": 539
+      },
+      "component_3785": {
+        "version": 526
+      }
+    },
+    "BarCharts": {
+      "MaxHeartRate": {
+        "_viewType": true,
+        "_type": "float",
+        "_rolling": false,
+        "value": "",
+        "_default": ""
+      },
+      "MaxAltitude": {
+        "_viewType": true,
+        "_type": "float",
+        "_rolling": false,
+        "value": "",
+        "_default": ""
+      },
+      "MaxPace": {
+        "_viewType": true,
+        "_type": "float",
+        "_rolling": false,
+        "value": "",
+        "_default": ""
+      },
+      "MaxDistance": {
+        "_viewType": true,
+        "_type": "float",
+        "value": "",
+        "_default": ""
+      },
+      "MaxTime": {
+        "_viewType": true,
+        "_type": "int",
+        "_rolling": false,
+        "value": "",
+        "_default": ""
+      },
+      "Padding": {
+        "_viewType": true,
+        "_type": "int",
+        "_rolling": false,
+        "value": 20,
+        "_default": 20
+      },
+      "Gridline Opacity": {
+        "_viewType": true,
+        "_type": "int",
+        "_rolling": false,
+        "value": 25,
+        "_default": 25
+      }
+    }
+  },
+  "data": {
+    "Run Demo": {
+      "Steps": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Steps",
+          "Type"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Steps",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "Type"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "flip `Steps`Type!(11000 9000;`Goal`Remaining)",
+        "_queryParams": [],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Run Data": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_maxRows": 2000,
+        "_pageSize": 2000,
+        "_serverPaging": false,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "select from Rundata",
+        "_queryParams": [],
+        "_subscriptionKey": "",
+        "_aggregateCols": [],
+        "_breakdownCols": [],
+        "_aggregateFns": [],
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query"
+      },
+      "Calories": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Calories",
+          "Type"
+        ],
+        "_dataType": "query",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_mappings": {
+          "key": "Calories",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          },
+          "value": "Type"
+        },
+        "_maxRows": 2000,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "isExpanded": true,
+            "weight": 2
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": false,
+            "weight": 1
+          },
+          {
+            "isExpanded": true,
+            "weight": 0
+          },
+          {
+            "isExpanded": true,
+            "weight": 2
+          }
+        ],
+        "_queryString": "flip `Calories`Type!(430 1760;`CaloriesBurnt`Remaining)\n",
+        "_queryParams": [],
+        "_subscriptionKey": "",
+        "_hasUpdateQuery": false,
+        "_updateQueryString": "",
+        "_updateType": "query",
+        "_pageSize": 2000,
+        "_serverPaging": false
+      },
+      "Get Aggregates": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Key",
+          "Value",
+          "avgAltitudeMeters",
+          "maxAltitudeMeters",
+          "minAltitudeMeters",
+          "avgDistanceMeters",
+          "maxDistanceMeters",
+          "minDistanceMeters",
+          "avgHeartRate",
+          "maxHeartRate",
+          "minHeartRate",
+          "avgPace",
+          "maxPace",
+          "minPace",
+          "avgSeconds",
+          "maxSeconds",
+          "minSeconds",
+          "formattedTime"
+        ],
+        "_dataType": "virtual",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_maxRows": 2000,
+        "_pageSize": 2000,
+        "_serverPaging": false,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "weight": 2.6519337016574585,
+            "isExpanded": true
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 0,
+            "isExpanded": true
+          },
+          {
+            "weight": 1.3480662983425415,
+            "isExpanded": true
+          }
+        ],
+        "_subscriptionKey": "_rowIndex",
+        "_virtualParams": [
+          {
+            "name": "source",
+            "index": 0,
+            "type": "datasource",
+            "value": "Run Demo/Run Data",
+            "isVirtual": true
+          }
+        ],
+        "_virtualQueryString": "function (source, callback) {\n\t\n\tvar aggRows = [],\n\t\t\taggs = {'Key': 'all'},\n\t    cols = ['AltitudeMeters', 'DistanceMeters', 'HeartRate', 'Pace', 'Seconds'],\n\t\t\tcolumns = ['Key', 'Value'],\n\t    fns = ['avg', 'max', 'min'],\n\t    max = {},\n\t\t\tmeta = {\n\t        'Key': 9,\n\t        'Value': 11\n\t    };\n\t\n\t\taggRows.push(aggs);\n\n\t\t_.each(cols, function(col) {\n\t\t    var agg,\n\t\t\tdata = _.map(source.rows, col);\n\n\t\t\t_.each(fns, function(fn) {\n\t\t\t    switch (fn) {\n\t\t\t\t    case 'avg':\n\t\t\t\t\t\tagg = Math.floor(_.mean(data));\n\t\t\t\t\t\tbreak;\n\t\t\t\t\tcase 'max':\n\t\t\t\t\t\tagg = _.max(data);\n\t\t\t\t\t\tbreak;\n\t\t\t\t\tcase 'min':\n\t\t\t\t\t\t agg = _.min(data);\n\t\t\t\t\t\tbreak;\n\t\t\t\t}\n\n\t\t\t\tagg = agg || 0;\n\n\t\t\t\taggRows.push({\n\t\t\t\t\t'Key': fn + col,\n\t\t\t\t\t'Value': agg\n\t\t\t\t});\n\t\t\t\t\n\t\t\t\taggs[fn + col] = agg;\n\t\t\t\tcolumns.push(fn + col);\n\t\t\t\tmeta[fn + col] = 11;\n\t\t\t});\n\t\t});\n\t\n\t// format time\n\taggs.formattedTime = Tools.convertValueToDuration(aggRows[0].maxSeconds * 1000).format('mm:ss');\n\tcolumns.push('formattedTime');\n\tmeta.formattedTime = 9;\n\n\tcallback({\n\t    meta: meta,\n\t    columns: columns,\n\t    rows: aggRows\n\t});\n}",
+        "_mappings": {
+          "key": "Key",
+          "value": "Value",
+          "mappings": {
+            "maxAltitudeMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxAltitude"
+            },
+            "maxDistanceMeters": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxDistance"
+            },
+            "maxHeartRate": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxHeartRate"
+            },
+            "maxPace": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxPace"
+            },
+            "maxSeconds": {
+              "_dashboardsType": "viewstate",
+              "value": "BarCharts/MaxTime"
+            }
+          }
+        }
+      },
+      "Point in Time": {
+        "_pagingType": "NONE",
+        "_autoExec": true,
+        "_columns": [
+          "Time",
+          "LatitudeDegrees",
+          "LongitudeDegrees",
+          "AltitudeMeters",
+          "DistanceMeters",
+          "HeartRate",
+          "Weight",
+          "Seconds",
+          "Pace",
+          "Speed",
+          "MinHeartTarget",
+          "MaxHeartTarget"
+        ],
+        "_dataType": "virtual",
+        "_dataSource": "kdb",
+        "_connection": "html5evalcongroup",
+        "_maxRows": 2000,
+        "_pageSize": 2000,
+        "_serverPaging": false,
+        "_subscriptionType": "static",
+        "_subscriptionInterval": 3,
+        "_layout": [
+          {
+            "weight": 2.5582655826558267,
+            "isExpanded": true
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 1,
+            "isExpanded": false
+          },
+          {
+            "weight": 0,
+            "isExpanded": true
+          },
+          {
+            "weight": 1.4417344173441735,
+            "isExpanded": true
+          }
+        ],
+        "_subscriptionKey": "_rowIndex",
+        "_virtualParams": [
+          {
+            "type": "datasource",
+            "name": "source",
+            "value": "Run Demo/Run Data",
+            "index": 0,
+            "isVirtual": true
+          },
+          {
+            "name": "selected",
+            "index": 1,
+            "type": "viewstate",
+            "value": "Run/Sate",
+            "isVirtual": true
+          }
+        ],
+        "_virtualQueryString": "function (source, selected,  callback) {\n\t\n\tvar selectedRow = {\n\t\t\tTime: Tools.convertISODatetimeToKDBLikeObject(selected)\n\t\t},\n\t\tindex = _.sortedIndexBy(source.rows, selectedRow, function (row) {\n\t\t\treturn row.Time.i;\n\t});\n\t  \n    callback({\n\t\tmeta: source.meta,\n\t\tcolumns: source.columns,\n\t\trows: [source.rows[index] || {}]\n\t});\n\n}"
+      }
+    }
+  },
+  "worksheetPadding": 10,
+  "widgetsSpacing": 0,
+  "borderColor": "000000",
+  "borderBackground": "ffffff",
+  "transparentBackground": false,
+  "borderWidth": 0,
+  "borderRounding": 0,
+  "borderSpacing": 0,
+  "borderShadow": false,
+  "enableShareDashboard": false,
+  "notifications": {
+    "Notifications": {
+      "_Version": "4.2.0s2",
+      "Enabled": true,
+      "InBrowserNotifications": false,
+      "Position": "Bottom Right",
+      "MaxVisibleCount": 3,
+      "FadeOut": 5,
+      "Icon": "bell-o",
+      "Sound": "beep",
+      "SoundVolume": 100,
+      "Grouping": false,
+      "GroupingInterval": 1,
+      "triggers": []
+    }
+  },
+  "showLoadingIndicators": true,
+  "unsavedViewerPrompt": false,
+  "advancedCss": "",
+  "cssClasses": "",
+  "viewStateBinding": false,
+  "widgets": [],
+  "wasChanged": true,
+  "action": "replace",
+  "version": "4.4.0p7"
+}

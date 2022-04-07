@@ -1,0 +1,18 @@
+.editor-app {
+  display: flex;
+  flex-direction: column;
+}
+.editor-app .editor-toolbar {
+  display: none;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 1px;
+}
+.editor-app .editor-toolbar .editor-btn {
+  margin-right: 5px;
+}
+.editor-app .editor-container {
+  flex-grow: 1;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDSTs7QUFHUjtFQUNJIiwiZmlsZSI6ImFwcC5jc3MifQ== */
