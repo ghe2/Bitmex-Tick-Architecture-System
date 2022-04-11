@@ -1,5 +1,5 @@
 /connect to tickerplant, if it doesn't exist just publish data locally for insertion
-TP_PORT:first "J"$getenv`TP_PORT;
+TP_PORT: first "J"$getenv`NODES_PORT;
 h:@[hopen;(`$":localhost:",string TP_PORT;10000);0i];
 pub:{$[h=0;
         neg[h](`upd   ;x;y);
@@ -12,19 +12,19 @@ upd:upsert;
 /conda install -c jmcmurray ws-client ws-server
 .utl.require"ws-client";
 
-/Initialise displaying tables 
-orderbook:([]`s#time:"n"$();`g#sym:`$();side:`$();price:"f"$();size:"f"$();id:"f"$();action:`$());
-bitmexbook:([]`s#time:"n"$();`g#sym:`$();bids:();bidsizes:();asks:();asksizes:());
+/Initialise displaying tables
+orderbook:([]`s#time:"p"$();`g#sym:`$();side:`$();price:"f"$();size:"f"$();id:"f"$();action:`$());
+bitmexbook:([]`s#time:"p"$();`g#sym:`$();bids:();bidsizes:();asks:();asksizes:());
 bitmex_last_book:`bidbook`askbook!(()!();()!());
 bitmex_last_book_sym:enlist[`]!enlist `bidbook`askbook!(()!();()!());
-trade: ([]time:`s#"n"$();`g#sym:`$();side:`$();size:"f"$();price:"f"$();tickDirection:`$();trdMatchID:`$();grossValue:"f"$();homeNotional:"f"$();foreignNotional:"f"$());
+trade: ([]time:`s#"p"$();`g#sym:`$();side:`$();size:"f"$();price:"f"$();tickDirection:`$();trdMatchID:`$();grossValue:"f"$();homeNotional:"f"$();foreignNotional:"f"$());
 
-bitmex_bookerbuilder:{[x;y] 
+bitmex_bookerbuilder:{[x;y]
     .debug.xy:(x;y);
     $[not y 0;x;
-        $[`insert=y 4;    
+        $[`insert=y 4;
             x,enlist[y 1]! enlist y 2 3;
-          `update=y 4;    
+          `update=y 4;
             $[(y 1) in x;.[x;(y 1;1);:;y 3];x];
           `delete=y 4;
             (y 1) _ x;
@@ -32,22 +32,23 @@ bitmex_bookerbuilder:{[x;y]
             ]
         ]
     };
+
 vwap_depth:{$[any z<=s:sums x;(deltas z & s) wavg y;0nf]};
-.bitmex.upd:{   
+.bitmex.upd:{
     d:.j.k x;.debug.d:d; // 0N!d;
-    if[d[`table] like "orderBookL2";  
+    if[d[`table] like "orderBookL2";
         $[d[`action] like "insert";
-            [.debug.i:d;new:select time:"n"$"Z"$timestamp,sym:`$symbol,`$side,price,size,id,action:`insert from d`data];   
-          d[`action] like "update";            
-            [.debug.u:d;new:select time:"n"$"Z"$timestamp,sym:`$symbol,`$side,price:0nf,size,id,action:`update from d`data];
-          d[`action] like "delete";            
-            [.debug.e:d;new:select time:"n"$"Z"$timestamp,sym:`$symbol,`$side,price:0n,size:0n,id,action:`delete from d`data];
+            [.debug.i:d;new:select time:"p"$"Z"$timestamp,sym:`$symbol,`$side,price,size,id,action:`insert from d`data];
+          d[`action] like "update";
+            [.debug.u:d;new:select time:"p"$"Z"$timestamp,sym:`$symbol,`$side,price:0nf,size,id,action:`update from d`data];
+          d[`action] like "delete";
+            [.debug.e:d;new:select time:"p"$"Z"$timestamp,sym:`$symbol,`$side,price:0n,size:0n,id,action:`delete from d`data];
           d[`action] like "partial";
-            [.debug.p:d;new:select time:"n"$"Z"$timestamp,sym:`$symbol,`$side,price:0n,size:0n,id,action:`partial from d`data];
+            [.debug.p:d;new:select time:"p"$"Z"$timestamp,sym:`$symbol,`$side,price:0n,size:0n,id,action:`partial from d`data];
                 .debug.a:d;
             ];
         // debug variable to see new records
-        .debug.new:new;            
+        .debug.new:new;
         //publish to TP - orderbook
         pub[`orderbook;new];
 
@@ -64,10 +65,10 @@ vwap_depth:{$[any z<=s:sums x;(deltas z & s) wavg y;0nf]};
         //publish to TP - bitmexbook
         pub[`bitmexbook;books];
         ];
-    
+
     if[d[`table] like "trade";
         $[d[`action] like "insert";
-            [.debug.trade.i:d;newTrade:select time:"n"$"Z"$timestamp,sym:`$symbol,`$side,"f"$size,price,`$tickDirection,`$trdMatchID,"f"$grossValue,"f"$homeNotional,"f"$foreignNotional from d`data;
+            [.debug.trade.i:d;newTrade:select time:"p"$"Z"$timestamp,sym:`$symbol,`$side,"f"$size,price,`$tickDirection,`$trdMatchID,"f"$grossValue,"f"$homeNotional,"f"$foreignNotional from d`data;
               .debug.newTrade:newTrade;
               pub[`trade;newTrade]
               ];
@@ -79,3 +80,4 @@ vwap_depth:{$[any z<=s:sums x;(deltas z & s) wavg y;0nf]};
     };
 
 .bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2";`.bitmex.upd];
+/.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2:XBTUSD";`.bitmex.upd];
