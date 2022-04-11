@@ -1,8 +1,8 @@
 /.utl.require"ws-client";
 \l ws-client_0.2.2.q
 
-TP_PORT:first "J"$getenv`NODES_PORT;
-h:@[hopen;(`$":localhost:",string TP_PORT;10000);0i];
+TP_PORT:first "J"$getenv`TP_PORT
+h:@[hopen;(`$":localhost:",string TP_PORT;10000);0i]
 
 pub:{$[h=0;
         neg[h](`upd   ;x;y);
