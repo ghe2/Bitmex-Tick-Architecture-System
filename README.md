@@ -27,6 +27,10 @@ wss://ws.bitmex.com/realtime?subscribe=instrument,orderBookL2_25:XBTUSD
 ## kdb+ and websocket 
 Simple Web application which uses kdb+ to provide real-time updating of tables based on user queries. Please see examples at https://github.com/jonathonmcmurray/ws.q
 
+## how to set up your Alchemy websocket key
+You need to set up a valid variable ALCHEMY_KEY in the feedhandler_ETH.q. Please find details below: 
+https://www.alchemy.com/
+
 
 ## Dashboard Example
 ![plot](./dashboard_demo.png)
