@@ -79,5 +79,26 @@ vwap_depth:{$[any z<=s:sums x;(deltas z & s) wavg y;0nf]};
     ];
     };
 
-.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2";`.bitmex.upd];
-/.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2:XBTUSD";`.bitmex.upd];
+
+/.bitmex.h:.ws.open["wss://ws.bitmex.com/realtime?subscribe=trade,orderBookL2";`.bitmex.upd];
+
+//open the websocket and check the connection status 
+host_bitmex:"wss://ws.bitmex.com";
+query_bitmex:"/realtime?subscribe=trade,orderBookL2";
+open_bitmex:{.bitmex.h:.ws.open[x,y;`.bitmex.upd];.bitmex.h};
+.ws.hosts_to_connect:([]host:enlist host_bitmex;query:enlist query_bitmex;func:open_bitmex);
+
+.ws.check_and_connect:{[x]
+    if[not (`$x`host) in `$1_' string exec hostname from .ws.w;
+        0N!x[`host]," not connected!.. Reconnecting at ",string .z.z;
+        res:x[`func] . x`host`query;
+        0N!x[`host]," connected on ",string res
+        ]
+    };
+
+.z.wo_orig:.z.wo;
+.z.wo:{.z.wo_orig x;0N!"Opening ws on ",string .debug.wo:x };
+.z.wc_orig:.z.wc;
+.z.wc:{.z.wc_orig x; .ws.check_and_connect each .ws.hosts_to_connect};
+.ws.check_and_connect each .ws.hosts_to_connect;
+
