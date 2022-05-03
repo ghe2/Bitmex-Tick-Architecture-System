@@ -46,7 +46,7 @@ alchemy_newFullPendingTransactions:.j.j @[alchemy_sub;`params;:;enlist "alchemy_
 
 //open the websocket and check the connection status 
 host_alchemy:"wss://eth-mainnet.alchemyapi.io/v2/";
-query_alchemy: "r0mK1sI3HynOjNeDhmi14CZQhyx7rY0N"; /getenv `ALCHEMY_KEY;
+query_alchemy:getenv `ALCHEMY_KEY;
 open_alchemy:{.alchemy.h:.ws.open[x,y;`.alchemy.upd];.alchemy.h};
 .ws.hosts_to_connect:([]host:enlist host_alchemy;query:enlist query_alchemy;func:open_alchemy);
 
