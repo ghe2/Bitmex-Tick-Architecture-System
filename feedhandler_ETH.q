@@ -19,18 +19,21 @@ eth_txns_pending:([]time:"p"$();sym:`$();blockHash:();blockNumber:();chainId:();
 col_mapping:`from`to`type`value!`from_address`to_address`type_txn`val;
 defaults:`time`sym`blockHash`blockNumber`chainId`condition`creates`from_address`to_address`gas`gasPrice`hash`input`nonce`publicKey`r`raw`s`standardV`transactionIndex`type_txn`v`val`accessList`maxFeePerGas`maxPriorityFeePerGas!(0np;`;"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"";"");
 
-.alchemy.upd:{d:.j.k .debug.x:ssr[x;"null";"\"\""];
-    // capture the debug variables for all incoming subscriptions
-    .debug.subs[`$d[`params;`subscription]]:enlist d[`params;`result];
-    // collect the values, append defaults for missing values
-    txn_dictionary:defaults,(`time`sym!(.z.p;.z.h)),d[`params;`result];
-    // map some column names
-    txn_dictionary:key[col_mapping] _ @[txn_dictionary;value col_mapping;:;txn_dictionary key col_mapping];
-    // convert to byte lists
-    //txn_dictionary:@[txn_dictionary;key[txn_dictionary] except `time`sym;string_to_byte];
-    // publish data as lists
-    pub[`eth_txns_pending;] .debug.pub:txn_dictionary cols eth_txns_pending;
-
+.alchemy.upd:{
+    r:.debug.r:.j.k x;
+    if[`jsonrpc`method`params ~ key r;
+        d:.j.k .debug.x:ssr[x;"null";"\"\""];
+        // capture the debug variables for all incoming subscriptions
+        .debug.subs[`$d[`params;`subscription]]:enlist d[`params;`result];
+        // collect the values, append defaults for missing values
+        txn_dictionary:defaults,(`time`sym!(.z.p;.z.h)),d[`params;`result];
+        // map some column names
+        txn_dictionary:key[col_mapping] _ @[txn_dictionary;value col_mapping;:;txn_dictionary key col_mapping];
+        // convert to byte lists
+        //txn_dictionary:@[txn_dictionary;key[txn_dictionary] except `time`sym;string_to_byte];
+        // publish data as lists
+        pub[`eth_txns_pending;] .debug.pub:txn_dictionary cols eth_txns_pending
+    ]
     };
 
 /.alchemy.h:.ws.open[getenv `WEBSOCKET_KEY;`.alchemy.upd];
@@ -43,7 +46,7 @@ alchemy_newFullPendingTransactions:.j.j @[alchemy_sub;`params;:;enlist "alchemy_
 
 //open the websocket and check the connection status 
 host_alchemy:"wss://eth-mainnet.alchemyapi.io/v2/";
-query_alchemy: getenv `ALCHEMY_KEY;
+query_alchemy: "r0mK1sI3HynOjNeDhmi14CZQhyx7rY0N"; /getenv `ALCHEMY_KEY;
 open_alchemy:{.alchemy.h:.ws.open[x,y;`.alchemy.upd];.alchemy.h};
 .ws.hosts_to_connect:([]host:enlist host_alchemy;query:enlist query_alchemy;func:open_alchemy);
 
