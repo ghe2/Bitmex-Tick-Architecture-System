@@ -124,7 +124,7 @@ generateOrderbook:{[newOrder]
     books:generateOrderbook[neworderTbl];
     .debug.gda.books2:books;
 
-    //publish to TP - bitfinexBook
+    //publish to TP - Book
     pub[`book;books];
     };
 
