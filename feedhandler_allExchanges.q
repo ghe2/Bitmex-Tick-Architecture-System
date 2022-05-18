@@ -1,10 +1,10 @@
 .utl.require"ws-client";
 
 TP_PORT:first "J"$getenv`TP_PORT;
-h:@[hopen;(`$":localhost:",string TP_PORT;10000);0i];
+h:@[hopen;(`$":localhost:5000";10000);0i];
 pub:{$[h=0;
         neg[h](`upd   ;x;y);
-        neg[h](`.u.upd;x;value flip y)
+        $[0h~type y;neg[h](`.u.upd;x;y);neg[h](`.u.upd;x;value flip y)]
         ]};
 
 upd:upsert;
